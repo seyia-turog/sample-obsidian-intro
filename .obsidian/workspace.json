@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fourth Note.md",
+                "file": "Third Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fourth Note"
+              "title": "Third Note"
             }
           }
         ],
@@ -199,10 +199,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "edf56b4d0ce101b9",
+  "active": "4e3fbf2bf32952d6",
   "lastOpenFiles": [
-    "Third Note.md",
     "Fourth Note.md",
+    "Third Note.md",
     "Intro.md",
     "Sample Second File.md",
     "Sample First File.md"
