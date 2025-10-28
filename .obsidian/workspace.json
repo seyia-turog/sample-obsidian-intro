@@ -4,39 +4,65 @@
     "type": "split",
     "children": [
       {
-        "id": "77d0021cb3819c5a",
+        "id": "9dc9c2efb1ef00b3",
         "type": "tabs",
         "children": [
           {
-            "id": "ed8a7db777a4a7cf",
+            "id": "31bc397df9eabf04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sample Second File.md",
+                "file": "2025-10-28 Post Name.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sample Second File"
+              "title": "2025-10-28 Post Name"
             }
           },
           {
-            "id": "5ffabb54d3d53aac",
+            "id": "3fbc421acf85b054",
+            "type": "leaf",
+            "state": {
+              "type": "bpmn-view",
+              "state": {
+                "file": "model_2.bpmn"
+              },
+              "icon": "lucide-file",
+              "title": "model_2"
+            }
+          },
+          {
+            "id": "b90af9eaf310621f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Third Note.md",
+                "file": "ABC Clients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Third Note"
+              "title": "ABC Clients"
             }
           },
           {
-            "id": "4e3fbf2bf32952d6",
+            "id": "d0991b5d5bbbb4f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ABC Clients.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ABC Clients"
+            }
+          },
+          {
+            "id": "c0e78f8583aa640f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -123,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sample Second File.md",
+                "file": "Third Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +159,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Sample Second File"
+              "title": "Backlinks for Third Note"
             }
           },
           {
@@ -142,12 +168,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sample Second File.md",
+                "file": "Third Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Sample Second File"
+              "title": "Outgoing links from Third Note"
             }
           },
           {
@@ -171,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sample Second File.md",
+                "file": "Third Note.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Sample Second File"
+              "title": "Outline of Third Note"
             }
           }
         ]
@@ -189,22 +215,32 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "4e3fbf2bf32952d6",
+  "active": "c0e78f8583aa640f",
   "lastOpenFiles": [
-    "Fourth Note.md",
+    "conflict-files-obsidian-git.md",
     "Third Note.md",
-    "Intro.md",
+    "ABC Clients.md",
+    "model_2.bpmn",
+    "model_1.bpmn",
+    "2025-10-28 Post Name.md",
+    "2025-10-30 dfghjkk.md",
+    "THUMBNAIL.base",
+    "Social",
+    "Sample First File.md",
     "Sample Second File.md",
-    "Sample First File.md"
+    "Fourth Note.md",
+    "Intro.md"
   ]
 }
