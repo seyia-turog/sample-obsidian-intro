@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sample First File.md",
+                "file": "Sample Second File.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sample First File"
+              "title": "Sample Second File"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sample First File.md",
+                "file": "Sample Second File.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Sample First File"
+              "title": "Backlinks for Sample Second File"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sample First File.md",
+                "file": "Sample Second File.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Sample First File"
+              "title": "Outgoing links from Sample Second File"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sample First File.md",
+                "file": "Sample Second File.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Sample First File"
+              "title": "Outline of Sample Second File"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "ed8a7db777a4a7cf",
   "lastOpenFiles": [
-    "Sample First File.md"
+    "Sample First File.md",
+    "Sample Second File.md"
   ]
 }
