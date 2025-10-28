@@ -1,0 +1,24 @@
+formulas:
+  Untitled: ""
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - "!Thumbnail.isEmpty()"
+    order:
+      - file.name
+      - file.links
+      - file.fullname
+      - file.basename
+      - formula.Untitled
+      - file.mtime
+      - Due On
+      - Thumbnail
+  - type: cards
+    name: View
+    filters:
+      and:
+        - "!Thumbnail.isEmpty()"
+    image: note.Thumbnail
+    imageAspectRatio: 0.9
