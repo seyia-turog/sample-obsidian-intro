@@ -1,2 +1,2 @@
- This automaticall synced 
+ This automatic all synced 
  
