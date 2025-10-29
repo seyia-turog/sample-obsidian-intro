@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/ADIBA BACKOFFICE API.md",
+                "file": "Engineering/01 Projects/Backoffice Console.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ADIBA BACKOFFICE API"
+              "title": "Backoffice Console"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/01 Projects/ADIBA BACKOFFICE API.md",
+                "file": "Engineering/01 Projects/Backoffice Console.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ADIBA BACKOFFICE API"
+              "title": "Backlinks for Backoffice Console"
             }
           },
           {
@@ -244,6 +244,7 @@
   },
   "active": "edf56b4d0ce101b9",
   "lastOpenFiles": [
+    "Engineering/01 Projects/Adiba Backoffice API.md",
     "Engineering/02 Operations/People/People.md",
     "Engineering/02 Operations/Weekly Update/Sprint - Week 44 (28 Oct – 3 Nov 2025).md",
     "Engineering/02 Operations/People",
