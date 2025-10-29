@@ -242,8 +242,10 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "179c5a1bdf8037bc",
+  "active": "edf56b4d0ce101b9",
   "lastOpenFiles": [
+    "Engineering/Untitled",
+    "Untitled",
     "Engineering/01 Projects/Project 1.md",
     "Engineering/02 Operations/Processes/Product Development.md",
     "Engineering/02 Operations/Processes/Project Development.md",
@@ -276,9 +278,7 @@
     "Engineering/02 Operations/Weekly Update",
     "conflict-files-obsidian-git.md",
     "Intro.md",
-    "THUMBNAIL.base",
     "Fourth Note.md",
-    "Sample Second File.md",
-    "Sample First File.md"
+    "Sample Second File.md"
   ]
 }
