@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md",
+                "file": "ABC Clients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily Standup 29 Oct 2025"
+              "title": "ABC Clients"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md",
+                "file": "ABC Clients.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Daily Standup 29 Oct 2025"
+              "title": "Backlinks for ABC Clients"
             }
           },
           {
@@ -244,20 +244,20 @@
   },
   "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
+    "2025-10-30 dfghjkk.md",
+    "2025-10-28 Post Name.md",
+    "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md",
     "Engineering/01 Projects/Backoffice Console.md",
     "Engineering/01 Projects/Adiba Backoffice API.md",
     "Engineering/02 Operations/People/People.md",
     "Engineering/02 Operations/Weekly Update/Sprint - Week 44 (28 Oct – 3 Nov 2025).md",
     "Engineering/02 Operations/People",
-    "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md",
     "Third Note.md",
     "Engineering/02 Operations/Daily Standup Notes",
     "Engineering/02 Operations/Weekly Update",
     "conflict-files-obsidian-git.md",
     "Intro.md",
     "THUMBNAIL.base",
-    "2025-10-30 dfghjkk.md",
-    "2025-10-28 Post Name.md",
     "model_2.bpmn",
     "model_1.bpmn",
     "ABC Clients.md",
