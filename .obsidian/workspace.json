@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Active Projects/Project 1.md",
+                "file": "Engineering/02 Operations/Processes/01 Sample Process.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Project 1"
+              "title": "01 Sample Process"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/01 Projects/Active Projects/Project 1.md",
+                "file": "Engineering/02 Operations/Processes/01 Sample Process.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Project 1"
+              "title": "Backlinks for 01 Sample Process"
             }
           },
           {
@@ -242,8 +242,10 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "edf56b4d0ce101b9",
+  "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
+    "Engineering/01 Projects/Active Projects/Project 1.md",
+    "Engineering/02 Operations/Processes/01 Sample Process.md",
     "Engineering/02 Operations/Processes/Untitled",
     "Engineering/03 Team/Applicant Pipeline.md",
     "Engineering/06 Knowledge Base/Deployment Checklist.md",
@@ -256,7 +258,6 @@
     "Engineering/04 Ideas & Research/IDEA 2.md",
     "Engineering/04 Ideas & Research/IDEA 1.md",
     "Engineering/02 Operations/Processes/Hiring Process.md",
-    "Engineering/01 Projects/Active Projects/Project 1.md",
     "Engineering/01 Projects/Archived Projects",
     "Engineering/07 KPI/KPI Dashboard.md",
     "Engineering/01 Projects/Active Projects",
@@ -276,7 +277,6 @@
     "06 Team",
     "03 Team",
     "Engineering/00 Company/Org Chart.md",
-    "model_2.bpmn",
     "01 - The Future of ABC Clients.md",
     "ABC Clients.md",
     "2025-10-30 dfghjkk.md"
