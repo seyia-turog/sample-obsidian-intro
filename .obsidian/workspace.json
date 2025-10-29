@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/03 Team/Untitled.md",
+                "file": "Engineering/03 Team/UI Design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "UI Design"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/03 Team/Untitled.md",
+                "file": "Engineering/03 Team/UI Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Untitled"
+              "title": "Backlinks for UI Design"
             }
           },
           {
@@ -245,7 +245,7 @@
   "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
     "Engineering/03 Team/DevOps.md",
-    "Engineering/03 Team/Untitled.md",
+    "Engineering/03 Team/UI Design.md",
     "Engineering/03 Team/QA & Testing.md",
     "Engineering/03 Team/Backend.md",
     "Engineering/03 Team/Frontend.md",
