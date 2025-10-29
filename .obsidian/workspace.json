@@ -80,14 +80,12 @@
             "id": "179c5a1bdf8037bc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bpmn-view",
               "state": {
-                "file": "ABC Clients.md",
-                "mode": "source",
-                "source": false
+                "file": "model_2.bpmn"
               },
               "icon": "lucide-file",
-              "title": "ABC Clients"
+              "title": "model_2"
             }
           }
         ],
@@ -164,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ABC Clients.md",
+                "file": "model_2.bpmn",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +172,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ABC Clients"
+              "title": "Backlinks for model_2"
             }
           },
           {
@@ -244,6 +242,10 @@
   },
   "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
+    "model_1.bpmn",
+    "model_2.bpmn",
+    "01 - The Future of ABC Clients.md",
+    "ABC Clients.md",
     "2025-10-30 dfghjkk.md",
     "2025-10-28 Post Name.md",
     "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md",
@@ -258,9 +260,6 @@
     "conflict-files-obsidian-git.md",
     "Intro.md",
     "THUMBNAIL.base",
-    "model_2.bpmn",
-    "model_1.bpmn",
-    "ABC Clients.md",
     "Fourth Note.md",
     "Sample Second File.md",
     "Sample First File.md"
