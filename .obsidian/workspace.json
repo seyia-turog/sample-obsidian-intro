@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/02 Operations/Hiring Process.md",
+                "file": "Engineering/04 Ideas & Research/IDEA 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hiring Process"
+              "title": "IDEA 2"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/02 Operations/Hiring Process.md",
+                "file": "Engineering/04 Ideas & Research/IDEA 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Hiring Process"
+              "title": "Backlinks for IDEA 2"
             }
           },
           {
@@ -244,8 +244,9 @@
   },
   "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
-    "Engineering/01 Projects/Active Projects/Project 1.md",
+    "Engineering/04 Ideas & Research/IDEA 1.md",
     "Engineering/02 Operations/Hiring Process.md",
+    "Engineering/01 Projects/Active Projects/Project 1.md",
     "Engineering/01 Projects/Archived Projects",
     "Engineering/07 KPI/KPI Dashboard.md",
     "Engineering/01 Projects/Active Projects",
@@ -278,7 +279,6 @@
     "Engineering/02 Operations/Weekly Update/Sprint - Week 44 (28 Oct – 3 Nov 2025).md",
     "Third Note.md",
     "conflict-files-obsidian-git.md",
-    "Intro.md",
-    "Fourth Note.md"
+    "Intro.md"
   ]
 }
