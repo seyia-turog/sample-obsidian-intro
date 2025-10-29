@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/00 Company/Annual Roadmap.md",
+                "file": "Engineering/06 Knowledge Base/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Annual Roadmap"
+              "title": "Untitled"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/00 Company/Annual Roadmap.md",
+                "file": "Engineering/06 Knowledge Base/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Annual Roadmap"
+              "title": "Backlinks for Untitled"
             }
           },
           {
@@ -242,8 +242,11 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "edf56b4d0ce101b9",
+  "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
+    "Engineering/03 Team/Backend.md",
+    "Engineering/06 Knowledge Base/Untitled.md",
+    "Engineering/00 Company/Annual Roadmap.md",
     "Engineering/03 Team/Contractor Payments.md",
     "Engineering/00 Company/Engineering Budget 2025",
     "Engineering/00 Company/Engineering Budget 2025/Q3 Budget 2025.md",
@@ -266,13 +269,11 @@
     "Engineering/02 Operations/Processes",
     "Engineering/03 Team/DevOps.md",
     "Engineering/03 Team/QA & Testing.md",
-    "Engineering/03 Team/Backend.md",
     "Engineering/03 Team/Frontend.md",
     "Engineering/03 Team",
     "06 Team",
     "03 Team",
     "Engineering/00 Company/Org Chart.md",
-    "Engineering/00 Company/Annual Roadmap.md",
     "model_2.bpmn",
     "01 - The Future of ABC Clients.md",
     "ABC Clients.md",
