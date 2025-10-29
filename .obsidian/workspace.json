@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Active Projects/Project 1.md",
+                "file": "Engineering/02 Operations/Hiring Process.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Project 1"
+              "title": "Hiring Process"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/01 Projects/Active Projects/Project 1.md",
+                "file": "Engineering/02 Operations/Hiring Process.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Project 1"
+              "title": "Backlinks for Hiring Process"
             }
           },
           {
@@ -244,13 +244,14 @@
   },
   "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
+    "Engineering/01 Projects/Active Projects/Project 1.md",
+    "Engineering/02 Operations/Hiring Process.md",
     "Engineering/01 Projects/Archived Projects",
     "Engineering/07 KPI/KPI Dashboard.md",
     "Engineering/01 Projects/Active Projects",
     "Engineering/01 Projects/Active Projects/Project 2.md",
     "Engineering/07 KPI",
     "Untitled",
-    "Engineering/01 Projects/Active Projects/Project 1.md",
     "Engineering/02 Operations/Processes/Product Development.md",
     "Engineering/02 Operations/Processes/Project Development.md",
     "Engineering/02 Operations/Processes/Bug Fixing.md",
@@ -275,7 +276,6 @@
     "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md",
     "Engineering/02 Operations/People/People.md",
     "Engineering/02 Operations/Weekly Update/Sprint - Week 44 (28 Oct – 3 Nov 2025).md",
-    "Engineering/02 Operations/People",
     "Third Note.md",
     "conflict-files-obsidian-git.md",
     "Intro.md",
