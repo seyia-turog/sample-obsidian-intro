@@ -242,9 +242,10 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "179c5a1bdf8037bc",
+  "active": "edf56b4d0ce101b9",
   "lastOpenFiles": [
-    "Engineering/00 Company/Projected Budget 2025.md",
+    "Engineering/00 Company/Engineering Budget 2025",
+    "Engineering/00 Company/Engineering Budget 2025/Engineering Budget 2025.md",
     "Engineering/03 Team/Contractor Payments.md",
     "Engineering/00 Company/Vision & Goals.md",
     "Engineering/04 Ideas & Research/IDEA 2.md",
@@ -278,7 +279,6 @@
     "ABC Clients.md",
     "2025-10-30 dfghjkk.md",
     "2025-10-28 Post Name.md",
-    "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md",
-    "Engineering/02 Operations/People/People.md"
+    "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md"
   ]
 }
