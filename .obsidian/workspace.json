@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Project 2.md",
+                "file": "Engineering/07 KPI/KPI Dashboard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Project 2"
+              "title": "KPI Dashboard"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/01 Projects/Project 2.md",
+                "file": "Engineering/07 KPI/KPI Dashboard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Project 2"
+              "title": "Backlinks for KPI Dashboard"
             }
           },
           {
@@ -242,9 +242,11 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "edf56b4d0ce101b9",
+  "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
-    "Engineering/Untitled",
+    "Engineering/01 Projects/Project 2.md",
+    "Engineering/07 KPI/KPI Dashboard.md",
+    "Engineering/07 KPI",
     "Untitled",
     "Engineering/01 Projects/Project 1.md",
     "Engineering/02 Operations/Processes/Product Development.md",
@@ -257,7 +259,6 @@
     "Engineering/03 Team/QA & Testing.md",
     "Engineering/03 Team/Backend.md",
     "Engineering/03 Team/Frontend.md",
-    "Engineering/01 Projects/Project 2.md",
     "Engineering/03 Team",
     "06 Team",
     "03 Team",
@@ -275,7 +276,6 @@
     "Engineering/02 Operations/People",
     "Third Note.md",
     "Engineering/02 Operations/Daily Standup Notes",
-    "Engineering/02 Operations/Weekly Update",
     "conflict-files-obsidian-git.md",
     "Intro.md",
     "Fourth Note.md",
