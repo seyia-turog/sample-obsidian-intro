@@ -242,8 +242,9 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "179c5a1bdf8037bc",
+  "active": "edf56b4d0ce101b9",
   "lastOpenFiles": [
+    "Engineering/02 Operations/Processes/Untitled",
     "Engineering/03 Team/Applicant Pipeline.md",
     "Engineering/06 Knowledge Base/Deployment Checklist.md",
     "Engineering/03 Team/Backend.md",
@@ -254,7 +255,7 @@
     "Engineering/00 Company/Vision & Goals.md",
     "Engineering/04 Ideas & Research/IDEA 2.md",
     "Engineering/04 Ideas & Research/IDEA 1.md",
-    "Engineering/02 Operations/Hiring Process.md",
+    "Engineering/02 Operations/Processes/Hiring Process.md",
     "Engineering/01 Projects/Active Projects/Project 1.md",
     "Engineering/01 Projects/Archived Projects",
     "Engineering/07 KPI/KPI Dashboard.md",
@@ -278,7 +279,6 @@
     "model_2.bpmn",
     "01 - The Future of ABC Clients.md",
     "ABC Clients.md",
-    "2025-10-30 dfghjkk.md",
-    "2025-10-28 Post Name.md"
+    "2025-10-30 dfghjkk.md"
   ]
 }
