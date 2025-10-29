@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/03 Team/UI Design.md",
+                "file": "Engineering/02 Operations/Processes/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UI Design"
+              "title": "Untitled"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/03 Team/UI Design.md",
+                "file": "Engineering/02 Operations/Processes/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for UI Design"
+              "title": "Backlinks for Untitled"
             }
           },
           {
@@ -242,11 +242,13 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "edf56b4d0ce101b9",
+  "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
-    "Engineering/02 Operations/Operations & Processes",
-    "Engineering/03 Team/DevOps.md",
+    "Engineering/02 Operations/Processes/Feature Development.md",
+    "Engineering/02 Operations/Processes/Untitled.md",
     "Engineering/03 Team/UI Design.md",
+    "Engineering/02 Operations/Processes",
+    "Engineering/03 Team/DevOps.md",
     "Engineering/03 Team/QA & Testing.md",
     "Engineering/03 Team/Backend.md",
     "Engineering/03 Team/Frontend.md",
