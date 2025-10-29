@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/03 Team/Backend.md",
+                "file": "Engineering/03 Team/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Backend"
+              "title": "Untitled"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/03 Team/Backend.md",
+                "file": "Engineering/03 Team/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Backend"
+              "title": "Backlinks for Untitled"
             }
           },
           {
@@ -244,8 +244,11 @@
   },
   "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
-    "Engineering/03 Team/Frontend.md",
+    "Engineering/03 Team/DevOps.md",
+    "Engineering/03 Team/Untitled.md",
+    "Engineering/03 Team/QA & Testing.md",
     "Engineering/03 Team/Backend.md",
+    "Engineering/03 Team/Frontend.md",
     "Engineering/01 Projects/Backoffice Console.md",
     "Engineering/03 Team",
     "06 Team",
