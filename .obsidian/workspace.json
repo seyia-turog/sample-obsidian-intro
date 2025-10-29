@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice Console.md",
+                "file": "Engineering/03 Team/Backend.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Backoffice Console"
+              "title": "Backend"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice Console.md",
+                "file": "Engineering/03 Team/Backend.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Backoffice Console"
+              "title": "Backlinks for Backend"
             }
           },
           {
@@ -244,6 +244,9 @@
   },
   "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
+    "Engineering/03 Team/Frontend.md",
+    "Engineering/03 Team/Backend.md",
+    "Engineering/01 Projects/Backoffice Console.md",
     "Engineering/03 Team",
     "06 Team",
     "03 Team",
@@ -257,7 +260,6 @@
     "2025-10-30 dfghjkk.md",
     "2025-10-28 Post Name.md",
     "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md",
-    "Engineering/01 Projects/Backoffice Console.md",
     "Engineering/02 Operations/People/People.md",
     "Engineering/02 Operations/Weekly Update/Sprint - Week 44 (28 Oct – 3 Nov 2025).md",
     "Engineering/02 Operations/People",
