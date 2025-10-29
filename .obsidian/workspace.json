@@ -82,12 +82,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/02 Operations/- 29 Oct 2025.md",
+                "file": "Engineering/02 Operations/People/People.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "- 29 Oct 2025"
+              "title": "People"
             }
           }
         ],
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/02 Operations/- 29 Oct 2025.md",
+                "file": "Engineering/02 Operations/People/People.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for - 29 Oct 2025"
+              "title": "Backlinks for People"
             }
           },
           {
@@ -242,8 +242,11 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "179c5a1bdf8037bc",
+  "active": "edf56b4d0ce101b9",
   "lastOpenFiles": [
+    "Engineering/02 Operations/Weekly Update/Sprint - Week 44 (28 Oct – 3 Nov 2025).md",
+    "Engineering/02 Operations/People",
+    "Engineering/02 Operations/Daily Standup Notes/- 29 Oct 2025.md",
     "Third Note.md",
     "Engineering/02 Operations/Daily Standup Notes",
     "Engineering/02 Operations/Weekly Update",
