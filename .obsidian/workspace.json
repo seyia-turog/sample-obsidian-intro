@@ -4,94 +4,79 @@
     "type": "split",
     "children": [
       {
-        "id": "77d0021cb3819c5a",
+        "id": "9dc9c2efb1ef00b3",
         "type": "tabs",
         "children": [
           {
-            "id": "ed8a7db777a4a7cf",
+            "id": "31bc397df9eabf04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sample Second File.md",
+                "file": "2025-10-28 Post Name.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sample Second File"
+              "title": "2025-10-28 Post Name"
             }
           },
           {
-            "id": "5ffabb54d3d53aac",
+            "id": "3fbc421acf85b054",
+            "type": "leaf",
+            "state": {
+              "type": "bpmn-view",
+              "state": {
+                "file": "model_2.bpmn"
+              },
+              "icon": "lucide-file",
+              "title": "model_2"
+            }
+          },
+          {
+            "id": "b90af9eaf310621f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Third Note.md",
+                "file": "ABC Clients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Third Note"
+              "title": "ABC Clients"
             }
           },
           {
-            "id": "4e3fbf2bf32952d6",
+            "id": "d0991b5d5bbbb4f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Third Note.md",
+                "file": "ABC Clients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Third Note"
+              "title": "ABC Clients"
             }
           },
           {
-            "id": "5340c27603bbf662",
+            "id": "c0e78f8583aa640f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-10-30 dfghjkk.md",
+                "file": "ABC Clients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-30 dfghjkk"
-            }
-          },
-          {
-            "id": "81be4cf563653b5e",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "THUMBNAIL.base",
-                "viewName": "Table"
-              },
-              "icon": "lucide-table",
-              "title": "THUMBNAIL"
-            }
-          },
-          {
-            "id": "179c5a1bdf8037bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Third Note.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Third Note"
+              "title": "ABC Clients"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Third Note.md",
+                "file": "model_2.bpmn",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +159,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Third Note"
+              "title": "Backlinks for model_2"
             }
           },
           {
@@ -183,12 +168,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sample Second File.md",
+                "file": "model_2.bpmn",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Sample Second File"
+              "title": "Outgoing links from model_2"
             }
           },
           {
@@ -212,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sample Second File.md",
+                "file": "model_2.bpmn",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Sample Second File"
+              "title": "Outline of model_2"
             }
           }
         ]
@@ -230,7 +215,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -238,23 +222,44 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "179c5a1bdf8037bc",
+  "active": "3fbc421acf85b054",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Third Note.md",
-    "Intro.md",
-    "THUMBNAIL.base",
-    "2025-10-30 dfghjkk.md",
+    "Engineering/05 Templates/Template - Sprint.md",
+    "Engineering/05 Templates/Template - Project.md",
+    "Engineering/05 Templates/Template - Idea.md",
+    "Engineering/04 Ideas & Research/RESEARCH - Microservice Scaling.md",
+    "Engineering/04 Ideas & Research/IDEA - Automated Deployment.md",
+    "Engineering/03 Knowledge Base/UI Design Guidelines.md",
+    "Engineering/02 Operations/Sprint - Week 44 (28 Oct – 3 Nov 2025).md",
+    "Engineering/02 Operations/People.md",
+    "Engineering/02 Operations/Daily Standup Notes - 29 Oct 2025.md",
+    "Engineering/01 Projects/PROJECT - Backoffice Console.md",
+    "Engineering/01 Projects/PROJECT - ADIBA API.md",
+    "Engineering/00 Company/Vision & Goals.md",
+    "Engineering/00 Company/Roles & Responsibilities.md",
+    "Engineering/05 Templates",
+    "Engineering/04 Ideas & Research",
+    "Engineering/03 Knowledge Base",
+    "Engineering/02 Operations",
+    "Engineering/01 Projects",
+    "Engineering/00 Company",
+    "Engineering",
     "2025-10-28 Post Name.md",
     "model_2.bpmn",
-    "model_1.bpmn",
     "ABC Clients.md",
-    "Fourth Note.md",
+    "Third Note.md",
+    "conflict-files-obsidian-git.md",
+    "model_1.bpmn",
+    "2025-10-30 dfghjkk.md",
+    "THUMBNAIL.base",
+    "Sample First File.md",
     "Sample Second File.md",
-    "Sample First File.md"
+    "Fourth Note.md",
+    "Intro.md"
   ]
 }
