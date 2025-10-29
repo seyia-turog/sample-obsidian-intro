@@ -76,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ABC Clients.md",
+                "file": "model_2.bpmn",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ABC Clients"
+              "title": "Backlinks for model_2"
             }
           },
           {
@@ -168,12 +168,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ABC Clients.md",
+                "file": "model_2.bpmn",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from ABC Clients"
+              "title": "Outgoing links from model_2"
             }
           },
           {
@@ -197,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ABC Clients.md",
+                "file": "model_2.bpmn",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ABC Clients"
+              "title": "Outline of model_2"
             }
           }
         ]
@@ -227,14 +227,14 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "c0e78f8583aa640f",
+  "active": "3fbc421acf85b054",
   "lastOpenFiles": [
+    "2025-10-28 Post Name.md",
+    "model_2.bpmn",
+    "ABC Clients.md",
     "Third Note.md",
     "conflict-files-obsidian-git.md",
-    "ABC Clients.md",
-    "model_2.bpmn",
     "model_1.bpmn",
-    "2025-10-28 Post Name.md",
     "2025-10-30 dfghjkk.md",
     "THUMBNAIL.base",
     "Social",
