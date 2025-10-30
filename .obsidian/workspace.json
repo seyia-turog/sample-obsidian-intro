@@ -4,94 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "77d0021cb3819c5a",
+        "id": "72dc0f08ba3de988",
         "type": "tabs",
         "children": [
           {
-            "id": "ed8a7db777a4a7cf",
+            "id": "b30b85ec9da87647",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sample Second File.md",
+                "file": "Examples & Practice/ABC Clients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sample Second File"
-            }
-          },
-          {
-            "id": "5ffabb54d3d53aac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Third Note.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Third Note"
-            }
-          },
-          {
-            "id": "4e3fbf2bf32952d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Third Note.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Third Note"
-            }
-          },
-          {
-            "id": "5340c27603bbf662",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-10-30 dfghjkk.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-10-30 dfghjkk"
-            }
-          },
-          {
-            "id": "81be4cf563653b5e",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "THUMBNAIL.base",
-                "viewName": "Table"
-              },
-              "icon": "lucide-table",
-              "title": "THUMBNAIL"
-            }
-          },
-          {
-            "id": "179c5a1bdf8037bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Engineering/03 Team/UI Design.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "UI Design"
+              "title": "ABC Clients"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -164,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/03 Team/UI Design.md",
+                "file": "Examples & Practice/ABC Clients.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for UI Design"
+              "title": "Backlinks for ABC Clients"
             }
           },
           {
@@ -242,38 +172,43 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "179c5a1bdf8037bc",
+  "active": "b30b85ec9da87647",
   "lastOpenFiles": [
-    "Engineering/03 Team/DevOps.md",
-    "Engineering/03 Team/UI Design.md",
-    "Engineering/03 Team/QA & Testing.md",
-    "Engineering/03 Team/Backend.md",
+    "Engineering/05 Templates/Template - Sprint.md",
+    "Engineering/05 Templates/Template - Project.md",
+    "Engineering/05 Templates/Template - Idea.md",
+    "Engineering/04 Ideas & Research/IDEA 2.md",
+    "Engineering/04 Ideas & Research/IDEA 1.md",
     "Engineering/03 Team/Frontend.md",
-    "Engineering/01 Projects/Backoffice Console.md",
-    "Engineering/03 Team",
-    "06 Team",
-    "03 Team",
-    "Engineering/01 Projects/Adiba Backoffice API.md",
+    "Engineering/03 Team/Applicant Pipeline.md",
+    "Engineering/02 Operations/Processes/01 Sample Process.md",
+    "Engineering/02 Operations/Processes/Bug Fixing.md",
     "Engineering/00 Company/Org Chart.md",
+    "Examples & Practice/01 - The Future of ABC Clients.md",
+    "Examples & Practice/Fourth Note.md",
+    "Examples & Practice",
+    "Examples & Practice/2025-10-30 dfghjkk.md",
+    "Examples & Practice/THUMBNAIL.base",
+    "Engineering/01 Projects/Active Projects/Project 1.md",
+    "Engineering/02 Operations/Processes/Untitled",
+    "Engineering/06 Knowledge Base/Deployment Checklist.md",
+    "Engineering/03 Team/Backend.md",
     "Engineering/00 Company/Annual Roadmap.md",
-    "model_2.bpmn",
-    "model_1.bpmn",
-    "01 - The Future of ABC Clients.md",
-    "ABC Clients.md",
-    "2025-10-30 dfghjkk.md",
-    "2025-10-28 Post Name.md",
-    "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md",
-    "Engineering/02 Operations/People/People.md",
-    "Engineering/02 Operations/Weekly Update/Sprint - Week 44 (28 Oct – 3 Nov 2025).md",
-    "Engineering/02 Operations/People",
-    "Third Note.md",
-    "Engineering/02 Operations/Daily Standup Notes",
-    "Engineering/02 Operations/Weekly Update",
-    "conflict-files-obsidian-git.md",
-    "Intro.md",
-    "THUMBNAIL.base",
-    "Fourth Note.md",
-    "Sample Second File.md",
-    "Sample First File.md"
+    "Engineering/03 Team/Contractor Payments.md",
+    "Engineering/00 Company/Engineering Budget 2025",
+    "Engineering/00 Company/Engineering Budget 2025/Q3 Budget 2025.md",
+    "Engineering/00 Company/Vision & Goals.md",
+    "Engineering/02 Operations/Processes/Hiring Process.md",
+    "Engineering/01 Projects/Archived Projects",
+    "Engineering/00 Company/KPI Dashboard.md",
+    "Engineering/01 Projects/Active Projects",
+    "Engineering/01 Projects/Active Projects/Project 2.md",
+    "Engineering/00 Company/07 KPI",
+    "Engineering/02 Operations/Processes/Product Development.md",
+    "Engineering/02 Operations/Processes/Project Development.md",
+    "Engineering/02 Operations/Processes/Feature Development.md",
+    "Engineering/02 Operations/Processes",
+    "Engineering/03 Team",
+    "06 Team"
   ]
 }
