@@ -80,13 +80,14 @@
             "id": "179c5a1bdf8037bc",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "THUMBNAIL.base",
-                "viewName": "Table"
+                "file": "01 - The Future of ABC Clients.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "THUMBNAIL"
+              "icon": "lucide-file",
+              "title": "01 - The Future of ABC Clients"
             }
           }
         ],
@@ -163,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "THUMBNAIL.base",
+                "file": "01 - The Future of ABC Clients.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for THUMBNAIL"
+              "title": "Backlinks for 01 - The Future of ABC Clients"
             }
           },
           {
@@ -241,8 +242,9 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "edf56b4d0ce101b9",
+  "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
+    "THUMBNAIL.base",
     "Engineering/02 Operations/Processes/01 Sample Process.md",
     "Engineering/01 Projects/Active Projects/Project 1.md",
     "Engineering/02 Operations/Processes/Untitled",
@@ -277,7 +279,6 @@
     "03 Team",
     "Engineering/00 Company/Org Chart.md",
     "01 - The Future of ABC Clients.md",
-    "ABC Clients.md",
-    "2025-10-30 dfghjkk.md"
+    "ABC Clients.md"
   ]
 }
