@@ -98,9 +98,33 @@
               "icon": "lucide-file",
               "title": "Second creation"
             }
+          },
+          {
+            "id": "193ecca20377cf94",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "974312dc061e4b07",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "conflict-files-obsidian-git.md",
+                "bFile": "conflict-files-obsidian-git.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: conflict-files-obsidian-git"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -261,24 +285,42 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "428a3de489809956",
+  "active": "974312dc061e4b07",
   "lastOpenFiles": [
-    "Sample Second File.md",
-    "Intro.md",
-    "Second creation.md",
-    "Example creation.md",
-    "2025-11-03.md",
-    "ABC Clients.md",
-    "2025-10-30 dfghjkk.md",
-    "2025-10-28 Post Name.md",
-    "model_3.bpmn",
-    "Third Note.md",
-    "Sample First File.md",
-    "model_1.bpmn",
-    "model_2.bpmn",
     "conflict-files-obsidian-git.md",
-    "THUMBNAIL.base",
-    "Social",
-    "Fourth Note.md"
+    "Second creation.md",
+    "Growth/Sales/Non-SME",
+    "Growth/Sales/ISN",
+    "Growth/Sales",
+    "Growth/Social Media Calendar",
+    "Growth",
+    "Engineering/01 Projects/Active Projects/Project 2.md",
+    "Engineering/01 Projects/Active Projects/Project 1.md",
+    "Engineering/02 Operations/Weekly Update/Sprint - Week 44 (28 Oct – 3 Nov 2025).md",
+    "Engineering/02 Operations/Processes/Project Development.md",
+    "Engineering/02 Operations/Processes/Product Development.md",
+    "Engineering/02 Operations/Processes/Hiring Process.md",
+    "Engineering/02 Operations/Processes/Feature Development.md",
+    "Engineering/02 Operations/Processes/Bug Fixing.md",
+    "Engineering/02 Operations/Processes/01 Sample Process.md",
+    "Engineering/02 Operations/Daily Standup Notes/Daily Standup 29 Oct 2025.md",
+    "Engineering/00 Company/Engineering Budget 2025/Q3 Budget 2025.md",
+    "Engineering/07 KPI/KPI Dashboard.md",
+    "Engineering/06 Knowledge Base/UI Design Guidelines.md",
+    "Engineering/06 Knowledge Base/Deployment Checklist.md",
+    "Engineering/05 Templates/Template - Sprint.md",
+    "Engineering/05 Templates/Template - Project.md",
+    "Engineering/05 Templates/Template - Idea.md",
+    "Engineering/04 Ideas & Research/IDEA 2.md",
+    "Engineering/04 Ideas & Research/IDEA 1.md",
+    "Engineering/03 Team/UI Design.md",
+    "Engineering/03 Team/QA & Testing.md",
+    "Engineering/03 Team/Frontend.md",
+    "Engineering/03 Team/DevOps.md",
+    "Engineering/01 Projects/Active Projects",
+    "Engineering/02 Operations/Weekly Update",
+    "Engineering/02 Operations/Processes",
+    "Engineering/02 Operations/Daily Standup Notes",
+    "Engineering/00 Company/Engineering Budget 2025"
   ]
 }
