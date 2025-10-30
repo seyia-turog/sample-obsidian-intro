@@ -80,13 +80,14 @@
             "id": "179c5a1bdf8037bc",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "THUMBNAIL.base",
-                "viewName": "Table"
+                "file": "Fourth Note.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "THUMBNAIL"
+              "icon": "lucide-file",
+              "title": "Fourth Note"
             }
           }
         ],
@@ -163,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "THUMBNAIL.base",
+                "file": "Fourth Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for THUMBNAIL"
+              "title": "Backlinks for Fourth Note"
             }
           },
           {
@@ -243,8 +244,9 @@
   },
   "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
-    "01 - The Future of ABC Clients.md",
+    "2025-10-30 dfghjkk.md",
     "THUMBNAIL.base",
+    "01 - The Future of ABC Clients.md",
     "Engineering/02 Operations/Processes/01 Sample Process.md",
     "Engineering/01 Projects/Active Projects/Project 1.md",
     "Engineering/02 Operations/Processes/Untitled",
