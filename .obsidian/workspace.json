@@ -4,31 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "9dc9c2efb1ef00b3",
+        "id": "d9a0183dbdf77b8c",
         "type": "tabs",
         "children": [
           {
-            "id": "31bc397df9eabf04",
+            "id": "2b5c749065e99b0f",
             "type": "leaf",
             "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "3fbc421acf85b054",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
+              "type": "markdown",
+              "state": {
+                "file": "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "07 Connections"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 07 Connections"
             }
           },
           {
@@ -119,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Sample Second File.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Sample Second File"
             }
           },
           {
@@ -147,33 +142,25 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Sample Second File.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
-            }
-          },
-          {
-            "id": "061c81127be23a05",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline of Sample Second File"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -181,48 +168,47 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "bpmn-plugin:New BPMN": false
     }
   },
   "active": "edf56b4d0ce101b9",
   "lastOpenFiles": [
-    "Engineering/01 Projects/Backoffice APIs/Untitled.md",
+    "Engineering/01 Projects/Backoffice APIs/06 Loans.md",
+    "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
     "Engineering/01 Projects/Backoffice APIs/05 Savings.md",
     "Engineering/01 Projects/Backoffice APIs/04 Community.md",
     "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
     "Engineering/01 Projects/Backoffice APIs/02 Members.md",
     "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
-    "Engineering/01 Projects/Backoffice APIs",
-    "Examples & Practice/model_3.bpmn",
+    "Examples & Practice/ABC Clients.md",
+    "Engineering/03 Team/DevOps.md",
+    "Engineering/03 Team/Contractor Payments.md",
+    "Engineering/03 Team/Backend.md",
+    "Engineering/03 Team/Applicant Pipeline.md",
+    "Engineering/03 Team/Engagement Contracts",
+    "Examples & Practice/2025-11-03.md",
     "Examples & Practice/Second creation.md",
     "Examples & Practice/Example creation.md",
-    "Examples & Practice/2025-11-03.md",
-    "model_3.bpmn",
-    "Second creation.md",
-    "Example creation.md",
-    "2025-11-03.md",
     "conflict-files-obsidian-git.md",
-    "Examples & Practice/model_2.bpmn",
-    "Examples & Practice/model_1.bpmn",
-    "Examples & Practice/Third Note.md",
-    "Examples & Practice/THUMBNAIL.base",
-    "Examples & Practice/Sample Second File.md",
-    "Examples & Practice/Sample First File.md",
-    "Examples & Practice/Intro.md",
-    "Examples & Practice/Fourth Note.md",
-    "Examples & Practice/ABC Clients.md",
-    "Examples & Practice/2025-10-30 dfghjkk.md",
-    "Examples & Practice/2025-10-28 Post Name.md",
-    "Examples & Practice/01 - The Future of ABC Clients.md",
-    "Examples & Practice",
-    "Engineering/06 Knowledge Base/Deployment Checklist.md",
+    "Examples & Practice/model_3.bpmn",
+    "Engineering/05 Templates/Template - Sprint.md",
+    "Engineering/05 Templates/Template - Project.md",
+    "Engineering/05 Templates/Template - Idea.md",
     "Engineering/04 Ideas & Research/IDEA 2.md",
     "Engineering/04 Ideas & Research/IDEA 1.md",
-    "Engineering/03 Team/Contractor Payments.md",
-    "Engineering/02 Operations/Processes",
-    "Engineering/01 Projects/Active Projects",
-    "Engineering/00 Company/Engineering Budget 2025"
+    "Engineering/03 Team/Frontend.md",
+    "Engineering/02 Operations/Processes/01 Sample Process.md",
+    "Engineering/02 Operations/Processes/Bug Fixing.md",
+    "Engineering/00 Company/Org Chart.md",
+    "Examples & Practice/01 - The Future of ABC Clients.md",
+    "Examples & Practice",
+    "Examples & Practice/THUMBNAIL.base",
+    "Engineering/02 Operations/Processes/Untitled",
+    "Engineering/00 Company/Engineering Budget 2025",
+    "Engineering/01 Projects/Archived Projects",
+    "Engineering/01 Projects/Backoffice APIs",
+    "Engineering/00 Company/07 KPI",
+    "Engineering/02 Operations/Processes"
   ]
 }
