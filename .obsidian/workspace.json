@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/03 Team/DevOps.md",
+                "file": "Examples & Practice/ABC Clients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DevOps"
+              "title": "ABC Clients"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Engineering/03 Team/DevOps.md",
+                "file": "Examples & Practice/ABC Clients.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for DevOps"
+              "title": "Backlinks for ABC Clients"
             }
           },
           {
@@ -174,6 +174,7 @@
   },
   "active": "2b5c749065e99b0f",
   "lastOpenFiles": [
+    "Engineering/03 Team/DevOps.md",
     "Engineering/03 Team/Contractor Payments.md",
     "Engineering/03 Team/Backend.md",
     "Engineering/03 Team/Applicant Pipeline.md",
