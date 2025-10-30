@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Examples & Practice/ABC Clients.md",
+                "file": "Examples & Practice/2025-11-03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ABC Clients"
+              "title": "2025-11-03"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Examples & Practice/ABC Clients.md",
+                "file": "Examples & Practice/2025-11-03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ABC Clients"
+              "title": "Backlinks for 2025-11-03"
             }
           },
           {
@@ -172,14 +172,14 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "b30b85ec9da87647",
+  "active": "edf56b4d0ce101b9",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Examples & Practice/Second creation.md",
+    "Examples & Practice/Example creation.md",
+    "Examples & Practice/2025-11-03.md",
     "Examples & Practice/ABC Clients.md",
-    "model_3.bpmn",
-    "Second creation.md",
-    "Example creation.md",
-    "2025-11-03.md",
+    "conflict-files-obsidian-git.md",
+    "Examples & Practice/model_3.bpmn",
     "Engineering/05 Templates/Template - Sprint.md",
     "Engineering/05 Templates/Template - Project.md",
     "Engineering/05 Templates/Template - Idea.md",
