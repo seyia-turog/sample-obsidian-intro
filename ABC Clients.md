@@ -155,3 +155,13 @@ This section talks about the roles and attributes to be used to authorize API ca
 ### Related Documents
 
 1.  AI in ADIBA: [[01 - The Future of ABC Clients]]
+
+
+
+✅ - _Complete_  
+🔄 - In Progress  
+⏰ - Delayed  
+🚧 - In Testing  
+⚠️ - Comments from Testing  
+⛔ - Failed Testing  
+📋 - Planned for future release
