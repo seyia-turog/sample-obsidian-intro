@@ -147,13 +147,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of conflict-files-obsidian-git"
+              "title": "Outline"
             }
           },
           {
@@ -187,8 +186,9 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "061c81127be23a05",
+  "active": "edf56b4d0ce101b9",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Examples & Practice/model_2.bpmn",
     "Examples & Practice/model_1.bpmn",
     "Examples & Practice/Third Note.md",
@@ -223,7 +223,6 @@
     "ABC Clients.md",
     "THUMBNAIL.base",
     "model_2.bpmn",
-    "Engineering/06 Knowledge Base",
-    "Engineering/03 Team"
+    "Engineering/06 Knowledge Base"
   ]
 }
