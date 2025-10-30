@@ -80,14 +80,13 @@
             "id": "179c5a1bdf8037bc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "01 - The Future of ABC Clients.md",
-                "mode": "source",
-                "source": false
+                "file": "THUMBNAIL.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-file",
-              "title": "01 - The Future of ABC Clients"
+              "icon": "lucide-table",
+              "title": "THUMBNAIL"
             }
           }
         ],
@@ -164,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - The Future of ABC Clients.md",
+                "file": "THUMBNAIL.base",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +173,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 01 - The Future of ABC Clients"
+              "title": "Backlinks for THUMBNAIL"
             }
           },
           {
@@ -244,6 +243,7 @@
   },
   "active": "179c5a1bdf8037bc",
   "lastOpenFiles": [
+    "01 - The Future of ABC Clients.md",
     "THUMBNAIL.base",
     "Engineering/02 Operations/Processes/01 Sample Process.md",
     "Engineering/01 Projects/Active Projects/Project 1.md",
@@ -276,9 +276,7 @@
     "Engineering/03 Team/Frontend.md",
     "Engineering/03 Team",
     "06 Team",
-    "03 Team",
     "Engineering/00 Company/Org Chart.md",
-    "01 - The Future of ABC Clients.md",
     "ABC Clients.md"
   ]
 }
