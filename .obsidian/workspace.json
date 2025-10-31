@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+                "file": "Engineering/01 Projects/Backoffice APIs/02 Members.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "01 Clients"
+              "title": "02 Members"
             }
           }
         ]
@@ -213,8 +213,8 @@
   },
   "active": "2b5c749065e99b0f",
   "lastOpenFiles": [
-    "Examples & Practice/01 - The Future of ABC Clients.md",
     "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+    "Examples & Practice/01 - The Future of ABC Clients.md",
     "Engineering/01 Projects/Backoffice APIs/02 Members.md",
     "Examples & Practice/ABC Clients.md",
     "Examples & Practice/Example creation.md",
