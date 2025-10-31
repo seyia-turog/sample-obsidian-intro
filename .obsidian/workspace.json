@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+                "file": "Examples & Practice/ABC Clients.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "01 Clients"
+              "title": "ABC Clients"
             }
           }
         ]
@@ -174,9 +174,11 @@
   },
   "active": "2b5c749065e99b0f",
   "lastOpenFiles": [
-    "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
-    "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+    "Examples & Practice/Example creation.md",
+    "Examples & Practice/THUMBNAIL.base",
     "Examples & Practice/ABC Clients.md",
+    "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+    "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
     "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
     "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
     "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
@@ -195,15 +197,12 @@
     "Engineering/03 Team/Engagement Contracts",
     "Examples & Practice/2025-11-03.md",
     "Examples & Practice/Second creation.md",
-    "Examples & Practice/Example creation.md",
     "conflict-files-obsidian-git.md",
     "Examples & Practice/model_3.bpmn",
     "Engineering/05 Templates/Template - Sprint.md",
     "Engineering/05 Templates/Template - Project.md",
     "Engineering/05 Templates/Template - Idea.md",
-    "Engineering/04 Ideas & Research/IDEA 2.md",
     "Examples & Practice",
-    "Examples & Practice/THUMBNAIL.base",
     "Engineering/02 Operations/Processes/Untitled",
     "Engineering/00 Company/Engineering Budget 2025",
     "Engineering/01 Projects/Archived Projects",
