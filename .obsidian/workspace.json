@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Examples & Practice/ABC Clients.md",
+                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ABC Clients"
+              "title": "01 Clients"
             }
           }
         ]
@@ -172,8 +172,10 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "edf56b4d0ce101b9",
+  "active": "2b5c749065e99b0f",
   "lastOpenFiles": [
+    "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
+    "Examples & Practice/ABC Clients.md",
     "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
     "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
     "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
@@ -186,7 +188,6 @@
     "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
     "Engineering/01 Projects/Backoffice APIs/02 Members.md",
     "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
-    "Examples & Practice/ABC Clients.md",
     "Engineering/03 Team/DevOps.md",
     "Engineering/03 Team/Contractor Payments.md",
     "Engineering/03 Team/Backend.md",
@@ -201,7 +202,6 @@
     "Engineering/05 Templates/Template - Project.md",
     "Engineering/05 Templates/Template - Idea.md",
     "Engineering/04 Ideas & Research/IDEA 2.md",
-    "Engineering/04 Ideas & Research/IDEA 1.md",
     "Examples & Practice",
     "Examples & Practice/THUMBNAIL.base",
     "Engineering/02 Operations/Processes/Untitled",
