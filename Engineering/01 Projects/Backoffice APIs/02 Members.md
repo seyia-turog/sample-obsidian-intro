@@ -1,173 +1,96 @@
 ---
-Status: Pending
-Thumbnail: "#8AB6FF"
-Description: Tenant Staff / Internal Users
-Application: Backoffice API
-Due On: 2025-11-15T12:00:00
+module: Members
+owner: Dev Factory Manager
+status: Active
+last-updated: 2025-10-29
 ---
 
----
+# 👥 Members Module
 
-## Overview
-
-The **Members Module** serves as the central component for managing **tenant-level users and internal staff** who operate within the Backoffice system of the ADIBA ecosystem.  
-It handles user access provisioning, staff lifecycle management, and ensures secure, role-based access control across all connected tenant applications.
-
-This module enables administrators and system managers to efficiently onboard, manage, and govern staff accounts, ensuring proper segregation of duties, compliance, and auditability.
-
-### Core Business Functions
-
-The Members Module provides foundational Backoffice operations that enable internal and partner organizations to manage users:
-
-- **Member Onboarding**: Registering tenant staff, assigning default roles, and enabling initial authentication setup.  
-- **Role & Permission Assignment**: Managing the roles, policies, and privileges of each member to control access boundaries.  
-- **Member Profile Management**: Updating member details, contact information, and role associations.  
-- **Member Lifecycle Management**: Managing activation, deactivation, and archival of staff accounts during employment transitions.  
-- **Device & Access Control**: Managing linked devices, login channels, and access history for compliance and security.  
-- **Member Directory & Search**: Quick lookup for staff information, role details, and team associations.
+### Overview  
+The **Members Module** manages internal users (bank staff, administrators, or relationship officers) within the Backoffice system.  
+It handles **member onboarding, profile management, authentication support, password updates**, and **account removal**.  
 
 ---
 
-## Technical Dependencies
+## 🔹 Backoffice APIs
 
-### Adapter Dependencies
-
-The Members Module integrates with shared platform services and adapters to perform its role:
-
-| Adapter / Utility     | Business Purpose                                                                 |
-| ---------------------- | -------------------------------------------------------------------------------- |
-| **Identity Adapter**   | Handles user authentication, session management, and regulatory KYC/KYB mapping. |
-| **Access Control Utility** | Provides role-based and attribute-based access enforcement for API endpoints. |
-| **Core Directory Service** | Manages centralized member information for all tenants and sub-tenants.     |
-| **CRM Adapter**        | Connects to CRM to align staff responsibilities with client portfolios.         |
-| **Messaging Utility**  | Sends notifications and updates related to account activities or access changes. |
-| **Persistence Utility**| Stores and retrieves member settings, preferences, and organization mappings.   |
+| **Action** | **Summary**              | **Route**                           | **Method** | **Status** |
+| ----------- | ------------------------ | ----------------------------------- | ----------- | ----------- |
+| MB001       | Create Member            | /members/profile                    | POST        | ✅ |
+| MB002       | Member List              | /members/profile                    | GET         | ✅ |
+| MB003       | View Member              | /members/profile/{member_id}        | GET         | ✅ |
+| MB004       | Update Member Details    | /members/profile/{member_id}        | PUT         | ✅ |
+| MB005       | Change Password          | /members/password                   | PUT         | ✅ |
+| MB006       | Upload Profile Image     | /members/avatar                     | POST        | ✅ |
+| MB007       | Remove Member            | /members/profile/remove             | DELETE      | ✅ |
 
 ---
 
-## REST Endpoints
+## 🔹 BPM Workflow Steps (Business Process Layer)
 
-### 1. Backoffice APIs
-
-| **Action** | **Summary**                 | **Route**                              | **Method** | **Status** |
-| ----------- | --------------------------- | -------------------------------------- | ----------- | ----------- |
-| MB001       | List Members                | /members/profile                       | GET         | 🔄          |
-| MB002       | View Member Details         | /members/profile/{reference}           | GET         | 🔄          |
-| MB003       | Create Member               | /members/profile                       | POST        | 🔄          |
-| MB004       | Update Member Profile       | /members/profile/{reference}           | PUT         | 🔄          |
-| MB005       | Archive Member              | /members/profile/{reference}           | DELETE      | 🔄          |
-| MB006       | Member Devices              | /members/device/{reference}            | GET         | 🔄          |
-| MB007       | (Un)Lock Member Device      | /members/device/lock                   | POST        | 🔄          |
-| MB008       | Transfer Device Ownership   | /members/device/transfer               | POST        | 🔄          |
-| MB009       | (De)Activate Member Device  | /members/device/activate               | POST        | 🔄          |
-| MB010       | Reset Device PIN            | /members/device/resetPIN               | POST        | 🔄          |
-| MB011       | Assign Roles to Member      | /members/role/assign                   | POST        | 🔄          |
-| MB012       | Revoke Roles from Member    | /members/role/revoke                   | POST        | 🔄          |
-| MB013       | Search Members              | /members/profile?filter={filter query} | GET         | 🔄          |
+| **API** | **Step #** | **Description**                    |
+| -------- | ----------- | ---------------------------------- |
+| MB001    | 3–4         | Validate data → Create identity profile |
+| MB002    | 3–4         | Apply filters → Retrieve member list |
+| MB003    | 3–4         | Verify permissions → Fetch profile |
+| MB004    | 3–4         | Verify permissions → Update identity claims |
+| MB005    | 3–5         | Initiate reset workflow → Send reset notification |
+| MB006    | 3           | Upload avatar image |
+| MB007    | 2           | Remove member record |
 
 ---
 
-### 2. Identity Adapter APIs
+## 🔹 Integration Map (Adapters & Workers)
 
-| **Action** | **Summary**               | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ------------------------- | --------- | ---------- | ---------------- | ----------- |
-| ID001       | Create Member Identity    |           | POST       | MB003            | 🔄          |
-| ID002       | Update Member Identity    |           | PUT        | MB004            | 🔄          |
-| ID003       | Disable Member Identity   |           | DELETE     | MB005            | 🔄          |
-| ID004       | Get Member Devices        |           | GET        | MB006            | 🔄          |
-
----
-
-### 3. Access Control Utility APIs
-
-| **Action** | **Summary**                | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | -------------------------- | --------- | ---------- | ---------------- | ----------- |
-| AC001       | Assign Role to Member      |           | POST       | MB011            | 🔄          |
-| AC002       | Revoke Role from Member    |           | POST       | MB012            | 🔄          |
-| AC003       | Fetch Role Permissions     |           | GET        | MB011, MB012     | 🔄          |
-| AC004       | Validate Access Attributes |           | POST       | MB011            | 🔄          |
+| **Adapter / Worker**        | **Used In**              | **Purpose** |
+| ----------------------------- | ------------------------ | ------------ |
+| **Identity Adapter**          | MB001, MB004, MB007      | Create, update, and remove identity records |
+| **CRM Adapter**               | MB002, MB003             | Retrieve enriched member data |
+| **Messages Worker**           | MB005                    | Send password reset notifications |
+| **Documents Processor**       | MB006                    | Handle avatar image upload |
+| **Utility (User Settings)**   | MB005, MB006             | Manage user-specific preferences |
+| **Utility (Tenant Manager)**  | All APIs                 | Multi-tenant environment management |
 
 ---
 
-### 4. CRM Adapter APIs
+## 🔹 Permissions & APIs
 
-| **Action** | **Summary**             | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ----------------------- | --------- | ---------- | ---------------- | ----------- |
-| CR001       | Assign Relationship Set |           | POST       | MB011            | 🔄          |
-| CR002       | Update Assignment Links |           | PUT        | MB012            | 🔄          |
-
----
-
-### 5. Messaging Utility APIs
-
-| **Action** | **Summary**                           | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ------------------------------------- | --------- | ---------- | ---------------- | ----------- |
-| MS001       | Send Welcome Notification             |           | POST       | MB003            | 🔄          |
-| MS002       | Send Profile Update Notification      |           | POST       | MB004            | 🔄          |
-| MS003       | Send Deactivation Notification        |           | POST       | MB005            | 🔄          |
-| MS004       | Share Device Reset PIN Notification   |           | POST       | MB010            | 🔄          |
+| **Permission Code** | **Permission Name**     | **APIs**               | **Status** |
+| -------------------- | ---------------------- | ---------------------- | ----------- |
+| mbr_create           | Create Member          | MB001                  | ✅ |
+| mbr_list             | List Members           | MB002, MB003           | ✅ |
+| mbr_update           | Update Member Details  | MB004, MB006           | ✅ |
+| mbr_pwd_mgmt         | Password Management    | MB005                  | ✅ |
+| mbr_delete           | Remove Member          | MB007                  | ✅ |
 
 ---
 
-### 6. Persistence Utility APIs
+## 🔹 Roles & Permissions
 
-| **Action** | **Summary**                     | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ------------------------------- | --------- | ---------- | ---------------- | ----------- |
-| PS001       | Cache Member Settings           |           | POST       | MB004            | 🔄          |
-| PS002       | Retrieve Member Preferences     |           | GET        | MB002, MB004     | 🔄          |
-| PS003       | Store Role-Assignment Metadata  |           | POST       | MB011, MB012     | 🔄          |
-
----
-
-## Security and Governance
-
-This section defines the security model governing Member APIs, ensuring controlled access and accountability across the Backoffice.
-
-### Permissions & APIs
-
-| **Permission** | **Permission Name**       | **APIs**                                        | **Status** |
-| --------------- | ------------------------- | ----------------------------------------------- | ----------- |
-| mem_list        | List Members              | MB001, MB013                                    | 🔄          |
-| mem_updt        | Update Members            | MB002, MB004                                    | 🔄          |
-| mem_admin       | Member Admin              | MB001–MB005, MB011–MB012                        | 🔄          |
-| dev_mgmt        | Manage Devices            | MB006–MB010                                     | 🔄          |
-| role_mgmt       | Manage Role Assignments   | MB011–MB012                                     | 🔄          |
+| **Role Code** | **Role Name**        | **Permissions**                              | **Status** |
+| -------------- | ------------------- | -------------------------------------------- | ----------- |
+| RP001          | Administrator        | Create, Update, List, Delete Members         | ✅ |
+| RP002          | HR Officer           | Create, List, Update Members                 | ✅ |
+| RP003          | Member (Self)        | View Profile, Change Password, Upload Avatar | ✅ |
 
 ---
 
-### Roles & Permissions
+## 🔹 Persistence Worker APIs
 
-| **Role** | **Role Name**         | **Permissions**                             | **Status** |
-| -------- | --------------------- | ------------------------------------------- | ----------- |
-| RP101    | System Administrator  | Member Admin, Manage Devices, Role Assignments | 🔄          |
-| RP102    | HR Officer            | List Members, Update Members                | 🔄          |
-| RP103    | Branch Manager        | List Members, Update Members                | 🔄          |
-| RP104    | IT Support Officer    | Manage Devices                              | 🔄          |
-| RP105    | Security Auditor      | List Members, View Devices, Role Assignments | 🔄          |
+| **Action** | **Summary**                  | **Linked Operation ID** | **Status** |
+| ----------- | ---------------------------- | ----------------------- | ----------- |
+| MW001       | Save Member Profile          | MB001                   | ✅ |
+| MW002       | Update Member Profile        | MB004                   | ✅ |
+| MW003       | Delete Member Record         | MB007                   | ✅ |
 
 ---
 
-### Policies & Attributes
+## 🔹 BPM + Utility Integration Flow (Simplified)
 
-| **Policy ID** | **Policy**                                     | **Attribute / Condition**                             | **Status** |
-| -------------- | ---------------------------------------------- | ----------------------------------------------------- | ----------- |
-| P_MB_001       | Only Active Tenants Can Create Members         | `tenant.status` eq active                             | 🔄          |
-| P_MB_002       | Branch Managers Can Only Manage Branch Staff   | `role` eq RP103 AND member.branch eq manager.branch    | 🔄          |
-| P_MB_003       | IT Support Cannot Modify Admin Accounts        | `target.role` ne RP101                                | 🔄          |
-
----
-
-### Related Documents
-
-1. [[01 - ADIBA Access Governance Framework]]  
-2. [[02 - Identity and Onboarding Policy]]
-
----
-
-✅ - _Complete_  
-🔄 - In Progress  
-⏰ - Delayed  
-🚧 - In Testing  
-⚠️ - Comments from Testing  
-⛔ - Failed Testing  
-📋 - Planned for future release
+```mermaid
+flowchart TD
+    A[POST /members/profile] --> B[Validate Data]
+    B --> C[Create Identity Profile]
+    C --> D[Send Welcome Email via Messages Worker]
+    D --> E[Success → Save to Persistence Worker]
