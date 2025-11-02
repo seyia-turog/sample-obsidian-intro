@@ -6,7 +6,7 @@ status: Active
 last-updated: 2025-10-29
 ---
 
-# 👤 Members Module
+# Members Module
 
 ## Overview
 The **Members Module** manages internal staff (bank officers, administrators, relationship officers, etc.) who operate within the Backoffice platform.  
@@ -15,7 +15,7 @@ It provides identity management, access control, and communication setup through
 
 ---
 
-## ⚙️ Module Objectives
+##  Module Objectives
 - Manage member (staff) profiles and credentials  
 - Integrate with the Identity Adapter for user authentication and claims  
 - Handle password reset and welcome email workflows  
@@ -24,7 +24,7 @@ It provides identity management, access control, and communication setup through
 
 ---
 
-## 🧱 Core Endpoints
+## Core Endpoints
 
 | **Code** | **Summary** | **Route** | **Tag** | **Method** | **Status** |
 |-----------|--------------|-----------|----------|-------------|-------------|
@@ -52,7 +52,7 @@ It provides identity management, access control, and communication setup through
 
 ---
 
-## 🔐 Permissions & Roles
+## Permissions & Roles
 
 | **Permission Code** | **Permission Name** | **Associated APIs** | **Status** |
 |----------------------|---------------------|---------------------|-------------|
@@ -71,7 +71,7 @@ It provides identity management, access control, and communication setup through
 
 ---
 
-## 🧠 Workflow Summary
+## Workflow Summary
 
 ### Member Creation (`/members/profile`)
 1. Validate data  
