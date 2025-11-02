@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
-                "mode": "source",
+                "file": "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "01 Clients"
+              "title": "03 Compliance"
             }
           }
         ]
@@ -174,8 +174,8 @@
   },
   "active": "7578dabae2566551",
   "lastOpenFiles": [
-    "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
     "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+    "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
     "Engineering/01 Projects/Backoffice APIs/02 Members.md",
     "Examples & Practice/01 - The Future of ABC Clients.md",
     "Examples & Practice/ABC Clients.md",

@@ -1,85 +1,142 @@
 ---
-project: Backoffice API  
-module: Compliance  
-owner: Dev Factory Manager  
-status: Active  
-last-updated: 2025-10-29  
+Status: Pending  
+Thumbnail: "#FFD36E"  
+Description: AML & Credit Eligibility Checks  
+Application: Retail Engine  
+Due On: 2025-10-29T12:00:00  
 ---
-
-
-
-## 1. Overview
-The **Compliance Module** manages all regulatory, Anti-Money Laundering (AML), and credit eligibility verification processes within the Backoffice system.  
-It interacts with multiple adapters and processors — particularly **CRM**, **CBA**, and **Identity** — to ensure all client and member operations comply with regulatory and institutional policies.
-
-The module primarily supports:
-- Running comprehensive AML checks for individuals or entities.
-- Conducting eligibility and risk scoring before loan issuance.
-- Triggering notifications and compliance flags to relevant teams.
 
 ---
 
-## 2. Compliance APIs
+## Overview
 
-| **Action ID** | **Summary** | **Route** | **Method** | **Adapters / Processors Involved** | **Status** |
-|---------------|-------------|------------|-------------|------------------------------------|-------------|
-| CP001 | Run AML Check (All) | `/compliance/checks/run-aml` | POST | Processor (Identity): Run AML screening <br> Util Worker (Messages): Send result notification | ✅ Active |
-| CP002 | Run Loan Eligibility Checks | `/compliance/checks/loan-eligibility` | POST | Adapter (CBA): Provide financial history <br> Adapter (CRM): Retrieve client profile <br> Processor (Identity): Fetch credit score | ✅ Active |
+The **Compliance Module** is responsible for executing all regulatory, Anti-Money Laundering (AML), and credit eligibility verification operations within the ADIBA Backoffice ecosystem.  
 
----
+It ensures that every client and member action within the system adheres to local and international compliance regulations. The module integrates with multiple backend adapters and processors to execute due diligence, identity validation, and credit risk analysis before financial or operational approval.
 
-## 3. Process Flow Overview
+### Core Business Functions
 
-### **CP001 – Run AML Check (All)**
-1. **Receive Request:** Triggered when a client or member requires AML verification.  
-2. **Processor (Identity):** Executes internal AML screening logic using KYC and identity data.  
-3. **Util Worker (Messages):** Sends notification of results to Compliance and Risk teams.  
-4. **Response:** Returns AML risk level, flags, and compliance report reference.
+The Compliance Module performs the following key business functions:
 
-### **CP002 – Run Loan Eligibility Checks**
-1. **Receive Request:** Triggered when a loan pre-approval is initiated.  
-2. **Adapter (CBA):** Pulls recent financial activity and balance trends.  
-3. **Adapter (CRM):** Fetches customer demographic and account linkage data.  
-4. **Processor (Identity):** Computes internal credit score and eligibility rating.  
-5. **Response:** Returns credit score, eligibility result, and compliance recommendations.
+- **AML Screening:** Automated Anti-Money Laundering checks on clients or members against sanction lists and compliance watchlists.  
+- **Credit & Eligibility Assessment:** Evaluation of client eligibility using historical financial, behavioral, and identity-based data.  
+- **Regulatory Compliance Management:** Ensures conformity with KYC, AML, and credit governance frameworks.  
+- **Compliance Notification:** Sends AML and eligibility results to compliance teams for manual review or system action.
 
 ---
 
-## 4. Inter-Module Integrations
+## Technical Dependencies
 
-| **Module** | **Purpose** | **Integration Method** |
-|-------------|-------------|-------------------------|
-| **Clients Module** | Validate clients before onboarding or transaction approval. | AML Check (CP001) |
-| **Members Module** | Verify member access to compliance-sensitive operations. | Loan Eligibility (CP002) |
-| **Notifications Utility** | Deliver compliance alerts and AML outcomes. | Util Worker (Messages) |
+### Adapter Dependencies
 
----
-
-## 5. Data Governance & Security
-- All AML and eligibility results are **stored with encryption** and **role-based access controls (RBAC)**.  
-- Only users with the `compliance_admin` or `risk_analyst` roles can view or export AML results.  
-- Historical checks are **immutable**, ensuring traceability and audit integrity.
+| Adapter / Processor | Business Purpose                                                                                      |
+| -------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Identity Adapter** | Provides user identity details and validation results used during AML and credit checks.              |
+| **Core Banking Adapter (CBA)** | Retrieves transaction history, account activity, and balance summaries for credit evaluation. |
+| **CRM Adapter** | Supplies relationship and profile information for contextual eligibility checks.                          |
+| **Identity Processor** | Executes AML and risk scoring algorithms using internal compliance logic.                           |
+| **Messages Utility** | Sends compliance results and alerts to responsible parties.                                           |
+| **Persistence Utility** | Stores AML and eligibility results securely for auditing and reporting.                            |
 
 ---
 
-## 6. Related Internal Services
+## REST Endpoints
 
-| **Service** | **Role** | **Reference** |
-|--------------|----------|---------------|
-| **Persistence Utility APIs** | Stores and versions compliance results and risk assessments. | PU002 – Save AML Result |
-| **Notification Service** | Delivers AML and Eligibility outcomes to teams. | NW001 – Notify Compliance Officers |
-| **Identity Processor** | Core logic for AML and credit scoring. | IP004 – Run AML/Score Profile |
+### 1. Backoffice APIs
 
----
-
-## 7. Permissions & Roles
-
-| **Permission Code** | **Description** | **Assigned Roles** |
-|----------------------|-----------------|--------------------|
-| `compliance_run_aml` | Execute AML and KYC compliance checks. | Compliance Officer, Risk Analyst |
-| `compliance_view_results` | View AML/Eligibility outcomes. | Compliance Admin, System Auditor |
+| **Action** | **Summary**               | **Route**                              | **Method** | **Status** |
+| ----------- | ------------------------- | -------------------------------------- | ----------- | ----------- |
+| CP001       | Run AML Check (All)       | /compliance/checks/run-aml             | POST        | 🔄          |
+| CP002       | Run Loan Eligibility Check | /compliance/checks/loan-eligibility     | POST        | 🔄          |
 
 ---
 
-✅ **Status:** The Compliance module is fully operational and integrates with both CRM and CBA adapters for dynamic verification and risk evaluation.
+### 2. Core Banking Adapter APIs
 
+| **Action** | **Summary**                 | **Route** | **Method** | **Operation ID** | **Status** |
+| ----------- | --------------------------- | --------- | ---------- | ---------------- | ----------- |
+| CB001       | Provide Financial History   |           | GET        | CP002            | 🔄          |
+
+---
+
+### 3. CRM Adapter APIs
+
+| **Action** | **Summary**             | **Route** | **Method** | **Operation ID** | **Status** |
+| ----------- | ----------------------- | --------- | ---------- | ---------------- | ----------- |
+| CR001       | Retrieve Client Profile |           | GET        | CP002            | 🔄          |
+
+---
+
+### 4. Identity Processor APIs
+
+| **Action** | **Summary**               | **Route** | **Method** | **Operation ID** | **Status** |
+| ----------- | ------------------------- | --------- | ---------- | ---------------- | ----------- |
+| IP004       | Run AML Screening         |           | POST       | CP001            | 🔄          |
+| IP005       | Fetch Credit Score        |           | POST       | CP002            | 🔄          |
+
+---
+
+### 5. Messages Worker APIs
+
+| **Action** | **Summary**                     | **Route** | **Method** | **Operation ID** | **Status** |
+| ----------- | ------------------------------- | --------- | ---------- | ---------------- | ----------- |
+| MW010       | Send AML Result Notification     |           | POST       | CP001            | 🔄          |
+| MW011       | Send Eligibility Result Notification |         | POST       | CP002            | 🔄          |
+
+---
+
+### 6. Persistence Utility APIs
+
+| **Action** | **Summary**            | **Route** | **Method** | **Operation ID** | **Status** |
+| ----------- | ---------------------- | --------- | ---------- | ---------------- | ----------- |
+| PU002       | Save AML Result Record |           | POST       | CP001            | 🔄          |
+| PU003       | Save Eligibility Result |           | POST       | CP002            | 🔄          |
+
+---
+
+## Security and Governance
+
+### Permissions & APIs
+
+| **Permissions** | **Permission Name**        | **APIs**              | **Status** |
+| ---------------- | -------------------------- | --------------------- | ----------- |
+| comp_run_aml     | Run AML Compliance Checks  | CP001                 | 🔄          |
+| comp_run_elig    | Run Eligibility Evaluation | CP002                 | 🔄          |
+| comp_view_res    | View Compliance Results    | CP001, CP002          | 🔄          |
+
+---
+
+### Roles & Permissions
+
+| **Role** | **Role Name**        | **Permissions**                      | **Status** |
+| -------- | -------------------- | ------------------------------------ | ----------- |
+| RP006    | Compliance Officer   | Run AML Checks, View Results         | 🔄          |
+| RP007    | Risk Analyst         | Run Eligibility Evaluation, View Results | 🔄      |
+| RP001    | Administrator        | Compliance Admin Access              | 🔄          |
+
+---
+
+### Policies & Attributes
+
+| **Policy ID** | **Policy**                             | **Attribute / Condition**                           | **Status** |
+| -------------- | -------------------------------------- | ---------------------------------------------------- | ----------- |
+| P_CM_001       | Must have active Compliance License    | `org.apps.compliance` eq active                      | 🔄          |
+| P_CM_002       | Only Compliance Officer can trigger AML | role eq RP006                                        | 🔄          |
+| P_CM_003       | Eligibility results are read-only      | `data.scope` eq "readonly"                           | 🔄          |
+
+---
+
+### Related Documents
+
+1. **Compliance Workflow Guide** – [[BPM - AML & Eligibility Process Flow]]  
+2. **Data Governance Standard** – [[ADIBA Security & Compliance Policy]]
+
+---
+
+✅ - _Complete_  
+🔄 - In Progress  
+⏰ - Delayed  
+🚧 - In Testing  
+⚠️ - Comments from Testing  
+⛔ - Failed Testing  
+📋 - Planned for future release
