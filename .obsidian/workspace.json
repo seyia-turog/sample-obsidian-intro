@@ -13,15 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
+                "file": "Engineering/01 Projects/Backoffice APIs/09 Applications.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "12 Documents"
+              "title": "09 Applications"
+            }
+          },
+          {
+            "id": "6e4e9a181ae4abd4",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -172,11 +183,11 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "7578dabae2566551",
+  "active": "6e4e9a181ae4abd4",
   "lastOpenFiles": [
+    "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
     "Engineering/01 Projects/Backoffice APIs/02 Members.md",
     "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
-    "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
     "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
     "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
     "Engineering/01 Projects/Backoffice APIs/09 Applications.md",
