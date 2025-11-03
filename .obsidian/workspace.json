@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "3fa8c83738a2db5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "9dc9c2efb1ef00b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31bc397df9eabf04",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "3fbc421acf85b054",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6231041382f4ef33",
+    "type": "split",
+    "children": [
+      {
+        "id": "beaacdc73a7309dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "edf56b4d0ce101b9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "26553278940202d3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "414ac63f088780fa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ea5fa352856bf42a",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd991414bcdb4c80",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a10efd4ee9981f7a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for conflict-files-obsidian-git"
+            }
+          },
+          {
+            "id": "c0b77d1507279537",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from conflict-files-obsidian-git"
+            }
+          },
+          {
+            "id": "c29f7fb244b568b3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a0ecb2e40117eecc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of conflict-files-obsidian-git"
+            }
+          },
+          {
+            "id": "061c81127be23a05",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "bpmn-plugin:New BPMN": false
+    }
+  },
+  "active": "3fbc421acf85b054",
+  "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
+    "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
+    "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
+    "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
+    "Engineering/01 Projects/Backoffice APIs/09 Applications.md",
+    "Engineering/01 Projects/Backoffice APIs/08 Cards.md",
+    "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
+    "Engineering/01 Projects/Backoffice APIs/06 Loans.md",
+    "Engineering/01 Projects/Backoffice APIs/Untitled.md",
+    "Engineering/01 Projects/Backoffice APIs/05 Savings.md",
+    "Engineering/01 Projects/Backoffice APIs/04 Community.md",
+    "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
+    "Engineering/01 Projects/Backoffice APIs/02 Members.md",
+    "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+    "Engineering/01 Projects/Backoffice APIs",
+    "Examples & Practice/model_3.bpmn",
+    "Examples & Practice/Second creation.md",
+    "Examples & Practice/Example creation.md",
+    "Examples & Practice/2025-11-03.md",
+    "model_3.bpmn",
+    "Second creation.md",
+    "Example creation.md",
+    "2025-11-03.md",
+    "Examples & Practice/model_2.bpmn",
+    "Examples & Practice/model_1.bpmn",
+    "Examples & Practice/Third Note.md",
+    "Examples & Practice/THUMBNAIL.base",
+    "Examples & Practice/Sample Second File.md",
+    "Examples & Practice/Sample First File.md",
+    "Examples & Practice/Intro.md",
+    "Examples & Practice/Fourth Note.md",
+    "Examples & Practice",
+    "Engineering/02 Operations/Processes",
+    "Engineering/01 Projects/Active Projects",
+    "Engineering/00 Company/Engineering Budget 2025"
+  ]
+}
