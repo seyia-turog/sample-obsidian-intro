@@ -16,19 +16,8 @@
               "icon": "calendar-glyph",
               "title": "Calendar"
             }
-          },
-          {
-            "id": "3fbc421acf85b054",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Calendar"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,7 +178,7 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "3fbc421acf85b054",
+  "active": "31bc397df9eabf04",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
