@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/05 Templates/Template - Sprint.md",
+                "file": "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Template - Sprint"
+              "title": "12 Documents"
             }
           }
         ],
@@ -193,25 +193,26 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "edf56b4d0ce101b9",
+  "active": "64c24e60c41a45e6",
   "lastOpenFiles": [
+    "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
+    "Engineering/01 Projects/Backoffice APIs/08 Cards.md",
+    "Engineering/01 Projects/Backoffice APIs/06 Loans.md",
+    "Engineering/01 Projects/Backoffice APIs/04 Community.md",
+    "Engineering/01 Projects/Backoffice APIs/02 Members.md",
+    "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+    "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
+    "Engineering/05 Templates/Template - Sprint.md",
     "Engineering/05 Templates/Template - Project.md",
     "Engineering/05 Templates/Template - Idea.md",
     "conflict-files-obsidian-git.md",
     "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
     "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
-    "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
-    "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
     "Engineering/01 Projects/Backoffice APIs/09 Applications.md",
-    "Engineering/01 Projects/Backoffice APIs/08 Cards.md",
     "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
-    "Engineering/01 Projects/Backoffice APIs/06 Loans.md",
     "Engineering/01 Projects/Backoffice APIs/Untitled.md",
     "Engineering/01 Projects/Backoffice APIs/05 Savings.md",
-    "Engineering/01 Projects/Backoffice APIs/04 Community.md",
     "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
-    "Engineering/01 Projects/Backoffice APIs/02 Members.md",
-    "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
     "Engineering/01 Projects/Backoffice APIs",
     "Examples & Practice/model_3.bpmn",
     "Examples & Practice/Second creation.md",
@@ -226,7 +227,6 @@
     "Examples & Practice/Third Note.md",
     "Examples & Practice/THUMBNAIL.base",
     "Examples & Practice/Sample Second File.md",
-    "Examples & Practice/Sample First File.md",
     "Examples & Practice",
     "Engineering/02 Operations/Processes",
     "Engineering/01 Projects/Active Projects",
