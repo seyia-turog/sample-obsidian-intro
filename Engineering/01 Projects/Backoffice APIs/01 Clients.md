@@ -52,36 +52,36 @@ The Clients Module integrates with specialized adapters to provide comprehensive
 ### 1. Backoffice APIs
 
 | **Action** | **Summary**                | **Route**                              | **Method** | **Status** |
-| ---------- | -------------------------- | -------------------------------------- | ----------- | ----------- |
-| CL001      | List Clients               | /clients/profile                       | GET         | 🔄          |
-| CL002      | View Client Details        | /clients/profile/{reference}           | GET         | 🔄          |
-| CL003      | Create Client              | /clients/profile                       | POST        | 🔄          |
-| CL004      | Update Client Profile      | /clients/profile/{reference}           | PUT         | 🔄          |
-| CL005      | Archive Client             | /clients/profile/{reference}           | DELETE      | 🔄          |
-| CL006      | List Client Accounts       | /clients/accounts/{reference}          | GET         | 🔄          |
-| CL007      | Client Device List         | /clients/device/{reference}            | GET         | 🔄          |
-| CL008      | Toggle Client Favorites    | /clients/starred/{reference}           | POST        | 🔄          |
-| CL009      | Search Clients             | /clients/profile?filter={filter query} | GET         | 🔄          |
-| CL010      | (Un)Lock Client Device     | /clients/device/lock                   | POST        | 🔄          |
-| CL011      | Transfer Client Device     | /clients/device/transfer               | POST        | 🔄          |
-| CL012      | (De)Activate Client Device | /clients/device/activate               | POST        | 🔄          |
-| CL013      | Reset Device PIN           | /clients/device/resetPIN               | POST        | 🔄          |
+| ---------- | -------------------------- | -------------------------------------- | ---------- | ---------- |
+| CL001      | List Clients               | /clients/profile                       | GET        | 🔄         |
+| CL002      | View Client Details        | /clients/profile/{reference}           | GET        | 🔄         |
+| CL003      | Create Client              | /clients/profile                       | POST       | 🔄         |
+| CL004      | Update Client Profile      | /clients/profile/{reference}           | PUT        | 🔄         |
+| CL005      | Archive Client             | /clients/profile/{reference}           | DELETE     | 🔄         |
+| CL006      | List Client Accounts       | /clients/accounts/{reference}          | GET        | 🔄         |
+| CL007      | Client Device List         | /clients/device/{reference}            | GET        | 🔄         |
+| CL008      | Toggle Client Favorites    | /clients/starred/{reference}           | POST       | 🔄         |
+| CL009      | Search Clients             | /clients/profile?filter={filter query} | GET        | 🔄         |
+| CL010      | (Un)Lock Client Device     | /clients/device/lock                   | POST       | 🔄         |
+| CL011      | Transfer Client Device     | /clients/device/transfer               | POST       | 🔄         |
+| CL012      | (De)Activate Client Device | /clients/device/activate               | POST       | 🔄         |
+| CL013      | Reset Device PIN           | /clients/device/resetPIN               | POST       | 🔄         |
 
 ---
 
 ### 2. Corebanking Adapter APIs
 
-| **Action** | **Summary**                   | **Route** | **Method** | **Operation ID**   | **Status** |
-| ---------- | ----------------------------- | --------- | ---------- | ------------------ | ---------- |
-| CC001      | Create Client Profile         |           | POST       | CL003              | 🔄          |
-| CC002      | Update Client Profile         |           | PUT        | CL004              | 🔄          |
-| CC003      | Deactivate Client Profile*    |           | DELETE     | CL005              | 🔄          |
-| CC004      | Get Client SavingsAccounts    |           | GET        | CL006              | 🔄          |
-| CC005      | Get Client Credit Accounts    |           | GET        | CL006              | 🔄          |
-| CC008      | Fetch / Filter Clients List   |           | GET        | CL001<br>CL009     | 🔄          |
-| CC009      | Read Client Details           |           | GET        | CL002              | 🔄          |
-| CC010      | Close Client Accounts         |           | POST       | CL005              | 🔄          |
-| CC011      | Block Client Credits / Debits |           | POST       | CL005              | 🔄          |
+| **Action** | **Summary**                   | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ----------------------------- | --------- | ---------- | ---------------- | ---------- |
+| CC001      | Create Client Profile         |           | POST       | CL003            | 🔄         |
+| CC002      | Update Client Profile         |           | PUT        | CL004            | 🔄         |
+| CC003      | Deactivate Client Profile*    |           | DELETE     | CL005            | 🔄         |
+| CC004      | Get Client SavingsAccounts    |           | GET        | CL006            | 🔄         |
+| CC005      | Get Client Credit Accounts    |           | GET        | CL006            | 🔄         |
+| CC008      | Fetch / Filter Clients List   |           | GET        | CL001<br>CL009   | 🔄         |
+| CC009      | Read Client Details           |           | GET        | CL002            | 🔄         |
+| CC010      | Close Client Accounts         |           | POST       | CL005            | 🔄         |
+| CC011      | Block Client Credits / Debits |           | POST       | CL005            | 🔄         |
 
 > *Deactivation of client accounts should involve removing any open balances, post-no-debit and post-no-credit as well as closing any open client savings/loan accounts.*
 
