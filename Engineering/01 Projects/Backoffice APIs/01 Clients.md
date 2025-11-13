@@ -121,10 +121,10 @@ The Clients Module integrates with specialized adapters to provide comprehensive
 
 | **Action** | **Summary**                         | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ----------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| MW001      | Send Welcome Notification           |           | POST       | CL003            | 🔄          |
-| MU002      | Send Profile Change Notification    |           | POST       | CL004            | 🔄          |
-| MC001      | Send Account Closure Notification   |           | POST       | CL005            | 🔄          |
-| MD001      | Share Device PIN Reset Notification |           | POST       | CL013            | 🔄          |
+| MW001      | Send Welcome Notification           |           | POST       | CL003            | 🔄         |
+| MU002      | Send Profile Change Notification    |           | POST       | CL004            | 🔄         |
+| MC001      | Send Account Closure Notification   |           | POST       | CL005            | 🔄         |
+| MD001      | Share Device PIN Reset Notification |           | POST       | CL013            | 🔄         |
 
 ---
 
