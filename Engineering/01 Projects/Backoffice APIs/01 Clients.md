@@ -132,13 +132,13 @@ The Clients Module integrates with specialized adapters to provide comprehensive
 
 | **Action** | **Summary**                     | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| DL001      | List Client Devices             |           | GET        | CL007            | 🔄          |
-| DX002      | (Un)Lock Devices                |           | POST       | CL010            | 🔄          |
-| DT003      | Initiate Device Transfer        |           | POST       | CL011            | 🔄          |
-| DT004      | Confirm Transfer OTT            |           | POST       | CL011            | 🔄          |
-| DA005      | (De)Activate Devices            |           | POST       | CL012            | 🔄          |
-| DA006      | Reset Device PIN                |           | POST       | CL013            | 🔄          |
-| MC007      | (Un)Set Member Favorite Clients |           | POST       | CL008            | 🔄          |
+| DL001      | List Client Devices             |           | GET        | CL007            | 🔄         |
+| DX002      | (Un)Lock Devices                |           | POST       | CL010            | 🔄         |
+| DT003      | Initiate Device Transfer        |           | POST       | CL011            | 🔄         |
+| DT004      | Confirm Transfer OTT            |           | POST       | CL011            | 🔄         |
+| DA005      | (De)Activate Devices            |           | POST       | CL012            | 🔄         |
+| DA006      | Reset Device PIN                |           | POST       | CL013            | 🔄         |
+| MC007      | (Un)Set Member Favorite Clients |           | POST       | CL008            | 🔄         |
 
 ---
 
