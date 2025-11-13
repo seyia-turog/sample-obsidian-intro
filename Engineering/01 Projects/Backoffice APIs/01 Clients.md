@@ -109,11 +109,11 @@ The Clients Module integrates with specialized adapters to provide comprehensive
 
 ### 5. Document Processor APIs
 
-| **Action** | **Summary**                  | **Route** | **Method** | **Operation ID**   | **Status** |
-| ---------- | ---------------------------- | --------- | ---------- | ------------------ | ---------- |
-| DD001      | Get Client Utility Documents |           | GET        | CL002              | 🔄          |
-| DD002      | Get Client Verification IDs  |           | GET        | CL002              | 🔄          |
-| DD003      | Get Client Photo             |           | GET        | CL001<br>CL002     | 🔄          |
+| **Action** | **Summary**                  | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ---------------------------- | --------- | ---------- | ---------------- | ---------- |
+| DD001      | Get Client Utility Documents |           | GET        | CL002            | 🔄         |
+| DD002      | Get Client Verification IDs  |           | GET        | CL002            | 🔄         |
+| DD003      | Get Client Photo             |           | GET        | CL001<br>CL002   | 🔄         |
 
 ---
 
