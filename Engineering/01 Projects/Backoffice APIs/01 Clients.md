@@ -91,9 +91,9 @@ The Clients Module integrates with specialized adapters to provide comprehensive
 
 | **Action** | **Summary**             | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ----------------------- | --------- | ---------- | ---------------- | ---------- |
-| IU001      | Create User Profile     |           | POST       | CL003            | 🔄          |
-| IU002      | Update User Profile     |           | PUT        | CL004            | 🔄          |
-| IU003      | Deactivate User Profile |           | DELETE     | CL005            | 🔄          |
+| IU001      | Create User Profile     |           | POST       | CL003            | 🔄         |
+| IU002      | Update User Profile     |           | PUT        | CL004            | 🔄         |
+| IU003      | Deactivate User Profile |           | DELETE     | CL005            | 🔄         |
 
 ---
 
