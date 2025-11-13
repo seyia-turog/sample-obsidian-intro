@@ -101,9 +101,9 @@ The Clients Module integrates with specialized adapters to provide comprehensive
 
 | **Action** | **Summary**                | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | -------------------------- | --------- | ---------- | ---------------- | ---------- |
-| HP001      | Create Partner Profile     |           | POST       | CL003            | 🔄          |
-| HP002      | Update Partner Profile     |           | PUT        | CL004            | 🔄          |
-| HP003      | Deactivate Partner Profile |           | DELETE     | CL005            | 🔄          |
+| HP001      | Create Partner Profile     |           | POST       | CL003            | 🔄         |
+| HP002      | Update Partner Profile     |           | PUT        | CL004            | 🔄         |
+| HP003      | Deactivate Partner Profile |           | DELETE     | CL005            | 🔄         |
 
 ---
 
