@@ -53,9 +53,9 @@ The Compliance Module performs the following key business functions:
 
 ### 2. Core Banking Adapter APIs
 
-| **Action** | **Summary**                 | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | --------------------------- | --------- | ---------- | ---------------- | ----------- |
-| CB001       | Provide Financial History   |           | GET        | CP002            | 🔄          |
+| **Action** | **Summary**               | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------------------- | --------- | ---------- | ---------------- | ---------- |
+| CB001      | Provide Financial History |           | GET        | CP002            | 🔄         |
 
 ---
 
