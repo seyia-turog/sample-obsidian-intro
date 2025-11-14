@@ -429,12 +429,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
+                "file": "Engineering/01 Projects/Backoffice APIs/04 Community.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 Compliance"
+              "title": "04 Community"
             }
           }
         ],
@@ -602,6 +602,7 @@
   },
   "active": "7861966fb871f9ef",
   "lastOpenFiles": [
+    "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
     "Engineering/01 Projects/Backoffice APIs/04 Community.md",
     "Engineering/01 Projects/Backoffice APIs/02 Members.md",
     "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
@@ -636,7 +637,6 @@
     "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
     "Engineering/01 Projects/Backoffice APIs/09 Applications.md",
     "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
-    "Engineering/01 Projects/Backoffice APIs/06 Loans.md",
     "Engineering/01 Projects/Backoffice APIs"
   ]
 }
