@@ -78,10 +78,10 @@ The Compliance Module performs the following key business functions:
 
 ### 5. Messages Worker APIs
 
-| **Action** | **Summary**                     | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ------------------------------- | --------- | ---------- | ---------------- | ----------- |
-| MW010       | Send AML Result Notification     |           | POST       | CP001            | 🔄          |
-| MW011       | Send Eligibility Result Notification |         | POST       | CP002            | 🔄          |
+| **Action** | **Summary**                          | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------------------------------ | --------- | ---------- | ---------------- | ---------- |
+| MW010      | Send AML Result Notification         |           | POST       | CP001            | 🔄         |
+| MW011      | Send Eligibility Result Notification |           | POST       | CP002            | 🔄         |
 
 ---
 
