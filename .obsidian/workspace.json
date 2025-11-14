@@ -429,12 +429,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/02 Members.md",
+                "file": "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 Members"
+              "title": "03 Compliance"
             }
           }
         ],
@@ -602,13 +602,14 @@
   },
   "active": "7861966fb871f9ef",
   "lastOpenFiles": [
+    "Engineering/01 Projects/Backoffice APIs/04 Community.md",
+    "Engineering/01 Projects/Backoffice APIs/02 Members.md",
     "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
     "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
     "conflict-files-obsidian-git.md",
     "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
     "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
     "Engineering/01 Projects/Backoffice APIs/08 Cards.md",
-    "Engineering/01 Projects/Backoffice APIs/02 Members.md",
     "Engineering/01 Projects/Backoffice Console/06. Process Engine.md",
     "Engineering/01 Projects/Backoffice Console/05. Cards.md",
     "Engineering/01 Projects/Backoffice Console/04. Open Banking.md",
@@ -636,7 +637,6 @@
     "Engineering/01 Projects/Backoffice APIs/09 Applications.md",
     "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
     "Engineering/01 Projects/Backoffice APIs/06 Loans.md",
-    "Engineering/01 Projects/Backoffice APIs/Untitled.md",
     "Engineering/01 Projects/Backoffice APIs"
   ]
 }
