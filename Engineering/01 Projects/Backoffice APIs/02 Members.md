@@ -79,10 +79,10 @@ The Members Module provides critical internal capabilities:
 
 ### 4. Documents Processor APIs
 
-| **Action** | **Summary** | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ------------ | ---------- | ----------- | ---------------- | ----------- |
-| DP001 | Upload Member Avatar |  | POST | MB006 | 🔄 |
-| DP002 | Retrieve Avatar URL |  | GET | MB006 | 🔄 |
+| **Action** | **Summary**          | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------- | --------- | ---------- | ---------------- | ---------- |
+| DP001      | Upload Member Avatar |           | POST       | MB006            | 🔄         |
+| DP002      | Retrieve Avatar URL  |           | GET        | MB006            | 🔄         |
 
 ---
 
