@@ -60,11 +60,11 @@ The Members Module provides critical internal capabilities:
 
 ### 2. Identity Adapter APIs
 
-| **Action** | **Summary** | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ------------ | ---------- | ----------- | ---------------- | ----------- |
-| IU010 | Create Member Identity |  | POST | MB001 | 🔄 |
-| IU011 | Update Member Identity |  | PUT | MB004 | 🔄 |
-| IU012 | Password Challenge / Reset |  | PUT | MB005 | 🔄 |
+| **Action** | **Summary**                | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------------- | --------- | ---------- | ---------------- | ---------- |
+| IU010      | Create Member Identity     |           | POST       | MB001            | 🔄         |
+| IU011      | Update Member Identity     |           | PUT        | MB004            | 🔄         |
+| IU012      | Password Challenge / Reset |           | PUT        | MB005            | 🔄         |
 
 ---
 
