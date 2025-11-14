@@ -44,10 +44,10 @@ The Compliance Module performs the following key business functions:
 
 ### 1. Backoffice APIs
 
-| **Action** | **Summary**               | **Route**                              | **Method** | **Status** |
-| ----------- | ------------------------- | -------------------------------------- | ----------- | ----------- |
-| CP001       | Run AML Check (All)       | /compliance/checks/run-aml             | POST        | 🔄          |
-| CP002       | Run Loan Eligibility Check | /compliance/checks/loan-eligibility     | POST        | 🔄          |
+| **Action** | **Summary**                | **Route**                           | **Method** | **Status** |
+| ---------- | -------------------------- | ----------------------------------- | ---------- | ---------- |
+| CP001      | Run AML Check (All)        | /compliance/checks/run-aml          | POST       | 🔄         |
+| CP002      | Run Loan Eligibility Check | /compliance/checks/loan-eligibility | POST       | 🔄         |
 
 ---
 
