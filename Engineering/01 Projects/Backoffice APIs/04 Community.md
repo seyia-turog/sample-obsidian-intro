@@ -68,21 +68,21 @@ The Community Management Module enables the following key operations:
 
 | **Action** | **Summary**                     | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| **CB001**  | Retrieve Community List          |           | GET        | CM001            | 🔄          |
-| **CB002**  | Filter / Search Communities      |           | GET        | CM002            | 🔄          |
-| **CB003**  | Link Community to Clients        |           | POST       | CM003            | 🔄          |
-| **CB004**  | Retrieve Community Details       |           | GET        | CM004            | 🔄          |
-| **CB005**  | Update Community Record          |           | PUT        | CM005            | 🔄          |
-| **CB006**  | Update Community Status          |           | PUT        | CM007            | 🔄          |
-| **CB007**  | Dissolve Community               |           | DELETE     | CM006            | 🔄          |
-| **CB008**  | Create Invitation                |           | POST       | CM008            | 🔄          |
-| **CB009**  | Retrieve Pending Invites         |           | GET        | CM009            | 🔄          |
-| **CB010**  | Remove Invitation                |           | DELETE     | CM010            | 🔄          |
-| **CB011**  | Update Membership                |           | POST       | CM011, CM014     | 🔄          |
-| **CB012**  | Update Invitation Status         |           | POST       | CM012            | 🔄          |
-| **CB013**  | Retrieve Member List             |           | GET        | CM013            | 🔄          |
-| **CB014**  | Update Membership After Removal  |           | DELETE     | CM014            | 🔄          |
-| **CB015**  | Update Member Role               |           | PUT        | CM015            | 🔄          |
+| **CB001**  | Retrieve Community List         |           | GET        | CM001            | 🔄         |
+| **CB002**  | Filter / Search Communities     |           | GET        | CM002            | 🔄         |
+| **CB003**  | Link Community to Clients       |           | POST       | CM003            | 🔄         |
+| **CB004**  | Retrieve Community Details      |           | GET        | CM004            | 🔄         |
+| **CB005**  | Update Community Record         |           | PUT        | CM005            | 🔄         |
+| **CB006**  | Update Community Status         |           | PUT        | CM007            | 🔄         |
+| **CB007**  | Dissolve Community              |           | DELETE     | CM006            | 🔄         |
+| **CB008**  | Create Invitation               |           | POST       | CM008            | 🔄         |
+| **CB009**  | Retrieve Pending Invites        |           | GET        | CM009            | 🔄         |
+| **CB010**  | Remove Invitation               |           | DELETE     | CM010            | 🔄         |
+| **CB011**  | Update Membership               |           | POST       | CM011, CM014     | 🔄         |
+| **CB012**  | Update Invitation Status        |           | POST       | CM012            | 🔄         |
+| **CB013**  | Retrieve Member List            |           | GET        | CM013            | 🔄         |
+| **CB014**  | Update Membership After Removal |           | DELETE     | CM014            | 🔄         |
+| **CB015**  | Update Member Role              |           | PUT        | CM015            | 🔄         |
 
 ---
 
