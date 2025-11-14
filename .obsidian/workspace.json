@@ -429,12 +429,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+                "file": "Engineering/01 Projects/Backoffice APIs/02 Members.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 Clients"
+              "title": "02 Members"
             }
           }
         ],
@@ -602,8 +602,8 @@
   },
   "active": "7861966fb871f9ef",
   "lastOpenFiles": [
-    "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
     "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+    "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
     "conflict-files-obsidian-git.md",
     "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
     "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
