@@ -46,15 +46,15 @@ The Members Module provides critical internal capabilities:
 
 ### 1. Backoffice APIs
 
-| **Action** | **Summary** | **Route** | **Method** | **Status** |
-| ----------- | ------------ | ---------- | ----------- | ----------- |
-| MB001 | Create Member | /members/profile | POST | 🔄 |
-| MB002 | Member List | /members/profile | GET | 🔄 |
-| MB003 | View Member | /members/profile/{member_id} | GET | 🔄 |
-| MB004 | Update Member Details | /members/profile/{member_id} | PUT | 🔄 |
-| MB005 | Change Password | /members/password | PUT | 🔄 |
-| MB006 | Upload Profile Image | /members/avatar | POST | 🔄 |
-| MB007 | Remove Member | /members/profile/remove | DELETE | 🔄 |
+| **Action** | **Summary**           | **Route**                    | **Method** | **Status** |
+| ---------- | --------------------- | ---------------------------- | ---------- | ---------- |
+| MB001      | Create Member         | /members/profile             | POST       | 🔄         |
+| MB002      | Member List           | /members/profile             | GET        | 🔄         |
+| MB003      | View Member           | /members/profile/{member_id} | GET        | 🔄         |
+| MB004      | Update Member Details | /members/profile/{member_id} | PUT        | 🔄         |
+| MB005      | Change Password       | /members/password            | PUT        | 🔄         |
+| MB006      | Upload Profile Image  | /members/avatar              | POST       | 🔄         |
+| MB007      | Remove Member         | /members/profile/remove      | DELETE     | 🔄         |
 
 ---
 
