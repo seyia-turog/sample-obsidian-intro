@@ -88,10 +88,10 @@ The Members Module provides critical internal capabilities:
 
 ### 5. Messaging Utility APIs
 
-| **Action** | **Summary** | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ------------ | ---------- | ----------- | ---------------- | ----------- |
-| MW010 | Send Welcome Email |  | POST | MB001 | 🔄 |
-| MW011 | Send Password Reset Notification |  | POST | MB005 | 🔄 |
+| **Action** | **Summary**                      | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------------------- | --------- | ---------- | ---------------- | ---------- |
+| MW010      | Send Welcome Email               |           | POST       | MB001            | 🔄         |
+| MW011      | Send Password Reset Notification |           | POST       | MB005            | 🔄         |
 
 ---
 
