@@ -44,23 +44,23 @@ The Community Management Module enables the following key operations:
 
 ### 1. Backoffice APIs
 
-| **Action** | **Summary**                   | **Route**                         | **Method** | **Status** |
-| ---------- | ----------------------------- | --------------------------------- | ----------- | ----------- |
-| **CM001**  | Retrieve Community List        | /communities                      | GET         | 🔄          |
-| **CM002**  | Filter / Search Communities    | /communities?filter={query}       | GET         | 🔄          |
-| **CM003**  | Link Community to Clients      | /communities/clients              | POST        | 🔄          |
-| **CM004**  | Retrieve Community Details     | /communities/{communityId}        | GET         | 🔄          |
-| **CM005**  | Update Community Record        | /communities/{communityId}        | PUT         | 🔄          |
-| **CM006**  | Dissolve Community             | /communities/{communityId}        | DELETE      | 🔄          |
-| **CM007**  | Update Community Status        | /communities/{communityId}/status | PUT         | 🔄          |
-| **CM008**  | Create Invitation              | /communities/invites              | POST        | 🔄          |
-| **CM009**  | Retrieve Pending Invites       | /communities/invites              | GET         | 🔄          |
-| **CM010**  | Remove Invitation              | /communities/invites/{inviteId}   | DELETE      | 🔄          |
-| **CM011**  | Update Membership              | /communities/members              | POST        | 🔄          |
-| **CM012**  | Update Invitation Status       | /communities/invites/status       | POST        | 🔄          |
-| **CM013**  | Retrieve Member List           | /communities/members              | GET         | 🔄          |
-| **CM014**  | Update Membership After Removal| /communities/members/{memberId}   | DELETE      | 🔄          |
-| **CM015**  | Update Member Role             | /communities/members/{memberId}   | PUT         | 🔄          |
+| **Action** | **Summary**                     | **Route**                         | **Method** | **Status** |
+| ---------- | ------------------------------- | --------------------------------- | ---------- | ---------- |
+| **CM001**  | Retrieve Community List         | /communities                      | GET        | 🔄         |
+| **CM002**  | Filter / Search Communities     | /communities?filter={query}       | GET        | 🔄         |
+| **CM003**  | Link Community to Clients       | /communities/clients              | POST       | 🔄         |
+| **CM004**  | Retrieve Community Details      | /communities/{communityId}        | GET        | 🔄         |
+| **CM005**  | Update Community Record         | /communities/{communityId}        | PUT        | 🔄         |
+| **CM006**  | Dissolve Community              | /communities/{communityId}        | DELETE     | 🔄         |
+| **CM007**  | Update Community Status         | /communities/{communityId}/status | PUT        | 🔄         |
+| **CM008**  | Create Invitation               | /communities/invites              | POST       | 🔄         |
+| **CM009**  | Retrieve Pending Invites        | /communities/invites              | GET        | 🔄         |
+| **CM010**  | Remove Invitation               | /communities/invites/{inviteId}   | DELETE     | 🔄         |
+| **CM011**  | Update Membership               | /communities/members              | POST       | 🔄         |
+| **CM012**  | Update Invitation Status        | /communities/invites/status       | POST       | 🔄         |
+| **CM013**  | Retrieve Member List            | /communities/members              | GET        | 🔄         |
+| **CM014**  | Update Membership After Removal | /communities/members/{memberId}   | DELETE     | 🔄         |
+| **CM015**  | Update Member Role              | /communities/members/{memberId}   | PUT        | 🔄         |
 
 ---
 
