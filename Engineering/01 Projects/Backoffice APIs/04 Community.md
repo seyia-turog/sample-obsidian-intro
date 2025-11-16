@@ -88,13 +88,13 @@ The Community Management Module enables the following key operations:
 
 ### 3. Messaging Utility APIs
 
-| **Action** | **Summary**                           | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | ------------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| **MU001**  | Send Community Invite Notification    |           | POST       | CM008            | 🔄          |
-| **MU002**  | Send Invite Acceptance Notification   |           | POST       | CM012            | 🔄          |
-| **MU003**  | Send Dissolution Notice to Admins     |           | POST       | CM006            | 🔄          |
-| **MU004**  | Send Role Update Notification         |           | POST       | CM015            | 🔄          |
-| **MU005**  | Send Member Removal Notification      |           | POST       | CM014            | 🔄          |
+| **Action** | **Summary**                         | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ----------------------------------- | --------- | ---------- | ---------------- | ---------- |
+| **MU001**  | Send Community Invite Notification  |           | POST       | CM008            | 🔄         |
+| **MU002**  | Send Invite Acceptance Notification |           | POST       | CM012            | 🔄         |
+| **MU003**  | Send Dissolution Notice to Admins   |           | POST       | CM006            | 🔄         |
+| **MU004**  | Send Role Update Notification       |           | POST       | CM015            | 🔄         |
+| **MU005**  | Send Member Removal Notification    |           | POST       | CM014            | 🔄         |
 
 ---
 
