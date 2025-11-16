@@ -64,19 +64,19 @@ This module ensures seamless integration between **core banking**, **identity**,
 ### 2. Corebanking Adapter APIs
 
 | **Action** | **Summary**                   | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ----------------------------- | --------- | ----------- | ---------------- | ----------- |
-| CB001       | Retrieve Savings Accounts     |           | GET         | SV001, SV002     | 🔄          |
-| CB002       | Retrieve Account Details      |           | GET         | SV003, SV005     | 🔄          |
-| CB003       | Retrieve Account Performance  |           | GET         | SV004            | 🔄          |
-| CB004       | Retrieve Account Transactions |           | GET         | SV006            | 🔄          |
-| CB005       | Process Deposit               |           | POST        | SV007            | 🔄          |
-| CB006       | Process Withdrawal            |           | POST        | SV008            | 🔄          |
-| CB007       | Update Relationship Officer   |           | PUT         | SV009            | 🔄          |
-| CB008       | Update Account Status         |           | PUT         | SV010            | 🔄          |
-| CB009       | Close Account                 |           | POST        | SV011            | 🔄          |
-| CB010       | Apply Account Charge          |           | POST        | SV012            | 🔄          |
-| CB011       | Initiate Transfer             |           | POST        | SV013            | 🔄          |
-| CB012       | Archive Account Records       |           | PUT         | SV014            | 🔄          |
+| ---------- | ----------------------------- | --------- | ---------- | ---------------- | ---------- |
+| CB001      | Retrieve Savings Accounts     |           | GET        | SV001, SV002     | 🔄         |
+| CB002      | Retrieve Account Details      |           | GET        | SV003, SV005     | 🔄         |
+| CB003      | Retrieve Account Performance  |           | GET        | SV004            | 🔄         |
+| CB004      | Retrieve Account Transactions |           | GET        | SV006            | 🔄         |
+| CB005      | Process Deposit               |           | POST       | SV007            | 🔄         |
+| CB006      | Process Withdrawal            |           | POST       | SV008            | 🔄         |
+| CB007      | Update Relationship Officer   |           | PUT        | SV009            | 🔄         |
+| CB008      | Update Account Status         |           | PUT        | SV010            | 🔄         |
+| CB009      | Close Account                 |           | POST       | SV011            | 🔄         |
+| CB010      | Apply Account Charge          |           | POST       | SV012            | 🔄         |
+| CB011      | Initiate Transfer             |           | POST       | SV013            | 🔄         |
+| CB012      | Archive Account Records       |           | PUT        | SV014            | 🔄         |
 
 ---
 
