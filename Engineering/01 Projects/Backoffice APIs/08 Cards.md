@@ -43,14 +43,14 @@ This module supports both **physical** and **virtual** cards, maintaining compli
 
 ### 1. Card Management APIs
 
-| **Action** | **Summary**              | **Route**                       | **Method** | **Status** |
-| ----------- | ------------------------ | -------------------------------- | ----------- | ----------- |
-| CD001       | List Client Cards        | /cards/internal                  | GET         | 🔄          |
-| CD002       | Create Card              | /cards/internal                  | POST        | 🔄          |
-| CD003       | Get Card Details         | /cards/internal/{card_id}        | GET         | 🔄          |
-| CD004       | Update Card Status       | /cards/internal/status           | PUT         | 🔄          |
-| CD005       | Reset Card PIN           | /cards/pin/reset                 | PUT         | 🔄          |
-| CD006       | Block Card               | /cards/internal/block            | PUT         | 🔄          |
+| **Action** | **Summary**        | **Route**                 | **Method** | **Status** |
+| ---------- | ------------------ | ------------------------- | ---------- | ---------- |
+| CD001      | List Client Cards  | /cards/internal           | GET        | 🔄         |
+| CD002      | Create Card        | /cards/internal           | POST       | 🔄         |
+| CD003      | Get Card Details   | /cards/internal/{card_id} | GET        | 🔄         |
+| CD004      | Update Card Status | /cards/internal/status    | PUT        | 🔄         |
+| CD005      | Reset Card PIN     | /cards/pin/reset          | PUT        | 🔄         |
+| CD006      | Block Card         | /cards/internal/block     | PUT        | 🔄         |
 
 ---
 
