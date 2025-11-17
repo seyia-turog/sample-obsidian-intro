@@ -69,19 +69,19 @@ This module supports both **Retail** and **Corporate** loan types, enabling auto
 ### 2. Corebanking Adapter APIs
 
 | **Action** | **Summary**                 | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | --------------------------- | --------- | ----------- | ---------------- | ----------- |
-| CB001       | Retrieve Loan Accounts      |           | GET         | LN001            | 🔄          |
-| CB002       | Retrieve Loan Details       |           | GET         | LN003            | 🔄          |
-| CB003       | Generate Repayment Schedule |           | GET         | LN004            | 🔄          |
-| CB004       | Retrieve Loan Transactions  |           | GET         | LN005            | 🔄          |
-| CB005       | Update Loan Parameters      |           | PUT         | LN002            | 🔄          |
-| CB006       | Close Loan Account          |           | DELETE      | LN006            | 🔄          |
-| CB007       | Add Loan Guarantor          |           | POST        | LN007            | 🔄          |
-| CB008       | Remove Loan Guarantor       |           | DELETE      | LN008            | 🔄          |
-| CB009       | Update Loan Status          |           | PUT         | LN010            | 🔄          |
-| CB010       | Apply Loan Charges          |           | POST        | LN011            | 🔄          |
-| CB011       | Create Loan Account Stub    |           | POST        | LN015            | 🔄          |
-| CB012       | Lock Funds for Disbursement |           | POST        | LN017            | 🔄          |
+| ---------- | --------------------------- | --------- | ---------- | ---------------- | ---------- |
+| CB001      | Retrieve Loan Accounts      |           | GET        | LN001            | 🔄         |
+| CB002      | Retrieve Loan Details       |           | GET        | LN003            | 🔄         |
+| CB003      | Generate Repayment Schedule |           | GET        | LN004            | 🔄         |
+| CB004      | Retrieve Loan Transactions  |           | GET        | LN005            | 🔄         |
+| CB005      | Update Loan Parameters      |           | PUT        | LN002            | 🔄         |
+| CB006      | Close Loan Account          |           | DELETE     | LN006            | 🔄         |
+| CB007      | Add Loan Guarantor          |           | POST       | LN007            | 🔄         |
+| CB008      | Remove Loan Guarantor       |           | DELETE     | LN008            | 🔄         |
+| CB009      | Update Loan Status          |           | PUT        | LN010            | 🔄         |
+| CB010      | Apply Loan Charges          |           | POST       | LN011            | 🔄         |
+| CB011      | Create Loan Account Stub    |           | POST       | LN015            | 🔄         |
+| CB012      | Lock Funds for Disbursement |           | POST       | LN017            | 🔄         |
 
 ---
 
