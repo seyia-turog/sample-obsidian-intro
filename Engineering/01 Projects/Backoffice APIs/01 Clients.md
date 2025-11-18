@@ -73,7 +73,7 @@ The Clients Module integrates with specialized adapters to provide comprehensive
 
 | **Action** | **Summary**                   | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ----------------------------- | --------- | ---------- | ---------------- | ---------- |
-| CC001      | Create Client Profile         |           | POST       | CL003            | 🔄         |
+| CC001      | Create Client Profile         |           | POST       | CL003            | ✅          |
 | CC002      | Update Client Profile         |           | PUT        | CL004            | 🔄         |
 | CC003      | Deactivate Client Profile*    |           | DELETE     | CL005            | 🔄         |
 | CC004      | Get Client SavingsAccounts    |           | GET        | CL006            | 🔄         |

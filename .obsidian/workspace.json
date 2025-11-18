@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/08 Cards.md",
+                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08 Cards"
+              "title": "01 Clients"
             }
           },
           {
@@ -602,6 +602,7 @@
   },
   "active": "64c24e60c41a45e6",
   "lastOpenFiles": [
+    "Engineering/01 Projects/Backoffice APIs/08 Cards.md",
     "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
     "Engineering/01 Projects/Backoffice APIs/06 Loans.md",
     "Engineering/01 Projects/Backoffice APIs/05 Savings.md",
@@ -614,7 +615,6 @@
     "conflict-files-obsidian-git.md",
     "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
     "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
-    "Engineering/01 Projects/Backoffice APIs/08 Cards.md",
     "Engineering/01 Projects/Backoffice Console/06. Process Engine.md",
     "Engineering/01 Projects/Backoffice Console/05. Cards.md",
     "Engineering/01 Projects/Backoffice Console/04. Open Banking.md",
