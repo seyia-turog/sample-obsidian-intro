@@ -10,33 +10,35 @@
 
 ## Overview
 
-The **Users API Module** manages user identity creation, verification, compliance document processing, banking account provisioning, profile updates, messaging and user settings. It integrates Identity, CBA, CRM, Messaging, Documents and User Settings components to provide end-to-end onboarding and profile management.
+The **Users Module** manages the full lifecycle of a platform user—identity creation, document verification, compliance handling, account creation, messaging, and profile maintenance.
+
+It provides the foundational user identity layer used across all ADIBA-powered financial institutions.
 
 ---
 
 ## Core Business Functions
 
-- User Onboarding & Identity creation  
-- Identity verification (BVN/NIN, OTP)  
-- Compliance & KYC document handling  
-- Banking account creation & payment method init  
-- Profile updates, avatar and preferences  
-- User messages retrieval
+- **User Onboarding & Identity Creation**  
+- **Identity Verification (BVN/NIN, Codes, Sessions)**  
+- **Compliance & ID Document Processing**  
+- **User Profile Read & Update**  
+- **User Messaging & Notifications**  
+- **User Preferences & Environment Settings**
 
 ---
 
 ## Technical Dependencies
 
-| Component |
-|-----------|
-| Identity Processor |
-| Identity Adapter |
-| Core Banking Adapter (CBA) |
-| Payments Processor |
-| CRM Adapter |
-| Messages Worker |
-| Documents Processor |
-| User Settings Utility |
+| Component | Business Purpose |
+|----------|------------------|
+| **Identity Processor** | Validation, verification workflow, sessions |
+| **Identity Adapter** | Manage identity records and claims |
+| **Core Banking Adapter (CBA)** | Create bank accounts, retrieve account data |
+| **Payments Processor** | Initialize payment instruments |
+| **CRM Adapter** | Sync CRM contact details |
+| **Messages Worker** | Sends notifications, OTPs, verification emails |
+| **Documents Processor** | Processes and stores user documents |
+| **User Settings Utility** | Manages user preferences and settings |
 
 ---
 
@@ -44,119 +46,177 @@ The **Users API Module** manages user identity creation, verification, complianc
 
 ## 1. User Onboarding APIs
 
-| Code   | Summary                           | Route                                      | Method | Operation ID | Status |
-|--------|-----------------------------------|--------------------------------------------|--------|--------------|--------|
-| UA001  | Onboard New User                  | /users/profile                             | POST   | UA001        | 🔄     |
-| UA002  | Lookup Existing User              | /users/profile/by/{accountNo}              | GET    | UA002        | 🔄     |
-| UA003  | Onboard Existing User (Create Account) | /users/profile/by/{accountNo}          | POST   | UA003        | 🔄     |
-| UA004  | Trigger Identity Verification     | /users/identity/lookup                     | POST   | UA004        | 🔄     |
-| UA005  | Resend Verification Code          | /users/identity/resend-code                | POST   | UA005        | 🔄     |
-| UA006  | Confirm Identity Verification     | /users/identity/confirm                    | POST   | UA006        | 🔄     |
-| UA007  | Upload Compliance Document        | /users/documents/compliance                | POST   | UA007        | 🔄     |
-| UA008  | Upload Identity Document          | /users/documents/identification            | POST   | UA008        | 🔄     |
-| UA009  | Upload Profile Picture            | /users/profile/avatar                      | POST   | UA009        | 🔄     |
-| UA010  | Trigger Email Verification        | /users/email/verify                        | POST   | UA010        | 🔄     |
+| Code | Summary | Route | Method | Status |
+|------|---------|--------|--------|--------|
+| **US001** | Onboard New User | `/users/profile` | POST | 🔄 |
+| **US002** | Lookup Existing User | `/users/profile/by/{accountNo}` | GET | 🔄 |
+| **US003** | Onboard Existing User (Create Bank Account) | `/users/profile/by/{accountNo}` | POST | 🔄 |
+| **US004** | Trigger Identity Verification | `/users/identity/lookup` | POST | 🔄 |
+| **US005** | Resend Verification Code | `/users/identity/resend-code` | POST | 🔄 |
+| **US006** | Confirm Identity Verification | `/users/identity/confirm` | POST | 🔄 |
+| **US007** | Upload Compliance Document | `/users/documents/compliance` | POST | 🔄 |
+| **US008** | Upload Identity Document | `/users/documents/identification` | POST | 🔄 |
+| **US009** | Upload Profile Picture | `/users/profile/avatar` | POST | 🔄 |
+| **US010** | Trigger Email Verification | `/users/email/verify` | POST | 🔄 |
 
 ---
 
 ## 2. User Profile APIs
 
-| Code   | Summary                           | Route                                      | Method | Operation ID | Status |
-|--------|-----------------------------------|--------------------------------------------|--------|--------------|--------|
-| UP001  | View User Profile                 | /users/profile/my                          | GET    | UP001        | 🔄     |
-| UP002  | View User Avatar                  | /users/profile/avatar                      | GET    | UP002        | 🔄     |
-| UP003  | Update User Attributes            | /users/claims/my                           | PUT    | UP003        | 🔄     |
+| Code | Summary | Route | Method | Status |
+|------|---------|--------|--------|--------|
+| **US011** | View User Profile | `/users/profile/my` | GET | 🔄 |
+| **US012** | View User Avatar | `/users/profile/avatar` | GET | 🔄 |
+| **US013** | Update User Attributes | `/users/claims/my` | PUT | 🔄 |
 
 ---
 
 ## 3. User Messages APIs
 
-| Code   | Summary                           | Route                                      | Method | Operation ID | Status |
-|--------|-----------------------------------|--------------------------------------------|--------|--------------|--------|
-| UM001  | List User Messages                | /users/messages                            | GET    | UM001        | 🔄     |
-| UM002  | Delete User Message               | /users/messages/{message_id}               | DELETE | UM002        | 🔄     |
+| Code | Summary | Route | Method | Status |
+|------|---------|--------|--------|--------|
+| **US014** | List User Messages | `/users/messages` | GET | 🔄 |
+| **US015** | Delete User Message | `/users/messages/{message_id}` | DELETE | 🔄 |
 
 ---
 
-## 4. Identity Adapter APIs
+# Component Interactions (Adapter & Worker APIs)
 
-| Code   | Summary                           | Route (internal)                           | Method | Operation ID | Status |
-|--------|-----------------------------------|--------------------------------------------|--------|--------------|--------|
-| ID001  | Create Identity Stub              | /identity/users                             | POST   | ID001        | 🔄     |
-| ID002  | Fetch Identity Data               | /identity/users/{id}                        | GET    | ID002        | 🔄     |
-| ID003  | Update Identity Claims            | /identity/users/{id}/claims                 | PUT    | ID003        | 🔄     |
-| ID004  | Mark Identity Verified            | /identity/verify/{session}                  | POST   | ID004        | 🔄     |
+## 1. Identity Processor APIs
 
----
-
-## 5. Core Banking Adapter (CBA) APIs
-
-| Code   | Summary                           | Route (internal)                           | Method | Operation ID | Status |
-|--------|-----------------------------------|--------------------------------------------|--------|--------------|--------|
-| CB001  | Create Banking Account            | /cba/accounts                               | POST   | CB001        | 🔄     |
-| CB002  | Get Account Status                | /cba/accounts/{accountId}/status            | GET    | CB002        | 🔄     |
-| CB003  | Initialize Payment Methods        | /cba/accounts/{accountId}/payments/init     | POST   | CB003        | 🔄     |
-
----
-
-## 6. Payments Processor APIs
-
-| Code   | Summary                           | Route                                      | Method | Operation ID | Status |
-|--------|-----------------------------------|--------------------------------------------|--------|--------------|--------|
-| PP001  | Initialize Payment Methods        | /payments/methods/init                      | POST   | PP001        | 🔄     |
-| PP002  | Process Onboarding Fee (if any)   | /payments/charge/onboarding                 | POST   | PP002        | 🔄     |
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **IP001** | Validate Input & Create Identity Record | `/users/profile` | POST | US001 | 🔄 |
+| **IP002** | Validate Access Rights | `/users/profile/by/{accountNo}` | GET | US002 | 🔄 |
+| **IP003** | Verify Identity Status & Compliance | `/users/profile/by/{accountNo}` | POST | US003 | 🔄 |
+| **IP004** | Start Verification Session (BVN/NIN) | `/users/identity/lookup` | POST | US004 | 🔄 |
+| **IP005** | Generate New Verification Code | `/users/identity/resend-code` | POST | US005 | 🔄 |
+| **IP006** | Validate Verification Code | `/users/identity/confirm` | POST | US006 | 🔄 |
+| **IP007** | Validate Compliance Document Requirements | `/users/documents/compliance` | POST | US007 | 🔄 |
+| **IP008** | Validate ID Document | `/users/documents/identification` | POST | US008 | 🔄 |
+| **IP009** | Validate Image Format | `/users/profile/avatar` | POST | US009 | 🔄 |
+| **IP010** | Generate Email Verification Token | `/users/email/verify` | POST | US010 | 🔄 |
+| **IP011** | Authenticate & Retrieve Claims | `/users/profile/my` | GET | US011 | 🔄 |
+| **IP012** | Validate Image Access Rights | `/users/profile/avatar` | GET | US012 | 🔄 |
+| **IP013** | Validate Update Permissions | `/users/claims/my` | PUT | US013 | 🔄 |
+| **IP014** | Authenticate User Session | `/users/messages` | GET | US014 | 🔄 |
+| **IP015** | Validate Delete Permission | `/users/messages/{message_id}` | DELETE | US015 | 🔄 |
 
 ---
 
-## 7. CRM Adapter APIs
+## 2. Identity Adapter APIs
 
-| Code   | Summary                           | Route (internal)                           | Method | Operation ID | Status |
-|--------|-----------------------------------|--------------------------------------------|--------|--------------|--------|
-| CR001  | Create CRM Record                 | /crm/clients                                | POST   | CR001        | 🔄     |
-| CR002  | Update CRM with Account Details   | /crm/clients/{clientId}/accounts            | PUT    | CR002        | 🔄     |
-| CR003  | Enrich Profile Data               | /crm/clients/{clientId}/enrich              | PUT    | CR003        | 🔄     |
-
----
-
-## 8. Messages Worker APIs
-
-| Code   | Summary                           | Route                                      | Method | Operation ID | Status |
-|--------|-----------------------------------|--------------------------------------------|--------|--------------|--------|
-| MW001  | Send Welcome & Verification Msg   | /messages/send/welcome                     | POST   | MW001        | 🔄     |
-| MW002  | Send OTP / Verification Code      | /messages/send/otp                         | POST   | MW002        | 🔄     |
-| MW003  | Send Account Ready Notification   | /messages/send/account-ready               | POST   | MW003        | 🔄     |
-| MW004  | Remove Message Notification       | /messages/notify/delete                    | POST   | MW004        | 🔄     |
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **IA001** | Create User in Identity System | `/users/profile` | POST | US001 | 🔄 |
+| **IA002** | Fetch Identity Data | `/users/profile/by/{accountNo}` | GET | US002 | 🔄 |
+| **IA003** | Mark Identity Verified | `/users/identity/confirm` | POST | US006 | 🔄 |
+| **IA004** | Update Identity Claims | `/users/claims/my` | PUT | US013 | 🔄 |
+| **IA005** | Fetch Identity Profile | `/users/profile/my` | GET | US011 | 🔄 |
 
 ---
 
-## 9. Documents Processor APIs
+## 3. Core Banking Adapter (CBA) APIs
 
-| Code   | Summary                           | Route                                      | Method | Operation ID | Status |
-|--------|-----------------------------------|--------------------------------------------|--------|--------------|--------|
-| DP001  | Store Compliance Document         | /documents/compliance                      | POST   | DP001        | 🔄     |
-| DP002  | Store Identity Document           | /documents/identification                  | POST   | DP002        | 🔄     |
-| DP003  | Serve Avatar Image                | /documents/avatar/{id}                     | GET    | DP003        | 🔄     |
-
----
-
-## 10. User Settings Utility APIs
-
-| Code   | Summary                           | Route                                      | Method | Operation ID | Status |
-|--------|-----------------------------------|--------------------------------------------|--------|--------------|--------|
-| US001  | Set Basic User Preferences        | /users/settings/defaults                   | POST   | US001        | 🔄     |
-| US002  | Update User Preferences           | /users/settings/{userId}                   | PUT    | US002        | 🔄     |
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **CB001** | Create Banking Account | `/users/profile/by/{accountNo}` | POST | US003 | 🔄 |
+| **CB002** | Retrieve Bank Account Status | `/users/profile/my` | GET | US011 | 🔄 |
+| **CB003** | Sync Profile With CBA | `/users/claims/my` | PUT | US013 | 🔄 |
 
 ---
 
-## Security & Governance (quick reference)
+## 4. Payments Processor APIs
 
-| Permission | APIs (examples) |
-|------------|------------------|
-| **usr_onboard** | UA001, UA003, UA004 |
-| **usr_read**    | UP001, UA002       |
-| **usr_update**  | UP003, US002       |
-| **usr_docs**    | UA007, UA008       |
-| **usr_messages**| UM001, UM002, MW001, MW002 |
-| **usr_msg_delete** | UM002, MW004 |
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **PP001** | Initialize Payment Methods | `/users/profile/by/{accountNo}` | POST | US003 | 🔄 |
 
 ---
+
+## 5. CRM Adapter APIs
+
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **CR001** | Create Partner Record | `/users/profile` | POST | US001 | 🔄 |
+| **CR002** | Update CRM with Account Details | `/users/profile/by/{accountNo}` | POST | US003 | 🔄 |
+| **CR003** | Enrich CRM Data | `/users/profile/my` | GET | US011 | 🔄 |
+| **CR004** | Update CRM Record | `/users/claims/my` | PUT | US013 | 🔄 |
+
+---
+
+## 6. Messages Worker APIs
+
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **MW001** | Send Welcome & Verification Instructions | `/users/profile` | POST | US001 | 🔄 |
+| **MW002** | Send Verification Code / OTP | `/users/identity/lookup` | POST | US004 | 🔄 |
+| **MW003** | Resend Verification Code | `/users/identity/resend-code` | POST | US005 | 🔄 |
+| **MW004** | Send Verification Success Message | `/users/identity/confirm` | POST | US006 | 🔄 |
+| **MW005** | Send Email Verification | `/users/email/verify` | POST | US010 | 🔄 |
+| **MW006** | Fetch User Messages | `/users/messages` | GET | US014 | 🔄 |
+| **MW007** | Send Message Deletion Notification | `/users/messages/{message_id}` | DELETE | US015 | 🔄 |
+
+---
+
+## 7. Documents Processor APIs
+
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **DP001** | Process & Store Compliance Documents | `/users/documents/compliance` | POST | US007 | 🔄 |
+| **DP002** | Process & Store ID Documents | `/users/documents/identification` | POST | US008 | 🔄 |
+| **DP003** | Process & Optimize Profile Image | `/users/profile/avatar` | POST | US009 | 🔄 |
+| **DP004** | Serve Image File | `/users/profile/avatar` | GET | US012 | 🔄 |
+
+---
+
+## 8. User Settings Utility APIs
+
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **USU001** | Set Basic User Preferences | `/users/profile` | POST | US001 | 🔄 |
+| **USU002** | Set Banking Preferences | `/users/profile/by/{accountNo}` | POST | US003 | 🔄 |
+| **USU003** | Apply User Settings | `/users/profile/my` | GET | US011 | 🔄 |
+| **USU004** | Apply Message Settings | `/users/messages` | GET | US014 | 🔄 |
+
+---
+
+# Security & Governance
+
+## Permissions & APIs
+
+| Permission | Name | APIs | Status |
+|------------|-------|--------|--------|
+| **usr_onboard** | Onboard Users | US001–US010 | 🔄 |
+| **usr_read** | View Profiles | US011–US012 | 🔄 |
+| **usr_update** | Update Profiles | US013 | 🔄 |
+| **usr_messages** | Manage Messages | US014–US015 | 🔄 |
+| **usr_docs** | Upload Documents | US007–US009 | 🔄 |
+
+---
+
+## Roles & Permissions
+
+| Role | Name | Permissions | Status |
+|-------|---------|----------------|--------|
+| **UR001** | Administrator | usr_onboard, usr_update, usr_docs, usr_messages | 🔄 |
+| **UR002** | Onboarding Officer | usr_onboard, usr_docs | 🔄 |
+| **UR003** | Customer Service | usr_read, usr_messages | 🔄 |
+| **UR004** | Compliance Officer | usr_read, usr_docs | 🔄 |
+
+---
+
+## Policies & Attributes
+
+| Policy ID | Policy | Condition | Status |
+|-----------|--------|-----------|--------|
+| **P_USR_001** | Org MUST have active RE Subscription | `org.apps.retail eq active` | 🔄 |
+| **P_USR_002** | Users can ONLY update their own profile | `subject.id eq user.id` | 🔄 |
+
+---
+
+## Related Documents
+
+1. Identity Verification Framework  
+2. Customer Lifecycle & Compliance Model  
+3. Messaging Templates – User Onboarding
