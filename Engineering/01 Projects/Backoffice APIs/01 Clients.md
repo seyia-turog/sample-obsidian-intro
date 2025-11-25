@@ -22,11 +22,15 @@ The module distinguishes between two primary client categories to ensure appropr
 The Clients Module provides essential business operations that support the entire ADIBA platform:
 
 ## Client Onboarding
-###Profile Management
+- Registration  
+- ID creation  
+- Compliance validation  
+
+## Profile Management
 - Updating demographic data  
 - Updating relationship data  
 
-### Lifecycle Management
+## Lifecycle Management
 - Deactivate or archive when client relationship ends  
 
 ## Client Data Retrieval
