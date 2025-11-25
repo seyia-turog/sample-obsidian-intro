@@ -366,79 +366,9 @@
               "icon": "lucide-file",
               "title": "01 Clients"
             }
-          },
-          {
-            "id": "cba9849f619b7135",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 Clients"
-            }
-          },
-          {
-            "id": "3b40a3bb187c7877",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 Clients"
-            }
-          },
-          {
-            "id": "12badaa75fc528e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 Clients"
-            }
-          },
-          {
-            "id": "4f42831f242102d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 Clients"
-            }
-          },
-          {
-            "id": "7861966fb871f9ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/04 Community.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04 Community"
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 25
       }
     ],
     "direction": "vertical"
@@ -600,17 +530,17 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "64c24e60c41a45e6",
+  "active": "b699ea35d83932d8",
   "lastOpenFiles": [
+    "Engineering/01 Projects/Backoffice APIs/04 Community.md",
+    "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
     "Engineering/01 Projects/Backoffice APIs/08 Cards.md",
     "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
     "Engineering/01 Projects/Backoffice APIs/06 Loans.md",
     "Engineering/01 Projects/Backoffice APIs/05 Savings.md",
-    "Engineering/01 Projects/Backoffice APIs/04 Community.md",
     "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
     "Engineering/05 Templates/Untitled.md",
     "Engineering/01 Projects/Backoffice APIs/02 Members.md",
-    "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
     "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
     "conflict-files-obsidian-git.md",
     "Engineering/01 Projects/Backoffice APIs/00 Overview.md",

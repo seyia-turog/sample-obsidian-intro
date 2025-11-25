@@ -21,11 +21,28 @@ The module distinguishes between two primary client categories to ensure appropr
 
 The Clients Module provides essential business operations that support the entire ADIBA platform:
 
-- **Client Onboarding**: Streamlined registration process for new stakeholders with automated verification and compliance checks  
-- **Client Profile Management**: Comprehensive updating of client information, preferences, and service configurations to maintain accurate relationship data  
-- **Client Lifecycle Management**: Secure removal and archival of client records when relationships are terminated or accounts are closed  
-- **Client Data Retrieval**: Efficient lookup and retrieval of individual client profiles for service delivery and relationship management  
-- **Client Portfolio Management**: Bulk operations and reporting capabilities for managing large client bases across different segments  
+## Client Onboarding
+- Registration  
+- ID creation  
+- Compliance validation  
+
+## Profile Management
+- Updating demographic data  
+- Updating relationship data  
+
+## Lifecycle Management
+- Deactivate or archive when client relationship ends  
+
+## Client Data Retrieval
+- Fetch detailed client records  
+
+## Account Portfolio Management
+- List savings, loan, and credit accounts  
+
+## Device & Security Management
+- Handle device binding  
+- Device activation  
+- Device locking 
 
 ---
 
