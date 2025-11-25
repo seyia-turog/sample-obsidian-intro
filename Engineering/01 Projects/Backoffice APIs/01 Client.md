@@ -88,8 +88,7 @@ It supports onboarding, profile management, lifecycle handling, account access, 
 | --------- | --------------------- | ------------------------- | ------ | ------------ | ------ |
 | **CR001** | Create CRM Record     | `/clients/setup`          | POST   | CL003        | 🔄     |
 | **CR002** | Sync CRM Profile      | `/clients/profile`        | PUT    | CL004        | 🔄     |
-| **CR003** | Update Partner Status | `/clients/profile/remove` | PUT    | CL004        | 🔄     |
-|           |                       |                           |        |              |        |
+| **CR003** | Update Partner Status | `/clients/profile/remove` | PUT    | CL005        | 🔄     |
 
 ---
 
