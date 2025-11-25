@@ -46,23 +46,23 @@ It integrates with Identity, CBA, CRM, Payment Processors, Document Processors, 
 
 ### 1. Users APIs (Onboarding, Compliance, Profile & Messaging)
 
-| **Action** | **Summary** | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ----------- | --------- | ---------- | ---------------- | ---------- |
-| Onboard New User | Create User Identity | /users/profile | POST | ONB001 | 🔄 |
-| Lookup Existing User | Lookup User Identity | /users/profile/by/{accountNo} | GET | ONB002 | 🔄 |
-| Onboard Existing User | Complete Banking Account Creation | /users/profile/by/{accountNo} | POST | ONB003 | 🔄 |
-| Trigger Identity Verification | Verify Identity Documents | /users/identity/lookup | POST | ONB004 | 🔄 |
-| Resend Verification Code | Resend Verification Code | /users/identity/resend-code | POST | ONB005 | 🔄 |
-| Confirm Identity Verification | Confirm Identity Verification | /users/identity/confirm | POST | ONB006 | 🔄 |
-| Upload Compliance Document | Upload Compliance Documents | /users/documents/compliance | POST | CMP001 | 🔄 |
-| Upload Identity Document | Upload Identity Documents | /users/documents/identification | POST | IDD001 | 🔄 |
-| Upload Profile Picture | Upload Profile Picture | /users/profile/avatar | POST | IMG001 | 🔄 |
-| Trigger Email Verification | Trigger Email Verification | /users/email/verify | POST | EMV001 | 🔄 |
-| View User Profile | View User Profile | /users/profile/my | GET | PROF001 | 🔄 |
-| View User Avatar | View User Avatar | /users/profile/avatar | GET | PROF002 | 🔄 |
-| Update User Attributes | Update User Attributes | /users/claims/my | PUT | PROF003 | 🔄 |
-| List User Messages | List User Messages | /users/messages | GET | MSG001 | 🔄 |
-| Delete User Message | Delete User Message | /users/messages/{messageId} | DELETE | MSG002 | 🔄 |
+| **Action**                    | **Summary**                       | **Route**                       | **Method** | **Operation ID** | **Status** |
+| ----------------------------- | --------------------------------- | ------------------------------- | ---------- | ---------------- | ---------- |
+| Onboard New User              | Create User Identity              | /users/profile                  | POST       | ONB001           | 🔄         |
+| Lookup Existing User          | Lookup User Identity              | /users/profile/by/{accountNo}   | GET        | ONB002           | 🔄         |
+| Onboard Existing User         | Complete Banking Account Creation | /users/profile/by/{accountNo}   | POST       | ONB003           | 🔄         |
+| Trigger Identity Verification | Verify Identity Documents         | /users/identity/lookup          | POST       | ONB004           | 🔄         |
+| Resend Verification Code      | Resend Verification Code          | /users/identity/resend-code     | POST       | ONB005           | 🔄         |
+| Confirm Identity Verification | Confirm Identity Verification     | /users/identity/confirm         | POST       | ONB006           | 🔄         |
+| Upload Compliance Document    | Upload Compliance Documents       | /users/documents/compliance     | POST       | CMP001           | 🔄         |
+| Upload Identity Document      | Upload Identity Documents         | /users/documents/identification | POST       | IDD001           | 🔄         |
+| Upload Profile Picture        | Upload Profile Picture            | /users/profile/avatar           | POST       | IMG001           | 🔄         |
+| Trigger Email Verification    | Trigger Email Verification        | /users/email/verify             | POST       | EMV001           | 🔄         |
+| View User Profile             | View User Profile                 | /users/profile/my               | GET        | PROF001          | 🔄         |
+| View User Avatar              | View User Avatar                  | /users/profile/avatar           | GET        | PROF002          | 🔄         |
+| Update User Attributes        | Update User Attributes            | /users/claims/my                | PUT        | PROF003          | 🔄         |
+| List User Messages            | List User Messages                | /users/messages                 | GET        | MSG001           | 🔄         |
+| Delete User Message           | Delete User Message               | /users/messages/{messageId}     | DELETE     | MSG002           | 🔄         |
 
 ---
 
