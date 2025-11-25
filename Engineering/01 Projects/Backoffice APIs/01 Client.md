@@ -84,11 +84,11 @@ It supports onboarding, profile management, lifecycle handling, account access, 
 
 ## 4. CRM Adapter APIs
 
-| Action    | Summary                | Route                     | Method | Operation ID | Status |
-| --------- | ---------------------- | ------------------------- | ------ | ------------ | ------ |
-| **CR001** | Create CRM Record      | `/clients/setup`          | POST   | CL003        | 🔄     |
-| **CR002** | Sync CRM Profile       | `/clients/profile`        | PUT    | CL004        | 🔄     |
-| **CR003** | Remove  Partner Status | `/clients/profile/remove` | PUT    | CL005        | 🔄     |
+| Action    | Summary                | Route              | Method | Operation ID | Status |
+| --------- | ---------------------- | ------------------ | ------ | ------------ | ------ |
+| **CR001** | Create CRM Record      | `/clients/setup`   | POST   | CL003        | 🔄     |
+| **CR002** | Sync CRM Profile       | `/clients/profile` | PUT    | CL004        | 🔄     |
+| **CR003** | update  Partner Status | `/clients/profile` | PUT    | CL005        | 🔄     |
 
 ---
 
