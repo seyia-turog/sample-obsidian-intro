@@ -1,199 +1,147 @@
----
-Status: Pending
-Thumbnail: "#FF8674"
-Description: Individual / Corporate Customers
-Application: Retail Engine
-Due On: 2025-10-09T12:00:00
----
+
+
+**Status:** Pending  
+**Thumbnail:** `#FF8674`  
+**Description:** Individual / Corporate Customers  
+**Application:** Retail Engine  
+**Due On:** 2025-10-09T12:00:00
 
 ---
 
 ## Overview
 
-The Clients Module serves as the central hub for managing registered customers for tenants (Banks and Fintechs) within the ADIBA ecosystem. This module is responsible for the complete lifecycle management of client entities, enabling the platform to effectively serve both institutional and individual users with tailored experiences and services.
+The **Clients Module** manages all customer entities within the ADIBA ecosystem—serving both **individual** and **corporate** clients for banks and fintech tenants.
 
-The module distinguishes between two primary client categories to ensure appropriate service delivery and compliance requirements:
+It supports onboarding, profile management, lifecycle handling, account access, device management, and communication workflows across multiple integrated services.
 
-- **Corporate Clients**: Small and Medium Enterprises (SME) and Enterprise-level organizations that require advanced banking services, bulk transaction capabilities, and dedicated relationship management  
-- **Individual Clients**: Retail customers who access personal banking services, individual investment products, and consumer-focused financial solutions
+### Client Categories
+- **Corporate Clients:** SMEs and enterprises needing advanced financial services  
+- **Individual Clients:** Retail users with personal banking requirements  
 
-### Core Business Functions
+---
 
-The Clients Module provides essential business operations that support the entire ADIBA platform:
+## Core Business Functions
 
-## Client Onboarding
-- Registration  
-- ID creation  
-- Compliance validation  
-
-## Profile Management
-- Updating demographic data  
-- Updating relationship data  
-
-## Lifecycle Management
-- Deactivate or archive when client relationship ends  
-
-## Client Data Retrieval
-- Fetch detailed client records  
-
-## Account Portfolio Management
-- List savings, loan, and credit accounts  
-
-## Device & Security Management
-- Handle device binding  
-- Device activation  
-- Device locking 
+- **Client Onboarding** – registration, identity creation, compliance checks  
+- **Profile Management** – updates to demographic and relationship data  
+- **Lifecycle Management** – deactivation, archival, and exit management  
+- **Data Retrieval** – fetching client details and account information  
+- **Portfolio Management** – list all account types tied to a client  
+- **Device & Security** – manage device bindings, activation, locking  
 
 ---
 
 ## Technical Dependencies
 
-### Adapter Dependencies
+### Adapter & Worker Responsibilities
 
-The Clients Module integrates with specialized adapters to provide comprehensive client management capabilities across the ADIBA platform:
-
-| Adapter              | Business Purpose                                                                                                                         |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Identity Adapter     | Ensures secure client authentication and maintains regulatory compliance for identity verification across all client interactions        |
-| Core Banking Adapter | Provides seamless integration with banking systems for account management, transaction processing, and financial data synchronization    |
-| CRM Adapter          | Manages client relationship data, interaction history, and customer service workflows to support personalized banking experiences        |
-| Identity Processor   | Handles complex identity validation workflows, regulatory compliance checks, and identity data transformation for different client types |
-| Documents Processor  | Manages client documentation, KYC processes, and regulatory document storage to support compliance and audit requirements                |
-| Messaging Utility    | Enables multi-channel communication with clients including notifications, alerts, and service communications                             |
-| Persistence Utility  | Manages member/client-specific settings, and personalization options to enhance user experience by providing a persistence layer         |
+| Component | Business Purpose |
+|----------|------------------|
+| **Identity Adapter** | Creates/updates identity claims and identity stub |
+| **Core Banking Adapter (CBA)** | Retrieves accounts, balances, and syncs profile to core banking |
+| **CRM Adapter** | Maintains CRM profile and relationship records |
+| **Notifications Worker** | Sends welcome, profile update, and closure messages |
+| **User Settings Utility** | Manages device bindings and stored client-specific settings |
 
 ---
 
-## REST Endpoints
+# REST Endpoints
 
-### 1. Backoffice APIs
+## 1. Backoffice APIs
 
-| **Action** | **Summary**                | **Route**                              | **Method** | **Status** |
-| ---------- | -------------------------- | -------------------------------------- | ---------- | ---------- |
-| CL001      | List Clients               | /clients/profile                       | GET        | 🔄         |
-| CL002      | View Client Details        | /clients/profile/{reference}           | GET        | 🔄         |
-| CL003      | Create Client              | /clients/profile                       | POST       | 🔄         |
-| CL004      | Update Client Profile      | /clients/profile/{reference}           | PUT        | 🔄         |
-| CL005      | Archive Client             | /clients/profile/{reference}           | DELETE     | 🔄         |
-| CL006      | List Client Accounts       | /clients/accounts/{reference}          | GET        | 🔄         |
-| CL007      | Client Device List         | /clients/device/{reference}            | GET        | 🔄         |
-| CL008      | Toggle Client Favorites    | /clients/starred/{reference}           | POST       | 🔄         |
-| CL009      | Search Clients             | /clients/profile?filter={filter query} | GET        | 🔄         |
-| CL010      | (Un)Lock Client Device     | /clients/device/lock                   | POST       | 🔄         |
-| CL011      | Transfer Client Device     | /clients/device/transfer               | POST       | 🔄         |
-| CL012      | (De)Activate Client Device | /clients/device/activate               | POST       | 🔄         |
-| CL013      | Reset Device PIN           | /clients/device/resetPIN               | POST       | 🔄         |
+| Code | Summary | Route | Method | Status |
+|------|---------|--------|---------|--------|
+| **CL001** | List Clients | `/clients/details` | GET | 🔄 |
+| **CL002** | View Client Details | `/clients/details` | GET | 🔄 |
+| **CL003** | Create Client | `/clients/setup` | POST | 🔄 |
+| **CL004** | Update Client Profile | `/clients/profile` | PUT | 🔄 |
+| **CL005** | Delete Client | `/clients/profile/remove` | DELETE | 🔄 |
+| **CL006** | List Client Accounts | `/clients/accounts` | GET | 🔄 |
+| **CL007** | Client Device List | `/clients/device` | GET | 🔄 |
 
 ---
 
-### 2. Corebanking Adapter APIs
+## 2. Identity Adapter APIs
 
-| **Action** | **Summary**                   | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | ----------------------------- | --------- | ---------- | ---------------- | ---------- |
-| CC001      | Create Client Profile         |           | POST       | CL003            | ✅          |
-| CC002      | Update Client Profile         |           | PUT        | CL004            | 🔄         |
-| CC003      | Deactivate Client Profile*    |           | DELETE     | CL005            | 🔄         |
-| CC004      | Get Client SavingsAccounts    |           | GET        | CL006            | 🔄         |
-| CC005      | Get Client Credit Accounts    |           | GET        | CL006            | 🔄         |
-| CC008      | Fetch / Filter Clients List   |           | GET        | CL001<br>CL009   | 🔄         |
-| CC009      | Read Client Details           |           | GET        | CL002            | 🔄         |
-| CC010      | Close Client Accounts         |           | POST       | CL005            | 🔄         |
-| CC011      | Block Client Credits / Debits |           | POST       | CL005            | 🔄         |
-
-> *Deactivation of client accounts should involve removing any open balances, post-no-debit and post-no-credit as well as closing any open client savings/loan accounts.*
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **IU001** | Create Identity Stub | `/clients/setup` | POST | CL003 | 🔄 |
+| **IU002** | Update Identity Claims | `/clients/profile` | PUT | CL004 | 🔄 |
 
 ---
 
-### 3. Identity Adapter APIs
+## 3. Core Banking Adapter (CBA) APIs
 
-| **Action** | **Summary**             | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | ----------------------- | --------- | ---------- | ---------------- | ---------- |
-| IU001      | Create User Profile     |           | POST       | CL003            | 🔄         |
-| IU002      | Update User Profile     |           | PUT        | CL004            | 🔄         |
-| IU003      | Deactivate User Profile |           | DELETE     | CL005            | 🔄         |
-
----
-
-### 4. CRM / Helpdesk Adapter APIs
-
-| **Action** | **Summary**                | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | -------------------------- | --------- | ---------- | ---------------- | ---------- |
-| HP001      | Create Partner Profile     |           | POST       | CL003            | 🔄         |
-| HP002      | Update Partner Profile     |           | PUT        | CL004            | 🔄         |
-| HP003      | Deactivate Partner Profile |           | DELETE     | CL005            | 🔄         |
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **CC001** | Create CBA Client Stub | `/clients/setup` | POST | CL003 | 🔄 |
+| **CC002** | Update CBA Client Data | `/clients/profile` | PUT | CL004 | 🔄 |
+| **CC003** | Get Client Accounts | `/clients/accounts` | GET | CL006 | 🔄 |
+| **CC004** | Close Client Accounts | `/clients/profile/remove` | DELETE | CL005 | 🔄 |
+| **CC005** | Update Client Status | `/clients/profile/remove` | DELETE | CL005 | 🔄 |
 
 ---
 
-### 5. Document Processor APIs
+## 4. CRM Adapter APIs
 
-| **Action** | **Summary**                  | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | ---------------------------- | --------- | ---------- | ---------------- | ---------- |
-| DD001      | Get Client Utility Documents |           | GET        | CL002            | 🔄         |
-| DD002      | Get Client Verification IDs  |           | GET        | CL002            | 🔄         |
-| DD003      | Get Client Photo             |           | GET        | CL001<br>CL002   | 🔄         |
-
----
-
-### 6. Messages Worker APIs
-
-| **Action** | **Summary**                         | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | ----------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| MW001      | Send Welcome Notification           |           | POST       | CL003            | 🔄         |
-| MU002      | Send Profile Change Notification    |           | POST       | CL004            | 🔄         |
-| MC001      | Send Account Closure Notification   |           | POST       | CL005            | 🔄         |
-| MD001      | Share Device PIN Reset Notification |           | POST       | CL013            | 🔄         |
+| Action    | Summary                | Route              | Method | Operation ID | Status |
+| --------- | ---------------------- | ------------------ | ------ | ------------ | ------ |
+| **CR001** | Create CRM Record      | `/clients/setup`   | POST   | CL003        | 🔄     |
+| **CR002** | Sync CRM Profile       | `/clients/profile` | PUT    | CL004        | 🔄     |
+| **CR003** | update  Partner Status | `/clients/profile` | PUT    | CL005        | 🔄     |
 
 ---
 
-### 7. Persistence Worker APIs
+## 5. Notifications Worker APIs
 
-| **Action** | **Summary**                     | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | ------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| DL001      | List Client Devices             |           | GET        | CL007            | 🔄         |
-| DX002      | (Un)Lock Devices                |           | POST       | CL010            | 🔄         |
-| DT003      | Initiate Device Transfer        |           | POST       | CL011            | 🔄         |
-| DT004      | Confirm Transfer OTT            |           | POST       | CL011            | 🔄         |
-| DA005      | (De)Activate Devices            |           | POST       | CL012            | 🔄         |
-| DA006      | Reset Device PIN                |           | POST       | CL013            | 🔄         |
-| MC007      | (Un)Set Member Favorite Clients |           | POST       | CL008            | 🔄         |
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **NT001** | Send Welcome Message | `/clients/setup` | POST | CL003 | 🔄 |
+| **NT002** | Send Profile Update Notification | `/clients/profile` | PUT | CL004 | 🔄 |
+| **NT003** | Send Closure Notification | `/clients/profile/remove` | DELETE | CL005 | 🔄 |
 
 ---
 
-## Security and Governance
+## 6. User Settings Utility APIs
 
-This section outlines the roles, permissions, and attributes required to authorize API calls securely.
-
-### Permissions & APIs
-
-| **Permissions** | **Permission Name**  | **APIs**                                    | **Status** |
-| ---------------- | -------------------- | ------------------------------------------- | ----------- |
-| clnt_list        | List Clients         | CL001, CL008, CL009                         | 🔄          |
-| clnt_read_updt   | Update Clients       | CL002, CL004                                | 🔄          |
-| clnt_mgmt_admin  | Clients Admin        | CL001, CL002, CL003, CL004, CL005, CL008, CL009 | 🔄      |
-| dev_list         | List Devices         | CL007                                       | 🔄          |
-| dev_mgmt_admin   | Device Admin         | CL007, CL010, CL011, CL012, CL013           | 🔄          |
-| clnt_acct_list   | List Client Accounts | CL006                                       | 🔄          |
+| Action | Summary | Route | Method | Operation ID | Status |
+|--------|----------|--------|---------|----------------|--------|
+| **US001** | Retrieve Device List | `/clients/device` | GET | CL007 | 🔄 |
 
 ---
 
-### Roles & Permissions
+# Security & Governance
 
-| **Role** | **Role Name**          | **Permissions**                                       | **Status** |
-| -------- | ---------------------- | ----------------------------------------------------- | ----------- |
-| RP001    | Administrator          | Clients Admin, Device Admin, List Client Accounts     | 🔄          |
-| RP002    | Relationship Officer   | List Clients, Update Clients                          | 🔄          |
-| RP003    | Compliance Officer     | List Clients, Update Clients                          | 🔄          |
-| RP004    | Credit Controller      | List Clients, Update Clients                          | 🔄          |
-| RP005    | Helpdesk Officer       | List Clients, Device Admin                            | 🔄          |
+## Permissions & APIs
+
+| Permission | Name | APIs | Status |
+|------------|----------|--------|--------|
+| **clnt_list** | List Clients | CL001 | 🔄 |
+| **clnt_read_updt** | View/Update Clients | CL002, CL004 | 🔄 |
+| **clnt_admin** | Client Admin | CL001, CL002, CL003, CL004, CL005 | 🔄 |
+| **acct_list** | List Accounts | CL006 | 🔄 |
+| **dev_list** | List Devices | CL007 | 🔄 |
 
 ---
 
-### Policies & Attributes
+## Roles & Permissions
 
-| **Policy ID** | **Policy**                              | **Attribute / Condition**                              | **Status** |
-| -------------- | --------------------------------------- | ------------------------------------------------------- | ----------- |
-| P_RE_001       | Org MUST have active RE Subscription    | `org.apps.retail` eq active                             | 🔄          |
-| P_RE_002       | RP002 can ONLY update assigned clients  | role eq RP002 AND member.clients contain {client}       | 🔄          |
+| Role | Name | Permissions | Status |
+|-------|--------|----------------|--------|
+| **RP001** | Administrator | Client Admin, List Accounts, List Devices | 🔄 |
+| **RP002** | Relationship Officer | List Clients, View/Update Clients | 🔄 |
+| **RP003** | Compliance Officer | List Clients, View/Update Clients | 🔄 |
+| **RP004** | Credit Controller | List Clients, View/Update Clients | 🔄 |
+| **RP005** | Helpdesk Officer | List Clients, List Devices | 🔄 |
+
+---
+
+## Policies & Attributes
+
+| Policy ID | Policy | Condition | Status |
+|-----------|---------|-------------|--------|
+| **P_RE_001** | Org MUST have active RE Subscription | `org.apps.retail eq active` | 🔄 |
+| **P_RE_002** | RP002 can ONLY update assigned clients | `role eq RP002 AND member.clients contain {client}` | 🔄 |
 
 ---
 
