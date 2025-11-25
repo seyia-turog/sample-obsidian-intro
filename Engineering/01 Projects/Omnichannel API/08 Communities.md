@@ -32,15 +32,15 @@ The module integrates with Identity, CRM, CBA systems, payment processors, notif
 
 ### Adapter & Processor Dependencies
 
-| Adapter / Processor | Business Purpose |
-| -------------------- | ---------------- |
-| Identity Processor / Adapter | Validates creator and participant permissions and identities. |
-| CBA Adapter          | Creates community accounts, checks participant eligibility, and updates rules. |
-| Payments Processor   | Initializes and manages community payment pools, processes settlements. |
-| CRM Adapter          | Tracks community records, invitations, participation, and membership changes. |
-| Util Worker (Messages) | Sends notifications for community creation, invitations, and rule updates. |
-| Documents Processor  | Stores community charters, agreements, and rules documents. |
-| User Settings Utility | Updates participant and community preferences.
+| Adapter / Processor          | Business Purpose                                                               |
+| ---------------------------- | ------------------------------------------------------------------------------ |
+| Identity Processor / Adapter | Validates creator and participant permissions and identities.                  |
+| CBA Adapter                  | Creates community accounts, checks participant eligibility, and updates rules. |
+| Payments Processor           | Initializes and manages community payment pools, processes settlements.        |
+| CRM Adapter                  | Tracks community records, invitations, participation, and membership changes.  |
+| Util Worker (Messages)       | Sends notifications for community creation, invitations, and rule updates.     |
+| Documents Processor          | Stores community charters, agreements, and rules documents.                    |
+| User Settings Utility        | Updates participant and community preferences.                                 |
 
 ---
 
