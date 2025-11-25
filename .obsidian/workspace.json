@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Omnichannel API/02. Device.md",
+                "file": "Engineering/01 Projects/Omnichannel API/02. Devices API.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02. Device"
+              "title": "02. Devices API"
             }
           }
         ]
@@ -187,7 +187,7 @@
   "lastOpenFiles": [
     "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
     "Engineering/01 Projects/Backoffice Console/01. Retail Engine.md",
-    "Engineering/01 Projects/Omnichannel API/02. Device.md",
+    "Engineering/01 Projects/Omnichannel API/02. Devices API.md",
     "Engineering/01 Projects/Omnichannel API/01. Users API.md",
     "Engineering/01 Projects/Omnichannel API/01. User API.md",
     "Engineering/01 Projects/Backoffice APIs/02 Members.md",
