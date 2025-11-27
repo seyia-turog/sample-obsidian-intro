@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Engineering/01 Projects/Omnichannel API/01. Users.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -183,7 +183,7 @@
       "bpmn-plugin:New BPMN": false
     }
   },
-  "active": "edf56b4d0ce101b9",
+  "active": "ee44878349066c0d",
   "lastOpenFiles": [
     "Engineering/01 Projects/Omnichannel API/Untitled.md",
     "Engineering/01 Projects/Omnichannel API/01. Users.md",
