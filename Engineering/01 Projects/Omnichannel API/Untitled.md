@@ -1,8 +1,3 @@
-# Device API Documentation
-
----
-
-## 1. Header
 
 - **Status:** Active  
 - **Thumbnail:** ![Device API](path/to/thumbnail.png
