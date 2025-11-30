@@ -1,137 +1,157 @@
-
-- **Status:** Active  
-- **Thumbnail:** ![Device API](path/to/thumbnail.png
-- **Description:** Provides endpoints to manage device enrollment, activation, certificates, ownership transfer, and PIN management.  
-- **Application:** Digital Banking Platform  
-- **Due Date:** TBD  
-
----
-
-## 2. Overview
-
-The Device API module allows secure management of devices used in the banking ecosystem. Key operations include device enrollment, certificate management, activation control, PIN management, and secure ownership transfer. All operations ensure compliance, security, and real-time notifications.
+**Status:** In Progress  
+**Thumbnail:** `#6A9BFF`  
+**Description:** Device enrollment, activation, certificate management, ownership transfer, and PIN operations  
+**Application:** Retail Engine  
+**Due On:** 2025-10-20T12:00:00
 
 ---
 
-## 3. Core Business Functions
+## Overview
 
-- Check device status and activation state  
-- Activate or deactivate devices for banking services  
-- Submit and sign Certificate Signing Requests (CSR)  
-- Rotate expiring certificates automatically  
-- Transfer device ownership securely  
-- Create, change, reset, and confirm device PINs  
+The **Device Module** manages the full lifecycle of devices in the banking ecosystem, including enrollment, activation/deactivation, certificate issuance and rotation, secure ownership transfer, and PIN management.
+
+It ensures security compliance, real-time monitoring, notifications, and device preference management across all ADIBA-powered financial institutions.
 
 ---
 
-## 4. Technical Dependencies
+## Core Business Functions
 
-| Dependency | Type | Description |
-|------------|------|-------------|
-| Devices API | REST API | Core API handling device operations |
-| Identity Adapter | Adapter | Interfaces with identity management systems |
-| CRM Adapter | Adapter | Interfaces with CRM for device ownership updates |
-| Messages Worker | Worker | Sends notifications and messages |
-| Documents Processor | Processor | Handles certificate processing |
-| User Settings Utility | Utility | Updates device and user preferences |
-
----
-
-## 5. REST Endpoints (DVxxx)
-
-| Operation ID | Name | Summary | Verb | Route |
-|--------------|------|--------|------|-------|
-| DV001 | Check Device Status | Retrieves current device status and activation state | GET | /devices/enrollment/status |
-| DV002 | (de)Activate Device | Enables or disables device access to banking services | POST | /devices/enrollment/status |
-| DV003 | Submit CSR`for Device | Generates and submits Certificate Signing Request to CA | POST | /devices/certificate/request |
-| DV004 | Sign CSR for Device | Processes and signs CSR to issue valid device certificates | POST | /devices/certificate/sign |
-| DV005 | Rotate Expiring Certificates | Automatically renews device certificates before expiration | POST | /devices/certificate/rotate |
-| DV006 | Transfer Device Ownership | Initiates secure device ownership transfer | POST | /devices/ownership/transfer |
-| DV007 | Accept Transfer Request | Completes device ownership transfer upon acceptance | POST | /devices/ownership/accept |
-| DV008 | Create Device PIN | Establishes secure PIN protection for device access | POST | /devices/pin/my |
-| DV009 | Change Device PIN | Updates existing device PIN with validation | POST | /devices/pin/change |
-| DV010 | Reset Device PIN | Initiates secure PIN reset process | POST | /devices/pin/reset |
-| DV011 | Confirm PIN Reset | Validates reset token and sets new PIN | POST | /devices/pin/confirm |
+- **Device Status Monitoring & Compliance**  
+- **Device Activation & Deactivation**  
+- **Certificate Signing Request (CSR) Submission & Signing**  
+- **Automatic Certificate Rotation**  
+- **Secure Device Ownership Transfer**  
+- **PIN Creation, Update, Reset & Confirmation**  
+- **Device Notifications & Messaging**  
+- **Device Preferences & Security Settings Management**
 
 ---
 
-## 6. Component Interaction Tables
+## Technical Dependencies
 
-### Identity Adapter APIs (IA010–IA014)
-
-| Action Code | Summary | Route | Method | External ID | Operation ID | Status |
-|-------------|--------|-------|-------|-------------|-------------|-------|
-| IA010 | Fetch Device Status | /devices/enrollment/status | GET | EXT-US001 | DV001 | 🔄 |
-| IA011 | Update Device Activation Status | /devices/enrollment/status | POST | EXT-US002 | DV002 | 🔄 |
-| IA012 | Validate Device Enrollment | /devices/certificate/request | POST | EXT-US003 | DV003 | 🔄 |
-| IA013 | Validate CA Token | /devices/certificate/sign | POST | EXT-US004 | DV004 | 🔄 |
-| IA014 | Check Certificate Expiry | /devices/certificate/rotate | POST | EXT-US005 | DV005 | 🔄 |
-
-### CRM Adapter APIs (CR008–CR009)
-
-| Action Code | Summary | Route | Method | External ID | Operation ID | Status |
-|-------------|--------|-------|-------|-------------|-------------|-------|
-| CR008 | Send Device Status Change Notification |  |  | EXT-US002 | DV002 | 🔄 |
-| CR009 | Update CRM Device Assignment |  |  | EXT-US007 | DV007 | 🔄 |
-
-### Messages Worker APIs (MW007–MW010)
-
-| Action Code | Summary | Route | Method | External ID | Operation ID | Status |
-|-------------|--------|-------|-------|-------------|-------------|-------|
-| MW007 | Send Transfer Request to Recipient |  |  | EXT-US006 | DV006 | 🔄 |
-| MW008 | Send Transfer Completion Notifications |  |  | EXT-US007 | DV007 | 🔄 |
-| MW009 | Send Reset Token via Secure Channel |  |  | EXT-US010 | DV010 | 🔄 |
-| MW010 | Send Reset Completion Notice |  |  | EXT-US011 | DV011 | 🔄 |
-
-### Documents Processor APIs (PD005–PD006)
-
-| Action Code | Summary | Route | Method | External ID | Operation ID | Status |
-|-------------|--------|-------|-------|-------------|-------------|-------|
-| PD005 | Generate CSR & Submit to External CA | /devices/certificate/request | POST | EXT-US003 | DV003 | 🔄 |
-| PD006 | Sign Certificate & Issue Device Cert | /devices/certificate/sign | POST | EXT-US004 | DV004 | 🔄 |
-
-### User Settings Utility APIs (SU004–SU009)
-
-| Action Code | Summary | Route | Method | External ID | Operation ID | Status |
-|-------------|--------|-------|-------|-------------|-------------|-------|
-| SU004 | Update Device Preferences |  |  | EXT-US002 | DV002 | 🔄 |
-| SU005 | Set PIN Policy Settings |  |  | EXT-US008 | DV008 | 🔄 |
-| SU006 | Update PIN Change Timestamp |  |  | EXT-US009 | DV009 | 🔄 |
-| SU007 | Update Security Settings |  |  | EXT-US011 | DV011 | 🔄 |
-| SU008 | Send Certificate Rotation Notice |  |  | EXT-US005 | DV005 | 🔄 |
-| SU009 | Create & Encrypt Device PIN |  |  | EXT-US008 | DV008 | 🔄 |
+| Component                      | Business Purpose                                  |
+| ------------------------------ | ------------------------------------------------ |
+| **Identity Adapter**           | Fetch and update device records                  |
+| **CRM Adapter**                | Update device ownership and assignment           |
+| **Messages Worker**            | Send device notifications and alerts            |
+| **Documents Processor**        | Validate, sign, and process device certificates |
+| **User Settings Utility**      | Manage PINs, preferences, and security settings |
 
 ---
 
-## 7. Security & Governance
+## REST Endpoints
 
-### Permissions Table
-
-| Permission | Description |
-|------------|-------------|
-| DEVICE_READ | Read device status |
-| DEVICE_WRITE | Create, update, or deactivate devices |
-| DEVICE_CERT_MANAGE | Manage device certificates |
-| DEVICE_PIN_MANAGE | Manage device PINs |
-| DEVICE_TRANSFER | Transfer device ownership |
-
-### Roles & Permissions
-
-| Role | Permissions |
-|------|------------|
-| DeviceAdmin | All device permissions |
-| DeviceUser | DEVICE_READ, DEVICE_PIN_MANAGE |
-
-### Policies
-
-- All device operations require user authentication and authorization  
-- PIN and certificate operations require secure channel (TLS)  
-- Ownership transfer requires dual authorization (initiator + recipient)  
+| **Code**  | **Summary**                        | **Route**                       | **Method** | **External ID**                | **Status** |
+| :-------- | :--------------------------------- | :------------------------------ | :--------- | :----------------------------- | :--------- |
+| **DV001** | Check Device Status                | /devices/enrollment/status      | GET        | fetchDeviceStatus              | 🔄         |
+| **DV002** | (de)Activate Device                | /devices/enrollment/status      | POST       | updateDeviceActivation         | 🔄         |
+| **DV003** | Submit CSR for Device              | /devices/certificate/request    | POST       | submitCSR                      | 🔄         |
+| **DV004** | Sign CSR for Device                | /devices/certificate/sign       | POST       | signCSR                        | 🔄         |
+| **DV005** | Rotate Expiring Certificates       | /devices/certificate/rotate     | POST       | rotateCertificates             | 🔄         |
+| **DV006** | Transfer Device Ownership          | /devices/ownership/transfer     | POST       | initiateOwnershipTransfer      | 🔄         |
+| **DV007** | Accept Transfer Request            | /devices/ownership/accept       | POST       | completeOwnershipTransfer      | 🔄         |
+| **DV008** | Create Device PIN                  | /devices/pin/my                 | POST       | createDevicePIN                | 🔄         |
+| **DV009** | Change Device PIN                  | /devices/pin/change             | POST       | changeDevicePIN                | 🔄         |
+| **DV010** | Reset Device PIN                   | /devices/pin/reset              | POST       | resetDevicePIN                 | 🔄         |
+| **DV011** | Confirm PIN Reset                  | /devices/pin/confirm            | POST       | confirmPINReset                | 🔄         |
 
 ---
 
-## 8. Related Documents
+# Component Interactions (Adapter & Processor APIs)
 
-- Device API Integration Guide  
-- Security & Compliance Policy for Device Management  
-- Certificate Authority (CA) Enrollment Procedure  
+## 1. Identity Adapter APIs
+
+| Action    | Summary                          | Route | Method | External ID | Operation ID(s) | Status |
+| --------- | -------------------------------- | ----- | ------ | ----------- | --------------- | ------ |
+| **IA001** | Fetch Device Status               |       | GET    | EXT-DV001   | DV001           | 🔄     |
+| **IA002** | Update Device Activation Status   |       | POST   | EXT-DV002   | DV002           | 🔄     |
+| **IA003** | Validate Device Enrollment        |       | POST   | EXT-DV003   | DV003           | 🔄     |
+| **IA004** | Validate CA Token                 |       | POST   | EXT-DV004   | DV004           | 🔄     |
+| **IA005** | Initiate Ownership Transfer       |       | POST   | EXT-DV006   | DV006           | 🔄     |
+| **IA006** | Complete Ownership Transfer       |       | POST   | EXT-DV007   | DV007           | 🔄     |
+| **IA007** | Validate Current PIN & Update     |       | POST   | EXT-DV009   | DV009           | 🔄     |
+
+---
+
+## 2. CRM Adapter APIs
+
+| Action    | Summary                          | Route | Method | External ID | Operation ID(s) | Status |
+| --------- | -------------------------------- | ----- | ------ | ----------- | --------------- | ------ |
+| **CR001** | Update CRM Device Assignment     |       | POST   | EXT-DV007   | DV007           | 🔄     |
+| **CR002** | Send Transfer Request to Recipient |       | POST   | EXT-DV006   | DV006           | 🔄     |
+
+---
+
+## 3. Messages Worker APIs
+
+| Action    | Summary                             | Route | Method | External ID | Operation ID(s) | Status |
+| --------- | ----------------------------------- | ----- | ------ | ----------- | --------------- | ------ |
+| **MW001** | Send Device Status Change Notification |       | POST   | EXT-DV002   | DV002           | 🔄     |
+| **MW002** | Send Certificate Rotation Notice    |       | POST   | EXT-DV005   | DV005           | 🔄     |
+| **MW003** | Send Transfer Completion Notifications |       | POST   | EXT-DV007   | DV007           | 🔄     |
+| **MW004** | Send PIN Change Confirmation        |       | POST   | EXT-DV009   | DV009           | 🔄     |
+| **MW005** | Send Reset Token via Secure Channel |       | POST   | EXT-DV010   | DV010           | 🔄     |
+| **MW006** | Send PIN Reset Completion Notice    |       | POST   | EXT-DV011   | DV011           | 🔄     |
+
+---
+
+## 4. Documents Processor APIs
+
+| Action    | Summary                          | Route | Method | External ID | Operation ID(s) | Status |
+| --------- | -------------------------------- | ----- | ------ | ----------- | --------------- | ------ |
+| **PD001** | Generate CSR & Submit to External CA |       | POST   | EXT-DV003   | DV003           | 🔄     |
+| **PD002** | Sign Certificate & Issue Device Cert |       | POST   | EXT-DV004   | DV004           | 🔄     |
+| **PD003** | Generate NEW CSR & Submit to CA     |       | POST   | EXT-DV005   | DV005           | 🔄     |
+
+---
+
+## 5. User Settings Utility APIs
+
+| Action    | Summary                    | Route | Method | External ID | Operation ID(s) | Status |
+| --------- | -------------------------- | ----- | ------ | ----------- | --------------- | ------ |
+| **SU001** | Update Device Preferences  |       | POST   | EXT-DV002   | DV002           | 🔄     |
+| **SU002** | Set PIN Policy Settings    |       | POST   | EXT-DV008   | DV008           | 🔄     |
+| **SU003** | Update PIN Change Timestamp |       | POST   | EXT-DV009   | DV009           | 🔄     |
+| **SU004** | Update Security Settings    |       | POST   | EXT-DV011   | DV011           | 🔄     |
+
+---
+
+# Security & Governance
+
+## Permissions & APIs
+
+| Permission           | Name                         | APIs              | Status |
+| ------------------- | ---------------------------- | ---------------- | ------ |
+| **dev_status**       | View Device Status           | DV001             | 🔄     |
+| **dev_activation**   | Activate / Deactivate Device | DV002             | 🔄     |
+| **dev_certificate**  | Manage Device Certificates   | DV003–DV005       | 🔄     |
+| **dev_ownership**    | Transfer Device Ownership    | DV006–DV007       | 🔄     |
+| **dev_pin**          | Manage Device PIN            | DV008–DV011       | 🔄     |
+
+---
+
+## Roles & Permissions
+
+| Role         | Name                   | Permissions                        | Status |
+| ------------ | -------------------- | --------------------------------- | ------ |
+| **DR001**    | Device Administrator   | dev_status, dev_activation, dev_certificate, dev_ownership, dev_pin | 🔄 |
+| **DR002**    | Compliance Officer     | dev_status, dev_certificate        | 🔄 |
+| **DR003**    | Customer Service       | dev_status, dev_ownership, dev_pin | 🔄 |
+
+---
+
+## Policies & Attributes
+
+| Policy ID    | Policy                                            | Condition                       | Status |
+| ------------ | ----------------------------------------------- | ------------------------------- | ------ |
+| **P_DEV_001** | Devices must have active enrollment            | `device.status eq active`       | 🔄     |
+| **P_DEV_002** | PIN reset requires secure verification         | `user.identityVerified eq true` | 🔄     |
+
+---
+
+## Related Documents
+
+1. Device Enrollment & Activation Guidelines  
+2. Certificate Management & CSR Process  
+3. Device Ownership Transfer Framework  
+4. Device PIN & Security Policy
