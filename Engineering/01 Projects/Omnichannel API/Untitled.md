@@ -41,19 +41,19 @@ It ensures security compliance, real-time monitoring, notifications, and device 
 
 ## REST Endpoints
 
-| **Code**  | **Summary**                        | **Route**                       | **Method** | **External ID**                | **Status** |
-| :-------- | :--------------------------------- | :------------------------------ | :--------- | :----------------------------- | :--------- |
-| **DV001** | Check Device Status                | /devices/enrollment/status      | GET        | fetchDeviceStatus              | 🔄         |
-| **DV002** | (de)Activate Device                | /devices/enrollment/status      | POST       | updateDeviceActivation         | 🔄         |
-| **DV003** | Submit CSR for Device              | /devices/certificate/request    | POST       | submitCSR                      | 🔄         |
-| **DV004** | Sign CSR for Device                | /devices/certificate/sign       | POST       | signCSR                        | 🔄         |
-| **DV005** | Rotate Expiring Certificates       | /devices/certificate/rotate     | POST       | rotateCertificates             | 🔄         |
-| **DV006** | Transfer Device Ownership          | /devices/ownership/transfer     | POST       | initiateOwnershipTransfer      | 🔄         |
-| **DV007** | Accept Transfer Request            | /devices/ownership/accept       | POST       | completeOwnershipTransfer      | 🔄         |
-| **DV008** | Create Device PIN                  | /devices/pin/my                 | POST       | createDevicePIN                | 🔄         |
-| **DV009** | Change Device PIN                  | /devices/pin/change             | POST       | changeDevicePIN                | 🔄         |
-| **DV010** | Reset Device PIN                   | /devices/pin/reset              | POST       | resetDevicePIN                 | 🔄         |
-| **DV011** | Confirm PIN Reset                  | /devices/pin/confirm            | POST       | confirmPINReset                | 🔄         |
+| **Code**  | **Summary**                  | **Route**                    | **Method** | **External ID**           | **Status** |
+| :-------- | :--------------------------- | :--------------------------- | :--------- | :------------------------ | :--------- |
+| **DV001** | Check Device Status          | /devices/enrollment/status   | GET        | checkDeviceStatus         | 🔄         |
+| **DV002** | (de)Activate Device          | /devices/enrollment/status   | POST       | updateDeviceActivation    | 🔄         |
+| **DV003** | Submit CSR for Device        | /devices/certificate/request | POST       | submitCSR                 | 🔄         |
+| **DV004** | Sign CSR for Device          | /devices/certificate/sign    | POST       | signCSR                   | 🔄         |
+| **DV005** | Rotate Expiring Certificates | /devices/certificate/rotate  | POST       | rotateCertificates        | 🔄         |
+| **DV006** | Transfer Device Ownership    | /devices/ownership/transfer  | POST       | initiateOwnershipTransfer | 🔄         |
+| **DV007** | Accept Transfer Request      | /devices/ownership/accept    | POST       | completeOwnershipTransfer | 🔄         |
+| **DV008** | Create Device PIN            | /devices/pin/my              | POST       | createDevicePIN           | 🔄         |
+| **DV009** | Change Device PIN            | /devices/pin/change          | POST       | changeDevicePIN           | 🔄         |
+| **DV010** | Reset Device PIN             | /devices/pin/reset           | POST       | resetDevicePIN            | 🔄         |
+| **DV011** | Confirm PIN Reset            | /devices/pin/confirm         | POST       | confirmPINReset           | 🔄         |
 
 ---
 
