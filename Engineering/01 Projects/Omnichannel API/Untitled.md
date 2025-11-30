@@ -5,7 +5,7 @@
 ## 1. Header
 
 - **Status:** Active  
-- **Thumbnail:** ![Device API](path/to/thumbnail.png)  
+- **Thumbnail:** ![Device API](path/to/thumbnail.png
 - **Description:** Provides endpoints to manage device enrollment, activation, certificates, ownership transfer, and PIN management.  
 - **Application:** Digital Banking Platform  
 - **Due Date:** TBD  
