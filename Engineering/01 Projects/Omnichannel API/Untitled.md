@@ -79,9 +79,9 @@ It ensures security compliance, real-time monitoring, notifications, and device 
 
 ## 2. CRM Adapter APIs
 
-| Action    | Summary                            | Route | Method | External ID | Operation ID(s) | Status |
-| --------- | ---------------------------------- | ----- | ------ | ----------- | --------------- | ------ |
-| **CR001** | Update CRM Device Assignment       |       | POST   | EXT-DV007   | DV007           | 🔄     |
+| Action    | Summary                      | Route | Method | External ID             | Operation ID(s) | Status |
+| --------- | ---------------------------- | ----- | ------ | ----------------------- | --------------- | ------ |
+| **CR001** | Update CRM Device Assignment |       | POST   | updateDeviceAssigngment | DV007           | 🔄     |
 
 
 ---
