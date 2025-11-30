@@ -46,9 +46,9 @@ It ensures security compliance, real-time monitoring, notifications, and device 
 | **DV001** | Check Device Status          | /devices/enrollment/status   | GET        | checkDeviceStatus         | 🔄         |
 | **DV002** | (de)Activate Device          | /devices/enrollment/status   | POST       | updateDeviceActivation    | 🔄         |
 | **DV003** | Submit CSR for Device        | /devices/certificate/request | POST       | submitCSR                 | 🔄         |
-| **DV004** | Sign CSR for Device          | /devices/certificate/sign    | POST       | signCSR                   | 🔄         |
-| **DV005** | Rotate Expiring Certificates | /devices/certificate/rotate  | POST       | rotateCertificates        | 🔄         |
-| **DV006** | Transfer Device Ownership    | /devices/ownership/transfer  | POST       | initiateOwnershipTransfer | 🔄         |
+| **DV004** | Sign CSR for Device          | /devices/certificate/sign    | POST       | signDecviceCSR            | 🔄         |
+| **DV005** | Rotate Expiring Certificates | /devices/certificate/rotate  | POST       | rotateExpiringCertificate | 🔄         |
+| **DV006** | Transfer Device Ownership    | /devices/ownership/transfer  | POST       | transferDeviceOwnership   | 🔄         |
 | **DV007** | Accept Transfer Request      | /devices/ownership/accept    | POST       | acceptTransferRequest     | 🔄         |
 | **DV008** | Create Device PIN            | /devices/pin/my              | POST       | createDevicePIN           | 🔄         |
 | **DV009** | Change Device PIN            | /devices/pin/change          | POST       | changeDevicePIN           | 🔄         |
