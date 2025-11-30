@@ -60,16 +60,31 @@ It ensures security compliance, real-time monitoring, notifications, and device 
 # Component Interactions (Adapter & Processor APIs)
 
 ## 1. Identity Adapter APIs
+## 1. Identity Adapter APIs
 
 | Action    | Summary                          | Route | Method | External ID | Operation ID(s) | Status |
 | --------- | -------------------------------- | ----- | ------ | ----------- | --------------- | ------ |
-| **IA001** | Fetch Device Status               |       | GET    | EXT-DV001   | DV001           | 🔄     |
-| **IA002** | Update Device Activation Status   |       | POST   | EXT-DV002   | DV002           | 🔄     |
-| **IA003** | Validate Device Enrollment        |       | POST   | EXT-DV003   | DV003           | 🔄     |
-| **IA004** | Validate CA Token                 |       | POST   | EXT-DV004   | DV004           | 🔄     |
-| **IA005** | Initiate Ownership Transfer       |       | POST   | EXT-DV006   | DV006           | 🔄     |
-| **IA006** | Complete Ownership Transfer       |       | POST   | EXT-DV007   | DV007           | 🔄     |
-| **IA007** | Validate Current PIN & Update     |       | POST   | EXT-DV009   | DV009           | 🔄     |
+| **IA010** | Fetch Device Status               | /devices/enrollment/status | GET    | EXT-DV001   | DV001           | 🔄     |
+| **IA011** | Update Device Activation Status   | /devices/enrollment/status | POST   | EXT-DV002   | DV002           | 🔄     |
+| **IA012** | Validate Device Enrollment        | /devices/certificate/request | POST   | EXT-DV003   | DV003           | 🔄     |
+| **IA013** | Validate CA Token                 | /devices/certificate/sign | POST   | EXT-DV004   | DV004           | 🔄     |
+| **IA014** | Check Certificate Expiry          | /devices/certificate/rotate | POST   | EXT-DV005   | DV005           | 🔄     |
+| **IA015** | Initiate Ownership Transfer       | /devices/ownership/transfer | POST   | EXT-DV006   | DV006           | 🔄     |
+| **IA016** | Complete Ownership Transfer       | /devices/ownership/accept | POST   | EXT-DV007   | DV007           | 🔄     |
+| **IA017** | Create & Encrypt Device PIN       | /devices/pin/my | POST   | EXT-DV008   | DV008           | 🔄     |
+| **IA018** | Validate Current PIN & Update     | /devices/pin/change | POST   | EXT-DV009   | DV009           | 🔄     |
+| **IA019** | Generate Reset Token              | /devices/pin/reset | POST   | EXT-DV010   | DV010           | 🔄     |
+| **IA020** | Validate Reset Token & Set New PIN | /devices/pin/confirm | POST   | EXT-DV011   | DV011           | 🔄     |
+
+| Action    | Summary                         | Route | Method | External ID | Operation ID(s) | Status |
+| --------- | ------------------------------- | ----- | ------ | ----------- | --------------- | ------ |
+| **IA001** | Fetch Device Status             |       | GET    | EXT-DV001   | DV001           | 🔄     |
+| **IA002** | Update Device Activation Status |       | POST   | EXT-DV002   | DV002           | 🔄     |
+| **IA003** | Validate Device Enrollment      |       | POST   | EXT-DV003   | DV003           | 🔄     |
+| **IA004** | Validate CA Token               |       | POST   | EXT-DV004   | DV004           | 🔄     |
+| **IA005** | Initiate Ownership Transfer     |       | POST   | EXT-DV006   | DV006           | 🔄     |
+| **IA006** | Complete Ownership Transfer     |       | POST   | EXT-DV007   | DV007           | 🔄     |
+| **IA007** | Validate Current PIN & Update   |       | POST   | EXT-DV009   | DV009           | 🔄     |
 
 ---
 
