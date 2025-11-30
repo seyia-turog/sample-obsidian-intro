@@ -49,7 +49,7 @@ It ensures security compliance, real-time monitoring, notifications, and device 
 | **DV004** | Sign CSR for Device          | /devices/certificate/sign    | POST       | signCSR                   | 🔄         |
 | **DV005** | Rotate Expiring Certificates | /devices/certificate/rotate  | POST       | rotateCertificates        | 🔄         |
 | **DV006** | Transfer Device Ownership    | /devices/ownership/transfer  | POST       | initiateOwnershipTransfer | 🔄         |
-| **DV007** | Accept Transfer Request      | /devices/ownership/accept    | POST       | completeOwnershipTransfer | 🔄         |
+| **DV007** | Accept Transfer Request      | /devices/ownership/accept    | POST       | acceptTransferRequest     | 🔄         |
 | **DV008** | Create Device PIN            | /devices/pin/my              | POST       | createDevicePIN           | 🔄         |
 | **DV009** | Change Device PIN            | /devices/pin/change          | POST       | changeDevicePIN           | 🔄         |
 | **DV010** | Reset Device PIN             | /devices/pin/reset           | POST       | resetDevicePIN            | 🔄         |
