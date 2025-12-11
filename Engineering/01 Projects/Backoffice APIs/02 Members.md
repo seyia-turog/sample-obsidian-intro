@@ -1,105 +1,87 @@
 ---
-Status: Pending
-Thumbnail: "#82B1FF"
-Description: Internal Staff & User Management
-Application: Backoffice Engine
-Due On: 2025-10-29T12:00:00
----
-
+Thumbnail: "#5C6BC0"
+Description: Member Profile & Access Management
+Application: Retail Engine
+Due On: 2025-12-12T12:00:00
 ---
 
 ## Overview
 
-The **Members Module** is responsible for managing internal users (bank and fintech staff) who operate within the Backoffice environment of the ADIBA ecosystem.  
-This module handles staff onboarding, authentication, password management, and internal profile operations, ensuring secure and compliant access to system resources.
+The **Members Management Module** handles the complete lifecycle of organizational member accounts in the digital banking platform.
 
-Unlike Clients, Members represent **operational system users** (e.g., Administrators, Relationship Officers, Auditors) who interact with ADIBA Backoffice tools and APIs for administrative and service delivery functions.
+It manages member profile creation, listing, viewing, updates, password changes, profile image uploads, and member removal, integrating with Identity Adapter, Document Processor, and Message Processor to ensure secure member management and communications.
 
-### Core Business Functions
+---
 
-The Members Module provides critical internal capabilities:
+## Core Business Functions
 
-- **Member Onboarding**: Secure creation of staff profiles and identity claims through the Identity Adapter  
-- **Profile Management**: Enable profile view, update, and permissions management for backoffice users  
-- **Password Management**: Handles password creation, reset workflows, and secure authentication synchronization  
-- **Profile Media Management**: Manage staff avatars and profile-related documents  
-- **Member Lifecycle Management**: Support deactivation and archival while maintaining audit trail integrity  
+- **Member Creation** – Register new members with personal details and login credentials.
+- **Member Listing** – Retrieve paginated lists of members with search and filtering capabilities.
+- **Profile Management** – View and update member profile information including roles and contact details.
+- **Password Management** – Enable secure password changes with reset challenges and notifications.
+- **Avatar Management** – Upload and update member profile pictures.
+- **Member Removal** – Remove members and revoke their access and privileges.
 
 ---
 
 ## Technical Dependencies
 
-### Adapter Dependencies
+### Adapter & Processor Dependencies
 
-| Adapter / Processor / Utility | Business Purpose |
-| ----------------------------- | ---------------- |
-| **Identity Adapter** | Manages staff authentication, identity claims, and profile creation for all Backoffice users |
-| **CRM Adapter** | Supports extended directory information for internal reporting and staff-role mapping |
-| **Identity Processor** | Validates member data and synchronizes identity updates between internal modules |
-| **Messaging Utility** | Sends staff welcome emails, password reset notifications, and security alerts |
-| **Documents Processor** | Handles profile avatar uploads and retrieval of media files |
-| **Persistence Utility** | Maintains state and activity history for staff users (create, deactivate, restore) |
+|Adapter / Processor|Business Purpose|
+|---|---|
+|Identity Adapter|Manages member identity profiles, authentication, role updates, avatar URLs, and member records.|
+|Processor (Messages)|Sends welcome emails and password reset success notifications to members.|
+|Processor (Documents)|Stores and processes member profile images.|
 
 ---
 
 ## REST Endpoints
 
-### 1. Backoffice APIs
+### Member Management APIs
 
-| **Action** | **Summary**           | **Route**                    | **Method** | **Status** |
-| ---------- | --------------------- | ---------------------------- | ---------- | ---------- |
-| MB001      | Create Member         | /members/profile             | POST       | 🔄         |
-| MB002      | Member List           | /members/profile             | GET        | 🔄         |
-| MB003      | View Member           | /members/profile/{member_id} | GET        | 🔄         |
-| MB004      | Update Member Details | /members/profile/{member_id} | PUT        | 🔄         |
-| MB005      | Change Password       | /members/password            | PUT        | 🔄         |
-| MB006      | Upload Profile Image  | /members/avatar              | POST       | 🔄         |
-| MB007      | Remove Member         | /members/profile/remove      | DELETE     | 🔄         |
-
----
-
-### 2. Identity Adapter APIs
-
-| **Action** | **Summary**                | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | -------------------------- | --------- | ---------- | ---------------- | ---------- |
-| IU010      | Create Member Identity     |           | POST       | MB001            | 🔄         |
-| IU011      | Update Member Identity     |           | PUT        | MB004            | 🔄         |
-| IU012      | Password Challenge / Reset |           | PUT        | MB005            | 🔄         |
+|**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|---|
+|MB001|Create Member|/members/profile|POST|Members API|Member|🔄|
+|MB002|Member List|/members/profile|GET|Members API|Member|🔄|
+|MB003|View Member|/members/profile/{member_id}|GET|Members API|Member|🔄|
+|MB004|Update Member Details|/members/profile/{member_id}|PUT|Members API|Member|🔄|
+|MB005|Change Password|/members/password|PUT|Members API|Member|🔄|
+|MB006|Upload Profile Image|/members/avatar|POST|Members API|Member|🔄|
+|MB007|Remove Member|/members/profile/remove|DELETE|Members API|Member|🔄|
 
 ---
 
-### 3. CRM Adapter APIs
+## Dependency Service APIs
 
-| **Action** | **Summary** | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ------------ | ---------- | ----------- | ---------------- | ----------- |
-| CR001 | Retrieve Member Directory |  | GET | MB002 | 🔄 |
-| CR002 | Retrieve Member Record |  | GET | MB003 | 🔄 |
+### 1. Identity Adapter APIs
 
----
-
-### 4. Documents Processor APIs
-
-| **Action** | **Summary**          | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | -------------------- | --------- | ---------- | ---------------- | ---------- |
-| DP001      | Upload Member Avatar |           | POST       | MB006            | 🔄         |
-| DP002      | Retrieve Avatar URL  |           | GET        | MB006            | 🔄         |
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|AIB001|Create Identity Profile||POST|MB001|🔄|
+|AIB002|Retrieve Member List||GET|MB002|🔄|
+|AIB003|Fetch Member Profile||GET|MB003|🔄|
+|AIB004|Update Identity Claims||PUT|MB004|🔄|
+|AIB005|Create Password Reset Challenge||PUT|MB005|🔄|
+|AIB006|Update Avatar URL||POST|MB006|🔄|
+|AIB007|Remove Member Record||DELETE|MB007|🔄|
 
 ---
 
-### 5. Messaging Utility APIs
+### 2. Message Processor APIs
 
-| **Action** | **Summary**                      | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | -------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| MW010      | Send Welcome Email               |           | POST       | MB001            | 🔄         |
-| MW011      | Send Password Reset Notification |           | POST       | MB005            | 🔄         |
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|PMI001|Send Welcome Email||POST|MB001|🔄|
+|PMI002|Send Password Reset Success Notification||PUT|MB005|🔄|
 
 ---
 
-### 6. Persistence Utility APIs
+### 3. Document Processor APIs
 
-| **Action** | **Summary** | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ------------ | ---------- | ----------- | ---------------- | ----------- |
-| PU001 | Remove Member Record (Logical Delete) |  | DELETE | MB007 | 🔄 |
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|PDB001|Store & Process Image||POST|MB006|🔄|
 
 ---
 
@@ -107,47 +89,51 @@ The Members Module provides critical internal capabilities:
 
 ### Permissions & APIs
 
-| **Permissions** | **Permission Name** | **APIs** | **Status** |
-| ---------------- | -------------------- | --------- | ----------- |
-| mem_create | Create Members | MB001 | 🔄 |
-| mem_list | List Members | MB002, MB003 | 🔄 |
-| mem_update | Update Member Info | MB004 | 🔄 |
-| mem_pwd_mgmt | Manage Passwords | MB005 | 🔄 |
-| mem_avatar | Manage Avatars | MB006 | 🔄 |
-| mem_remove | Remove Members | MB007 | 🔄 |
+|**Permission**|**Permission Name**|**APIs**|**Status**|
+|---|---|---|---|
+|member_create|Create Members|MB001|🔄|
+|member_view|View Member Information|MB002, MB003|🔄|
+|member_update|Update Member Profiles|MB004, MB006|🔄|
+|member_password|Manage Member Passwords|MB005|🔄|
+|member_remove|Remove Members|MB007|🔄|
 
 ---
 
 ### Roles & Permissions
 
-| **Role** | **Role Name** | **Permissions** | **Status** |
-| -------- | -------------- | ---------------- | ----------- |
-| RP001 | Administrator | mem_create, mem_list, mem_update, mem_pwd_mgmt, mem_avatar, mem_remove | 🔄 |
-| RP002 | Relationship Officer | mem_list, mem_update | 🔄 |
-| RP003 | Auditor | mem_list | 🔄 |
+|**Role**|**Role Name**|**Permissions**|**Status**|
+|---|---|---|---|
+|RP1701|Organization Administrator|member_create, member_view, member_update, member_password, member_remove|🔄|
+|RP1702|Member Manager|member_create, member_view, member_update, member_remove|🔄|
+|RP1703|Member (Self)|member_view, member_update, member_password|🔄|
+|RP1704|HR Administrator|member_create, member_view, member_update|🔄|
 
 ---
 
 ### Policies & Attributes
 
-| **Policy ID** | **Policy** | **Attribute / Condition** | **Status** |
-| -------------- | ----------- | ------------------------- | ----------- |
-| P_BO_001 | Member must belong to active tenant | `tenant.status` eq active | 🔄 |
-| P_BO_002 | Only administrators can remove members | `role` eq RP001 | 🔄 |
-| P_BO_003 | Password resets require MFA verification | `auth.challenge` eq true | 🔄 |
+|**Policy ID**|**Policy**|**Attribute / Condition**|**Status**|
+|---|---|---|---|
+|P_MBR_001|Members can only update their own profile|`member.id eq user.id`|🔄|
+|P_MBR_002|Password changes require old password verification|`password.old_verified eq true`|🔄|
+|P_MBR_003|Member removal requires admin privileges|`role in ["RP1701", "RP1702"]`|🔄|
+|P_MBR_004|Profile images must meet size and format requirements|`image.valid eq true`|🔄|
+|P_MBR_005|Member listing supports pagination and filtering|`pagination.enabled eq true`|🔄|
+|P_MBR_006|Removed members lose all access and privileges|`member.status eq "removed"`|🔄|
 
 ---
 
 ### Related Documents
 
-1. [[Backoffice Overview]]
-2. [[Identity Adapter Specification]]
-3. [[Messaging Utility Reference]]
-4. [[Member Onboarding BPM Process]]
+1. **Member Onboarding Process Guide**
+2. **Password Policy & Security Standards**
+3. **Profile Image Requirements**
+4. **Member Role & Permission Matrix**
+5. **Member Removal & Access Revocation Policy**
 
 ---
 
-✅ - _Complete_  
+✅ - Complete  
 🔄 - In Progress  
 ⏰ - Delayed  
 🚧 - In Testing  
