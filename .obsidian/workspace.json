@@ -14,8 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "Engineering/01 Projects/Omnichannel API/01. Users.md",
-                "mode": "source",
-                "source": false
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
               "title": "01. Users"
