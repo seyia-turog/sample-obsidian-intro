@@ -72,13 +72,13 @@ It supports onboarding, profile management, lifecycle handling, account access, 
 
 ## 3. Core Banking Adapter (CBA) APIs
 
-| Action    | Summary                   | Route                                           | Method | Operation ID | Status |
-| --------- | ------------------------- | ----------------------------------------------- | ------ | ------------ | ------ |
-| **CC001** | Create CBA Client Stub    | /api/v1/clients/{type}                          | POST   | CL003        | 🔄     |
-| **CC002** | Update CBA Client Profile | /api/v1/clients/{clientId}/{type}               | PUT    | CL004        | 🔄     |
-| **CC003** | Get Client Accounts       | /api/v1/savings/accounts/overview/{{accountId}} | GET    | CL006        | 🔄     |
-| **CC004** | Close Client Accounts     | `/clients/profile/remove`                       | DELETE | CL005        | 🔄     |
-| **CC005** | Update Client Status      | `/clients/profile/remove`                       | DELETE | CL005        | 🔄     |
+| Action    | Summary                   | Route                                         | Method | Operation ID | Status |
+| --------- | ------------------------- | --------------------------------------------- | ------ | ------------ | ------ |
+| **CC001** | Create CBA Client Stub    | /api/v1/clients/{type}                        | POST   | CL003        | 🔄     |
+| **CC002** | Update CBA Client Profile | /api/v1/clients/{clientId}/{type}             | PUT    | CL004        | 🔄     |
+| **CC003** | Get Client Accounts       | /api/v1/savings/accounts/overview/{accountId} | GET    | CL006        | 🔄     |
+| **CC004** | Close Client Accounts     | `/clients/profile/remove`                     | DELETE | CL005        | 🔄     |
+| **CC005** | Update Client Status      | `/clients/profile/remove`                     | DELETE | CL005        | 🔄     |
 
 ---
 
