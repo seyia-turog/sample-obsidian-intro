@@ -82,10 +82,10 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ### 3. CRM Adapter APIs
 
-| **Action** | **Summary**                    | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | ------------------------------ | --------- | ---------- | ---------------- | ---------- |
-| CRB001     | Create Customer in CRM         |           | POST       | CLB003           | 🔄         |
-| CRB002     | Update Customer Profile in CRM |           | PUT        | CLB004           | 🔄         |
+| **Action** | **Summary**                    | **Route**                                   | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------------------------ | ------------------------------------------- | ---------- | ---------------- | ---------- |
+| CRB001     | Create Customer in CRM         | /api/v1/stakeholders/customers              | POST       | CLB003           | 🔄         |
+| CRB002     | Update Customer Profile in CRM | /api/v1/stakeholders/customers/{customerId} | PUT        | CLB004           | 🔄         |
 
 ---
 
@@ -97,7 +97,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ---
 
-### 5. Notification Worker APIs
+### 5. Message Processor APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
