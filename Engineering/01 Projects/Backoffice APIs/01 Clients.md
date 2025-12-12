@@ -93,7 +93,7 @@ It supports onboarding, profile management, lifecycle handling, account access, 
 
 ---
 
-## 5. Notifications Worker APIs
+## 5. Message Processor APIs
 
 | Action | Summary | Route | Method | Operation ID | Status |
 |--------|----------|--------|---------|----------------|--------|
