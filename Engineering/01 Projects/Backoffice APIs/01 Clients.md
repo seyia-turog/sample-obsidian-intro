@@ -95,11 +95,11 @@ It supports onboarding, profile management, lifecycle handling, account access, 
 
 ## 5. Message Processor APIs
 
-| Action | Summary | Route | Method | Operation ID | Status |
-|--------|----------|--------|---------|----------------|--------|
-| **NT001** | Send Welcome Message | `/clients/setup` | POST | CL003 | 🔄 |
-| **NT002** | Send Profile Update Notification | `/clients/profile` | PUT | CL004 | 🔄 |
-| **NT003** | Send Closure Notification | `/clients/profile/remove` | DELETE | CL005 | 🔄 |
+| Action    | Summary                          | Route                     | Method | Operation ID | Status |
+| --------- | -------------------------------- | ------------------------- | ------ | ------------ | ------ |
+| **NT001** | Send Welcome Message             | `/clients/setup`          | POST   | CL003        | 🔄     |
+| **NT002** | Send Profile Update Notification | `/clients/profile`        | PUT    | CL004        | 🔄     |
+| **NT003** | Send Closure Notification        | `/clients/profile/remove` | DELETE | CL005        | 🔄     |
 
 ---
 
