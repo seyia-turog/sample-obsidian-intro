@@ -1,11 +1,8 @@
 ---
-
-## Status: Pending  
-Thumbnail: "#29B6F6"  
-Description: Client Profile & Account Management  
-Application: Retail Engine  
-Due On: 2025-10-12T12:00:00
-
+Thumbnail: "#29B6F6"
+Description: Client Profile & Account Management
+Application: Retail Engine
+Due On: 2025-12-12T12:00:00
 ---
 
 ## Overview
@@ -63,10 +60,10 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ### 1. Identity Adapter APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|AIB008|Create User in Identity System||POST|CLB003|🔄|
-|AIB009|Update Identity Claims||PUT|CLB004|🔄|
+| **Action** | **Summary**                    | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------------------------ | --------- | ---------- | ---------------- | ---------- |
+| AIB008     | Create User in Identity System |           | POST       | CLB003           | 🔄         |
+| AIB009     | Update User Profile            |           | PUT        | CLB004           | 🔄         |
 
 ---
 
