@@ -82,10 +82,10 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ### 3. CRM Adapter APIs
 
-| **Action** | **Summary**                   | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | ----------------------------- | --------- | ---------- | ---------------- | ---------- |
-| CRB001     | Create Customer in CRM        |           | POST       | CLB003           | 🔄         |
-| CRB002     | Update Partner Profile in CRM |           | PUT        | CLB004           | 🔄         |
+| **Action** | **Summary**                    | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------------------------ | --------- | ---------- | ---------------- | ---------- |
+| CRB001     | Create Customer in CRM         |           | POST       | CLB003           | 🔄         |
+| CRB002     | Update Customer Profile in CRM |           | PUT        | CLB004           | 🔄         |
 
 ---
 
