@@ -74,7 +74,7 @@ It supports onboarding, profile management, lifecycle handling, account access, 
 
 | Action    | Summary                | Route                     | Method | Operation ID | Status |
 | --------- | ---------------------- | ------------------------- | ------ | ------------ | ------ |
-| **CC001** | Create CBA Client Stub | `/clients/setup`          | POST   | CL003        | 🔄     |
+| **CC001** | Create CBA Client Stub | /api/v1/clients/{type}    | POST   | CL003        | 🔄     |
 | **CC002** | Update CBA Client Data | `/clients/profile`        | PUT    | CL004        | 🔄     |
 | **CC003** | Get Client Accounts    | `/clients/accounts`       | GET    | CL006        | 🔄     |
 | **CC004** | Close Client Accounts  | `/clients/profile/remove` | DELETE | CL005        | 🔄     |
