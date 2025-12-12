@@ -78,7 +78,8 @@ It supports onboarding, profile management, lifecycle handling, account access, 
 | **CC002** | Update CBA Client Profile | /api/v1/clients/{clientId}/{type}             | PUT    | CL004        | 🔄     |
 | **CC003** | Get Client Accounts       | /api/v1/savings/accounts/overview/{accountId} | GET    | CL006        | 🔄     |
 | **CC004** | Close Client Accounts     | /api/v1/savings/accounts/close                | DELETE | CL005        | 🔄     |
-| **CC005** | Delete Client             | `/clients/profile/remove`                     | DELETE | CL005        | 🔄     |
+| **CC005** | Delete Client             | /api/v1/clients/{clientId}                    | DELETE | CL005        | 🔄     |
+|           |                           |                                               |        |              |        |
 
 ---
 
