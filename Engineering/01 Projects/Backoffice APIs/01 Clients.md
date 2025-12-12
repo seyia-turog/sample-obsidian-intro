@@ -79,7 +79,7 @@ It supports onboarding, profile management, lifecycle handling, account access, 
 | **CC003** | Get Client Accounts       | /api/v1/savings/accounts/overview/{accountId} | GET    | CL006        | 🔄     |
 | **CC004** | Close Client Accounts     | /api/v1/savings/accounts/close                | DELETE | CL005        | 🔄     |
 | **CC005** | Delete Client             | /api/v1/clients/{clientId}                    | DELETE | CL005        | 🔄     |
-| **CL001** | List Clients              | `/clients/details`                            | GET    | 🔄           |        |
+| **CC001** | List Clients              | `/clients/details`                            | GET    | CL001        | 🔄     |
 
 ---
 
