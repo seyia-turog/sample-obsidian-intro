@@ -76,7 +76,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | CBB003     | Create Client in CBA         | /api/v1/clients/{type}                        | POST       | CLB003           | 🔄         |
 | CBB004     | Update Client Profile in CBA | /api/v1/clients/{type}                        | PUT        | CLB004           | 🔄         |
 | CBB005     | List Client Accounts         | /api/v1/savings/accounts/overview/{accountId} | GET        | CLB005           | 🔄         |
-| CBB006     | Remove Client                |                                               | DELETE     | CLB007           | 🔄         |
+| CBB006     | Remove Client                | /api/v1/clients/{clientId}                    | DELETE     | CLB007           | 🔄         |
 
 ---
 
