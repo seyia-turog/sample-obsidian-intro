@@ -49,15 +49,15 @@ It supports onboarding, profile management, lifecycle handling, account access, 
 
 ## 1. Backoffice APIs
 
-| Code      | Summary               | Route                     | Method | Status |
-| --------- | --------------------- | ------------------------- | ------ | ------ |
-| **CL001** | List Clients          | `/clients/details`        | GET    | 🔄     |
-| **CL002** | View Client Details   | `/clients/details`        | GET    | 🔄     |
-| **CL003** | Create Client         | `/clients/setup`          | POST   | 🔄     |
-| **CL004** | Update Client Profile | `/clients/profile`        | PUT    | 🔄     |
-| **CL005** | Delete Client         | `/clients/profile/remove` | DELETE | 🔄     |
-| **CL006** | List Client Accounts  | `/clients/accounts`       | GET    | 🔄     |
-| **CL007** | Client Device List    | `/clients/device`         | GET    | 🔄     |
+| Code      | Summary               | Route                     | Method | Status |     |
+| --------- | --------------------- | ------------------------- | ------ | ------ | --- |
+| **CL001** | List Clients          | `/clients/details`        | GET    | 🔄     |     |
+| **CL002** | View Client Details   | `/clients/details`        | GET    | 🔄     |     |
+| **CL003** | Create Client         | `/clients/setup`          | POST   | 🔄     |     |
+| **CL004** | Update Client Profile | `/clients/profile`        | PUT    | 🔄     |     |
+| **CL005** | Delete Client         | `/clients/profile/remove` | DELETE | 🔄     |     |
+| **CL006** | List Client Accounts  | `/clients/accounts`       | GET    | 🔄     |     |
+| **CL007** | Client Device List    | `/clients/device`         | GET    | 🔄     |     |
 
 ---
 
@@ -79,7 +79,7 @@ It supports onboarding, profile management, lifecycle handling, account access, 
 | **CC003** | Get Client Accounts       | /api/v1/savings/accounts/overview/{accountId} | GET    | CL006        | 🔄     |
 | **CC004** | Close Client Accounts     | /api/v1/savings/accounts/close                | DELETE | CL005        | 🔄     |
 | **CC005** | Delete Client             | /api/v1/clients/{clientId}                    | DELETE | CL005        | 🔄     |
-|           |                           |                                               |        |              |        |
+| **CL001** | List Clients              | `/clients/details`                            | GET    | 🔄           |        |
 
 ---
 
