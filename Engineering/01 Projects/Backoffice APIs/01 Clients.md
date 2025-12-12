@@ -41,7 +41,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ## REST Endpoints
 
-### Client Management APIs
+### Omnichannel APIs
 
 | **Action** | **Summary**           | **Route**               | **Method** | **Operation ID** | **Status** |
 | ---------- | --------------------- | ----------------------- | ---------- | ---------------- | ---------- |
