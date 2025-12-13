@@ -1,0 +1,160 @@
+---
+
+## Status: Pending  
+Thumbnail: "#AB47BC"  
+Description: Community Management & Member Collaboration  
+Application: Retail Engine  
+Due On: 2025-10-12T12:00:00
+
+---
+
+## Overview
+
+The **Communities Module** handles the complete lifecycle of digital communities and collaborative groups in the banking platform.
+
+It manages community creation, search and discovery, membership management, invitations, role assignments, and community dissolution, integrating with CBA Adapter and Message Workers to ensure seamless community operations, member collaboration, and comprehensive notifications.
+
+---
+
+## Core Business Functions
+
+- **Community Discovery** – List and search communities with filtering capabilities.
+- **Community Management** – Create, view, update, block/unblock, and dissolve communities.
+- **Invitation Management** – Send, view, cancel, accept, and decline community invitations.
+- **Member Management** – View member lists, remove members, and modify member roles.
+- **Access Control** – Manage community status and member permissions.
+- **Notifications** – Send automated notifications for all community events and actions.
+
+---
+
+## Technical Dependencies
+
+### Adapter & Processor Dependencies
+
+|Adapter / Processor|Business Purpose|
+|---|---|
+|CBA Adapter|Manages community accounts, member operations, invitation lifecycle, and role assignments in Core Banking.|
+|Util Worker (Messages)|Sends notifications for community creation, status changes, invitations, member actions, role updates, and dissolution events.|
+
+---
+
+## REST Endpoints
+
+### Community Management APIs
+
+|**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|---|
+|CMB001|Communities List|/communities/accounts|GET|Communities API|Communities|🔄|
+|CMB002|Search Community|/communities/accounts/search|GET|Communities API|Communities|🔄|
+|CMB003|Add New Community|/communities/account|POST|Communities API|Communities|🔄|
+|CMB004|View Community Detail|/communities/account/{community_id}|GET|Communities API|Communities|🔄|
+|CMB005|Update Community Detail|/communities/account/{community_id}|PUT|Communities API|Communities|🔄|
+|CMB006|Block / Unblock Community|/communities/account/status/{community_id}|PUT|Communities API|Communities|🔄|
+|CMB007|Invite To Community|/communities/account/invites|POST|Communities API|Communities|🔄|
+|CMB008|Get Pending Invites|/communities/account/invites/pending|GET|Communities API|Communities|🔄|
+|CMB009|Cancel Invite|/communities/account/invites/{invite_id}|DELETE|Communities API|Communities|🔄|
+|CMB010|Accept Invite|/communities/invites/accept|POST|Communities API|Communities|🔄|
+|CMB011|Decline Invite|/communities/account/invites/decline|POST|Communities API|Communities|🔄|
+|CMB012|View Member List|/communities/account/members|GET|Communities API|Communities|🔄|
+|CMB013|Remove Member|/communities/account/members|DELETE|Communities API|Communities|🔄|
+|CMB014|Modify Community Member Role|/communities/members/role/|PUT|Communities API|Communities|🔄|
+|CMB015|Dissolve Community|/communities/account/update/{community_id}|DELETE|Communities API|Communities|🔄|
+
+---
+
+## Dependency Service APIs
+
+### 1. CBA Adapter APIs
+
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|CBB007|Retrieve Community List||GET|CMB001|🔄|
+|CBB008|Filter/Search Community||GET|CMB002|🔄|
+|CBB009|Add Client to Community||POST|CMB003|🔄|
+|CBB010|Retrieve Community Details||GET|CMB004|🔄|
+|CBB011|Update Community Detail||PUT|CMB005|🔄|
+|CBB012|(Un)Block Communities||PUT|CMB006|🔄|
+|CBB013|Create Invitation||POST|CMB007|🔄|
+|CBB014|Retrieve Pending Invites||GET|CMB008|🔄|
+|CBB015|Remove Invitation||DELETE|CMB009|🔄|
+|CBB016|Accept Invite||POST|CMB010|🔄|
+|CBB017|Decline Invite||POST|CMB011|🔄|
+|CBB018|Retrieve Member List||GET|CMB012|🔄|
+|CBB019|Remove a Community Member||DELETE|CMB013|🔄|
+|CBB020|Update Member Role||PUT|CMB014|🔄|
+|CBB021|Delete Community||DELETE|CMB015|🔄|
+
+---
+
+### 2. Notification Worker APIs
+
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|UMB001|Send Community Details to Admin||POST|CMB003|🔄|
+|UMB002|Send Community (Un)Block Notification to Admin||PUT|CMB006|🔄|
+|UMB003|Create Invitation||POST|CMB007|🔄|
+|UMB004|Send Invite Accepted Notification to Community Admin||POST|CMB010|🔄|
+|UMB005|Send Invite Declined Notification to Community Admin||POST|CMB011|🔄|
+|UMB006|Send Community Member Removed Notification to Removed Member||DELETE|CMB013|🔄|
+|UMB007|Send New Role Notification Message to Affected Member and Other Admin||PUT|CMB014|🔄|
+|UMB008|Send Dissolution Notification to All Admin||DELETE|CMB015|🔄|
+
+---
+
+## Security and Governance
+
+### Permissions & APIs
+
+|**Permission**|**Permission Name**|**APIs**|**Status**|
+|---|---|---|---|
+|community_create|Create Communities|CMB003|🔄|
+|community_view|View Community Information|CMB001, CMB002, CMB004, CMB008, CMB012|🔄|
+|community_manage|Manage Communities|CMB005, CMB006|🔄|
+|community_invite|Manage Invitations|CMB007, CMB008, CMB009, CMB010, CMB011|🔄|
+|community_member|Manage Members|CMB012, CMB013, CMB014|🔄|
+|community_dissolve|Dissolve Communities|CMB015|🔄|
+
+---
+
+### Roles & Permissions
+
+|**Role**|**Role Name**|**Permissions**|**Status**|
+|---|---|---|---|
+|RP2001|Community Admin|community_create, community_view, community_manage, community_invite, community_member, community_dissolve|🔄|
+|RP2002|Community Moderator|community_view, community_invite, community_member|🔄|
+|RP2003|Community Member|community_view, community_invite|🔄|
+|RP2004|Platform Administrator|community_create, community_view, community_manage, community_dissolve|🔄|
+
+---
+
+### Policies & Attributes
+
+|**Policy ID**|**Policy**|**Attribute / Condition**|**Status**|
+|---|---|---|---|
+|P_CMY_001|Only community admin can manage community settings|`user.role eq "community_admin"`|🔄|
+|P_CMY_002|Blocked communities restrict member activities|`community.status != "blocked"`|🔄|
+|P_CMY_003|Invitations require valid recipient information|`recipient.validated eq true`|🔄|
+|P_CMY_004|Member removal requires admin or moderator role|`role in ["admin", "moderator"]`|🔄|
+|P_CMY_005|Role changes require higher or equal privileges|`user.role_level >= target.role_level`|🔄|
+|P_CMY_006|Community dissolution requires admin confirmation|`dissolution.confirmed eq true`|🔄|
+|P_CMY_007|Dissolved communities cannot be reactivated|`community.status != "dissolved"`|🔄|
+
+---
+
+### Related Documents
+
+1. **Community Creation Guidelines**
+2. **Member Role & Permission Framework**
+3. **Invitation Management Procedures**
+4. **Community Moderation Policy**
+5. **Community Dissolution Workflow**
+
+---
+
+✅ - Complete  
+🔄 - In Progress  
+⏰ - Delayed  
+🚧 - In Testing  
+⚠️ - Comments from Testing  
+⛔ - Failed Testing  
+📋 - Planned for future release
