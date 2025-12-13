@@ -38,7 +38,7 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 ## REST Endpoints
 
-### Compliance Verification APIs
+### Backoffice APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|---|

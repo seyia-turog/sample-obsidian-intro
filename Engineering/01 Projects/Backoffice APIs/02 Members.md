@@ -41,7 +41,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 ## REST Endpoints
 
-### Member Management APIs
+### Backoffice APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|---|

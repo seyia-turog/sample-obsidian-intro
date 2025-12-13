@@ -41,7 +41,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ## REST Endpoints
 
-### Omnichannel APIs
+### Backoffice APIs
 
 | **Action** | **Summary**           | **Route**               | **Method** | **Operation ID** | **Status** |
 | ---------- | --------------------- | ----------------------- | ---------- | ---------------- | ---------- |
