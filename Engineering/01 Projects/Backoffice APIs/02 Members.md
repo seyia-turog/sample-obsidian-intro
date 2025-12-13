@@ -85,7 +85,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | **Action** | **Summary**   | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------- | --------- | ---------- | ---------------- | ---------- |
 | PDB001     | Process Image |           | POST       | MBB006           | 🔄         |
-| PDB001     | Store Image   |           | POST       | MBB006           | 🔄         |
+| PDB002     | Store Image   |           | POST       | MBB006           | 🔄         |
 
 ---
 
