@@ -1,8 +1,11 @@
 ---
-Thumbnail: "#5C6BC0"
-Description: Member Profile & Access Management
-Application: Retail Engine
-Due On: 2025-12-12T12:00:00
+
+## Status: Pending  
+Thumbnail: "#5C6BC0"  
+Description: Member Profile & Access Management  
+Application: Retail Engine  
+Due On: 2025-10-12T12:00:00
+
 ---
 
 ## Overview
@@ -42,13 +45,13 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 |**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|---|
-|MB001|Create Member|/members/profile|POST|Members API|Member|🔄|
-|MB002|Member List|/members/profile|GET|Members API|Member|🔄|
-|MB003|View Member|/members/profile/{member_id}|GET|Members API|Member|🔄|
-|MB004|Update Member Details|/members/profile/{member_id}|PUT|Members API|Member|🔄|
-|MB005|Change Password|/members/password|PUT|Members API|Member|🔄|
-|MB006|Upload Profile Image|/members/avatar|POST|Members API|Member|🔄|
-|MB007|Remove Member|/members/profile/remove|DELETE|Members API|Member|🔄|
+|MBB001|Create Member|/members/profile|POST|Members API|Member|🔄|
+|MBB002|Member List|/members/profile|GET|Members API|Member|🔄|
+|MBB003|View Member|/members/profile/{member_id}|GET|Members API|Member|🔄|
+|MBB004|Update Member Details|/members/profile/{member_id}|PUT|Members API|Member|🔄|
+|MBB005|Change Password|/members/password|PUT|Members API|Member|🔄|
+|MBB006|Upload Profile Image|/members/avatar|POST|Members API|Member|🔄|
+|MBB007|Remove Member|/members/profile/remove|DELETE|Members API|Member|🔄|
 
 ---
 
@@ -58,13 +61,13 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
-|AIB001|Create Identity Profile||POST|MB001|🔄|
-|AIB002|Retrieve Member List||GET|MB002|🔄|
-|AIB003|Fetch Member Profile||GET|MB003|🔄|
-|AIB004|Update Identity Claims||PUT|MB004|🔄|
-|AIB005|Create Password Reset Challenge||PUT|MB005|🔄|
-|AIB006|Update Avatar URL||POST|MB006|🔄|
-|AIB007|Remove Member Record||DELETE|MB007|🔄|
+|AIB001|Create Identity Profile||POST|MBB001|🔄|
+|AIB002|Retrieve Member List||GET|MBB002|🔄|
+|AIB003|Fetch Member Profile||GET|MBB003|🔄|
+|AIB004|Update Identity Claims||PUT|MBB004|🔄|
+|AIB005|Create Password Reset Challenge||PUT|MBB005|🔄|
+|AIB006|Update Avatar URL||POST|MBB006|🔄|
+|AIB007|Remove Member Record||DELETE|MBB007|🔄|
 
 ---
 
@@ -72,16 +75,17 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
-|PMI001|Send Welcome Email||POST|MB001|🔄|
-|PMI002|Send Password Reset Success Notification||PUT|MB005|🔄|
+|PMI001|Send Welcome Email||POST|MBB001|🔄|
+|PMI002|Send Password Reset Success Notification||PUT|MBB005|🔄|
 
 ---
 
 ### 3. Document Processor APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|PDB001|Store & Process Image||POST|MB006|🔄|
+| **Action** | **Summary**   | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------- | --------- | ---------- | ---------------- | ---------- |
+| PDB001     | Process Image |           | POST       | MBB006           | 🔄         |
+| PDB001     | Store Image   |           | POST       | MBB006           | 🔄         |
 
 ---
 
@@ -91,11 +95,11 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 |**Permission**|**Permission Name**|**APIs**|**Status**|
 |---|---|---|---|
-|member_create|Create Members|MB001|🔄|
-|member_view|View Member Information|MB002, MB003|🔄|
-|member_update|Update Member Profiles|MB004, MB006|🔄|
-|member_password|Manage Member Passwords|MB005|🔄|
-|member_remove|Remove Members|MB007|🔄|
+|member_create|Create Members|MBB001|🔄|
+|member_view|View Member Information|MBB002, MBB003|🔄|
+|member_update|Update Member Profiles|MBB004, MBB006|🔄|
+|member_password|Manage Member Passwords|MBB005|🔄|
+|member_remove|Remove Members|MBB007|🔄|
 
 ---
 
