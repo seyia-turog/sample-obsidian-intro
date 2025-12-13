@@ -40,7 +40,7 @@ It manages community creation, search and discovery, membership management, invi
 
 ## REST Endpoints
 
-### Community Management APIs
+### Backoffice APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|---|
