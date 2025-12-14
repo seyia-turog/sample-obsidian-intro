@@ -44,7 +44,7 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 ## REST Endpoints
 
-### Loan Account Management APIs
+### Backoffice APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|---|
@@ -73,23 +73,23 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
-|TBD|Retrieve Loan Accounts||GET|LNB001|🔄|
-|TBD|Update Loan Parameters||PUT|LNB002|🔄|
-|TBD|Retrieve Loan Details||GET|LNB003|🔄|
-|TBD|Fetch Repayment Schedule||GET|LNB004|🔄|
-|TBD|Retrieve Loan Transactions||GET|LNB005|🔄|
-|TBD|Close Loan Account||DELETE|LNB006|🔄|
-|TBD|Add Guarantor to Loan Account||POST|LNB007|🔄|
-|TBD|Remove Guarantor from Loan Account||DELETE|LNB008|🔄|
-|TBD|Retrieve Guarantors||GET|LNB009|🔄|
-|TBD|Update Loan Status||PUT|LNB010|🔄|
-|TBD|Post Loan Charges||POST|LNB011|🔄|
-|TBD|Create Loan Application||POST|LNB012|🔄|
-|TBD|Retrieve Submitted Application||PUT|LNB014|🔄|
-|TBD|Retrieve Financial Data||PUT|LNB014|🔄|
-|TBD|Create Loan Account||POST|LNB015|🔄|
-|TBD|Reject Loan||POST|LNB016|🔄|
-|TBD|Disburse Loan||POST|LNB017|🔄|
+|CBB039|Retrieve Loan Accounts||GET|LNB001|🔄|
+|CBB040|Update Loan Parameters||PUT|LNB002|🔄|
+|CBB041|Retrieve Loan Details||GET|LNB003|🔄|
+|CBB042|Fetch Repayment Schedule||GET|LNB004|🔄|
+|CBB043|Retrieve Loan Transactions||GET|LNB005|🔄|
+|CBB044|Close Loan Account||DELETE|LNB006|🔄|
+|CBB045|Add Guarantor to Loan Account||POST|LNB007|🔄|
+|CBB046|Remove Guarantor from Loan Account||DELETE|LNB008|🔄|
+|CBB047|Retrieve Guarantors||GET|LNB009|🔄|
+|CBB048|Update Loan Status||PUT|LNB010|🔄|
+|CBB049|Post Loan Charges||POST|LNB011|🔄|
+|CBB050|Create Loan Application||POST|LNB012|🔄|
+|CBB051|Retrieve Submitted Application||PUT|LNB014|🔄|
+|CBB052|Retrieve Financial Data||PUT|LNB014|🔄|
+|CBB053|Create Loan Account||POST|LNB015|🔄|
+|CBB054|Reject Loan||POST|LNB016|🔄|
+|CBB055|Disburse Loan||POST|LNB017|🔄|
 
 ---
 
@@ -97,7 +97,7 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
-|TBD|Get Risk Profile||PUT|LNB014|🔄|
+|PIB002|Get Risk Profile||PUT|LNB014|🔄|
 
 ---
 
@@ -105,9 +105,9 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
-|TBD|Store & Process Guarantor Docs||POST|LNB007|🔄|
-|TBD|Store & Process Loan Application Docs||POST|LNB012|🔄|
-|TBD|Get Application Docs||PUT|LNB014|🔄|
+|PDB002|Store & Process Guarantor Docs||POST|LNB007|🔄|
+|PDB003|Store & Process Loan Application Docs||POST|LNB012|🔄|
+|PDB004|Get Application Docs||PUT|LNB014|🔄|
 
 ---
 
@@ -115,16 +115,16 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
-|TBD|Send Loan Update Notification||PUT|LNB002|🔄|
-|TBD|Send Loan Account Closure Notification||DELETE|LNB006|🔄|
-|TBD|Notify Client of New Guarantor||POST|LNB007|🔄|
-|TBD|Send Guarantor Removal Notification||DELETE|LNB008|🔄|
-|TBD|Send Loan Status Changed Notification||PUT|LNB010|🔄|
-|TBD|Send Loan Charge Notification||POST|LNB011|🔄|
-|TBD|Send Loan Application Submitted Notification||POST|LNB012|🔄|
-|TBD|Send Loan Approval Notice||POST|LNB015|🔄|
-|TBD|Send Loan Rejection Notice||POST|LNB016|🔄|
-|TBD|Send Loan Disbursal Notification||POST|LNB017|🔄|
+|UMB017|Send Loan Update Notification||PUT|LNB002|🔄|
+|UMB018|Send Loan Account Closure Notification||DELETE|LNB006|🔄|
+|UMB019|Notify Client of New Guarantor||POST|LNB007|🔄|
+|UMB020|Send Guarantor Removal Notification||DELETE|LNB008|🔄|
+|UMB021|Send Loan Status Changed Notification||PUT|LNB010|🔄|
+|UMB022|Send Loan Charge Notification||POST|LNB011|🔄|
+|UMB023|Send Loan Application Submitted Notification||POST|LNB012|🔄|
+|UMB024|Send Loan Approval Notice||POST|LNB015|🔄|
+|UMB025|Send Loan Rejection Notice||POST|LNB016|🔄|
+|UMB026|Send Loan Disbursal Notification||POST|LNB017|🔄|
 
 ---
 
