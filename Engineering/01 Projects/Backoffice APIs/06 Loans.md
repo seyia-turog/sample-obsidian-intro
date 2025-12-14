@@ -46,24 +46,24 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 ### Backoffice APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|---|
-|LNB001|Loan Accounts|/loans/account|GET|Loan Account API|Loan Accounts|🔄|
-|LNB002|Update Loan Account|/loans/account/{loan_id}|PUT|Loan Account API|Loan Accounts|🔄|
-|LNB003|Loan Account Details|/loans/account/{loan_id}|GET|Loan Account API|Loan Accounts|🔄|
-|LNB004|Loan Repayment Schedule|/loans/account/schedule/{loan_id}|GET|Loan Account API|Loan Accounts|🔄|
-|LNB005|Loan Account Transactions|/loans/account/transactions/{loan_id}|GET|Loan Account API|Loan Accounts|🔄|
-|LNB006|Close Loan Account|/loans/account/close/{loan_id}|DELETE|Loan Account API|Loan Accounts|🔄|
-|LNB007|Add Loan Guarantor|/loans/account/guarantors|POST|Loan Account API|Loan Accounts|🔄|
-|LNB008|Remove Loan Guarantor|/loans/account/guarantors/{guarantor_id}/{loan_id}|DELETE|Loan Account API|Loan Accounts|🔄|
-|LNB009|List Loan Guarantor|/loans/account/guarantors-list/{loan_id}|GET|Loan Account API|Loan Accounts|🔄|
-|LNB010|Update Loan Status|/loans/account/status|PUT|Loan Account API|Loan Accounts|🔄|
-|LNB011|Loan Charges|/loans/account/charges|POST|Loan Account API|Loan Accounts|🔄|
-|LNB012|Submit Loan Application|/loans/applications|POST|Loan Account API|Loan Accounts|🔄|
-|LNB014|Review Loan Application|/loan/applications/review|PUT|Loan Account API|Loan Accounts|🔄|
-|LNB015|Approve Loan|/loans/applications/approve|POST|Loan Account API|Loan Accounts|🔄|
-|LNB016|Reject Loan|/loan/applications/reject|POST|Loan Account API|Loan Accounts|🔄|
-|LNB017|Disburse Loan|/loans/application/disburse|POST|Loan Account API|Loan Accounts|🔄|
+| **Action** | **Summary**               | **Route**                                          | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------------------- | -------------------------------------------------- | ---------- | ---------------- | ---------- |
+| LNB001     | Loan Accounts             | /loans/account                                     | GET        | Loan Accounts    | 🔄         |
+| LNB002     | Update Loan Account       | /loans/account/{loan_id}                           | PUT        | Loan Accounts    | 🔄         |
+| LNB003     | Loan Account Details      | /loans/account/{loan_id}                           | GET        | Loan Accounts    | 🔄         |
+| LNB004     | Loan Repayment Schedule   | /loans/account/schedule/{loan_id}                  | GET        | Loan Accounts    | 🔄         |
+| LNB005     | Loan Account Transactions | /loans/account/transactions/{loan_id}              | GET        | Loan Accounts    | 🔄         |
+| LNB006     | Close Loan Account        | /loans/account/close/{loan_id}                     | DELETE     | Loan Accounts    | 🔄         |
+| LNB007     | Add Loan Guarantor        | /loans/account/guarantors                          | POST       | Loan Accounts    | 🔄         |
+| LNB008     | Remove Loan Guarantor     | /loans/account/guarantors/{guarantor_id}/{loan_id} | DELETE     | Loan Accounts    | 🔄         |
+| LNB009     | List Loan Guarantor       | /loans/account/guarantors-list/{loan_id}           | GET        | Loan Accounts    | 🔄         |
+| LNB010     | Update Loan Status        | /loans/account/status                              | PUT        | Loan Accounts    | 🔄         |
+| LNB011     | Loan Charges              | /loans/account/charges                             | POST       | Loan Accounts    | 🔄         |
+| LNB012     | Submit Loan Application   | /loans/applications                                | POST       | Loan Accounts    | 🔄         |
+| LNB014     | Review Loan Application   | /loan/applications/review                          | PUT        | Loan Accounts    | 🔄         |
+| LNB015     | Approve Loan              | /loans/applications/approve                        | POST       | Loan Accounts    | 🔄         |
+| LNB016     | Reject Loan               | /loan/applications/reject                          | POST       | Loan Accounts    | 🔄         |
+| LNB017     | Disburse Loan             | /loans/application/disburse                        | POST       | Loan Accounts    | 🔄         |
 
 ---
 
