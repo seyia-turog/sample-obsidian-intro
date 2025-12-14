@@ -82,10 +82,10 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 | CBB045     | Add Guarantor to Loan Account      | /api/v1/loans/account/guarantors                          | POST       | LNB007           | 🔄         |
 | CBB046     | Remove Guarantor from Loan Account | /api/v1/loans/account/guarantors/{guarantor_id}/{loan_id} | DELETE     | LNB008           | 🔄         |
 | CBB047     | Retrieve Guarantors                | /api/v1/loans/account/guarantors-list/{loan_id}           | GET        | LNB009           | 🔄         |
-| CBB048     | Update Loan Status                 |                                                           | PUT        | LNB010           | 🔄         |
-| CBB049     | Post Loan Charges                  |                                                           | POST       | LNB011           | 🔄         |
-| CBB050     | Create Loan Application            |                                                           | POST       | LNB012           | 🔄         |
-| CBB051     | Retrieve Submitted Application     |                                                           | PUT        | LNB014           | 🔄         |
+| CBB048     | Update Loan Status                 | /api/v1/loans/account/status                              | PUT        | LNB010           | 🔄         |
+| CBB049     | Post Loan Charges                  | /api/v1/loans/account/charges                             | POST       | LNB011           | 🔄         |
+| CBB050     | Create Loan Application            | /api/v1/loans/applications                                | POST       | LNB012           | 🔄         |
+| CBB051     | Retrieve Submitted Applications    | /api/v1/loans/applications                                | PUT        | LNB014           | 🔄         |
 | CBB052     | Retrieve Financial Data            |                                                           | PUT        | LNB014           | 🔄         |
 | CBB053     | Create Loan Account                |                                                           | POST       | LNB015           | 🔄         |
 | CBB054     | Reject Loan                        |                                                           | POST       | LNB016           | 🔄         |
