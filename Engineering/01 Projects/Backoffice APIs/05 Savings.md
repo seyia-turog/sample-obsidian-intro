@@ -46,23 +46,23 @@ It manages account listing and search, detailed account information retrieval, p
 
 ### Backoffice APIs
 
-| **Action** | **Summary**                                  | **Route**                                   | **Method** | **API Tag** | **Operation ID**          | **Status** |
-| ---------- | -------------------------------------------- | ------------------------------------------- | ---------- | ----------- | ------------------------- | ---------- |
-| SVB001     | Get Savings Accounts                         | /savings/accounts                           | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB002     | Search Saving Accounts                       | /savings/accounts/search                    | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB003     | Get Savings Account Details                  | /savings/accounts/{account_id}              | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB004     | Get Savings Account Performance              | /savings/accounts/performance/{account_id}  | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB005     | Get Savings Account Overview                 | /savings/accounts/overview/{account_id}     | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB006     | Get Savings Account Transactions             | /savings/accounts/transactions/{account_id} | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB007     | Deposit to Savings Account                   | /savings/accounts/deposit                   | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB008     | Withdraw from Savings Account                | /savings/accounts/withdraw                  | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB009     | Assign Staff to Savings Account              | /savings/accounts/assign-staff/{account_id} | PUT        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB010     | Change Savings Account Status                | /savings/accounts/status/{account_id}       | PUT        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB011     | Close Savings Account                        | /savings/accounts/close                     | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB012     | Add Charge to Savings Account                | /savings/accounts/charge                    | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB013     | Transfer Funds from Savings Account Internal | /savings/accounts/transfer                  | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB014     | Transfer Funds from Savings Account External | /savings/accounts/transfer                  | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
-| SVB014     | Archive Savings Account                      | /savings/accounts/archive                   | PUT        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| **Action** | **Summary**                                  | **Route**                                   | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------------------------------- | ------------------------------------------- | ---------- | ---------------- | ---------- |
+| SVB001     | Get Savings Accounts                         | /savings/accounts                           | GET        |                  | 🔄         |
+| SVB002     | Search Saving Accounts                       | /savings/accounts/search                    | GET        |                  | 🔄         |
+| SVB003     | Get Savings Account Details                  | /savings/accounts/{account_id}              | GET        |                  | 🔄         |
+| SVB004     | Get Savings Account Performance              | /savings/accounts/performance/{account_id}  | GET        |                  | 🔄         |
+| SVB005     | Get Savings Account Overview                 | /savings/accounts/overview/{account_id}     | GET        |                  | 🔄         |
+| SVB006     | Get Savings Account Transactions             | /savings/accounts/transactions/{account_id} | GET        |                  | 🔄         |
+| SVB007     | Deposit to Savings Account                   | /savings/accounts/deposit                   | POST       |                  | 🔄         |
+| SVB008     | Withdraw from Savings Account                | /savings/accounts/withdraw                  | POST       |                  | 🔄         |
+| SVB009     | Assign Staff to Savings Account              | /savings/accounts/assign-staff/{account_id} | PUT        |                  | 🔄         |
+| SVB010     | Change Savings Account Status                | /savings/accounts/status/{account_id}       | PUT        |                  | 🔄         |
+| SVB011     | Close Savings Account                        | /savings/accounts/close                     | POST       |                  | 🔄         |
+| SVB012     | Add Charge to Savings Account                | /savings/accounts/charge                    | POST       |                  | 🔄         |
+| SVB013     | Transfer Funds from Savings Account Internal | /savings/accounts/transfer                  | POST       |                  | 🔄         |
+| SVB014     | Transfer Funds from Savings Account External | /savings/accounts/transfer                  | POST       |                  | 🔄         |
+| SVB014     | Archive Savings Account                      | /savings/accounts/archive                   | PUT        |                  | 🔄         |
 
 ---
 
@@ -70,25 +70,25 @@ It manages account listing and search, detailed account information retrieval, p
 
 ### 1. CBA Adapter APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|CBB022|Get Savings Accounts||GET|SVB001|🔄|
-|CBB023|Search Saving Accounts||GET|SVB002|🔄|
-|CBB024|Get Savings Account Details||GET|SVB003|🔄|
-|CBB025|Get Savings Account Performance||GET|SVB004|🔄|
-|CBB026|Get Savings Account Overview||GET|SVB005|🔄|
-|CBB027|Get Savings Account Transactions||GET|SVB006|🔄|
-|CBB028|Post Deposit||POST|SVB007|🔄|
-|CBB029|Post Withdrawal||POST|SVB008|🔄|
-|CBB030|Update Relationship Officer||PUT|SVB009|🔄|
-|CBB031|Update Account Status||PUT|SVB010|🔄|
-|CBB032|Close Account||POST|SVB011|🔄|
-|CBB033|Post Withdrawal||POST|SVB012|🔄|
-|CBB034|Process Fund Transfer||POST|SVB013|🔄|
-|CBB035|Hold Transaction Amount||POST|SVB014|🔄|
-|CBB036|Release Transaction Amount||POST|SVB014|🔄|
-|CBB037|Reverse Transaction Amount||POST|SVB014|🔄|
-|CBB038|Archive Savings Account||PUT|SVB014|🔄|
+| **Action** | **Summary**                      | **Route**                       | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------------------- | ------------------------------- | ---------- | ---------------- | ---------- |
+| CBB022     | Get Savings Accounts             | /api/v1/savings/accounts        | GET        | SVB001           | 🔄         |
+| CBB023     | Search Saving Accounts           | /api/v1/savings/accounts/search | GET        | SVB002           | 🔄         |
+| CBB024     | Get Savings Account Details      |                                 | GET        | SVB003           | 🔄         |
+| CBB025     | Get Savings Account Performance  |                                 | GET        | SVB004           | 🔄         |
+| CBB026     | Get Savings Account Overview     |                                 | GET        | SVB005           | 🔄         |
+| CBB027     | Get Savings Account Transactions |                                 | GET        | SVB006           | 🔄         |
+| CBB028     | Post Deposit                     |                                 | POST       | SVB007           | 🔄         |
+| CBB029     | Post Withdrawal                  |                                 | POST       | SVB008           | 🔄         |
+| CBB030     | Update Relationship Officer      |                                 | PUT        | SVB009           | 🔄         |
+| CBB031     | Update Account Status            |                                 | PUT        | SVB010           | 🔄         |
+| CBB032     | Close Account                    |                                 | POST       | SVB011           | 🔄         |
+| CBB033     | Post Withdrawal                  |                                 | POST       | SVB012           | 🔄         |
+| CBB034     | Process Fund Transfer            |                                 | POST       | SVB013           | 🔄         |
+| CBB035     | Hold Transaction Amount          |                                 | POST       | SVB014           | 🔄         |
+| CBB036     | Release Transaction Amount       |                                 | POST       | SVB014           | 🔄         |
+| CBB037     | Reverse Transaction Amount       |                                 | POST       | SVB014           | 🔄         |
+| CBB038     | Archive Savings Account          |                                 | PUT        | SVB014           | 🔄         |
 
 ---
 
