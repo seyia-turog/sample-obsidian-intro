@@ -40,7 +40,7 @@ It manages merchant catalog listing, detailed merchant information viewing, merc
 
 ## REST Endpoints
 
-### Merchant Management APIs
+### Backoffice APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|---|
@@ -66,7 +66,7 @@ It manages merchant catalog listing, detailed merchant information viewing, merc
 
 ---
 
-### 2. Notification Worker APIs
+### 2. Messages Processor APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|

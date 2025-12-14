@@ -38,18 +38,18 @@ It manages application discovery through listing, searching, and filtering, appl
 
 ## REST Endpoints
 
-### Application Management APIs
+### Backoffice APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|---|
-|APB001|List Applications|/applications/clients|GET|Application API|Application Management|🔄|
-|APB002|Search Application|/applications/clients/search?query={keyword}|GET|Application API|Application Management|🔄|
-|APB003|Filter Application|/applications/clients/filter?category={category}&type={type}|GET|Application API|Application Management|🔄|
-|APB004|View Application Details|/applications/clients/{application_id}|GET|Application API|Application Management|🔄|
-|APB005|Add Application To Plan|/applications/clients/plans|POST|Application API|Application Management|🔄|
-|APB006|List My Applications|/application/clients/{client_id}|GET|Application API|Application Management|🔄|
-|APB007|Edit My Application|/applications/clients/{application_id}|PUT|Application API|Application Management|🔄|
-|APB008|Remove My Application|/applications/clients/{application_id}|DELETE|Application API|Application Management|🔄|
+| **Action** | **Summary**              | **Route**                                                    | **Method** | **API Tag**     | **Operation ID**       | **Status** |
+| ---------- | ------------------------ | ------------------------------------------------------------ | ---------- | --------------- | ---------------------- | ---------- |
+| APB001     | List Applications        | /applications/clients                                        | GET        | Application API | Application Management | 🔄         |
+| APB002     | Search Application       | /applications/clients/search?query={keyword}                 | GET        | Application API | Application Management | 🔄         |
+| APB003     | Filter Application       | /applications/clients/filter?category={category}&type={type} | GET        | Application API | Application Management | 🔄         |
+| APB004     | View Application Details | /applications/clients/{application_id}                       | GET        | Application API | Application Management | 🔄         |
+| APB005     | Add Application To Plan  | /applications/clients/plans                                  | POST       | Application API | Application Management | 🔄         |
+| APB006     | List My Applications     | /application/clients/{client_id}                             | GET        | Application API | Application Management | 🔄         |
+| APB007     | Edit My Application      | /applications/clients/{application_id}                       | PUT        | Application API | Application Management | 🔄         |
+| APB008     | Remove My Application    | /applications/clients/{application_id}                       | DELETE     | Application API | Application Management | 🔄         |
 
 ---
 
