@@ -62,7 +62,7 @@ It manages account listing and search, detailed account information retrieval, p
 | SVB012     | Add Charge to Savings Account                | /savings/accounts/charge                    | POST       |                  | 🔄         |
 | SVB013     | Transfer Funds from Savings Account Internal | /savings/accounts/transfer                  | POST       |                  | 🔄         |
 | SVB014     | Transfer Funds from Savings Account External | /savings/accounts/transfer                  | POST       |                  | 🔄         |
-| SVB014     | Archive Savings Account                      | /savings/accounts/archive                   | PUT        |                  | 🔄         |
+| SVB015     | Archive Savings Account                      | /savings/accounts/archive                   | PUT        |                  | 🔄         |
 
 ---
 
@@ -87,7 +87,7 @@ It manages account listing and search, detailed account information retrieval, p
 | CBB035     | Hold Transaction Amount                   | /api/v1/savings/accounts/{accountId}/hold                      | POST       | SVB014           | 🔄         |
 | CBB036     | Release Transaction Amount                | /api/v1/savings/accounts/{{accountId}}/release/{transactionId} | POST       | SVB014           | 🔄         |
 | CBB037     | Reverse Transaction Amount                | /api/v1/savings/accounts/{accountId}/reverse/{transactionId}   | POST       | SVB014           | 🔄         |
-| CBB038     | Archive Savings Account                   | /api/v1/savings/accounts/archive                               | PUT        | SVB014           | 🔄         |
+| CBB038     | Archive Savings Account                   | /api/v1/savings/accounts/archive                               | PUT        | SVB015           | 🔄         |
 
 ---
 
