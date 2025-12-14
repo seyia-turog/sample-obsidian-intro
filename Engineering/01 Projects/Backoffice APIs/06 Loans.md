@@ -111,20 +111,20 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 ---
 
-### 4. Notification Worker APIs
+### 4. Message Processor APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|UMB017|Send Loan Update Notification||PUT|LNB002|🔄|
-|UMB018|Send Loan Account Closure Notification||DELETE|LNB006|🔄|
-|UMB019|Notify Client of New Guarantor||POST|LNB007|🔄|
-|UMB020|Send Guarantor Removal Notification||DELETE|LNB008|🔄|
-|UMB021|Send Loan Status Changed Notification||PUT|LNB010|🔄|
-|UMB022|Send Loan Charge Notification||POST|LNB011|🔄|
-|UMB023|Send Loan Application Submitted Notification||POST|LNB012|🔄|
-|UMB024|Send Loan Approval Notice||POST|LNB015|🔄|
-|UMB025|Send Loan Rejection Notice||POST|LNB016|🔄|
-|UMB026|Send Loan Disbursal Notification||POST|LNB017|🔄|
+| **Action** | **Summary**                                  | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------------------------------- | --------- | ---------- | ---------------- | ---------- |
+| UMB017     | Send Loan Update Notification                |           | PUT        | LNB002           | 🔄         |
+| UMB018     | Send Loan Account Closure Notification       |           | DELETE     | LNB006           | 🔄         |
+| UMB019     | Notify Client of New Guarantor               |           | POST       | LNB007           | 🔄         |
+| UMB020     | Send Guarantor Removal Notification          |           | DELETE     | LNB008           | 🔄         |
+| UMB021     | Send Loan Status Changed Notification        |           | PUT        | LNB010           | 🔄         |
+| UMB022     | Send Loan Charge Notification                |           | POST       | LNB011           | 🔄         |
+| UMB023     | Send Loan Application Submitted Notification |           | POST       | LNB012           | 🔄         |
+| UMB024     | Send Loan Approval Notice                    |           | POST       | LNB015           | 🔄         |
+| UMB025     | Send Loan Rejection Notice                   |           | POST       | LNB016           | 🔄         |
+| UMB026     | Send Loan Disbursal Notification             |           | POST       | LNB017           | 🔄         |
 
 ---
 
