@@ -44,12 +44,12 @@ It manages card listing, creation and issuance, detailed information retrieval, 
 
 ### Backoffice APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|---|
-|CDB001|List Client Cards|/cards/internal|GET|CARD API|CARD MANAGEMENT|🔄|
-|CDB002|Create Card|/cards/internal|POST|CARD API|CARD MANAGEMENT|🔄|
-|CDB003|Card Details|/cards/internal/{card_id}|GET|CARD API|CARD MANAGEMENT|🔄|
-|CDB006|Reset Card Pin|/cards/pin/reset|PUT|CARD API|CARD MANAGEMENT|🔄|
+| **Action** | **Summary**       | **Route**                 | **Method** | **Operation ID** | **Status** |
+| ---------- | ----------------- | ------------------------- | ---------- | ---------------- | ---------- |
+| CDB001     | List Client Cards | /cards/internal           | GET        |                  | 🔄         |
+| CDB002     | Create Card       | /cards/internal           | POST       |                  | 🔄         |
+| CDB003     | Card Details      | /cards/internal/{card_id} | GET        |                  | 🔄         |
+| CDB006     | Reset Card Pin    | /cards/pin/reset          | PUT        |                  | 🔄         |
 
 ---
 
