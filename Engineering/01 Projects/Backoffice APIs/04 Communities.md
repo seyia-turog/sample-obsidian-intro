@@ -76,10 +76,10 @@ It manages community creation, search and discovery, membership management, invi
 | CBB012     | (Un)Block Communities      |                                            | PUT        | CMB006           | 🔄         |
 | CBB013     | Create Invitation          | /api/v1/communities/invites                | POST       | CMB007           | 🔄         |
 | CBB014     | Retrieve Pending Invites   | /api/v1/communities/invites/pending        | GET        | CMB008           | 🔄         |
-| CBB015     | Remove Invitation          |                                            | DELETE     | CMB009           | 🔄         |
-| CBB016     | Accept Invite              |                                            | POST       | CMB010           | 🔄         |
-| CBB017     | Decline Invite             |                                            | POST       | CMB011           | 🔄         |
-| CBB018     | Retrieve Member List       |                                            | GET        | CMB012           | 🔄         |
+| CBB015     | Remove Invitation          | /api/v1/communities/invites/{{invite_id}}  | DELETE     | CMB009           | 🔄         |
+| CBB016     | Accept Invite              | /api/v1/communities/invites/accept         | POST       | CMB010           | 🔄         |
+| CBB017     | Decline Invite             | /api/v1/communities/invites/decline        | POST       | CMB011           | 🔄         |
+| CBB018     | Retrieve Member List       | /api/v1/communities/members                | GET        | CMB012           | 🔄         |
 | CBB019     | Remove a Community Member  |                                            | DELETE     | CMB013           | 🔄         |
 | CBB020     | Update Member Role         |                                            | PUT        | CMB014           | 🔄         |
 | CBB021     | Delete Community           |                                            | DELETE     | CMB015           | 🔄         |
