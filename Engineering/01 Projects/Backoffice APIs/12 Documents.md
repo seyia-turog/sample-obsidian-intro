@@ -40,7 +40,7 @@ It manages document listing with metadata, preview generation, document download
 
 ## REST Endpoints
 
-### Document Management APIs
+### Backoffice APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|---|
