@@ -89,7 +89,7 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 | CBB052     | Retrieve Financial Data            | /api/v1/savings/accounts/{accountNo}/statement            | PUT        | LNB014           | 🔄         |
 | CBB053     | Approve Loan Application           | /api/v1/loans/applications/approve                        | POST       | LNB015           | 🔄         |
 | CBB054     | Reject Loan application            | /api/v1/loans/applications/reject                         | POST       | LNB016           | 🔄         |
-| CBB055     | Disburse Loan                      |                                                           | POST       | LNB017           | 🔄         |
+| CBB055     | Disburse Loan                      | /api/v1/loans/application/disburse                        | POST       | LNB017           | 🔄         |
 
 ---
 
@@ -103,11 +103,11 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 ### 3. Document Processor APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|PDB002|Store & Process Guarantor Docs||POST|LNB007|🔄|
-|PDB003|Store & Process Loan Application Docs||POST|LNB012|🔄|
-|PDB004|Get Application Docs||PUT|LNB014|🔄|
+| **Action** | **Summary**                           | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------------------------------- | --------- | ---------- | ---------------- | ---------- |
+| PDB002     | Store & Process Guarantor Docs        |           | POST       | LNB007           | 🔄         |
+| PDB003     | Store & Process Loan Application Docs |           | POST       | LNB012           | 🔄         |
+| PDB004     | Get Application Docs                  |           | PUT        | LNB014           | 🔄         |
 
 ---
 
