@@ -66,23 +66,23 @@ It manages community creation, search and discovery, membership management, invi
 
 ### 1. CBA Adapter APIs
 
-| **Action** | **Summary**                | **Route**                                    | **Method** | **Operation ID** | **Status** |
-| ---------- | -------------------------- | -------------------------------------------- | ---------- | ---------------- | ---------- |
-| CBB007     | Retrieve Community List    |                                              | GET        | CMB001           | 🔄         |
-| CBB008     | Filter/Search Community    |                                              | GET        | CMB002           | 🔄         |
-| CBB009     | Create Community           | /api/v1/communities/account                  | POST       | CMB003           | 🔄         |
-| CBB010     | Retrieve Community Details | /api/v1/communities/account/{{community_id}} | GET        | CMB004           | 🔄         |
-| CBB011     | Update Community Detail    |                                              | PUT        | CMB005           | 🔄         |
-| CBB012     | (Un)Block Communities      |                                              | PUT        | CMB006           | 🔄         |
-| CBB013     | Create Invitation          |                                              | POST       | CMB007           | 🔄         |
-| CBB014     | Retrieve Pending Invites   |                                              | GET        | CMB008           | 🔄         |
-| CBB015     | Remove Invitation          |                                              | DELETE     | CMB009           | 🔄         |
-| CBB016     | Accept Invite              |                                              | POST       | CMB010           | 🔄         |
-| CBB017     | Decline Invite             |                                              | POST       | CMB011           | 🔄         |
-| CBB018     | Retrieve Member List       |                                              | GET        | CMB012           | 🔄         |
-| CBB019     | Remove a Community Member  |                                              | DELETE     | CMB013           | 🔄         |
-| CBB020     | Update Member Role         |                                              | PUT        | CMB014           | 🔄         |
-| CBB021     | Delete Community           |                                              | DELETE     | CMB015           | 🔄         |
+| **Action** | **Summary**                | **Route**                                  | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------------- | ------------------------------------------ | ---------- | ---------------- | ---------- |
+| CBB007     | Retrieve Community List    |                                            | GET        | CMB001           | 🔄         |
+| CBB008     | Filter/Search Community    |                                            | GET        | CMB002           | 🔄         |
+| CBB009     | Create Community           | /api/v1/communities/account                | POST       | CMB003           | 🔄         |
+| CBB010     | Retrieve Community Details | /api/v1/communities/account/{community_id} | GET        | CMB004           | 🔄         |
+| CBB011     | Update Community Detail    |                                            | PUT        | CMB005           | 🔄         |
+| CBB012     | (Un)Block Communities      |                                            | PUT        | CMB006           | 🔄         |
+| CBB013     | Create Invitation          |                                            | POST       | CMB007           | 🔄         |
+| CBB014     | Retrieve Pending Invites   |                                            | GET        | CMB008           | 🔄         |
+| CBB015     | Remove Invitation          |                                            | DELETE     | CMB009           | 🔄         |
+| CBB016     | Accept Invite              |                                            | POST       | CMB010           | 🔄         |
+| CBB017     | Decline Invite             |                                            | POST       | CMB011           | 🔄         |
+| CBB018     | Retrieve Member List       |                                            | GET        | CMB012           | 🔄         |
+| CBB019     | Remove a Community Member  |                                            | DELETE     | CMB013           | 🔄         |
+| CBB020     | Update Member Role         |                                            | PUT        | CMB014           | 🔄         |
+| CBB021     | Delete Community           |                                            | DELETE     | CMB015           | 🔄         |
 
 ---
 
