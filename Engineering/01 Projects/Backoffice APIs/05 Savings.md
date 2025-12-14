@@ -79,11 +79,10 @@ It manages account listing and search, detailed account information retrieval, p
 | CBB026     | Get Savings Account Overview     | /api/v1/savings/accounts/overview/{accountId}     | GET        | SVB005           | 🔄         |
 | CBB027     | Get Savings Account Transactions | /api/v1/savings/accounts/{{accountNo}}/statement  | GET        | SVB006           | 🔄         |
 | CBB028     | Deposit to Saving Account        | /api/v1/savings/accounts/deposit                  | POST       | SVB007           | 🔄         |
-| CBB029     | Withdraw from Saving Account     | /api/v1/savings/accounts/withdraw                 | POST       | SVB008           | 🔄         |
+| CBB029     | Withdraw from Saving Account     | /api/v1/savings/accounts/withdraw                 | POST       | SVB008, SVB012   | 🔄         |
 | CBB030     | Update Relationship Officer      | /api/v1/savings/accounts/assign-staff/{accountId} | PUT        | SVB009           | 🔄         |
 | CBB031     | Update Account Status            | /api/v1/savings/accounts/status/{accountId}       | PUT        | SVB010           | 🔄         |
 | CBB032     | Close Account                    | /api/v1/savings/accounts/close                    | POST       | SVB011           | 🔄         |
-| CBB033     | Post Withdrawal                  |                                                   | POST       | SVB012           | 🔄         |
 | CBB034     | Process Fund Transfer            |                                                   | POST       | SVB013           | 🔄         |
 | CBB035     | Hold Transaction Amount          |                                                   | POST       | SVB014           | 🔄         |
 | CBB036     | Release Transaction Amount       |                                                   | POST       | SVB014           | 🔄         |
