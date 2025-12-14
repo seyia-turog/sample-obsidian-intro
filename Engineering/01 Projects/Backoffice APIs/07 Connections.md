@@ -41,16 +41,16 @@ It manages connection listing, creation, configuration, status control (pause/ac
 
 ### Backoffice APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|---|
-|CNB001|List Connections|/connections/applications|GET|Connections API|Connections Management|🔄|
-|CNB002|Edit Connection|/connections/applications|PUT|Connections API|Connections Management|🔄|
-|CNB003|Pause Connection|/connections/applications/pause|PUT|Connections API|Connections Management|🔄|
-|CNB004|Test Connection|/connections/applications/test|POST|Connections API|Connections Management|🔄|
-|CNB005|Start Connection|/connections/applications/activate|PUT|Connections API|Connections Management|🔄|
-|CNB006|View Connection Detail|/connections/applications/{connection_id}|GET|Connections API|Connections Management|🔄|
-|CNB007|Create Connection|/connections/applications|POST|Connections API|Connections Management|🔄|
-|CNB008|Delete Connection|/connections/applications/{connectionId}|DELETE|Connections API|Connections Management|🔄|
+| **Action** | **Summary**            | **Route**                                 | **Method** | **Operation ID** | **Status** |
+| ---------- | ---------------------- | ----------------------------------------- | ---------- | ---------------- | ---------- |
+| CNB001     | List Connections       | /connections/applications                 | GET        |                  | 🔄         |
+| CNB002     | Edit Connection        | /connections/applications                 | PUT        |                  | 🔄         |
+| CNB003     | Pause Connection       | /connections/applications/pause           | PUT        |                  | 🔄         |
+| CNB004     | Test Connection        | /connections/applications/test            | POST       |                  | 🔄         |
+| CNB005     | Start Connection       | /connections/applications/activate        | PUT        |                  | 🔄         |
+| CNB006     | View Connection Detail | /connections/applications/{connection_id} | GET        |                  | 🔄         |
+| CNB007     | Create Connection      | /connections/applications                 | POST       |                  | 🔄         |
+| CNB008     | Delete Connection      | /connections/applications/{connectionId}  | DELETE     |                  | 🔄         |
 
 ---
 
