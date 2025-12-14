@@ -59,15 +59,15 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 ### 1. Identity Adapter APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|AIB001|Create Identity Profile||POST|MBB001|🔄|
-|AIB002|Retrieve Member List||GET|MBB002|🔄|
-|AIB003|Fetch Member Profile||GET|MBB003|🔄|
-|AIB004|Update Identity Claims||PUT|MBB004|🔄|
-|AIB005|Create Password Reset Challenge||PUT|MBB005|🔄|
-|AIB006|Update Avatar URL||POST|MBB006|🔄|
-|AIB007|Remove Member Record||DELETE|MBB007|🔄|
+| **Action** | **Summary**                     | **Route**                             | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------------------------- | ------------------------------------- | ---------- | ---------------- | ---------- |
+| AIB001     | Create Identity Profile         | /api/v1/members/profile               | POST       | MBB001           | 🔄         |
+| AIB002     | Retrieve Member List            | /api/v1/members/profile               | GET        | MBB002           | 🔄         |
+| AIB003     | Fetch Member Profile            | /api/v1/members/profile/{{member_id}} | GET        | MBB003           | 🔄         |
+| AIB004     | Update Identity Claims          | /api/v1/members/profile/{{member_id}} | PUT        | MBB004           | 🔄         |
+| AIB005     | Create Password Reset Challenge |                                       | PUT        | MBB005           | 🔄         |
+| AIB006     | Update Avatar URL               |                                       | POST       | MBB006           | 🔄         |
+| AIB007     | Remove Member Record            |                                       | DELETE     | MBB007           | 🔄         |
 
 ---
 
