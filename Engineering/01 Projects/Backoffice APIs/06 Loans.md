@@ -44,7 +44,7 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 ## REST Endpoints
 
-### Backoffice APIs
+### Loan Account Management APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|---|
@@ -111,7 +111,7 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 ---
 
-### 4. Message APIs
+### 4. Notification Worker APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
