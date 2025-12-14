@@ -71,25 +71,25 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 ### 1. CBA Adapter APIs
 
-| **Action** | **Summary**                        | **Route**                             | **Method** | **Operation ID** | **Status** |
-| ---------- | ---------------------------------- | ------------------------------------- | ---------- | ---------------- | ---------- |
-| CBB039     | Retrieve Loan Accounts             | /api/v1/loans/account/close/{loan_id} | GET        | LNB001           | 🔄         |
-| CBB040     | Update Loan Parameters             | /api/v1/loans/account/{loan_id}       | PUT        | LNB002           | 🔄         |
-| CBB041     | Retrieve Loan Details              |                                       | GET        | LNB003           | 🔄         |
-| CBB042     | Fetch Repayment Schedule           |                                       | GET        | LNB004           | 🔄         |
-| CBB043     | Retrieve Loan Transactions         |                                       | GET        | LNB005           | 🔄         |
-| CBB044     | Close Loan Account                 |                                       | DELETE     | LNB006           | 🔄         |
-| CBB045     | Add Guarantor to Loan Account      |                                       | POST       | LNB007           | 🔄         |
-| CBB046     | Remove Guarantor from Loan Account |                                       | DELETE     | LNB008           | 🔄         |
-| CBB047     | Retrieve Guarantors                |                                       | GET        | LNB009           | 🔄         |
-| CBB048     | Update Loan Status                 |                                       | PUT        | LNB010           | 🔄         |
-| CBB049     | Post Loan Charges                  |                                       | POST       | LNB011           | 🔄         |
-| CBB050     | Create Loan Application            |                                       | POST       | LNB012           | 🔄         |
-| CBB051     | Retrieve Submitted Application     |                                       | PUT        | LNB014           | 🔄         |
-| CBB052     | Retrieve Financial Data            |                                       | PUT        | LNB014           | 🔄         |
-| CBB053     | Create Loan Account                |                                       | POST       | LNB015           | 🔄         |
-| CBB054     | Reject Loan                        |                                       | POST       | LNB016           | 🔄         |
-| CBB055     | Disburse Loan                      |                                       | POST       | LNB017           | 🔄         |
+| **Action** | **Summary**                        | **Route**                                    | **Method** | **Operation ID** | **Status** |
+| ---------- | ---------------------------------- | -------------------------------------------- | ---------- | ---------------- | ---------- |
+| CBB039     | Retrieve Loan Accounts             | /api/v1/loans/account/close/{loan_id}        | GET        | LNB001           | 🔄         |
+| CBB040     | Update Loan Parameters             | /api/v1/loans/account/{loan_id}              | PUT        | LNB002           | 🔄         |
+| CBB041     | Retrieve Loan Details              | /api/v1/loans/account/{loanId}               | GET        | LNB003           | 🔄         |
+| CBB042     | Fetch Repayment Schedule           |                                              | GET        | LNB004           | 🔄         |
+| CBB043     | Retrieve Loan Transactions         | /api/v1/loans/account/transactions/{loan_id} | GET        | LNB005           | 🔄         |
+| CBB044     | Close Loan Account                 |                                              | DELETE     | LNB006           | 🔄         |
+| CBB045     | Add Guarantor to Loan Account      |                                              | POST       | LNB007           | 🔄         |
+| CBB046     | Remove Guarantor from Loan Account |                                              | DELETE     | LNB008           | 🔄         |
+| CBB047     | Retrieve Guarantors                |                                              | GET        | LNB009           | 🔄         |
+| CBB048     | Update Loan Status                 |                                              | PUT        | LNB010           | 🔄         |
+| CBB049     | Post Loan Charges                  |                                              | POST       | LNB011           | 🔄         |
+| CBB050     | Create Loan Application            |                                              | POST       | LNB012           | 🔄         |
+| CBB051     | Retrieve Submitted Application     |                                              | PUT        | LNB014           | 🔄         |
+| CBB052     | Retrieve Financial Data            |                                              | PUT        | LNB014           | 🔄         |
+| CBB053     | Create Loan Account                |                                              | POST       | LNB015           | 🔄         |
+| CBB054     | Reject Loan                        |                                              | POST       | LNB016           | 🔄         |
+| CBB055     | Disburse Loan                      |                                              | POST       | LNB017           | 🔄         |
 
 ---
 
