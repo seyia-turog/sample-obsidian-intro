@@ -87,8 +87,8 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 | CBB050     | Create Loan Application            | /api/v1/loans/applications                                | POST       | LNB012           | 🔄         |
 | CBB051     | Retrieve Submitted Applications    | /api/v1/loans/applications                                | PUT        | LNB014           | 🔄         |
 | CBB052     | Retrieve Financial Data            | /api/v1/savings/accounts/{accountNo}/statement            | PUT        | LNB014           | 🔄         |
-| CBB053     | Approve Loan Account               |                                                           | POST       | LNB015           | 🔄         |
-| CBB054     | Reject Loan                        |                                                           | POST       | LNB016           | 🔄         |
+| CBB053     | Approve Loan Application           | /api/v1/loans/applications/approve                        | POST       | LNB015           | 🔄         |
+| CBB054     | Reject Loan application            | /api/v1/loans/applications/reject                         | POST       | LNB016           | 🔄         |
 | CBB055     | Disburse Loan                      |                                                           | POST       | LNB017           | 🔄         |
 
 ---
