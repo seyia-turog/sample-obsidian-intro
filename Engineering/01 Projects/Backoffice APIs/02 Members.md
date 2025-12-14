@@ -71,7 +71,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 ---
 
-### 2. Message Processor APIs
+### 2. Messages Processor APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|

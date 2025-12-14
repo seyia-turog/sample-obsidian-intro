@@ -97,7 +97,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ---
 
-### 5. Message Processor APIs
+### 5. Messages Processor APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
