@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
-                "mode": "source",
+                "file": "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "12 Documents"
+              "title": "01 Clients"
             }
           }
         ]
@@ -184,10 +184,13 @@
   },
   "active": "ee44878349066c0d",
   "lastOpenFiles": [
-    "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
-    "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
-    "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
+    "Engineering/01 Projects/Backoffice APIs/02 Members.md",
+    "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
+    "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
     "Engineering/01 Projects/Backoffice APIs/09 Applications.md",
+    "Engineering/01 Projects/Backoffice APIs/12 Documents.md",
+    "Engineering/01 Projects/Backoffice APIs/11 Messages.md",
+    "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
     "Engineering/01 Projects/Backoffice APIs/08 Cards.md",
     "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
     "Engineering/01 Projects/Backoffice APIs/06 Loans.md",
@@ -195,12 +198,9 @@
     "Engineering/01 Projects/Omnichannel API/07. Savings.md",
     "Engineering/01 Projects/Backoffice APIs/04 Community.md",
     "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
-    "Engineering/01 Projects/Backoffice APIs/02 Members.md",
-    "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
     "Engineering/01 Projects/Omnichannel API/01. Users.md",
     "Engineering/01 Projects/Backoffice Console/02. CRM Engine.md",
     "Engineering/01 Projects/Backoffice Console/01. Retail Engine.md",
-    "Engineering/01 Projects/Backoffice APIs/00 Overview.md",
     "Engineering/01 Projects/Omnichannel API/14. Compliance.md",
     "Engineering/01 Projects/Omnichannel API/13. Transactions.md",
     "Engineering/01 Projects/Omnichannel API/06. Loans.md",
