@@ -70,7 +70,7 @@ It manages community creation, search and discovery, membership management, invi
 | ---------- | -------------------------- | --------- | ---------- | ---------------- | ---------- |
 | CBB007     | Retrieve Community List    |           | GET        | CMB001           | 🔄         |
 | CBB008     | Filter/Search Community    |           | GET        | CMB002           | 🔄         |
-| CBB009     | Add Client to Community    |           | POST       | CMB003           | 🔄         |
+| CBB009     | Create Community           |           | POST       | CMB003           | 🔄         |
 | CBB010     | Retrieve Community Details |           | GET        | CMB004           | 🔄         |
 | CBB011     | Update Community Detail    |           | PUT        | CMB005           | 🔄         |
 | CBB012     | (Un)Block Communities      |           | PUT        | CMB006           | 🔄         |
