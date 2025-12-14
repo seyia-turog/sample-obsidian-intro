@@ -1,111 +1,117 @@
 ---
-Status: Pending  
-Thumbnail: "#74B9FF"  
-Description: Manage Savings Accounts and Transactions  
+
+## Status: Pending  
+Thumbnail: "#26C6DA"  
+Description: Comprehensive Savings Account Operations & Transaction Management  
 Application: Retail Engine  
-Due On: 2025-10-09T12:00:00  
----
+Due On: 2025-10-12T12:00:00
 
 ---
 
 ## Overview
 
-The **Savings Module** is responsible for managing all savings-related operations for individual and corporate clients within the ADIBA ecosystem. It enables tenants (banks and fintechs) to open, maintain, monitor, and close savings accounts, while providing financial performance insights, transactional visibility, and compliance tracking.
+The **Savings Account Management Module** handles comprehensive savings account operations and transaction processing in the digital banking platform.
 
-This module ensures seamless integration between **core banking**, **identity**, and **payment processors**, supporting end-to-end savings account management and related workflows.
+It manages account listing and search, detailed account information retrieval, performance tracking, transactions (deposits, withdrawals, transfers), staff assignments, status management, charges, account closure, and archival, integrating with CBA Adapter, Payment Processor, and Message Workers to ensure complete account lifecycle management with real-time notifications.
 
-### Core Business Functions
+---
 
-- **Account Management** – Create, update, and maintain savings account information.  
-- **Transaction Processing** – Enable deposits, withdrawals, and fund transfers with integrated payment processors.  
-- **Performance Monitoring** – Calculate interest and display real-time account performance and overview.  
-- **Account Lifecycle** – Archive or close accounts while maintaining audit integrity.  
-- **Notifications and Alerts** – Provide automatic messaging for account events, deposits, withdrawals, and closures.
+## Core Business Functions
+
+- **Account Discovery** – List and search savings accounts with filtering capabilities.
+- **Account Information** – Retrieve detailed account information, performance metrics, and overview summaries.
+- **Transaction Management** – Process deposits, withdrawals, and view transaction history.
+- **Fund Transfers** – Execute internal and external fund transfers with holds and releases.
+- **Staff Assignment** – Assign relationship officers to savings accounts.
+- **Status Management** – Change account operational status (Active, Frozen, Suspended).
+- **Account Closure** – Close accounts permanently with fund transfers.
+- **Charges & Fees** – Apply maintenance and penalty charges to accounts.
+- **Archival** – Move accounts to archived state for record-keeping.
 
 ---
 
 ## Technical Dependencies
 
-### Adapter Dependencies
+### Adapter & Processor Dependencies
 
-| Adapter               | Business Purpose                                                                                                 |
-| --------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Identity Adapter      | Handles account-owner authentication and permission validation.                                                 |
-| Core Banking Adapter  | Connects directly with the financial core for account management, balance, and transaction synchronization.     |
-| CRM Adapter           | Manages relationship officer assignment and communication tracking.                                             |
-| Payments Processor    | Processes deposits, withdrawals, and fund transfers securely.                                                   |
-| Messaging Utility     | Sends transactional notifications and savings account updates to clients.                                       |
+|Adapter / Processor|Business Purpose|
+|---|---|
+|CBA Adapter|Manages all savings account operations including CRUD operations, transactions, status changes, staff assignments, charges, and archival.|
+|Processor (Payments)|Processes external fund transfers for inter-bank transactions.|
+|Util Worker (Messages)|Sends notifications for deposits, withdrawals, transfers, staff assignments, status changes, closures, and charges.|
 
 ---
 
 ## REST Endpoints
 
-### 1. Backoffice APIs
+### Backoffice APIs
 
-| **Action** | **Summary**                       | **Route**                                   | **Method** | **Status** |
-| ----------- | --------------------------------- | ------------------------------------------- | ----------- | ----------- |
-| SV001       | Get Savings Accounts              | /savings/accounts                           | GET         | 🔄          |
-| SV002       | Search Saving Accounts            | /savings/accounts/search                    | GET         | 🔄          |
-| SV003       | Get Savings Account Details       | /savings/accounts/{account_id}              | GET         | 🔄          |
-| SV004       | Get Savings Account Performance   | /savings/accounts/performance/{account_id}  | GET         | 🔄          |
-| SV005       | Get Savings Account Overview      | /savings/accounts/overview/{account_id}     | GET         | 🔄          |
-| SV006       | Get Savings Account Transactions  | /savings/accounts/transactions/{account_id} | GET         | 🔄          |
-| SV007       | Deposit to Savings Account        | /savings/accounts/deposit                   | POST        | 🔄          |
-| SV008       | Withdraw from Savings Account     | /savings/accounts/withdraw                  | POST        | 🔄          |
-| SV009       | Assign Staff to Savings Account   | /savings/accounts/assign-staff/{account_id} | PUT         | 🔄          |
-| SV010       | Change Savings Account Status     | /savings/accounts/status/{account_id}       | PUT         | 🔄          |
-| SV011       | Close Savings Account             | /savings/accounts/close                     | POST        | 🔄          |
-| SV012       | Add Charge to Savings Account     | /savings/accounts/charge                    | POST        | 🔄          |
-| SV013       | Transfer Funds from Savings       | /savings/accounts/transfer                  | POST        | 🔄          |
-| SV014       | Archive Savings Account           | /savings/accounts/archive                   | PUT         | 🔄          |
-
----
-
-### 2. Corebanking Adapter APIs
-
-| **Action** | **Summary**                   | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | ----------------------------- | --------- | ---------- | ---------------- | ---------- |
-| CB001      | Retrieve Savings Accounts     |           | GET        | SV001, SV002     | 🔄         |
-| CB002      | Retrieve Account Details      |           | GET        | SV003, SV005     | 🔄         |
-| CB003      | Retrieve Account Performance  |           | GET        | SV004            | 🔄         |
-| CB004      | Retrieve Account Transactions |           | GET        | SV006            | 🔄         |
-| CB005      | Process Deposit               |           | POST       | SV007            | 🔄         |
-| CB006      | Process Withdrawal            |           | POST       | SV008            | 🔄         |
-| CB007      | Update Relationship Officer   |           | PUT        | SV009            | 🔄         |
-| CB008      | Update Account Status         |           | PUT        | SV010            | 🔄         |
-| CB009      | Close Account                 |           | POST       | SV011            | 🔄         |
-| CB010      | Apply Account Charge          |           | POST       | SV012            | 🔄         |
-| CB011      | Initiate Transfer             |           | POST       | SV013            | 🔄         |
-| CB012      | Archive Account Records       |           | PUT        | SV014            | 🔄         |
+| **Action** | **Summary**                                  | **Route**                                   | **Method** | **API Tag** | **Operation ID**          | **Status** |
+| ---------- | -------------------------------------------- | ------------------------------------------- | ---------- | ----------- | ------------------------- | ---------- |
+| SVB001     | Get Savings Accounts                         | /savings/accounts                           | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB002     | Search Saving Accounts                       | /savings/accounts/search                    | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB003     | Get Savings Account Details                  | /savings/accounts/{account_id}              | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB004     | Get Savings Account Performance              | /savings/accounts/performance/{account_id}  | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB005     | Get Savings Account Overview                 | /savings/accounts/overview/{account_id}     | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB006     | Get Savings Account Transactions             | /savings/accounts/transactions/{account_id} | GET        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB007     | Deposit to Savings Account                   | /savings/accounts/deposit                   | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB008     | Withdraw from Savings Account                | /savings/accounts/withdraw                  | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB009     | Assign Staff to Savings Account              | /savings/accounts/assign-staff/{account_id} | PUT        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB010     | Change Savings Account Status                | /savings/accounts/status/{account_id}       | PUT        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB011     | Close Savings Account                        | /savings/accounts/close                     | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB012     | Add Charge to Savings Account                | /savings/accounts/charge                    | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB013     | Transfer Funds from Savings Account Internal | /savings/accounts/transfer                  | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB014     | Transfer Funds from Savings Account External | /savings/accounts/transfer                  | POST       | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
+| SVB014     | Archive Savings Account                      | /savings/accounts/archive                   | PUT        | SAVINGS API | SAVING ACCOUNT MANAGEMENT | 🔄         |
 
 ---
 
-### 3. CRM Adapter APIs
+## Dependency Service APIs
 
-| **Action** | **Summary**                 | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | --------------------------- | --------- | ----------- | ---------------- | ----------- |
-| CR001       | Update Relationship Officer |           | PUT         | SV009            | 🔄          |
+### 1. CBA Adapter APIs
+
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|CBB022|Get Savings Accounts||GET|SVB001|🔄|
+|CBB023|Search Saving Accounts||GET|SVB002|🔄|
+|CBB024|Get Savings Account Details||GET|SVB003|🔄|
+|CBB025|Get Savings Account Performance||GET|SVB004|🔄|
+|CBB026|Get Savings Account Overview||GET|SVB005|🔄|
+|CBB027|Get Savings Account Transactions||GET|SVB006|🔄|
+|CBB028|Post Deposit||POST|SVB007|🔄|
+|CBB029|Post Withdrawal||POST|SVB008|🔄|
+|CBB030|Update Relationship Officer||PUT|SVB009|🔄|
+|CBB031|Update Account Status||PUT|SVB010|🔄|
+|CBB032|Close Account||POST|SVB011|🔄|
+|CBB033|Post Withdrawal||POST|SVB012|🔄|
+|CBB034|Process Fund Transfer||POST|SVB013|🔄|
+|CBB035|Hold Transaction Amount||POST|SVB014|🔄|
+|CBB036|Release Transaction Amount||POST|SVB014|🔄|
+|CBB037|Reverse Transaction Amount||POST|SVB014|🔄|
+|CBB038|Archive Savings Account||PUT|SVB014|🔄|
 
 ---
 
-### 4. Messaging Utility APIs
+### 2. Payment Processor APIs
 
-| **Action** | **Summary**                        | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ---------------------------------- | --------- | ----------- | ---------------- | ----------- |
-| MU001       | Send Deposit Receipt Notification  |           | POST        | SV007            | 🔄          |
-| MU002       | Send Withdrawal Receipt            |           | POST        | SV008            | 🔄          |
-| MU003       | Send Account Update Notification   |           | POST        | SV009, SV010     | 🔄          |
-| MU004       | Send Account Closure Notification  |           | POST        | SV011            | 🔄          |
-| MU005       | Send Charge Notification           |           | POST        | SV012            | 🔄          |
-| MU006       | Send Transfer Notification         |           | POST        | SV013            | 🔄          |
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|PPB001|Transfer Transaction Amount||POST|SVB014|🔄|
 
 ---
 
-### 5. Payments Processor APIs
+### 3. Notification Worker APIs
 
-| **Action** | **Summary**              | **Route** | **Method** | **Operation ID** | **Status** |
-| ----------- | ------------------------ | --------- | ----------- | ---------------- | ----------- |
-| PP001       | Process Account Transfer |           | POST        | SV013            | 🔄          |
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|UMB009|Send Deposit Notification||POST|SVB007|🔄|
+|UMB010|Send Withdrawal Notification||POST|SVB008|🔄|
+|UMB011|Send Staff-Assigned-to-Account Notification||PUT|SVB009|🔄|
+|UMB012|Send Account Status Changed Notification||PUT|SVB010|🔄|
+|UMB013|Send Account Closure Notification||POST|SVB011|🔄|
+|UMB014|Send Withdrawal Notification||POST|SVB012|🔄|
+|UMB015|Send Fund Transfer Notification||POST|SVB013|🔄|
+|UMB016|Send Fund Transfer Notification||POST|SVB014|🔄|
 
 ---
 
@@ -113,43 +119,54 @@ This module ensures seamless integration between **core banking**, **identity**,
 
 ### Permissions & APIs
 
-| **Permission**   | **Permission Name**         | **APIs**                    | **Status** |
-| ---------------- | --------------------------- | --------------------------- | ----------- |
-| svg_list         | List Savings Accounts       | SV001, SV002, SV003, SV005  | 🔄          |
-| svg_txn_view     | View Account Transactions   | SV006                       | 🔄          |
-| svg_txn_process  | Perform Transactions        | SV007, SV008, SV013         | 🔄          |
-| svg_admin        | Manage Account Lifecycle    | SV009, SV010, SV011, SV012, SV014 | 🔄     |
+|**Permission**|**Permission Name**|**APIs**|**Status**|
+|---|---|---|---|
+|savings_view|View Savings Account Information|SVB001, SVB002, SVB003, SVB004, SVB005, SVB006|🔄|
+|savings_deposit|Deposit to Savings Accounts|SVB007|🔄|
+|savings_withdraw|Withdraw from Savings Accounts|SVB008|🔄|
+|savings_transfer|Transfer Funds|SVB013, SVB014|🔄|
+|savings_manage|Manage Account Status|SVB009, SVB010, SVB011, SVB012|🔄|
+|savings_archive|Archive Savings Accounts|SVB014|🔄|
 
 ---
 
 ### Roles & Permissions
 
-| **Role** | **Role Name**          | **Permissions**                         | **Status** |
-| --------- | ---------------------- | --------------------------------------- | ----------- |
-| RP001     | Administrator          | svg_admin, svg_list, svg_txn_process    | 🔄          |
-| RP002     | Relationship Officer   | svg_list, svg_txn_view                  | 🔄          |
-| RP003     | Teller / Cash Officer  | svg_txn_process                         | 🔄          |
-| RP004     | Compliance Officer     | svg_list                                | 🔄          |
+|**Role**|**Role Name**|**Permissions**|**Status**|
+|---|---|---|---|
+|RP2101|Account Holder (Self)|savings_view, savings_deposit, savings_withdraw, savings_transfer|🔄|
+|RP2102|Relationship Officer|savings_view, savings_manage|🔄|
+|RP2103|Branch Manager|savings_view, savings_deposit, savings_withdraw, savings_transfer, savings_manage, savings_archive|🔄|
+|RP2104|Operations Officer|savings_view, savings_deposit, savings_withdraw, savings_manage|🔄|
 
 ---
 
 ### Policies & Attributes
 
-| **Policy ID** | **Policy**                                | **Attribute / Condition**                     | **Status** |
-| -------------- | ----------------------------------------- | ---------------------------------------------- | ----------- |
-| P_SV_001       | Org MUST have Active RE Subscription      | `org.apps.retail` eq active                    | 🔄          |
-| P_SV_002       | RP002 can ONLY view assigned accounts     | `role eq RP002 AND member.accounts contain {account}` | 🔄     |
+|**Policy ID**|**Policy**|**Attribute / Condition**|**Status**|
+|---|---|---|---|
+|P_SAV_001|Account holders can only access their own accounts|`account.owner_id eq user.id`|🔄|
+|P_SAV_002|Withdrawals require sufficient available balance|`balance.available >= withdrawal.amount`|🔄|
+|P_SAV_003|Account closure requires zero balance|`balance.total eq 0`|🔄|
+|P_SAV_004|Frozen accounts restrict all transactions|`account.status != "frozen"`|🔄|
+|P_SAV_005|External transfers use hold-release mechanism|`transfer.type eq "external"`|🔄|
+|P_SAV_006|Staff assignments require relationship officer role|`staff.role eq "relationship_officer"`|🔄|
+|P_SAV_007|Archived accounts are read-only|`account.status != "archived"`|🔄|
 
 ---
 
 ### Related Documents
 
-1. **AI in ADIBA: The Future of Savings Accounts**
-2. **Corebanking Integration Reference for ADIBA Savings**
+1. **Savings Account Operations Manual**
+2. **Transaction Processing Guidelines**
+3. **Fund Transfer Procedures**
+4. **Account Status Management Policy**
+5. **Charge & Fee Structure**
+6. **Account Closure Workflow**
 
 ---
 
-✅ - _Complete_  
+✅ - Complete  
 🔄 - In Progress  
 ⏰ - Delayed  
 🚧 - In Testing  
