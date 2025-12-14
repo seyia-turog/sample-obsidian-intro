@@ -86,7 +86,7 @@ It manages community creation, search and discovery, membership management, invi
 
 ---
 
-### 2. Messages Processo APIs
+### 2. Messages Processor APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|

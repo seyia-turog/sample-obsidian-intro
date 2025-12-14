@@ -100,7 +100,7 @@ It manages account listing and search, detailed account information retrieval, p
 
 ---
 
-### 3. Message Processors APIs
+### 3. Messages Processors APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|

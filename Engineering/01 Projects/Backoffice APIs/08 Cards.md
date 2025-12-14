@@ -42,7 +42,7 @@ It manages card listing, creation and issuance, detailed information retrieval, 
 
 ## REST Endpoints
 
-### Card Management APIs
+### Backoffice APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|---|

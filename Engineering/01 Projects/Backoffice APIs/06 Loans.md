@@ -111,7 +111,7 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 ---
 
-### 4. Message Processor APIs
+### 4. Messages Processor APIs
 
 | **Action** | **Summary**                                  | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | -------------------------------------------- | --------- | ---------- | ---------------- | ---------- |
