@@ -74,8 +74,8 @@ It manages community creation, search and discovery, membership management, invi
 | CBB010     | Retrieve Community Details | /api/v1/communities/account/{community_id} | GET        | CMB004           | 🔄         |
 | CBB011     | Update Community Detail    |                                            | PUT        | CMB005           | 🔄         |
 | CBB012     | (Un)Block Communities      |                                            | PUT        | CMB006           | 🔄         |
-| CBB013     | Create Invitation          |                                            | POST       | CMB007           | 🔄         |
-| CBB014     | Retrieve Pending Invites   |                                            | GET        | CMB008           | 🔄         |
+| CBB013     | Create Invitation          | /api/v1/communities/invites                | POST       | CMB007           | 🔄         |
+| CBB014     | Retrieve Pending Invites   | /api/v1/communities/invites/pending        | GET        | CMB008           | 🔄         |
 | CBB015     | Remove Invitation          |                                            | DELETE     | CMB009           | 🔄         |
 | CBB016     | Accept Invite              |                                            | POST       | CMB010           | 🔄         |
 | CBB017     | Decline Invite             |                                            | POST       | CMB011           | 🔄         |
