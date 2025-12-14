@@ -42,23 +42,23 @@ It manages community creation, search and discovery, membership management, invi
 
 ### Backoffice APIs
 
-| **Action** | **Summary**                  | **Route**                                  | **Method** | **API Tag**     | **Operation ID** | **Status** |
-| ---------- | ---------------------------- | ------------------------------------------ | ---------- | --------------- | ---------------- | ---------- |
-| CMB001     | Communities List             | /communities/accounts                      | GET        | Communities API | Communities      | 🔄         |
-| CMB002     | Search Community             | /communities/accounts/search               | GET        | Communities API | Communities      | 🔄         |
-| CMB003     | Add New Community            | /communities/account                       | POST       | Communities API | Communities      | 🔄         |
-| CMB004     | View Community Detail        | /communities/account/{community_id}        | GET        | Communities API | Communities      | 🔄         |
-| CMB005     | Update Community Detail      | /communities/account/{community_id}        | PUT        | Communities API | Communities      | 🔄         |
-| CMB006     | Block / Unblock Community    | /communities/account/status/{community_id} | PUT        | Communities API | Communities      | 🔄         |
-| CMB007     | Invite To Community          | /communities/account/invites               | POST       | Communities API | Communities      | 🔄         |
-| CMB008     | Get Pending Invites          | /communities/account/invites/pending       | GET        | Communities API | Communities      | 🔄         |
-| CMB009     | Cancel Invite                | /communities/account/invites/{invite_id}   | DELETE     | Communities API | Communities      | 🔄         |
-| CMB010     | Accept Invite                | /communities/invites/accept                | POST       | Communities API | Communities      | 🔄         |
-| CMB011     | Decline Invite               | /communities/account/invites/decline       | POST       | Communities API | Communities      | 🔄         |
-| CMB012     | View Member List             | /communities/account/members               | GET        | Communities API | Communities      | 🔄         |
-| CMB013     | Remove Member                | /communities/account/members               | DELETE     | Communities API | Communities      | 🔄         |
-| CMB014     | Modify Community Member Role | /communities/members/role/                 | PUT        | Communities API | Communities      | 🔄         |
-| CMB015     | Dissolve Community           | /communities/account/update/{community_id} | DELETE     | Communities API | Communities      | 🔄         |
+| **Action** | **Summary**                  | **Route**                                  | **Method** | **Operation ID** | **Status** |
+| ---------- | ---------------------------- | ------------------------------------------ | ---------- | ---------------- | ---------- |
+| CMB001     | Communities List             | /communities/accounts                      | GET        |                  | 🔄         |
+| CMB002     | Search Community             | /communities/accounts/search               | GET        |                  | 🔄         |
+| CMB003     | Add New Community            | /communities/account                       | POST       |                  | 🔄         |
+| CMB004     | View Community Detail        | /communities/account/{community_id}        | GET        |                  | 🔄         |
+| CMB005     | Update Community Detail      | /communities/account/{community_id}        | PUT        |                  | 🔄         |
+| CMB006     | Block / Unblock Community    | /communities/account/status/{community_id} | PUT        |                  | 🔄         |
+| CMB007     | Invite To Community          | /communities/account/invites               | POST       |                  | 🔄         |
+| CMB008     | Get Pending Invites          | /communities/account/invites/pending       | GET        |                  | 🔄         |
+| CMB009     | Cancel Invite                | /communities/account/invites/{invite_id}   | DELETE     |                  | 🔄         |
+| CMB010     | Accept Invite                | /communities/invites/accept                | POST       |                  | 🔄         |
+| CMB011     | Decline Invite               | /communities/account/invites/decline       | POST       |                  | 🔄         |
+| CMB012     | View Member List             | /communities/account/members               | GET        |                  | 🔄         |
+| CMB013     | Remove Member                | /communities/account/members               | DELETE     |                  | 🔄         |
+| CMB014     | Modify Community Member Role | /communities/members/role/                 | PUT        |                  | 🔄         |
+| CMB015     | Dissolve Community           | /communities/account/update/{community_id} | DELETE     |                  | 🔄         |
 
 ---
 
