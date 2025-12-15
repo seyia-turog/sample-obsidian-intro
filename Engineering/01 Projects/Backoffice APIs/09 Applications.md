@@ -57,16 +57,16 @@ It manages application discovery through listing, searching, and filtering, appl
 
 ### CRM Adapter APIs
 
-| **Action** | **Summary**                          | **Route**            | **Method** | **Operation ID** | **Status** |
-| ---------- | ------------------------------------ | -------------------- | ---------- | ---------------- | ---------- |
-| CRB003     | Retrieve Application Catalog         | /api/v1/applications | GET        | APB001           | 🔄         |
-| CRB004     | Search Applications                  |                      | GET        | APB002           | 🔄         |
-| CRB005     | Filter Applications                  |                      | GET        | APB003           | 🔄         |
-| CRB006     | Retrieve Application Details         |                      | GET        | APB004           | 🔄         |
-| CRB007     | Add Application to Subscription Plan |                      | POST       | APB005           | 🔄         |
-| CRB008     | Retrieve User-Specific Apps          |                      | GET        | APB006           | 🔄         |
-| CRB009     | Update Application Config            |                      | PUT        | APB007           | 🔄         |
-| CRB010     | Remove My Application                |                      | DELETE     | APB008           | 🔄         |
+| **Action** | **Summary**                          | **Route**                                             | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------------------------------ | ----------------------------------------------------- | ---------- | ---------------- | ---------- |
+| CRB003     | Retrieve Application Catalog         | /api/v1/applications                                  | GET        | APB001           | 🔄         |
+| CRB004     | Search Applications                  |                                                       | GET        | APB002           | 🔄         |
+| CRB005     | Filter Applications                  |                                                       | GET        | APB003           | 🔄         |
+| CRB006     | Retrieve Application Details         | /api/v1/applications/{applicationId}                  | GET        | APB004           | 🔄         |
+| CRB007     | Add Application to Subscription Plan | /api/v1/applications/subscriptions/{{subscriptionId}} | POST       | APB005           | 🔄         |
+| CRB008     | Retrieve User-Specific Apps          |                                                       | GET        | APB006           | 🔄         |
+| CRB009     | Update Application Config            |                                                       | PUT        | APB007           | 🔄         |
+| CRB010     | Remove My Application                |                                                       | DELETE     | APB008           | 🔄         |
 
 ---
 
