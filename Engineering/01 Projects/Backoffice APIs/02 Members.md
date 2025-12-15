@@ -67,7 +67,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | AIB004     | Update Identity Claims          | /api/v1/members/profile/{{member_id}} | PUT        | MBB004           | 🔄         |
 | AIB005     | Create Password Reset Challenge | /api/v1/members/profile/password      | PUT        | MBB005           | 🔄         |
 | AIB006     | Update Avatar URL               | /api/v1/members/profile/avatar        | POST       | MBB006           | 🔄         |
-| AIB007     | Remove Member Record            |                                       | DELETE     | MBB007           | 🔄         |
+| AIB007     | Remove a Member                 |                                       | DELETE     | MBB007           | 🔄         |
 
 ---
 
