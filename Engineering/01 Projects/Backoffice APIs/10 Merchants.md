@@ -56,13 +56,13 @@ It manages merchant catalog listing, detailed merchant information viewing, merc
 
 ### 1. CRM Adapter APIs
 
-| **Action** | **Summary**                | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | -------------------------- | --------- | ---------- | ---------------- | ---------- |
-| CRB011     | Retrieve Merchants Catalog |           | GET        | MCB001           | 🔄         |
-| CRB012     | Retrieve Merchant Detail   |           | GET        | MCB002           | 🔄         |
-| CRB013     | Add Merchant               |           | POST       | MCB003           | 🔄         |
-| CRB015     | Update Merchant Config     |           | PUT        | MCB004           | 🔄         |
-| CRB016     | Remove Merchant            |           | DELETE     | MCB005           | 🔄         |
+| **Action** | **Summary**                | **Route**                                  | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------------- | ------------------------------------------ | ---------- | ---------------- | ---------- |
+| CRB011     | Retrieve Merchants Catalog | /api/v1/stakeholders/third-party-providers | GET        | MCB001           | 🔄         |
+| CRB012     | Retrieve Merchant Detail   |                                            | GET        | MCB002           | 🔄         |
+| CRB013     | Add Merchant               |                                            | POST       | MCB003           | 🔄         |
+| CRB015     | Update Merchant Config     |                                            | PUT        | MCB004           | 🔄         |
+| CRB016     | Remove Merchant            |                                            | DELETE     | MCB005           | 🔄         |
 
 ---
 
