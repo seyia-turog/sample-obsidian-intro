@@ -43,15 +43,15 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 ### Backoffice APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|---|
-|MBB001|Create Member|/members/profile|POST|Members API|Member|🔄|
-|MBB002|Member List|/members/profile|GET|Members API|Member|🔄|
-|MBB003|View Member|/members/profile/{member_id}|GET|Members API|Member|🔄|
-|MBB004|Update Member Details|/members/profile/{member_id}|PUT|Members API|Member|🔄|
-|MBB005|Change Password|/members/password|PUT|Members API|Member|🔄|
-|MBB006|Upload Profile Image|/members/avatar|POST|Members API|Member|🔄|
-|MBB007|Remove Member|/members/profile/remove|DELETE|Members API|Member|🔄|
+| **Action** | **Summary**           | **Route**                    | **Method** | **API Tag** | **Operation ID** | **Status** |
+| ---------- | --------------------- | ---------------------------- | ---------- | ----------- | ---------------- | ---------- |
+| MBB001     | Create Member         | /members/profile             | POST       | Members API | Member           | 🔄         |
+| MBB002     | Member List           | /members/profile             | GET        | Members API | Member           | 🔄         |
+| MBB003     | View Member           | /members/profile/{member_id} | GET        | Members API | Member           | 🔄         |
+| MBB004     | Update Member Details | /members/profile/{member_id} | PUT        | Members API | Member           | 🔄         |
+| MBB005     | Change Password       | /members/password            | PUT        | Members API | Member           | 🔄         |
+| MBB006     | Upload Profile Image  | /members/avatar              | POST       | Members API | Member           | 🔄         |
+| MBB007     | Remove Member         | /members/profile/remove      | DELETE     | Members API | Member           | 🔄         |
 
 ---
 
