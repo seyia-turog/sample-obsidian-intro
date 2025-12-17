@@ -64,7 +64,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | ---------- | ------------------------------ | ------------------ | ---------- | ---------------- | ---------- |
 | AIB008     | Create User in Identity System | /api/v1/users      | POST       | CLB003           | 🔄         |
 | AIB009     | Update User Profile            | /api/v1/users/{id} | PUT        | CLB004           | 🔄         |
-| AIB0       | Update User Profile            |                    | DELETE     | CLB007           | 🔄         |
+| AIB0       | Remove User                    | /api/v1/users/{id} | DELETE     | CLB007           | 🔄         |
 
 ---
 
