@@ -87,7 +87,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | ---------- | ------------------------------ | ------------------------------------------- | ---------- | ---------------- | ---------- |
 | CRB001     | Create Customer in CRM         | /api/v1/stakeholders/customers              | POST       | CLB003           | 🔄         |
 | CRB002     | Update Customer Profile in CRM | /api/v1/stakeholders/customers/{customerId} | PUT        | CLB004           | 🔄         |
-| CRB00      | Remove Customer Profile in CRM | /api/v1/users                               | DELETE     | CLB007           | 🔄         |
+| CRB00      | Remove Customer Profile in CRM | /api/v1/stakeholders/customers              | DELETE     | CLB007           | 🔄         |
 
 ---
 
