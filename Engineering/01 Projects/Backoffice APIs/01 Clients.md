@@ -71,8 +71,8 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 | **Action** | **Summary**                  | **Route**                                     | **Method** | **Operation ID** | **Status** |
 | ---------- | ---------------------------- | --------------------------------------------- | ---------- | ---------------- | ---------- |
-| CBB001     | Retrieve Client List         | /api/v1/clients                               | GET        | CLB001           | 🔄         |
-| CBB002     | Retrieve Client Details      | /api/v1/clients/{type}/{clientId}             | GET        | CLB002           | 🔄         |
+| CBB001     | Get Client List              | /api/v1/clients                               | GET        | CLB001           | 🔄         |
+| CBB002     | Retrieve a Client Details    | /api/v1/clients/{type}/{clientId}             | GET        | CLB002           | 🔄         |
 | CBB003     | Create Client in CBA         | /api/v1/clients/{type}                        | POST       | CLB003           | 🔄         |
 | CBB004     | Update Client Profile in CBA | /api/v1/clients/{type}                        | PUT        | CLB004           | 🔄         |
 | CBB005     | List Client Accounts         | /api/v1/savings/accounts/overview/{accountId} | GET        | CLB005           | 🔄         |
