@@ -91,9 +91,9 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ### 4. User Settings Utility APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|SUB001|Retrieve User Devices||GET|CLB006|🔄|
+| **Action** | **Summary**           | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | --------------------- | --------- | ---------- | ---------------- | ---------- |
+| SUB001     | Retrieve User Devices |           | GET        | CLB006           | 🔄         |
 
 ---
 
