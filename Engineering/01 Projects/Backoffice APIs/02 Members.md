@@ -62,7 +62,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | **Action** | **Summary**                     | **Route**                             | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------------------------- | ------------------------------------- | ---------- | ---------------- | ---------- |
 | AIB001     | Create Identity Profile         | /api/v1/members/profile               | POST       | MBB001           | 🔄         |
-| AIB002     | Retrieve Member List            | /api/v1/members/profile               | GET        | MBB002           | 🔄         |
+| AIB002     | Get Members List                | /api/v1/members/profile               | GET        | MBB002           | 🔄         |
 | AIB003     | Fetch Member Profile            | /api/v1/members/profile/{{member_id}} | GET        | MBB003           | 🔄         |
 | AIB004     | Update Identity Claims          | /api/v1/members/profile/{{member_id}} | PUT        | MBB004           | 🔄         |
 | AIB005     | Create Password Reset Challenge | /api/v1/members/profile/password      | PUT        | MBB005           | 🔄         |
