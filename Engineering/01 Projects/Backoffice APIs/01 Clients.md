@@ -82,7 +82,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 |            | Update Corporate Client          | /api/v1/clients/{clientId}/corporate             | PUT        |                  |            |
 |            | Add Corporate Client Director    | /api/v1/clients/{clientId}/director              | POST       |                  |            |
 |            | Remove Corporate Client Director | /api/v1/clients/{clientId}/director/{directorId} | DELETE     |                  |            |
-|            | List Corporate Client Directors  | /api/v1/clients/{clientId}}/directors            |            |                  |            |
+|            | List Corporate Client Directors  | /api/v1/clients/{clientId}/directors             | GET        |                  |            |
 
 ---
 
