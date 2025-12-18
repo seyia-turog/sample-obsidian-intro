@@ -43,16 +43,15 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ### Backoffice APIs
 
-| **Action** | **Summary**            | **Route**               | **Method** | **Operation ID** | **Status** |
-| ---------- | ---------------------- | ----------------------- | ---------- | ---------------- | ---------- |
-| CLB001     | List Clients           | /clients/details        | GET        |                  | 🔄         |
-| CLB002     | View Client Details    | /clients/details        | GET        |                  | 🔄         |
-| CLB003     | Create Client          | /clients/setup          | POST       |                  | 🔄         |
-| CLB004     | Update Client Profile  | /clients/profile        | PUT        |                  | 🔄         |
-| CLB005     | List Client Accounts   | /clients/profile        | GET        |                  | 🔄         |
-| CLB006     | Client Device List     | /clients/device         | GET        |                  | 🔄         |
-| CLB007     | Delete Client          | /clients/profile/remove | DELETE     |                  | 🔄         |
-| CLB00      | List Corporate Clients |                         | GET        |                  | 🔄         |
+| **Action** | **Summary**           | **Route**               | **Method** | **Operation ID** | **Status** |
+| ---------- | --------------------- | ----------------------- | ---------- | ---------------- | ---------- |
+| CLB001     | List Clients          | /clients/details        | GET        |                  | 🔄         |
+| CLB002     | View Client Details   | /clients/details        | GET        |                  | 🔄         |
+| CLB003     | Create Client         | /clients/setup          | POST       |                  | 🔄         |
+| CLB004     | Update Client Profile | /clients/profile        | PUT        |                  | 🔄         |
+| CLB005     | List Client Accounts  | /clients/profile        | GET        |                  | 🔄         |
+| CLB006     | Client Device List    | /clients/device         | GET        |                  | 🔄         |
+| CLB007     | Delete Client         | /clients/profile/remove | DELETE     |                  | 🔄         |
 
 
 ---
@@ -79,7 +78,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | CBB004     | Update Client Profile in CBA | /api/v1/clients/{type}                        | PUT        | CLB004           | 🔄         |
 | CBB005     | List Client Accounts         | /api/v1/savings/accounts/overview/{accountId} | GET        | CLB005           | 🔄         |
 | CBB006     | Remove Client                | /api/v1/clients/{clientId}                    | DELETE     | CLB007           | 🔄         |
-| CBB00      | Remove Client                | /api/v1/clients/{clientId}                    | DELETE     | CLB007           | 🔄         |
+|            | Remove Client                | /api/v1/clients/{clientId}                    | DELETE     | CLB007           | 🔄         |
 
 ---
 
