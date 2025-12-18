@@ -79,6 +79,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | CBB005     | List Client Accounts         | /api/v1/savings/accounts/overview/{accountId} | GET        | CLB005           | 🔄         |
 | CBB006     | Remove Client                | /api/v1/clients/{clientId}                    | DELETE     | CLB007           | 🔄         |
 |            | Get Corporate Client         | /api/v1/clients/corporate/{clientId}          | GET        |                  | 🔄         |
+|            |                              | /api/v1/clients/{clientId}}/corporate         |            |                  |            |
 
 ---
 
