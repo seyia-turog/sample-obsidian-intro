@@ -52,6 +52,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | CLB005     | List Client Accounts  | /clients/profile        | GET        |                  | 🔄         |
 | CLB006     | Client Device List    | /clients/device         | GET        |                  | 🔄         |
 | CLB007     | Delete Client         | /clients/profile/remove | DELETE     |                  | 🔄         |
+|            |                       |                         |            |                  |            |
 
 
 ---
