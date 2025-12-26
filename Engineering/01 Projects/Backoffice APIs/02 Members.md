@@ -85,7 +85,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | AIB002     | List Members           | /api/v1/members            | GET        | MBB002           | 🔄         |
 | AIB003     | Get Member Details     | /api/v1/members/{memberId} | GET        | MBB003           | 🔄         |
 | AIB004     | Update Member Profile  | /api/v1/members/{memberId} | PUT        | MBB004           | 🔄         |
-| AIB05      | Delete Member          |                            | Delete     | MBB010           | 🔄         |
+| AIB05      | Delete Member          | /api/v1/members/{memberId} | Delete     | MBB010           | 🔄         |
 
 ---
 
