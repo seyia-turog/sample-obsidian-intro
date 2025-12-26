@@ -72,7 +72,9 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | AIB006     | Upload Member Avatar   | /api/v1/members/profile/avatar      | POST       | MBB006           | 🔄         |
 | AIB007     | Get Member Avatar      | /api/v1/members/profile/avatar      | DELETE     | MBB007           | 🔄         |
 | AIB008     | Get Member Avatar      |                                     | GET        | MBB008           | 🔄         |
-|            | Delete Member          |                                     | MBB007     | 🔄               |            |
+| AIB008     | Delete Member          |                                     | MBB007     |                  | 🔄         |
+|            |                        |                                     |            |                  |            |
+|            |                        |                                     |            |                  |            |
 
 ---
 
