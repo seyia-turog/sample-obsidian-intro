@@ -43,18 +43,18 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ### Backoffice APIs
 
-| **Action** | **Summary**                      | **Route**                                        | **Method** | **Operation ID**              | **Status** |
-| ---------- | -------------------------------- | ------------------------------------------------ | ---------- | ----------------------------- | ---------- |
-| CLB001     | List Clients                     | /clients/                                        | GET        | listClients                   | 🔄         |
-| CLB002     | Get Client Details               | /clients/{clientId}                              | GET        | getClient                     | 🔄         |
-| CLB003     | Create Client                    | /clients/setup                                   | POST       | createClient                  | 🔄         |
-| CLB004     | Update Client Profile            | /clients/profile                                 | PUT        | updateClient                  | 🔄         |
-| CLB005     | List Client Accounts             | /clients/profile                                 | GET        | listClientAccounts            | 🔄         |
-| CLB006     | List Client Devices              | /clients/device                                  | GET        | listClientDevices             | 🔄         |
-| CLB007     | Delete Client                    | /clients/profile/remove                          | DELETE     | deleteClient                  | 🔄         |
-| CLB008     | Create Corporate Client Director | /api/v1/clients/{clientId}/director              | POST       | createCorporateClientDirector | 🔄         |
-| CLB009     | Remove Corporate Client Director | /api/v1/clients/{clientId}/director/{directorId} | DELETE     | deleteCorporateClientDirector | 🔄         |
-| CLB010     | List Corporate Client Directors  | /api/v1/clients/{clientId}/directors             | GET        | listCorporateClientDirectors  | 🔄         |
+| **Action** | **Summary**                      | **Route**               | **Method** | **Operation ID**              | **Status** |
+| ---------- | -------------------------------- | ----------------------- | ---------- | ----------------------------- | ---------- |
+| CLB001     | List Clients                     | /clients/               | GET        | listClients                   | 🔄         |
+| CLB002     | Get Client Details               |                         | GET        | getClient                     | 🔄         |
+| CLB003     | Create Client                    | /clients/setup          | POST       | createClient                  | 🔄         |
+| CLB004     | Update Client Profile            | /clients/profile        | PUT        | updateClient                  | 🔄         |
+| CLB005     | List Client Accounts             | /clients/profile        | GET        | listClientAccounts            | 🔄         |
+| CLB006     | List Client Devices              | /clients/device         | GET        | listClientDevices             | 🔄         |
+| CLB007     | Delete Client                    | /clients/profile/remove | DELETE     | deleteClient                  | 🔄         |
+| CLB008     | Create Corporate Client Director |                         | POST       | createCorporateClientDirector | 🔄         |
+| CLB009     | Remove Corporate Client Director |                         | DELETE     | deleteCorporateClientDirector | 🔄         |
+| CLB010     | List Corporate Client Directors  |                         | GET        | listCorporateClientDirectors  | 🔄         |
 
 
 ---
