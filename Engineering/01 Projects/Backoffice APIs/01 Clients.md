@@ -107,9 +107,9 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ### 5. Messages Processor APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|PMI003|Send Welcome Message||POST|CLB003|🔄|
+| **Action** | **Summary**          | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------- | --------- | ---------- | ---------------- | ---------- |
+| PMI003     | Send Welcome Message |           | POST       | CLB003           | 🔄         |
 
 ---
 
