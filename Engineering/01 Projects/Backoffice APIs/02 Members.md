@@ -54,7 +54,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | MBB007     | Get Member Avatar      | /members/avatar              | GET        | getMemberAvatar      | 🔄         |
 | MBB008     | Block Member           |                              | PATCH      | blockMember          | 🔄         |
 | MBB009     | Unblock Member         |                              | PATCH      | unblockMember        | 🔄         |
-| MBB010     | Delete Member          | /members/avatar              | Delete     | getMemberAvatar      | 🔄         |
+| MBB010     | Delete Member          | /members/profile/remove      | Delete     | getMemberAvatar      | 🔄         |
 
 ---
 
