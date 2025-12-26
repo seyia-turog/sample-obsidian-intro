@@ -52,9 +52,9 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | CLB005     | List Client Accounts             | /clients/profile                                 | GET        | listClientAccounts            | 🔄         |
 | CLB006     | List Client Devices              | /clients/device                                  | GET        | getClientDevices              | 🔄         |
 | CLB007     | Delete Client                    | /clients/profile/remove                          | DELETE     | deleteClient                  | 🔄         |
-| CLB008     | Create Corporate Client Director | /api/v1/clients/{clientId}/director              | POST       | createCorporateClientDirector |            |
-| CLB009     | Remove Corporate Client Director | /api/v1/clients/{clientId}/director/{directorId} | DELETE     | removeCorporateClientDirector |            |
-| CLB010     | List Corporate Client Directors  | /api/v1/clients/{clientId}/directors             | GET        | listCorporateClientDirector   |            |
+| CLB008     | Create Corporate Client Director | /api/v1/clients/{clientId}/director              | POST       | createCorporateClientDirector | 🔄         |
+| CLB009     | Remove Corporate Client Director | /api/v1/clients/{clientId}/director/{directorId} | DELETE     | removeCorporateClientDirector | 🔄         |
+| CLB010     | List Corporate Client Directors  | /api/v1/clients/{clientId}/directors             | GET        | listCorporateClientDirector   | 🔄         |
 
 
 ---
@@ -81,9 +81,9 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | CBB004     | Update Client Profile in CBA     | /api/v1/clients/{type}                           | PUT        | CLB004           | 🔄         |
 | CBB005     | List Client Accounts             | /api/v1/savings/accounts/overview/{accountId}    | GET        | CLB005           | 🔄         |
 | CBB006     | Remove Client                    | /api/v1/clients/{clientId}                       | DELETE     | CLB007           | 🔄         |
-| CBB007     | Add Corporate Client Director    | /api/v1/clients/{clientId}/director              | POST       | CLB008           |            |
-| CBB008     | Remove Corporate Client Director | /api/v1/clients/{clientId}/director/{directorId} | DELETE     | CLB009           |            |
-| CBB009     | List Corporate Client Directors  | /api/v1/clients/{clientId}/directors             | GET        | CLB010           |            |
+| CBB007     | Add Corporate Client Director    | /api/v1/clients/{clientId}/director              | POST       | CLB008           | 🔄         |
+| CBB008     | Remove Corporate Client Director | /api/v1/clients/{clientId}/director/{directorId} | DELETE     | CLB009           | 🔄         |
+| CBB009     | List Corporate Client Directors  | /api/v1/clients/{clientId}/directors             | GET        | CLB010           | 🔄         |
 
 ---
 
