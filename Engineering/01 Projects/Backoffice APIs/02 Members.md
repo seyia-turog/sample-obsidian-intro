@@ -51,7 +51,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | MBB004     | Update Member Details       | /members/profile/{member_id} | PUT        | updateMember         | 🔄         |
 | MBB005     | Update Member Password      | /members/password            | PUT        | updateMemberPassword | 🔄         |
 | MBB006     | Upload Member Profile Image | /members/avatar              | POST       | uploadMemberAvatar   | 🔄         |
-| MBB007     | (Un)Block Member            | /members/profile/remove      | PUT        | deleteMember         | 🔄         |
+| MBB007     | (Un)Block Member            | /members/profile/status      | PUT        | deleteMember         | 🔄         |
 | MBB008     | Get Member Avatar           | /members/avatar              | GET        | getMemberAvatar      | 🔄         |
 | MBB009     | Delete Member               | /members/avatar              | Delete     | getMemberAvatar      | 🔄         |
 
