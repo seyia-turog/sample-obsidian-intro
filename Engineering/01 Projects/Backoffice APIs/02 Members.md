@@ -77,7 +77,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 ---
 
-### 2. Identity Adapter APIs
+### 2. CRM Adapter APIs
 
 | **Action** | **Summary**            | **Route**                           | **Method** | **Operation ID** | **Status** |
 | ---------- | ---------------------- | ----------------------------------- | ---------- | ---------------- | ---------- |
