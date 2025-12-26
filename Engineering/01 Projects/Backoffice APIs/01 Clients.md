@@ -43,15 +43,15 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ### Backoffice APIs
 
-| **Action** | **Summary**           | **Route**               | **Method** | **Operation ID**  | **Status** |
-| ---------- | --------------------- | ----------------------- | ---------- | ----------------- | ---------- |
-| CLB001     | List Clients          | /clients/details        | GET        | listClients       | 🔄         |
-| CLB002     | View Client Details   | /clients/details        | GET        | viewClientDetails | 🔄         |
-| CLB003     | Create Client         | /clients/setup          | POST       |                   | 🔄         |
-| CLB004     | Update Client Profile | /clients/profile        | PUT        |                   | 🔄         |
-| CLB005     | List Client Accounts  | /clients/profile        | GET        |                   | 🔄         |
-| CLB006     | Client Device List    | /clients/device         | GET        |                   | 🔄         |
-| CLB007     | Delete Client         | /clients/profile/remove | DELETE     |                   | 🔄         |
+| **Action** | **Summary**            | **Route**               | **Method** | **Operation ID**    | **Status** |
+| ---------- | ---------------------- | ----------------------- | ---------- | ------------------- | ---------- |
+| CLB001     | Get Client List        | /clients/details        | GET        | getClientClist      | 🔄         |
+| CLB002     | View Client Details    | /clients/details        | GET        | viewClientDetails   | 🔄         |
+| CLB003     | Create Client          | /clients/setup          | POST       | createClient        | 🔄         |
+| CLB004     | Update Client Profile  | /clients/profile        | PUT        | updateClientProfile | 🔄         |
+| CLB005     | List Client Accounts   | /clients/profile        | GET        | listClientAccounts  | 🔄         |
+| CLB006     | Get Client Device List | /clients/device         | GET        | getClient           | 🔄         |
+| CLB007     | Delete Client          | /clients/profile/remove | DELETE     |                     | 🔄         |
 
 
 ---
