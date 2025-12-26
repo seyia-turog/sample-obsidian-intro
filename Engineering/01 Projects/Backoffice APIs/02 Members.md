@@ -105,7 +105,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | ---------- | ------------- | --------- | ---------- | ---------------- | ---------- |
 | PDB001     | Process Image |           | POST       | MBB006           | 🔄         |
 | PDB002     | Store Image   |           | POST       | MBB006           | 🔄         |
-|            |               |           |            |                  |            |
+| PDB003     | Get Image     |           | GET        | MBB007           | 🔄         |
 
 ---
 
