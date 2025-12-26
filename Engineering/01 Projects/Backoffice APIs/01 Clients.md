@@ -45,7 +45,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 | **Action** | **Summary**                      | **Route**                                        | **Method** | **Operation ID**              | **Status** |
 | ---------- | -------------------------------- | ------------------------------------------------ | ---------- | ----------------------------- | ---------- |
-| CLB001     | List Clients                     | /clients/details                                 | GET        | listClients                   | 🔄         |
+| CLB001     | List Clients                     | /clients/                                        | GET        | listClients                   | 🔄         |
 | CLB002     | Get Client Details               | /clients/{clientId}                              | GET        | getClient                     | 🔄         |
 | CLB003     | Create Client                    | /clients/setup                                   | POST       | createClient                  | 🔄         |
 | CLB004     | Update Client Profile            | /clients/profile                                 | PUT        | updateClient                  | 🔄         |
