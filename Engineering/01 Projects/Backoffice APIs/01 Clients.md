@@ -53,7 +53,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | CLB006     | List Client Devices              | /clients/device         | GET        | listClientDevices             | 🔄         |
 | CLB007     | Delete Client                    | /clients/profile/remove | DELETE     | deleteClient                  | 🔄         |
 | CLB008     | Create Corporate Client Director |                         | POST       | createCorporateClientDirector | 🔄         |
-| CLB009     | Remove Corporate Client Director |                         | DELETE     | deleteCorporateClientDirector | 🔄         |
+| CLB009     | Delete Corporate Client Director |                         | DELETE     | deleteCorporateClientDirector | 🔄         |
 | CLB010     | List Corporate Client Directors  |                         | GET        | listCorporateClientDirectors  | 🔄         |
 
 
