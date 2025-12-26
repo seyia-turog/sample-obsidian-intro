@@ -91,10 +91,11 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 ### 3. Messages Processor APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|PMI001|Send Welcome Email||POST|MBB001|🔄|
-|PMI002|Send Password Reset Success Notification||PUT|MBB005|🔄|
+| **Action** | **Summary**                                    | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ---------------------------------------------- | --------- | ---------- | ---------------- | ---------- |
+| PMI001     | Send Welcome Email                             |           | POST       | MBB001           | 🔄         |
+| PMI002     | Send Password Reset Success Notification       |           | PUT        | MBB005           | 🔄         |
+| PMI002     | Send Member Profile Status Update Notification |           | PUT        | MBB005           | 🔄         |
 
 ---
 
