@@ -43,15 +43,18 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ### Backoffice APIs
 
-| **Action** | **Summary**           | **Route**               | **Method** | **Operation ID**    | **Status** |
-| ---------- | --------------------- | ----------------------- | ---------- | ------------------- | ---------- |
-| CLB001     | List Clients          | /clients/details        | GET        | getClientClist      | 🔄         |
-| CLB002     | Get Client Details    | /clients/details        | GET        | viewClientDetails   | 🔄         |
-| CLB003     | Create Client         | /clients/setup          | POST       | createClient        | 🔄         |
-| CLB004     | Update Client Profile | /clients/profile        | PUT        | updateClientProfile | 🔄         |
-| CLB005     | List Client Accounts  | /clients/profile        | GET        | listClientAccounts  | 🔄         |
-| CLB006     | List Client Devices   | /clients/device         | GET        | getClientDevices    | 🔄         |
-| CLB007     | Delete Client         | /clients/profile/remove | DELETE     | deleteClient        | 🔄         |
+| **Action** | **Summary**                      | **Route**                                        | **Method** | **Operation ID**    | **Status** |
+| ---------- | -------------------------------- | ------------------------------------------------ | ---------- | ------------------- | ---------- |
+| CLB001     | List Clients                     | /clients/details                                 | GET        | getClientClist      | 🔄         |
+| CLB002     | Get Client Details               | /clients/details                                 | GET        | viewClientDetails   | 🔄         |
+| CLB003     | Create Client                    | /clients/setup                                   | POST       | createClient        | 🔄         |
+| CLB004     | Update Client Profile            | /clients/profile                                 | PUT        | updateClientProfile | 🔄         |
+| CLB005     | List Client Accounts             | /clients/profile                                 | GET        | listClientAccounts  | 🔄         |
+| CLB006     | List Client Devices              | /clients/device                                  | GET        | getClientDevices    | 🔄         |
+| CLB007     | Delete Client                    | /clients/profile/remove                          | DELETE     | deleteClient        | 🔄         |
+|            | Add Corporate Client Director    | /api/v1/clients/{clientId}/director              | POST       |                     |            |
+|            | Remove Corporate Client Director | /api/v1/clients/{clientId}/director/{directorId} | DELETE     |                     |            |
+|            | List Corporate Client Directors  | /api/v1/clients/{clientId}/directors             | GET        |                     |            |
 
 
 ---
@@ -79,7 +82,6 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | CBB005     | List Client Accounts             | /api/v1/savings/accounts/overview/{accountId}    | GET        | CLB005           | 🔄         |
 | CBB006     | Remove Client                    | /api/v1/clients/{clientId}                       | DELETE     | CLB007           | 🔄         |
 | CBB007     | Get Corporate Client             | /api/v1/clients/corporate/{clientId}             | GET        |                  | 🔄         |
-|            | Update Corporate Client          | /api/v1/clients/{clientId}/corporate             | PUT        |                  |            |
 |            | Add Corporate Client Director    | /api/v1/clients/{clientId}/director              | POST       |                  |            |
 |            | Remove Corporate Client Director | /api/v1/clients/{clientId}/director/{directorId} | DELETE     |                  |            |
 |            | List Corporate Client Directors  | /api/v1/clients/{clientId}/directors             | GET        |                  |            |
