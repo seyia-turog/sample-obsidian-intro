@@ -29,13 +29,13 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 ### Adapter & Processor Dependencies
 
-|Adapter / Processor|Business Purpose|
-|---|---|
-|Identity Adapter|Manages client identity profiles, authentication records, and claims updates.|
-|CBA Adapter|Manages client records, accounts, and profile data in Core Banking Application.|
-|CRM Adapter|Synchronizes client partner records and maintains customer relationship data.|
-|User Settings Utility|Retrieves registered devices and device authentication details.|
-|Util Worker (Messages)|Sends welcome messages to newly created clients.|
+| Adapter / Processor    | Business Purpose                                                                |
+| ---------------------- | ------------------------------------------------------------------------------- |
+| Identity Adapter       | Manages client identity profiles, authentication records, and claims updates.   |
+| CBA Adapter            | Manages client records, accounts, and profile data in Core Banking Application. |
+| CRM Adapter            | Synchronizes client partner records and maintains customer relationship data.   |
+| User Settings Utility  | Retrieves registered devices and device authentication details.                 |
+| Util Worker (Messages) | Sends welcome messages to newly created clients.                                |
 
 ---
 
