@@ -71,9 +71,9 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | AIB005     | Change Member Password | /api/v1/members/profile/password    | PUT        | MBB005           | 🔄         |
 | AIB006     | Upload Member Avatar   | /api/v1/members/profile/avatar      | POST       | MBB006           | 🔄         |
 | AIB007     | Get Member Avatar      | /api/v1/members/profile/avatar      | GET        | MBB007           | 🔄         |
-| AIB008     | Block Member           |                                     | PATCH      | blockMember      | 🔄         |
-| AIB009     | Unblock Member         |                                     | PATCH      | unblockMember    | 🔄         |
-| AIB010     | Delete Member          |                                     | Delete     | getMemberAvatar  | 🔄         |
+| AIB008     | Block Member           |                                     | PATCH      | MBB008           | 🔄         |
+| AIB009     | Unblock Member         |                                     | PATCH      | MBB009           | 🔄         |
+| AIB010     | Delete Member          |                                     | Delete     | MBB010           | 🔄         |
 
 ---
 
