@@ -126,6 +126,7 @@ It manages account listing and search, detailed account information retrieval, p
 | UMB013     | Send Account Closure Notification           |           | POST       | SVB011           | 🔄         |
 | UMB014     | Send Withdrawal Notification                |           | POST       | SVB012           | 🔄         |
 | UMB015     | Send Fund Transfer Notification             |           | POST       | SVB013, SVB014   | 🔄         |
+|            |                                             |           |            |                  |            |
 
 
 ---
