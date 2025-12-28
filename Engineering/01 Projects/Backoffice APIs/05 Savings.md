@@ -86,8 +86,8 @@ It manages account listing and search, detailed account information retrieval, p
 | CBB039     | Close Account                    | /api/v1/savings/accounts/close                    | POST       | SVB011           | 🔄         |
 | CBB040     | Add Savings Account Charge       | /api/v1/savings/accounts/charge                   | POST       | SVB013           | 🔄         |
 | CBB041     | Transfer Funds (Internal)        | /api/v1/savings/transfer                          | POST       | SVB013           | 🔄         |
-| CBB041     | Transfer Funds (External)        | /api/v1/savings/accounts/transfer                 | POST       | SVB014           |            |
-| CBB044     | Archive Savings Account          | /api/v1/savings/accounts/archive                  | PUT        | SVB015           |            |
+| CBB041     | Transfer Funds (External)        | /api/v1/savings/accounts/transfer                 | POST       | SVB014           | 🔄         |
+| CBB044     | Archive Savings Account          | /api/v1/savings/accounts/archive                  | PUT        | SVB015           | 🔄         |
 | CBB045     | Unarchive Savings Account        |                                                   | PUT        | SVB016           | 🔄         |
 
 ---
@@ -102,16 +102,16 @@ It manages account listing and search, detailed account information retrieval, p
 
 ### 3. Messages Processors APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|UMB009|Send Deposit Notification||POST|SVB007|🔄|
-|UMB010|Send Withdrawal Notification||POST|SVB008|🔄|
-|UMB011|Send Staff-Assigned-to-Account Notification||PUT|SVB009|🔄|
-|UMB012|Send Account Status Changed Notification||PUT|SVB010|🔄|
-|UMB013|Send Account Closure Notification||POST|SVB011|🔄|
-|UMB014|Send Withdrawal Notification||POST|SVB012|🔄|
-|UMB015|Send Fund Transfer Notification||POST|SVB013|🔄|
-|UMB016|Send Fund Transfer Notification||POST|SVB014|🔄|
+| **Action** | **Summary**                                 | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------------------------------------- | --------- | ---------- | ---------------- | ---------- |
+| UMB009     | Send Deposit Notification                   |           | POST       | SVB007           | 🔄         |
+| UMB010     | Send Withdrawal Notification                |           | POST       | SVB008           | 🔄         |
+| UMB011     | Send Staff-Assigned-to-Account Notification |           | POST       | SVB009           | 🔄         |
+| UMB012     | Send Account Status Changed Notification    |           | POST       | SVB010           | 🔄         |
+| UMB013     | Send Account Closure Notification           |           | POST       | SVB011           | 🔄         |
+| UMB014     | Send Withdrawal Notification                |           | POST       | SVB012           | 🔄         |
+| UMB015     | Send Fund Transfer Notification             |           | POST       | SVB013           | 🔄         |
+| UMB016     | Send Fund Transfer Notification             |           | POST       | SVB014           | 🔄         |
 
 ---
 
