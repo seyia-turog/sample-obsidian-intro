@@ -49,17 +49,17 @@ It manages community creation, search and discovery, membership management, invi
 | CMB003     | Create Community Accounts        |                       | POST       | createCommunityAccounts       | 🔄         |
 | CMB004     | Get Community Account Details    |                       | GET        | getCommunityAccountDetails    | 🔄         |
 | CMB005     | Update Community Account Details |                       | PUT        | updateCommunityAccountDetails | 🔄         |
-| CMB006     | Block / Unblock Community        |                       | PUT        | (un)BlockCommunity            | 🔄         |
-| CMB007     | Invite To Community              |                       | POST       | inviteToCommunity             | 🔄         |
-| CMB008     | Get Pending Invites              |                       | GET        | getPendingInvite              | 🔄         |
-| CMB009     | Cancel Invite                    |                       | DELETE     | cancelInvite                  | 🔄         |
-| CMB010     | Accept Invite                    |                       | POST       | acceptInvite                  | 🔄         |
-| CMB011     | Decline Invite                   |                       | POST       | declineInvite                 | 🔄         |
-| CMB012     | View Member List                 |                       | GET        | viewMemberList                | 🔄         |
-| CMB013     | Remove Member                    |                       | DELETE     | removeMember                  | 🔄         |
-| CMB014     | Modify Community Member Role     |                       | PUT        | modifyCommunityMemberRole     | 🔄         |
-| CMB015     | Dissolve Community               |                       | DELETE     | dissolveCommunit              | 🔄         |
-|            |                                  |                       |            |                               |            |
+|            | Block Community Account          |                       | PUT        | (un)BlockCommunity            | 🔄         |
+|            | Unblock Community Account        |                       | PUT        | (un)BlockCommunity            | 🔄         |
+|            | Invite To Community              |                       | POST       | inviteToCommunity             | 🔄         |
+|            | Get Pending Invites              |                       | GET        | getPendingInvite              | 🔄         |
+|            | Cancel Invite                    |                       | DELETE     | cancelInvite                  | 🔄         |
+|            | Accept Invite                    |                       | POST       | acceptInvite                  | 🔄         |
+|            | Decline Invite                   |                       | POST       | declineInvite                 | 🔄         |
+|            | View Member List                 |                       | GET        | viewMemberList                | 🔄         |
+|            | Remove Member                    |                       | DELETE     | removeMember                  | 🔄         |
+|            | Modify Community Member Role     |                       | PUT        | modifyCommunityMemberRole     | 🔄         |
+|            | Dissolve Community               |                       | DELETE     | dissolveCommunit              | 🔄         |
 
 
 ---
