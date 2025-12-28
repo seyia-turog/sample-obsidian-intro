@@ -94,9 +94,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | **Action** | **Summary**           | **Route**                  | **Method** | **Operation ID** | **Status** |
 | ---------- | --------------------- | -------------------------- | ---------- | ---------------- | ---------- |
 | CBB053     | Create Staff          | /api/v1/staff/             | POST       | MBB001           | 🔄         |
-| CBB054     | Get Staff Detail      | /api/v1/staff/{{staffId}}  | GET        | MBB003           | 🔄         |
-| CBB055     | Update Member Profile | /api/v1/members/{memberId} | PUT        | MBB004           | 🔄         |
-| CBB056     | Delete Member         | /api/v1/members/{memberId} | Delete     | MBB010           | 🔄         |
+
 
 ---
 
