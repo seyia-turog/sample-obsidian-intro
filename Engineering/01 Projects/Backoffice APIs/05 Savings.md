@@ -78,32 +78,32 @@ It manages account listing and search, detailed account information retrieval, p
 
 ### 1. CBA Adapter APIs
 
-| **Action** | **Summary**                             | **Route**                                         | **Method** | **Operation ID** | **Status** |
-| ---------- | --------------------------------------- | ------------------------------------------------- | ---------- | ---------------- | ---------- |
-| CBB029     | Get Savings Accounts                    | /api/v1/savings/accounts                          | GET        | SVB001           | 🔄         |
-| CBB030     | Search Saving Accounts                  | /api/v1/savings/accounts/search                   | GET        | SVB002           | 🔄         |
-| CBB031     | Get Savings Account Details             | /api/v1/savings/accounts/{accountId}              | GET        | SVB003           | 🔄         |
-| CBB032     | Get Savings Account Performance         | /api/v1/savings/accounts/performance/{accountId}  | GET        | SVB004           | 🔄         |
-| CBB033     | Get Savings Account Overview            | /api/v1/savings/accounts/overview/{accountId}     | GET        | SVB005           | 🔄         |
-| CBB034     | Get Savings Account Transactions        | /api/v1/savings/accounts/{accountNo}/statement    | GET        | SVB006           | 🔄         |
-| CBB035     | Deposit to Saving Account               | /api/v1/savings/accounts/deposit                  | POST       | SVB007           | 🔄         |
-| CBB036     | Withdraw from Saving Account            | /api/v1/savings/accounts/withdraw                 | POST       | SVB008, SVB012   | 🔄         |
-| CBB037     | Update Relationship Officer             | /api/v1/savings/accounts/assign-staff/{accountId} | PUT        | SVB009           | 🔄         |
-| CBB038     | Update Saving Account Status            | /api/v1/savings/accounts/status/{accountId}       | PUT        | SVB010           | 🔄         |
-| CBB039     | Close Account                           | /api/v1/savings/accounts/close                    | POST       | SVB011           | 🔄         |
-| CBB040     | Add Savings Account Charge              | /api/v1/savings/accounts/charge                   | POST       | SVB013           | 🔄         |
-| CBB041     | Transfer Funds (Internal)               | /api/v1/savings/transfer                          | POST       | SVB013           | 🔄         |
-| CBB041     | Transfer Funds (External)               | /api/v1/savings/accounts/transfer                 | POST       | SVB014           | 🔄         |
-| CBB044     | Archive Savings Account                 | /api/v1/savings/accounts/archive                  | PUT        | SVB015           | 🔄         |
-| CBB045     | Unarchive Savings Account               | /api/v1/savings/accounts/unarchive                | PUT        | SVB016           | 🔄         |
-| CBB046     | Update Savings Account                  | /api/v1/savings/accounts/{accountId}              | PUT        | SVB017           | 🔄         |
-| CBB047     | Get Savings Account Transaction Details | /api/v1/savings/transactions/{transactionId}      | GET        | SVB018           | 🔄         |
-| CBB048     | List Staff Member                       | /api/v1/staff/                                    | GET        | SVB019           | 🔄         |
-| CBB049     | List Charges                            |                                                   | GET        | SVB020           | 🔄         |
-| CBB050     | Get Charge Details                      |                                                   | GET        | SVB021           | 🔄         |
-| CBB051     | List Account Charges                    |                                                   | GET        | SVB022           | 🔄         |
-| CBB052     | Reverse Charge                          |                                                   | POST       | SVB023           | 🔄         |
-|            |                                         |                                                   |            |                  |            |
+| **Action** | **Summary**                             | **Route**                                                             | **Method** | **Operation ID** | **Status** |
+| ---------- | --------------------------------------- | --------------------------------------------------------------------- | ---------- | ---------------- | ---------- |
+| CBB029     | Get Savings Accounts                    | /api/v1/savings/accounts                                              | GET        | SVB001           | 🔄         |
+| CBB030     | Search Saving Accounts                  | /api/v1/savings/accounts/search                                       | GET        | SVB002           | 🔄         |
+| CBB031     | Get Savings Account Details             | /api/v1/savings/accounts/{accountId}                                  | GET        | SVB003           | 🔄         |
+| CBB032     | Get Savings Account Performance         | /api/v1/savings/accounts/performance/{accountId}                      | GET        | SVB004           | 🔄         |
+| CBB033     | Get Savings Account Overview            | /api/v1/savings/accounts/overview/{accountId}                         | GET        | SVB005           | 🔄         |
+| CBB034     | Get Savings Account Transactions        | /api/v1/savings/accounts/{accountNo}/statement                        | GET        | SVB006           | 🔄         |
+| CBB035     | Deposit to Saving Account               | /api/v1/savings/accounts/deposit                                      | POST       | SVB007           | 🔄         |
+| CBB036     | Withdraw from Saving Account            | /api/v1/savings/accounts/withdraw                                     | POST       | SVB008, SVB012   | 🔄         |
+| CBB037     | Update Relationship Officer             | /api/v1/savings/accounts/assign-staff/{accountId}                     | PUT        | SVB009           | 🔄         |
+| CBB038     | Update Saving Account Status            | /api/v1/savings/accounts/status/{accountId}                           | PUT        | SVB010           | 🔄         |
+| CBB039     | Close Account                           | /api/v1/savings/accounts/close                                        | POST       | SVB011           | 🔄         |
+| CBB040     | Add Savings Account Charge              | /api/v1/savings/accounts/charge                                       | POST       | SVB013           | 🔄         |
+| CBB041     | Transfer Funds (Internal)               | /api/v1/savings/transfer                                              | POST       | SVB013           | 🔄         |
+| CBB041     | Transfer Funds (External)               | /api/v1/savings/accounts/transfer                                     | POST       | SVB014           | 🔄         |
+| CBB044     | Archive Savings Account                 | /api/v1/savings/accounts/archive                                      | PUT        | SVB015           | 🔄         |
+| CBB045     | Unarchive Savings Account               | /api/v1/savings/accounts/unarchive                                    | PUT        | SVB016           | 🔄         |
+| CBB046     | Update Savings Account                  | /api/v1/savings/accounts/{accountId}                                  | PUT        | SVB017           | 🔄         |
+| CBB047     | Get Savings Account Transaction Details | /api/v1/savings/transactions/{transactionId}                          | GET        | SVB018           | 🔄         |
+| CBB048     | List Staff Member                       | /api/v1/staff/                                                        | GET        | SVB019           | 🔄         |
+| CBB049     | List Charges                            | /api/v1/savings/charges?accountId={accountId}&chargeType={chargeType} | GET        | SVB020           | 🔄         |
+| CBB050     | Get Charge Details                      |                                                                       | GET        | SVB021           | 🔄         |
+| CBB051     | List Account Charges                    |                                                                       | GET        | SVB022           | 🔄         |
+| CBB052     | Reverse Charge                          |                                                                       | POST       | SVB023           | 🔄         |
+|            |                                         |                                                                       |            |                  |            |
 
 ---
 
