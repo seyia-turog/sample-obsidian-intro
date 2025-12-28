@@ -44,27 +44,20 @@ It manages card listing, creation and issuance, detailed information retrieval, 
 
 ### Backoffice APIs
 
-| **Action** | **Summary**       | **Route**                 | **Method** | **Operation ID** | **Status** |
-| ---------- | ----------------- | ------------------------- | ---------- | ---------------- | ---------- |
-| CDB001     | List Client Cards | /cards/internal           | GET        |                  | 🔄         |
-| CDB002     | Create Card       | /cards/internal           | POST       |                  | 🔄         |
-| CDB003     | Card Details      | /cards/internal/{card_id} | GET        |                  | 🔄         |
-| CDB006     | Reset Card Pin    | /cards/pin/reset          | PUT        |                  | 🔄         |
+| **Action** | **Summary**             | **Route**                 | **Method** | **Operation ID**      | **Status** |
+| ---------- | ----------------------- | ------------------------- | ---------- | ------------------- | ---------- |
+| CDB001     | List Client Cards        | /cards/internal           | GET        | listClientCards      | 🔄         |
+| CDB002     | Create Card             | /cards/internal           | POST       | createCard           | 🔄         |
+| CDB003     | Retrieve Card Details    | /cards/internal/{card_id} | GET        | retrieveCardDetails  | 🔄         |
+| CDB006     | Reset Card Pin           | /cards/pin/reset          | PUT        | resetCardPin         | 🔄         |
 
 ---
 
 ## Dependency Service APIs
 
-### 1. CBA Adapter APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|CBB056|Deduct Card Processing Fee||POST|CDB002|🔄|
-|CBB057|Link Card to User Account||POST|CDB002|🔄|
 
----
-
-### 2. Card Processor APIs
+### 1. Card Processor APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
@@ -72,6 +65,15 @@ It manages card listing, creation and issuance, detailed information retrieval, 
 |PCB002|Retrieve Card Detail||GET|CDB003|🔄|
 |PCB005|Reset Card Pin||PUT|CDB006|🔄|
 |PCB006|Send PIN Reset Notification||PUT|CDB006|🔄|
+
+---
+
+### 1. CBA Adapter APIs
+
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|CBB056|Deduct Card Processing Fee||POST|CDB002|🔄|
+|CBB057|Link Card to User Account||POST|CDB002|🔄|
 
 ---
 
