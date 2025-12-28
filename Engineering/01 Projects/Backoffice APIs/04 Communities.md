@@ -71,27 +71,27 @@ It manages community creation, search and discovery, membership management, invi
 
 ### 1. CBA Adapter APIs
 
-| **Action** | **Summary**                        | **Route**                                         | **Method** | **Operation ID** | **Status** |
-| ---------- | ---------------------------------- | ------------------------------------------------- | ---------- | ---------------- | ---------- |
-| CBB007     | Retrieve Community List            | /api/v1/communities/accounts                      | GET        | CMB001           | 🔄         |
-| CBB008     | Search Community                   |                                                   | GET        | CMB002           | 🔄         |
-| CBB009     | Create Community Account           | /api/v1/communities/account                       | POST       | CMB003           | 🔄         |
-| CBB010     | Retrieve Community Account Details | /api/v1/communities/account/{community_id}        | GET        | CMB004           | 🔄         |
-| CBB011     | Update Community Account Detail    |                                                   | PUT        | CMB005           | 🔄         |
-|            | Block Community Account            |                                                   | PUT        | CMB006           | 🔄         |
-|            | Unlock Community Account           |                                                   | PUT        | CMB006           | 🔄         |
-|            | Create Invitation                  | /api/v1/communities/invites                       | POST       | CMB007           | 🔄         |
-|            | Retrieve Pending Invites           | /api/v1/communities/invites/pending               | GET        | CMB008           | 🔄         |
-|            | Remove Invitation                  | /api/v1/communities/invites/{{invite_id}}         | DELETE     | CMB009           | 🔄         |
-|            | Accept Invite                      | /api/v1/communities/invites/accept                | POST       | CMB010           | 🔄         |
-|            | Decline Invite                     | /api/v1/communities/invites/decline               | POST       | CMB011           | 🔄         |
-|            | Retrieve Member List               | /api/v1/communities/members                       | GET        | CMB012           | 🔄         |
-|            | Remove a Community Member          | /api/v1/communities/members/{community_id}        | DELETE     | CMB013           | 🔄         |
-|            | Update Member Role                 | /api/v1/communities/members/role/{{community_id}} | PUT        | CMB014           | 🔄         |
-|            | Delete Community                   | /api/v1/communities/account/{{community_id}}      | DELETE     | CMB015           | 🔄         |
-|            | Add Community Account Signatory    |                                                   | POST       |                  | 🔄         |
-|            | Remove Community Account Signatory |                                                   | DELETE     |                  | 🔄         |
-|            | List Community Account Signatories |                                                   | GET        |                  | 🔄         |
+| **Action** | **Summary**                        | **Route**                                  | **Method** | **Operation ID** | **Status** |
+| ---------- | ---------------------------------- | ------------------------------------------ | ---------- | ---------------- | ---------- |
+| CBB007     | Retrieve Community List            | /api/v1/communities/accounts               | GET        | CMB001           | 🔄         |
+| CBB008     | Search Community                   |                                            | GET        | CMB002           | 🔄         |
+| CBB009     | Create Community Account           | /api/v1/communities/account                | POST       | CMB003           | 🔄         |
+| CBB010     | Retrieve Community Account Details | /api/v1/communities/account/{community_id} | GET        | CMB004           | 🔄         |
+| CBB011     | Update Community Account Detail    | /api/v1/communities/account/{community_id} | PUT        | CMB005           | 🔄         |
+|            | Block Community Account            |                                            | PUT        | CMB006           | 🔄         |
+|            | Unlock Community Account           |                                            | PUT        | CMB006           | 🔄         |
+|            | Create Invitation                  |                                            | POST       | CMB007           | 🔄         |
+|            | Retrieve Pending Invites           |                                            | GET        | CMB008           | 🔄         |
+|            | Remove Invitation                  |                                            | DELETE     | CMB009           | 🔄         |
+|            | Accept Invite                      |                                            | POST       | CMB010           | 🔄         |
+|            | Decline Invite                     |                                            | POST       | CMB011           | 🔄         |
+|            | Retrieve Member List               |                                            | GET        | CMB012           | 🔄         |
+|            | Remove a Community Member          |                                            | DELETE     | CMB013           | 🔄         |
+|            | Update Member Role                 |                                            | PUT        | CMB014           | 🔄         |
+|            | Delete Community                   |                                            | DELETE     | CMB015           | 🔄         |
+|            | Add Community Account Signatory    |                                            | POST       |                  | 🔄         |
+|            | Remove Community Account Signatory |                                            | DELETE     |                  | 🔄         |
+|            | List Community Account Signatories |                                            | GET        |                  | 🔄         |
 
 ---
 
