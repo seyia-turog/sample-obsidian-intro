@@ -89,6 +89,9 @@ It manages community creation, search and discovery, membership management, invi
 |            | Remove a Community Member          | /api/v1/communities/members/{community_id}        | DELETE     | CMB013           | 🔄         |
 |            | Update Member Role                 | /api/v1/communities/members/role/{{community_id}} | PUT        | CMB014           | 🔄         |
 |            | Delete Community                   | /api/v1/communities/account/{{community_id}}      | DELETE     | CMB015           | 🔄         |
+|            | Add Community Account Signatory    |                                                   | POST       |                  | 🔄         |
+|            | Remove Community Account Signatory |                                                   | DELETE     |                  | 🔄         |
+|            | List Community Account Signatories |                                                   | GET        |                  | 🔄         |
 
 ---
 
