@@ -41,16 +41,16 @@ It manages connection listing, creation, configuration, status control (pause/ac
 
 ### Backoffice APIs
 
-| **Action** | **Summary**             | **Route**                                 | **Method** | **Operation ID**       | **Status** |
-| ---------- | ----------------------- | ----------------------------------------- | ---------- | -------------------- | ---------- |
-| CNB001     | List Connections        | /connections/applications                 | GET        | listConnections       | 🔄         |
-| CNB002     | Update Connection       | /connections/applications                 | PUT        | updateConnection      | 🔄         |
-| CNB003     | Pause Connection        | /connections/applications/pause           | PUT        | pauseConnection       | 🔄         |
-| CNB004     | Test Connection         | /connections/applications/test            | POST       | testConnection        | 🔄         |
-| CNB005     | Activate Connection     | /connections/applications/activate        | PUT        | activateConnection    | 🔄         |
-| CNB006     | Retrieve Connection Detail | /connections/applications/{connection_id} | GET        | retrieveConnectionDetail | 🔄     |
-| CNB007     | Create Connection       | /connections/applications                 | POST       | createConnection      | 🔄         |
-| CNB008     | Delete Connection       | /connections/applications/{connectionId}  | DELETE     | deleteConnection      | 🔄         |
+| **Action** | **Summary**                | **Route**                                 | **Method** | **Operation ID**         | **Status** |
+| ---------- | -------------------------- | ----------------------------------------- | ---------- | ------------------------ | ---------- |
+| CNB001     | List Connections           | /connections/applications                 | GET        | listConnections          | 🔄         |
+| CNB002     | Update Connection          | /connections/applications                 | PUT        | updateConnection         | 🔄         |
+| CNB003     | Pause Connection           | /connections/applications/pause           | PUT        | pauseConnection          | 🔄         |
+| CNB004     | Test Connection            | /connections/applications/test            | POST       | testConnection           | 🔄         |
+| CNB005     | Activate Connection        | /connections/applications/activate        | PUT        | activateConnection       | 🔄         |
+| CNB006     | Retrieve Connection Detail | /connections/applications/{connection_id} | GET        | retrieveConnectionDetail | 🔄         |
+| CNB007     | Create Connection          | /connections/applications                 | POST       | createConnection         | 🔄         |
+| CNB008     | Delete Connection          | /connections/applications/{connection_id} | DELETE     | deleteConnection         | 🔄         |
 
 ---
 
@@ -58,16 +58,16 @@ It manages connection listing, creation, configuration, status control (pause/ac
 
 ### Tenant Manager (Utility) APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|TMB001|Retrieve Connections||GET|CNB001|🔄|
-|TMB002|Update Connection Config||PUT|CNB002|🔄|
-|TMB003|Update Connection Status||PUT|CNB003|🔄|
-|TMB004|Ping Core Systems||POST|CNB004|🔄|
-|TMB005|Update Connection Status||PUT|CNB005|🔄|
-|TMB006|Retrieve Connection Details||GET|CNB006|🔄|
-|TMB007|Create Connection||POST|CNB007|🔄|
-|TMB008|Remove Connection||DELETE|CNB008|🔄|
+| **Action** | **Summary**                 | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | --------------------------- | --------- | ---------- | ---------------- | ---------- |
+| TMB001     | Retrieve Connections        |           | GET        | CNB001           | 🔄         |
+| TMB002     | Update Connection Config    |           | PUT        | CNB002           | 🔄         |
+| TMB003     | Update Connection Status    |           | PUT        | CNB003           | 🔄         |
+| TMB004     | Ping Core Systems           |           | POST       | CNB004           | 🔄         |
+| TMB005     | Update Connection Status    |           | PUT        | CNB005           | 🔄         |
+| TMB006     | Retrieve Connection Details |           | GET        | CNB006           | 🔄         |
+| TMB007     | Create Connection           |           | POST       | CNB007           | 🔄         |
+| TMB008     | Remove Connection           |           | DELETE     | CNB008           | 🔄         |
 
 ---
 
