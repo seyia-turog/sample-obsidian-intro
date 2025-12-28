@@ -79,9 +79,10 @@ It manages card listing, creation and issuance, detailed information retrieval, 
 
 ### 3. User Settings Utility APIs
 
-| **Action** | **Summary**      | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | ---------------- | --------- | ---------- | ---------------- | ---------- |
-| SUB002     | Fetch Cards List |           | GET        | CDB001           | 🔄         |
+| **Action** | **Summary**                      | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------------------- | --------- | ---------- | ---------------- | ---------- |
+| SUB002     | Add Card Detail to User Settings |           | GET        | CDB001           | 🔄         |
+| SUB002     | Fetch Cards List                 |           | GET        | CDB002           | 🔄         |
 
 ---
 
