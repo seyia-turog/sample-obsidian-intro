@@ -78,7 +78,7 @@ It manages account listing and search, detailed account information retrieval, p
 | CBB032     | Get Savings Account Performance           | /api/v1/savings/accounts/performance/{accountId} | GET        | SVB004           | 🔄         |
 | CBB033     | Get Savings Account Overview              | /api/v1/savings/accounts/overview/{accountId}    | GET        | SVB005           | 🔄         |
 | CBB034     | Get Savings Account Transactions          | /api/v1/savings/accounts/{accountNo}/statement   | GET        | SVB006           | 🔄         |
-| CBB035     | Deposit to Saving Account                 |                                                  | POST       | SVB007           | 🔄         |
+| CBB035     | Deposit to Saving Account                 | /api/v1/savings/accounts/deposit                 | POST       | SVB007           | 🔄         |
 | CBB036     | Withdraw from Saving Account              |                                                  | POST       | SVB008, SVB012   | 🔄         |
 | CBB037     | Update Relationship Officer               |                                                  | PUT        | SVB009           | 🔄         |
 | CBB038     | Update Account Status                     |                                                  | PUT        | SVB010           | 🔄         |
