@@ -60,7 +60,7 @@ It manages community creation, search and discovery, membership management, invi
 | CMB014     | Remove Community Member            | /communities/account/members               | DELETE     | removeCommunityMember         | 🔄         |
 | CMB015     | Update Community Member Role       | /communities/members/role/                 | PUT        | updateCommunityMemberRole     | 🔄         |
 | CMB016     | Delete Community                   | /communities/profile/remove                | DELETE     | deleteCommunity               | 🔄         |
-| CMB017     | Add Community Account Signatory    |                                            |            |                               | 🔄         |
+| CMB017     | Add Community Account Signatory    |                                            |            | addCommunityAccountSignatory  | 🔄         |
 | CMB018     | Remove Community Account Signatory |                                            |            |                               | 🔄         |
 | CMB019     | List Community Account Signatories |                                            |            |                               | 🔄         |
 
