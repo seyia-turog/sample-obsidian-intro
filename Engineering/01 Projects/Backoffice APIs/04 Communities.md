@@ -53,9 +53,9 @@ It manages community creation, search and discovery, membership management, invi
 | CMB007     | Unblock Community Account        |                       | PUT        | unblockCommunityAccount       | 🔄         |
 |            | Create Community Invite          |                       | POST       | createCommunityInvite         | 🔄         |
 |            | List Pending Community Invites   |                       | GET        | listPendingCommunityInvites   | 🔄         |
-|            | Cancel Invite                    |                       | DELETE     | cancelInvite                  | 🔄         |
-|            | Accept Invite                    |                       | POST       | acceptInvite                  | 🔄         |
-|            | Decline Invite                   |                       | POST       | declineInvite                 | 🔄         |
+|            | Cancel Community Invite          |                       | DELETE     | cancelCommunityInvite         | 🔄         |
+|            | Accept Community Invite          |                       | POST       | acceptCommunityInvite         | 🔄         |
+|            | Decline Community Invite         |                       | POST       | declineInvite                 | 🔄         |
 |            | View Member List                 |                       | GET        | viewMemberList                | 🔄         |
 |            | Remove Member                    |                       | DELETE     | removeMember                  | 🔄         |
 |            | Modify Community Member Role     |                       | PUT        | modifyCommunityMemberRole     | 🔄         |
