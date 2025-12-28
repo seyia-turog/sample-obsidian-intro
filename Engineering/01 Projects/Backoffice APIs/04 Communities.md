@@ -78,8 +78,8 @@ It manages community creation, search and discovery, membership management, invi
 | CBB009     | Create Community Account           | /api/v1/communities/account                       | POST       | CMB003           | 🔄         |
 | CBB010     | Retrieve Community Account Details | /api/v1/communities/account/{community_id}        | GET        | CMB004           | 🔄         |
 | CBB011     | Update Community Detail            |                                                   | PUT        | CMB005           | 🔄         |
-|            | (Un)Block Communities              |                                                   | PUT        | CMB006           | 🔄         |
-|            | (Un)Block Communities              |                                                   | PUT        | CMB006           | 🔄         |
+|            | Block Communi                      |                                                   | PUT        | CMB006           | 🔄         |
+|            | Unlock Communities                 |                                                   | PUT        | CMB006           | 🔄         |
 |            | Create Invitation                  | /api/v1/communities/invites                       | POST       | CMB007           | 🔄         |
 |            | Retrieve Pending Invites           | /api/v1/communities/invites/pending               | GET        | CMB008           | 🔄         |
 |            | Remove Invitation                  | /api/v1/communities/invites/{{invite_id}}         | DELETE     | CMB009           | 🔄         |
