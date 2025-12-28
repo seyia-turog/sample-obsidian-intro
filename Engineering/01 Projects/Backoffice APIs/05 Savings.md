@@ -48,7 +48,7 @@ It manages account listing and search, detailed account information retrieval, p
 
 | **Action** | **Summary**                                  | **Route**                                   | **Method** | **Operation ID** | **Status** |
 | ---------- | -------------------------------------------- | ------------------------------------------- | ---------- | ---------------- | ---------- |
-| SVB001     | Get Savings Accounts                         | /savings/accounts                           | GET        |                  | 🔄         |
+| SVB001     | List Saving Accounts                         | /savings/accounts                           | GET        |                  | 🔄         |
 | SVB002     | Search Saving Accounts                       | /savings/accounts/search                    | GET        |                  | 🔄         |
 | SVB003     | Get Savings Account Details                  | /savings/accounts/{account_id}              | GET        |                  | 🔄         |
 | SVB004     | Get Savings Account Performance              | /savings/accounts/performance/{account_id}  | GET        |                  | 🔄         |
