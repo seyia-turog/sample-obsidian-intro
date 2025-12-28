@@ -54,12 +54,12 @@ It manages community creation, search and discovery, membership management, invi
 | CMB008     | Create Community Invite          |                       | POST       | createCommunityInvite         | 🔄         |
 | CMB009     | List Pending Community Invites   |                       | GET        | listPendingCommunityInvites   | 🔄         |
 | CMB010     | Cancel Community Invite          |                       | DELETE     | cancelCommunityInvite         | 🔄         |
-|            | Accept Community Invite          |                       | POST       | acceptCommunityInvite         | 🔄         |
-|            | Decline Community Invite         |                       | POST       | declineCommunityInvite        | 🔄         |
-|            | List Community Members           |                       | GET        | listCommunityMembers          | 🔄         |
-|            | Remove Community Member          |                       | DELETE     | removeCommunityMember         | 🔄         |
-|            | Update Community Member Role     |                       | PUT        | updateCommunityMemberRole     | 🔄         |
-|            | Delete Community                 |                       | DELETE     | deleteCommunity               | 🔄         |
+| CMB011     | Accept Community Invite          |                       | POST       | acceptCommunityInvite         | 🔄         |
+| CMB012     | Decline Community Invite         |                       | POST       | declineCommunityInvite        | 🔄         |
+| CMB013     | List Community Members           |                       | GET        | listCommunityMembers          | 🔄         |
+| CMB014     | Remove Community Member          |                       | DELETE     | removeCommunityMember         | 🔄         |
+| CMB015     | Update Community Member Role     |                       | PUT        | updateCommunityMemberRole     | 🔄         |
+| CMB016     | Delete Community                 |                       | DELETE     | deleteCommunity               | 🔄         |
 
 
 ---
