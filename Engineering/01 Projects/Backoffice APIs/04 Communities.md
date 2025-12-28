@@ -50,7 +50,7 @@ It manages community creation, search and discovery, membership management, invi
 | CMB004     | Get Community Account Details    | /api/v1/communities/account/{community_id}        | GET        | getCommunityAccountDetails    | 🔄         |
 | CMB005     | Update Community Account Details | /api/v1/communities/account/{community_id}        | PUT        | updateCommunityAccountDetails | 🔄         |
 | CMB006     | Block Community Account          | /api/v1/communities/account/{community_id}/status | PUT        | blockCommunityAccount         | 🔄         |
-| CMB007     | Unblock Community Account        |                                                   | PUT        | unblockCommunityAccount       | 🔄         |
+| CMB007     | Unblock Community Account        | /api/v1/communities/account/{community_id}/status | PUT        | unblockCommunityAccount       | 🔄         |
 | CMB008     | Create Community Invite          |                                                   | POST       | createCommunityInvite         | 🔄         |
 | CMB009     | List Pending Community Invites   |                                                   | GET        | listPendingCommunityInvites   | 🔄         |
 | CMB010     | Cancel Community Invite          |                                                   | DELETE     | cancelCommunityInvite         | 🔄         |
