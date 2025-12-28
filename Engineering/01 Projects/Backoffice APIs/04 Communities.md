@@ -60,6 +60,8 @@ It manages community creation, search and discovery, membership management, invi
 | CMB014     | Remove Community Member          |                                                   | DELETE     | removeCommunityMember         | 🔄         |
 | CMB015     | Update Community Member Role     |                                                   | PUT        | updateCommunityMemberRole     | 🔄         |
 | CMB016     | Delete Community                 |                                                   | DELETE     | deleteCommunity               | 🔄         |
+| CMB016     | Delete Community                 |                                                   | DELETE     | deleteCommunity               | 🔄         |
+|            | Add Community Account Signatory  |                                                   |            |                               |            |
 
 
 ---
