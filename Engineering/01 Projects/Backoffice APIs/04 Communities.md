@@ -42,23 +42,23 @@ It manages community creation, search and discovery, membership management, invi
 
 ### Backoffice APIs
 
-| **Action** | **Summary**                  | **Route**             | **Method** | **Operation ID**          | **Status** |
-| ---------- | ---------------------------- | --------------------- | ---------- | ------------------------- | ---------- |
-| CMB001     | List Community Accounts      | /communities/accounts | GET        | listCommunityAccounts     | 🔄         |
-| CMB002     | Search Community Accounts    |                       | GET        | searchCommunityAccounts   | 🔄         |
-| CMB003     | Create Community Accounts    |                       | POST       | createCommunityAccounts   | 🔄         |
-| CMB004     | Get Community Account Detail |                       | GET        | viewCommunityDetail       | 🔄         |
-| CMB005     | Update Community Detail      |                       | PUT        | updateCommunityDetail     | 🔄         |
-| CMB006     | Block / Unblock Community    |                       | PUT        | (un)BlockCommunity        | 🔄         |
-| CMB007     | Invite To Community          |                       | POST       | inviteToCommunity         | 🔄         |
-| CMB008     | Get Pending Invites          |                       | GET        | getPendingInvite          | 🔄         |
-| CMB009     | Cancel Invite                |                       | DELETE     | cancelInvite              | 🔄         |
-| CMB010     | Accept Invite                |                       | POST       | acceptInvite              | 🔄         |
-| CMB011     | Decline Invite               |                       | POST       | declineInvite             | 🔄         |
-| CMB012     | View Member List             |                       | GET        | viewMemberList            | 🔄         |
-| CMB013     | Remove Member                |                       | DELETE     | removeMember              | 🔄         |
-| CMB014     | Modify Community Member Role |                       | PUT        | modifyCommunityMemberRole | 🔄         |
-| CMB015     | Dissolve Community           |                       | DELETE     | dissolveCommunit          | 🔄         |
+| **Action** | **Summary**                      | **Route**             | **Method** | **Operation ID**           | **Status** |
+| ---------- | -------------------------------- | --------------------- | ---------- | -------------------------- | ---------- |
+| CMB001     | List Community Accounts          | /communities/accounts | GET        | listCommunityAccounts      | 🔄         |
+| CMB002     | Search Community Accounts        |                       | GET        | searchCommunityAccounts    | 🔄         |
+| CMB003     | Create Community Accounts        |                       | POST       | createCommunityAccounts    | 🔄         |
+| CMB004     | Get Community Account Details    |                       | GET        | getCommunityAccountDetails | 🔄         |
+| CMB005     | Update Community Account Details |                       | PUT        | updateCommunityAccount     | 🔄         |
+| CMB006     | Block / Unblock Community        |                       | PUT        | (un)BlockCommunity         | 🔄         |
+| CMB007     | Invite To Community              |                       | POST       | inviteToCommunity          | 🔄         |
+| CMB008     | Get Pending Invites              |                       | GET        | getPendingInvite           | 🔄         |
+| CMB009     | Cancel Invite                    |                       | DELETE     | cancelInvite               | 🔄         |
+| CMB010     | Accept Invite                    |                       | POST       | acceptInvite               | 🔄         |
+| CMB011     | Decline Invite                   |                       | POST       | declineInvite              | 🔄         |
+| CMB012     | View Member List                 |                       | GET        | viewMemberList             | 🔄         |
+| CMB013     | Remove Member                    |                       | DELETE     | removeMember               | 🔄         |
+| CMB014     | Modify Community Member Role     |                       | PUT        | modifyCommunityMemberRole  | 🔄         |
+| CMB015     | Dissolve Community               |                       | DELETE     | dissolveCommunit           | 🔄         |
 
 
 ---
