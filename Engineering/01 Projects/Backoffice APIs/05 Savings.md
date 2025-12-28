@@ -100,7 +100,7 @@ It manages account listing and search, detailed account information retrieval, p
 | CBB047     | Get Savings Account Transaction Details | /api/v1/savings/transactions/{transactionId}                          | GET        | SVB018           | 🔄         |
 | CBB048     | List Staff Member                       | /api/v1/staff/                                                        | GET        | SVB019           | 🔄         |
 | CBB049     | List Charges                            | /api/v1/savings/charges?accountId={accountId}&chargeType={chargeType} | GET        | SVB020           | 🔄         |
-| CBB050     | Get Charge Details                      | /api/v1/savings/charges/{{chargeId}}?accountId=                       | GET        | SVB021           | 🔄         |
+| CBB050     | Get Charge Details                      | /api/v1/savings/charges/{{chargeId}}?accountId={accountId}            | GET        | SVB021           | 🔄         |
 | CBB051     | List Account Charges                    |                                                                       | GET        | SVB022           | 🔄         |
 | CBB052     | Reverse Charge                          |                                                                       | POST       | SVB023           | 🔄         |
 |            |                                         |                                                                       |            |                  |            |
