@@ -72,22 +72,22 @@ It manages account listing and search, detailed account information retrieval, p
 
 | **Action** | **Summary**                               | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ----------------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| CBB022     | Get Savings Accounts                      |           | GET        | SVB001           | 🔄         |
-| CBB023     | Search Saving Accounts                    |           | GET        | SVB002           | 🔄         |
-| CBB024     | Get Savings Account Details               |           | GET        | SVB003           | 🔄         |
-| CBB025     | Get Savings Account Performance           |           | GET        | SVB004           | 🔄         |
-| CBB026     | Get Savings Account Overview              |           | GET        | SVB005           | 🔄         |
-| CBB027     | Get Savings Account Transactions          |           | GET        | SVB006           | 🔄         |
-| CBB028     | Deposit to Saving Account                 |           | POST       | SVB007           | 🔄         |
-| CBB029     | Withdraw from Saving Account              |           | POST       | SVB008, SVB012   | 🔄         |
-| CBB030     | Update Relationship Officer               |           | PUT        | SVB009           | 🔄         |
-| CBB031     | Update Account Status                     |           | PUT        | SVB010           | 🔄         |
-| CBB032     | Close Account                             |           | POST       | SVB011           | 🔄         |
-| CBB034     | Process Fund Transfer from Saving Account |           | POST       | SVB013           | 🔄         |
-| CBB035     | Hold Transaction Amount                   |           | POST       | SVB014           | 🔄         |
-| CBB036     | Release Transaction Amount                |           | POST       | SVB014           | 🔄         |
-| CBB037     | Reverse Transaction Amount                |           | POST       | SVB014           | 🔄         |
-| CBB038     | Archive Savings Account                   |           | PUT        | SVB015           | 🔄         |
+| CBB029     | Get Savings Accounts                      |           | GET        | SVB001           | 🔄         |
+|            | Search Saving Accounts                    |           | GET        | SVB002           | 🔄         |
+|            | Get Savings Account Details               |           | GET        | SVB003           | 🔄         |
+|            | Get Savings Account Performance           |           | GET        | SVB004           | 🔄         |
+|            | Get Savings Account Overview              |           | GET        | SVB005           | 🔄         |
+|            | Get Savings Account Transactions          |           | GET        | SVB006           | 🔄         |
+|            | Deposit to Saving Account                 |           | POST       | SVB007           | 🔄         |
+|            | Withdraw from Saving Account              |           | POST       | SVB008, SVB012   | 🔄         |
+|            | Update Relationship Officer               |           | PUT        | SVB009           | 🔄         |
+|            | Update Account Status                     |           | PUT        | SVB010           | 🔄         |
+|            | Close Account                             |           | POST       | SVB011           | 🔄         |
+|            | Process Fund Transfer from Saving Account |           | POST       | SVB013           | 🔄         |
+|            | Hold Transaction Amount                   |           | POST       | SVB014           | 🔄         |
+|            | Release Transaction Amount                |           | POST       | SVB014           | 🔄         |
+|            | Reverse Transaction Amount                |           | POST       | SVB014           | 🔄         |
+|            | Archive Savings Account                   |           | PUT        | SVB015           | 🔄         |
 
 ---
 
