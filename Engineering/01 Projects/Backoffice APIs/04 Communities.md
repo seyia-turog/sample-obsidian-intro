@@ -55,9 +55,9 @@ It manages community creation, search and discovery, membership management, invi
 |            | List Pending Community Invites   |                       | GET        | listPendingCommunityInvites   | 🔄         |
 |            | Cancel Community Invite          |                       | DELETE     | cancelCommunityInvite         | 🔄         |
 |            | Accept Community Invite          |                       | POST       | acceptCommunityInvite         | 🔄         |
-|            | Decline Community Invite         |                       | POST       | declineInvite                 | 🔄         |
-|            | View Member List                 |                       | GET        | viewMemberList                | 🔄         |
-|            | Remove Member                    |                       | DELETE     | removeMember                  | 🔄         |
+|            | Decline Community Invite         |                       | POST       | declineCommunityInvite        | 🔄         |
+|            | List Community Members           |                       | GET        | listCommunityMembers          | 🔄         |
+|            | Remove Community Member          |                       | DELETE     | removeCommunityMember         | 🔄         |
 |            | Modify Community Member Role     |                       | PUT        | modifyCommunityMemberRole     | 🔄         |
 |            | Dissolve Community               |                       | DELETE     | dissolveCommunit              | 🔄         |
 
