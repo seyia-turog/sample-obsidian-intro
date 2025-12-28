@@ -49,7 +49,7 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 | **Action** | **Summary**               | **Route**                                          | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------------------- | -------------------------------------------------- | ---------- | ---------------- | ---------- |
 | LNB001     | Loan Accounts             | /loans/account                                     | GET        | Loan Accounts    | 🔄         |
-| LNB002     | Update Loan Account       | /loans/account/{loan_id}                           | PUT        | Loan Accounts    | 🔄         |
+| LNB002     | Update Loan Account       | /loans/account/{loan_id}Acco                       | PUT        | Loan Accounts    | 🔄         |
 | LNB003     | Loan Account Details      | /loans/account/{loan_id}                           | GET        | Loan Accounts    | 🔄         |
 | LNB004     | Loan Repayment Schedule   | /loans/account/schedule/{loan_id}                  | GET        | Loan Accounts    | 🔄         |
 | LNB005     | Loan Account Transactions | /loans/account/transactions/{loan_id}              | GET        | Loan Accounts    | 🔄         |
