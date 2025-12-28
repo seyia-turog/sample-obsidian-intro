@@ -65,7 +65,7 @@ It manages account listing and search, detailed account information retrieval, p
 | SVB015     | Archive Savings Account          | /savings/accounts/archive                   | PUT        | archiveSavingsAccount          | 🔄         |
 | SVB016     | Unarchive Savings Account        |                                             | PUT        | unarchiveSavingsAccount        | 🔄         |
 | SVB017     | Update Savings Account           |                                             | PUT        | updateSavingsAccount           | 🔄         |
-| SVB018     | Get Savings Ac                   |                                             |            |                                |            |
+| SVB018     | Get Savings Account Transaction  |                                             |            |                                |            |
 
 ---
 
