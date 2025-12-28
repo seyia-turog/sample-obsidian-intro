@@ -46,24 +46,24 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 ### Backoffice APIs
 
-| **Action** | **Summary**                    | **Route** | **Method** | **Operation ID**            | **Status** |
-| ---------- | ------------------------------ | --------- | ---------- | --------------------------- | ---------- |
-| LNA001     | List Loan Accounts             |           | GET        | listLoanAccounts            | 🔄         |
-| LNA002     | Get Loan Account Details       |           | GET        | getLoanAccountDetails       | 🔄         |
-| LNA003     | Update Loan Account            |           | PUT        | updateLoanAccount           | 🔄         |
-| LNA004     | Get Loan Repayment Schedule    |           | GET        | getLoanRepaymentSchedule    | 🔄         |
-| LNA005     | List Loan Account Transactions |           | GET        | listLoanAccountTransactions | 🔄         |
-| LNA006     | Close Loan Account             |           | POST       | closeLoanAccount            | 🔄         |
-| LNA007     | Add Loan Guarantor             |           | POST       | addLoanGuarantor            | 🔄         |
-| LNA008     | Remove Loan Guarantor          |           | DELETE     | removeLoanGuarantor         | 🔄         |
-| LNA009     | List Loan Guarantors           |           | GET        | listLoanGuarantors          | 🔄         |
-| LNA010     | Update Loan Status             |           | PUT        | updateLoanStatus            | 🔄         |
-| LNA011     | List Loan Charges              |           | GET        | listLoanCharges             | 🔄         |
-| LNA012     | Submit Loan Application        |           | POST       | submitLoanApplication       | 🔄         |
-| LNA013     | Review Loan Application        |           | POST       | reviewLoanApplication       | 🔄         |
-| LNA014     | Approve Loan Application       |           | POST       | approveLoanApplication      | 🔄         |
-| LNA015     | Reject Loan Application        |           | POST       | rejectLoanApplication       | 🔄         |
-| LNA016     | Disburse Loan                  |           | POST       | disburseLoan                | 🔄         |
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|LNA001|List Loan Accounts|/loans/account|GET|listLoanAccounts|🔄|
+|LNA002|Update Loan Account|/loans/account/{loan_id}Acco|PUT|updateLoanAccount|🔄|
+|LNA003|Get Loan Account Details|/loans/account/{loan_id}|GET|getLoanAccountDetails|🔄|
+|LNA004|Get Loan Repayment Schedule|/loans/account/schedule/{loan_id}|GET|getLoanRepaymentSchedule|🔄|
+|LNA005|Get Loan Account Transactions|/loans/account/transactions/{loan_id}|GET|listLoanAccountTransactions|🔄|
+|LNA006|Close Loan Account|/loans/account/close/{loan_id}|POST|closeLoanAccount|🔄|
+|LNA007|Add Loan Guarantor|/loans/account/guarantors|POST|addLoanGuarantor|🔄|
+|LNA008|Remove Loan Guarantor|/loans/account/guarantors/{guarantor_id}/{loan_id}|DELETE|removeLoanGuarantor|🔄|
+|LNA009|List Loan Guarantors|/loans/account/guarantors-list/{loan_id}|GET|listLoanGuarantors|🔄|
+|LNA010|Update Loan Status|/loans/account/status|PUT|updateLoanStatus|🔄|
+|LNA011|List Loan Charges|/loans/account/charges|GET|listLoanCharges|🔄|
+|LNA012|Submit Loan Application|/loans/applications|POST|submitLoanApplication|🔄|
+|LNA013|Review Loan Application|/loan/applications/review|POST|reviewLoanApplication|🔄|
+|LNA014|Approve Loan|/loans/applications/approve|POST|approveLoanApplication|🔄|
+|LNA015|Reject Loan|/loan/applications/reject|POST|rejectLoanApplication|🔄|
+|LNA016|Disburse Loan|/loans/application/disburse|POST|disburseLoan|🔄|
 
 
 ---
