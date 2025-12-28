@@ -66,7 +66,7 @@ It manages account listing and search, detailed account information retrieval, p
 | SVB016     | Unarchive Savings Account               |                                             | PUT        | unarchiveSavingsAccount        | 🔄         |
 | SVB017     | Update Savings Account                  |                                             | PUT        | updateSavingsAccount           | 🔄         |
 | SVB018     | Get Savings Account Transaction Details |                                             | GET        | getSavingsAccountTransaction   | 🔄         |
-| SVB018     | List Staff                              |                                             | GET        | list staff                     | 🔄         |
+| SVB018     | List Staff Member                       |                                             | GET        | listStaffMembers               | 🔄         |
 
 ---
 
@@ -94,6 +94,7 @@ It manages account listing and search, detailed account information retrieval, p
 | CBB045     | Unarchive Savings Account               | /api/v1/savings/accounts/unarchive                | PUT        | SVB016           | 🔄         |
 | CBB046     | Update Savings Account                  | /api/v1/savings/accounts/{accountId}              | PUT        | SVB017           | 🔄         |
 | CBB047     | Get Savings Account Transaction Details | /api/v1/savings/transactions/{transactionId}      | GET        | SVB018           | 🔄         |
+| SVB018     | List Staff Member                       | /api/v1/staff/                                    | GET        | SVB019           | 🔄         |
 
 ---
 
