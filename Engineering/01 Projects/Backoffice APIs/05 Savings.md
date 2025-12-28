@@ -64,7 +64,7 @@ It manages account listing and search, detailed account information retrieval, p
 | SVB014     | Transfer Funds (External)        | /savings/accounts/transfer                  | POST       | transferSavingsAccountExternal | 🔄         |
 | SVB015     | Archive Savings Account          | /savings/accounts/archive                   | PUT        | archiveSavingsAccount          | 🔄         |
 | SVB016     | Unarchive Savings Account        |                                             | PUT        | unarchiveSavingsAccount        | 🔄         |
-| SVB016     | Update Savings Account           |                                             |            |                                |            |
+| SVB017     | Update Savings Account           |                                             | PUT        | updateSavingsAccount           | 🔄         |
 
 ---
 
@@ -90,6 +90,7 @@ It manages account listing and search, detailed account information retrieval, p
 | CBB041     | Transfer Funds (External)        | /api/v1/savings/accounts/transfer                 | POST       | SVB014           | 🔄         |
 | CBB044     | Archive Savings Account          | /api/v1/savings/accounts/archive                  | PUT        | SVB015           | 🔄         |
 | CBB045     | Unarchive Savings Account        |                                                   | PUT        | SVB016           | 🔄         |
+| CBB046     | Update Savings Account           |                                                   | PUT        | SVB017           | 🔄         |
 
 ---
 
