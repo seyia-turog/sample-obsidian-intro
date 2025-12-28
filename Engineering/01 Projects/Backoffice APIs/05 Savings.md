@@ -96,9 +96,9 @@ It manages account listing and search, detailed account information retrieval, p
 
 ### 2. Payment Processor APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|PPB001|Transfer Transaction Amount||POST|SVB014|🔄|
+| **Action** | **Summary**                 | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | --------------------------- | --------- | ---------- | ---------------- | ---------- |
+| PPB001     | Transfer Transaction Amount |           | POST       | SVB014           | 🔄         |
 
 ---
 
