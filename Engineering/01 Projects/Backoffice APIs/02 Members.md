@@ -93,8 +93,8 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 | **Action** | **Summary**      | **Route**                 | **Method** | **Operation ID** | **Status** |
 | ---------- | ---------------- | ------------------------- | ---------- | ---------------- | ---------- |
-| AIB001     | Create Staff     | /api/v1/staff/            | POST       | MBB001           | 🔄         |
-| AIB003     | Get Staff Detail | /api/v1/staff/{{staffId}} | GET        | MBB003           | 🔄         |
+| CBB053     | Create Staff     | /api/v1/staff/            | POST       | MBB001           | 🔄         |
+| CBB054     | Get Staff Detail | /api/v1/staff/{{staffId}} | GET        | MBB003           | 🔄         |
 
 
 ---
