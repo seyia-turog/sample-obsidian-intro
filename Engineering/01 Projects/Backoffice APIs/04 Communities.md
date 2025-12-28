@@ -55,8 +55,8 @@ It manages community creation, search and discovery, membership management, invi
 | CMB009     | List Pending Community Invites     | /communities/account/invites/pending       | GET        | listPendingCommunityInvites   | 🔄         |
 | CMB010     | Cancel Community Invite            | /communities/account/invites/{invite_id}   | DELETE     | cancelCommunityInvite         | 🔄         |
 | CMB011     | Accept Community Invite            | /communities/invites/accept                | POST       | acceptCommunityInvite         | 🔄         |
-| CMB012     | Decline Community Invite           |                                            | POST       | declineCommunityInvite        | 🔄         |
-| CMB013     | List Community Members             |                                            | GET        | listCommunityMembers          | 🔄         |
+| CMB012     | Decline Community Invite           | /communities/account/invites/decline       | POST       | declineCommunityInvite        | 🔄         |
+| CMB013     | List Community Members             | /communities/account/members               | GET        | listCommunityMembers          | 🔄         |
 | CMB014     | Remove Community Member            |                                            | DELETE     | removeCommunityMember         | 🔄         |
 | CMB015     | Update Community Member Role       |                                            | PUT        | updateCommunityMemberRole     | 🔄         |
 | CMB016     | Delete Community                   |                                            | DELETE     | deleteCommunity               | 🔄         |
