@@ -40,9 +40,9 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 ### Backoffice APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**API Tag**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|---|
-|CLB008|Run AML Check (All)|/compliance/checks/run-aml|POST|Compliance API|Compliance|🔄|
+| **Action** | **Summary**         | **Route**                  | **Method** | **API Tag**    | **Operation ID** | **Status** |
+| ---------- | ------------------- | -------------------------- | ---------- | -------------- | ---------------- | ---------- |
+| CLB001     | Run AML Check (All) | /compliance/checks/run-aml | POST       | Compliance API | Compliance       | 🔄         |
 
 ---
 
