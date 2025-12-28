@@ -76,24 +76,24 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 | **Action** | **Summary**                        | **Route**                                                 | **Method** | **Operation ID** | **Status** |
 | ---------- | ---------------------------------- | --------------------------------------------------------- | ---------- | ---------------- | ---------- |
-| CBB039     | Retrieve Loan Accounts             | /api/v1/loans/account/close/{loan_id}                     | GET        | LNB001           | 🔄         |
-| CBB040     | Update Loan Parameters             | /api/v1/loans/account/{loan_id}                           | PUT        | LNB002           | 🔄         |
-| CBB041     | Retrieve Loan Details              | /api/v1/loans/account/{loanId}                            | GET        | LNB003           | 🔄         |
-| CBB042     | Fetch Repayment Schedule           | /api/v1/loans/account/schedule/{loanId}                   | GET        | LNB004           | 🔄         |
-| CBB043     | Retrieve Loan Transactions         | /api/v1/loans/account/transactions/{loan_id}              | GET        | LNB005           | 🔄         |
-| CBB044     | Close Loan Account                 | /api/v1/loans/account/close/{loan_id}                     | DELETE     | LNB006           | 🔄         |
-| CBB045     | Add Guarantor to Loan Account      | /api/v1/loans/account/guarantors                          | POST       | LNB007           | 🔄         |
-| CBB046     | Remove Guarantor from Loan Account | /api/v1/loans/account/guarantors/{guarantor_id}/{loan_id} | DELETE     | LNB008           | 🔄         |
-| CBB047     | Retrieve Guarantors                | /api/v1/loans/account/guarantors-list/{loan_id}           | GET        | LNB009           | 🔄         |
-| CBB048     | Update Loan Status                 | /api/v1/loans/account/status                              | PUT        | LNB010           | 🔄         |
-| CBB049     | Post Loan Charges                  | /api/v1/loans/account/charges                             | POST       | LNB011           | 🔄         |
-| CBB050     | Create Loan Application            | /api/v1/loans/applications                                | POST       | LNB012           | 🔄         |
-| CBB051     | Retrieve Submitted Applications    | /api/v1/loans/applications                                | PUT        | LNB014           | 🔄         |
-| CBB052     | Retrieve Financial Data            | /api/v1/savings/accounts/{accountNo}/statement            | PUT        | LNB014           | 🔄         |
-| CBB053     | Approve Loan Application           | /api/v1/loans/applications/approve                        | POST       | LNB015           | 🔄         |
-| CBB054     | Reject Loan application            | /api/v1/loans/applications/reject                         | POST       | LNB016           | 🔄         |
-| CBB055     | Disburse Loan                      | /api/v1/loans/application/disburse                        | POST       | LNB017           | 🔄         |
-| CBB056     | Write Off Loan Account             |                                                           | POST       | LNA018           | 🔄         |
+|            | Retrieve Loan Accounts             | /api/v1/loans/account/close/{loan_id}                     | GET        | LNB001           | 🔄         |
+|            | Update Loan Parameters             | /api/v1/loans/account/{loan_id}                           | PUT        | LNB002           | 🔄         |
+|            | Retrieve Loan Details              | /api/v1/loans/account/{loanId}                            | GET        | LNB003           | 🔄         |
+|            | Fetch Repayment Schedule           | /api/v1/loans/account/schedule/{loanId}                   | GET        | LNB004           | 🔄         |
+|            | Retrieve Loan Transactions         | /api/v1/loans/account/transactions/{loan_id}              | GET        | LNB005           | 🔄         |
+|            | Close Loan Account                 | /api/v1/loans/account/close/{loan_id}                     | DELETE     | LNB006           | 🔄         |
+|            | Add Guarantor to Loan Account      | /api/v1/loans/account/guarantors                          | POST       | LNB007           | 🔄         |
+|            | Remove Guarantor from Loan Account | /api/v1/loans/account/guarantors/{guarantor_id}/{loan_id} | DELETE     | LNB008           | 🔄         |
+|            | Retrieve Guarantors                | /api/v1/loans/account/guarantors-list/{loan_id}           | GET        | LNB009           | 🔄         |
+|            | Update Loan Status                 | /api/v1/loans/account/status                              | PUT        | LNB010           | 🔄         |
+|            | Post Loan Charges                  | /api/v1/loans/account/charges                             | POST       | LNB011           | 🔄         |
+|            | Create Loan Application            | /api/v1/loans/applications                                | POST       | LNB012           | 🔄         |
+|            | Retrieve Submitted Applications    | /api/v1/loans/applications                                | PUT        | LNB014           | 🔄         |
+|            | Retrieve Financial Data            | /api/v1/savings/accounts/{accountNo}/statement            | PUT        | LNB014           | 🔄         |
+|            | Approve Loan Application           | /api/v1/loans/applications/approve                        | POST       | LNB015           | 🔄         |
+|            | Reject Loan application            | /api/v1/loans/applications/reject                         | POST       | LNB016           | 🔄         |
+|            | Disburse Loan                      | /api/v1/loans/application/disburse                        | POST       | LNB017           | 🔄         |
+|            | Write Off Loan Account             | /api/v1/loans/account/writeoff/{loan_id}                  | POST       | LNA018           | 🔄         |
 
 ---
 
