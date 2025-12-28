@@ -50,9 +50,9 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 ### Identity Processor APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|PIB001|Run AML Check||POST|CLB008|🔄|
+| **Action** | **Summary**   | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ------------- | --------- | ---------- | ---------------- | ---------- |
+| PIB001     | Run AML Check |           | POST       | CLB001           | 🔄         |
 
 ---
 
@@ -60,9 +60,9 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 ### Permissions & APIs
 
-|**Permission**|**Permission Name**|**APIs**|**Status**|
-|---|---|---|---|
-|compliance_aml|Run AML Checks|CLB008|🔄|
+| **Permission** | **Permission Name** | **APIs** | **Status** |
+| -------------- | ------------------- | -------- | ---------- |
+| compliance_aml | Run AML Checks      | CLB001   | 🔄         |
 
 ---
 
