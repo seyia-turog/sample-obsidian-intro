@@ -42,27 +42,27 @@ It manages community creation, search and discovery, membership management, invi
 
 ### Backoffice APIs
 
-| **Action** | **Summary**                        | **Route**                                  | **Method** | **Operation ID**              | **Status** |
-| ---------- | ---------------------------------- | ------------------------------------------ | ---------- | ----------------------------- | ---------- |
-| CMB001     | List Community Accounts            | /communities/accounts                      | GET        | listCommunityAccounts         | 🔄         |
-| CMB002     | Search Community Accounts          | /communities/accounts/search               | GET        | searchCommunityAccounts       | 🔄         |
-| CMB003     | Create Community Accounts          | /communities/account                       | POST       | createCommunityAccounts       | 🔄         |
-| CMB004     | Get Community Account Details      | /communities/account/{community_id}        | GET        | getCommunityAccountDetails    | 🔄         |
-| CMB005     | Update Community Account Details   | /communities/account/{community_id}        | PUT        | updateCommunityAccountDetails | 🔄         |
-| CMB006     | Block Community Account            | /communities/account/status/{community_id} | PUT        | blockCommunityAccount         | 🔄         |
-| CMB007     | Unblock Community Account          | /communities/account/status/{community_id} | PUT        | unblockCommunityAccount       | 🔄         |
-| CMB008     | Create Community Invite            | /communities/account/invites               | POST       | createCommunityInvite         | 🔄         |
-| CMB009     | List Pending Community Invites     | /communities/account/invites/pending       | GET        | listPendingCommunityInvites   | 🔄         |
-| CMB010     | Cancel Community Invite            | /communities/account/invites/{invite_id}   | DELETE     | cancelCommunityInvite         | 🔄         |
-| CMB011     | Accept Community Invite            | /communities/invites/accept                | POST       | acceptCommunityInvite         | 🔄         |
-| CMB012     | Decline Community Invite           | /communities/account/invites/decline       | POST       | declineCommunityInvite        | 🔄         |
-| CMB013     | List Community Members             | /communities/account/members               | GET        | listCommunityMembers          | 🔄         |
-| CMB014     | Remove Community Member            | /communities/account/members               | DELETE     | removeCommunityMember         | 🔄         |
-| CMB015     | Update Community Member Role       | /communities/members/role/                 | PUT        | updateCommunityMemberRole     | 🔄         |
-| CMB016     | Delete Community                   | /communities/profile/remove                | DELETE     | deleteCommunity               | 🔄         |
-| CMB017     | Add Community Account Signatory    |                                            |            | addCommunityAccountSignatory  | 🔄         |
-| CMB018     | Remove Community Account Signatory |                                            |            |                               | 🔄         |
-| CMB019     | List Community Account Signatories |                                            |            |                               | 🔄         |
+| **Action** | **Summary**                        | **Route**                                  | **Method** | **Operation ID**                | **Status** |
+| ---------- | ---------------------------------- | ------------------------------------------ | ---------- | ------------------------------- | ---------- |
+| CMB001     | List Community Accounts            | /communities/accounts                      | GET        | listCommunityAccounts           | 🔄         |
+| CMB002     | Search Community Accounts          | /communities/accounts/search               | GET        | searchCommunityAccounts         | 🔄         |
+| CMB003     | Create Community Accounts          | /communities/account                       | POST       | createCommunityAccounts         | 🔄         |
+| CMB004     | Get Community Account Details      | /communities/account/{community_id}        | GET        | getCommunityAccountDetails      | 🔄         |
+| CMB005     | Update Community Account Details   | /communities/account/{community_id}        | PUT        | updateCommunityAccountDetails   | 🔄         |
+| CMB006     | Block Community Account            | /communities/account/status/{community_id} | PUT        | blockCommunityAccount           | 🔄         |
+| CMB007     | Unblock Community Account          | /communities/account/status/{community_id} | PUT        | unblockCommunityAccount         | 🔄         |
+| CMB008     | Create Community Invite            | /communities/account/invites               | POST       | createCommunityInvite           | 🔄         |
+| CMB009     | List Pending Community Invites     | /communities/account/invites/pending       | GET        | listPendingCommunityInvites     | 🔄         |
+| CMB010     | Cancel Community Invite            | /communities/account/invites/{invite_id}   | DELETE     | cancelCommunityInvite           | 🔄         |
+| CMB011     | Accept Community Invite            | /communities/invites/accept                | POST       | acceptCommunityInvite           | 🔄         |
+| CMB012     | Decline Community Invite           | /communities/account/invites/decline       | POST       | declineCommunityInvite          | 🔄         |
+| CMB013     | List Community Members             | /communities/account/members               | GET        | listCommunityMembers            | 🔄         |
+| CMB014     | Remove Community Member            | /communities/account/members               | DELETE     | removeCommunityMember           | 🔄         |
+| CMB015     | Update Community Member Role       | /communities/members/role/                 | PUT        | updateCommunityMemberRole       | 🔄         |
+| CMB016     | Delete Community                   | /communities/profile/remove                | DELETE     | deleteCommunity                 | 🔄         |
+| CMB017     | Add Community Account Signatory    |                                            | POST       | addCommunityAccountSignatory    | 🔄         |
+| CMB018     | Remove Community Account Signatory |                                            | DELETE     | removeCommunityAccountSignatory | 🔄         |
+| CMB019     | List Community Account Signatories |                                            | GET        | listCommunityAccountSignatories | 🔄         |
 
 
 ---
