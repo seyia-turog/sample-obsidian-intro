@@ -89,7 +89,20 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 ---
 
-### 3. Messages Processor APIs
+### 3. CBA Adapter APIs
+
+| **Action** | **Summary**           | **Route**                  | **Method** | **Operation ID** | **Status** |
+| ---------- | --------------------- | -------------------------- | ---------- | ---------------- | ---------- |
+| AIB001     | Create Staff Member   | /api/v1/staff/             | POST       | MBB001           | 🔄         |
+| AIB002     | List Members          | /api/v1/members            | GET        | MBB002           | 🔄         |
+| AIB003     | Get Member Profile    | /api/v1/members/{memberId} | GET        | MBB003           | 🔄         |
+| AIB004     | Update Member Profile | /api/v1/members/{memberId} | PUT        | MBB004           | 🔄         |
+| AIB05      | Delete Member         | /api/v1/members/{memberId} | Delete     | MBB010           | 🔄         |
+
+---
+
+
+### 4. Messages Processor APIs
 
 | **Action** | **Summary**                                    | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ---------------------------------------------- | --------- | ---------- | ---------------- | ---------- |
@@ -99,7 +112,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 ---
 
-### 4. Document Processor APIs
+### 5. Document Processor APIs
 
 | **Action** | **Summary**   | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------- | --------- | ---------- | ---------------- | ---------- |
