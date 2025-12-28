@@ -85,10 +85,10 @@ It manages community creation, search and discovery, membership management, invi
 |            | Remove Invitation                  |                                            | DELETE     | CMB009           | 🔄         |
 |            | Accept Invite                      |                                            | POST       | CMB010           | 🔄         |
 |            | Decline Invite                     |                                            | POST       | CMB011           | 🔄         |
-|            | Retrieve Member List               |                                            | GET        | CMB012           | 🔄         |
+|            | Retrieve Community Member List     |                                            | GET        | CMB012           | 🔄         |
 |            | Remove a Community Member          |                                            | DELETE     | CMB013           | 🔄         |
 |            | Update Member Role                 |                                            | PUT        | CMB014           | 🔄         |
-|            | Delete Community                   |                                            | DELETE     | CMB015           | 🔄         |
+|            | Delete Community Account           |                                            | DELETE     | CMB015           | 🔄         |
 |            | Add Community Account Signatory    |                                            | POST       |                  | 🔄         |
 |            | Remove Community Account Signatory |                                            | DELETE     |                  | 🔄         |
 |            | List Community Account Signatories |                                            | GET        |                  | 🔄         |
