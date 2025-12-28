@@ -59,7 +59,7 @@ It manages account listing and search, detailed account information retrieval, p
 | SVB009     | Assign Staff to Savings Account              | /savings/accounts/assign-staff/{account_id} | PUT        |                  | 🔄         |
 | SVB010     | Change Savings Account Status                | /savings/accounts/status/{account_id}       | PUT        |                  | 🔄         |
 | SVB011     | Close Savings Account                        | /savings/accounts/close                     | POST       |                  | 🔄         |
-| SVB012     | Add Charge to Savings Account                | /savings/accounts/charge                    | POST       |                  | 🔄         |
+| SVB012     | Create Savings Account Charge                | /savings/accounts/charge                    | POST       |                  | 🔄         |
 | SVB013     | Transfer Funds from Savings Account Internal | /savings/accounts/transfer                  | POST       |                  | 🔄         |
 | SVB014     | Transfer Funds from Savings Account External | /savings/accounts/transfer                  | POST       |                  | 🔄         |
 | SVB015     | Archive Savings Account                      | /savings/accounts/archive                   | PUT        |                  | 🔄         |
