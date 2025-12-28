@@ -100,13 +100,13 @@ It manages community creation, search and discovery, membership management, invi
 | **Action** | **Summary**                                                           | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | --------------------------------------------------------------------- | --------- | ---------- | ---------------- | ---------- |
 | UMB001     | Send Community Account Details to Community Admin                     |           | POST       | CMB003           | 🔄         |
-| UMB002     | Send Community (Un)Block Notification to Admin                        |           | PUT        | CMB006           | 🔄         |
+| UMB002     | Send Community (Un)Block Notification to Admin                        |           | POST       | CMB006           | 🔄         |
 | UMB003     | Create Invitation                                                     |           | POST       | CMB007           | 🔄         |
 | UMB004     | Send Invite Accepted Notification to Community Admin                  |           | POST       | CMB011           | 🔄         |
 | UMB005     | Send Invite Declined Notification to Community Admin                  |           | POST       | CMB012           | 🔄         |
-| UMB006     | Send Community Member Removed Notification to Removed Member          |           | DELETE     | CMB014           | 🔄         |
-| UMB007     | Send New Role Notification Message to Affected Member and Other Admin |           | PUT        | CMB014           | 🔄         |
-| UMB008     | Send Dissolution Notification to All Admin                            |           | DELETE     | CMB015           | 🔄         |
+| UMB006     | Send Community Member Removed Notification to Removed Member          |           | POST       | CMB014           | 🔄         |
+| UMB007     | Send New Role Notification Message to Affected Member and Other Admin |           | POST       | CMB014           | 🔄         |
+| UMB008     | Send Dissolution Notification to All Admin                            |           | POST       | CMB015           | 🔄         |
 
 ---
 
