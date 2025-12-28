@@ -73,7 +73,7 @@ It manages community creation, search and discovery, membership management, invi
 
 | **Action** | **Summary**                        | **Route**                                         | **Method** | **Operation ID** | **Status** |
 | ---------- | ---------------------------------- | ------------------------------------------------- | ---------- | ---------------- | ---------- |
-| CBB007     | Retrieve Community List            |                                                   | GET        | CMB001           | 🔄         |
+| CBB007     | Retrieve Community List            | /api/v1/communities/accounts                      | GET        | CMB001           | 🔄         |
 | CBB008     | Filter/Search Community            |                                                   | GET        | CMB002           | 🔄         |
 | CBB009     | Create Community Account           | /api/v1/communities/account                       | POST       | CMB003           | 🔄         |
 | CBB010     | Retrieve Community Account Details | /api/v1/communities/account/{community_id}        | GET        | CMB004           | 🔄         |
