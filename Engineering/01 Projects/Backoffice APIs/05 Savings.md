@@ -98,7 +98,7 @@ It manages account listing and search, detailed account information retrieval, p
 
 | **Action** | **Summary**                 | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | --------------------------- | --------- | ---------- | ---------------- | ---------- |
-| PPB001     | Transfer Transaction Amount |           | POST       | SVB014           | 🔄         |
+| PPB001     | Process Outboud Transaction |           | POST       | SVB014           | 🔄         |
 
 ---
 
