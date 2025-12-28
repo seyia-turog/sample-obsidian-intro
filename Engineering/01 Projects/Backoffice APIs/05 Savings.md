@@ -84,10 +84,7 @@ It manages account listing and search, detailed account information retrieval, p
 | CBB038     | Update Account Status            | /api/v1/savings/accounts/status/{accountId}       | PUT        | SVB010           | 🔄         |
 | CBB039     | Close Account                    | /api/v1/savings/accounts/close                    | POST       | SVB011           | 🔄         |
 | CBB040     | Transfer Funds (Internal)        |                                                   | POST       | SVB013           | 🔄         |
-| CBB040     | Transfer Funds (External)        |                                                   | POST       | SVB013           | 🔄         |
-| CBB041     | Hold Transaction Amount          |                                                   | POST       | SVB014           | 🔄         |
-| CBB042     | Release Transaction Amount       |                                                   | POST       | SVB014           | 🔄         |
-| CBB043     | Reverse Transaction Amount       |                                                   | POST       | SVB014           | 🔄         |
+| CBB041     | Transfer Funds (External)        |                                                   | POST       | SVB014           | 🔄         |
 | CBB044     | Archive Savings Account          |                                                   | PUT        | SVB015           |            |
 
 ---
