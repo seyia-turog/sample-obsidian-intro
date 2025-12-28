@@ -65,6 +65,7 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 | LNA015     | Approve Loan                  | /loans/applications/approve                        | POST       | approveLoanApplication      | 🔄         |
 | LNA016     | Reject Loan                   | /loan/applications/reject                          | POST       | rejectLoanApplication       | 🔄         |
 | LNA017     | Disburse Loan                 | /loans/application/disburse                        | POST       | disburseLoan                | 🔄         |
+|            |                               |                                                    |            |                             |            |
 
 
 ---
