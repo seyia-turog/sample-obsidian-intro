@@ -60,11 +60,11 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 | LNA010     | Update Loan Status            | /loans/account/status                              | PUT        | updateLoanStatus            | 🔄         |
 | LNA011     | Apply Loan Charge             | /loans/account/charges                             | POST       | applyLoanCharge             | 🔄         |
 | LNA012     | Submit Loan Application       | /loans/applications                                | POST       | submitLoanApplication       | 🔄         |
-| LNA012     | Submit Loan Application       | /loans/applications                                | POST       | submitLoanApplication       | 🔄         |
-| LNA013     | Review Loan Application       | /loan/applications/review                          | POST       | reviewLoanApplication       | 🔄         |
-| LNA014     | Approve Loan                  | /loans/applications/approve                        | POST       | approveLoanApplication      | 🔄         |
-| LNA015     | Reject Loan                   | /loan/applications/reject                          | POST       | rejectLoanApplication       | 🔄         |
-| LNA016     | Disburse Loan                 | /loans/application/disburse                        | POST       | disburseLoan                | 🔄         |
+| LNA013     | Submit Loan Application       | /loans/applications                                | POST       | submitLoanApplication       | 🔄         |
+| LNA014     | Review Loan Application       | /loan/applications/review                          | POST       | reviewLoanApplication       | 🔄         |
+| LNA015     | Approve Loan                  | /loans/applications/approve                        | POST       | approveLoanApplication      | 🔄         |
+| LNA016     | Reject Loan                   | /loan/applications/reject                          | POST       | rejectLoanApplication       | 🔄         |
+| LNA017     | Disburse Loan                 | /loans/application/disburse                        | POST       | disburseLoan                | 🔄         |
 
 
 ---
