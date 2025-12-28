@@ -51,8 +51,8 @@ It manages community creation, search and discovery, membership management, invi
 | CMB005     | Update Community Account Details |                       | PUT        | updateCommunityAccountDetails | 🔄         |
 | CMB006     | Block Community Account          |                       | PUT        | blockCommunityAccount         | 🔄         |
 | CMB007     | Unblock Community Account        |                       | PUT        | unblockCommunityAccount       | 🔄         |
-|            | Create Community Invite          |                       | POST       | inviteToCommunity             | 🔄         |
-|            | Get Pending Invites              |                       | GET        | getPendingInvite              | 🔄         |
+|            | Create Community Invite          |                       | POST       | createCommunityInvite         | 🔄         |
+|            | List Pending Community Invites   |                       | GET        | listPendingCommunityInvites   | 🔄         |
 |            | Cancel Invite                    |                       | DELETE     | cancelInvite                  | 🔄         |
 |            | Accept Invite                    |                       | POST       | acceptInvite                  | 🔄         |
 |            | Decline Invite                   |                       | POST       | declineInvite                 | 🔄         |
