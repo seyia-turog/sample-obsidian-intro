@@ -51,15 +51,15 @@ It manages community creation, search and discovery, membership management, invi
 | CMB005     | Update Community Account Details |                       | PUT        | updateCommunityAccountDetails | 🔄         |
 | CMB006     | Block Community Account          |                       | PUT        | blockCommunityAccount         | 🔄         |
 | CMB007     | Unblock Community Account        |                       | PUT        | unblockCommunityAccount       | 🔄         |
-|            | Create Community Invite          |                       | POST       | createCommunityInvite         | 🔄         |
-|            | List Pending Community Invites   |                       | GET        | listPendingCommunityInvites   | 🔄         |
-|            | Cancel Community Invite          |                       | DELETE     | cancelCommunityInvite         | 🔄         |
+| CMB008     | Create Community Invite          |                       | POST       | createCommunityInvite         | 🔄         |
+| CMB009     | List Pending Community Invites   |                       | GET        | listPendingCommunityInvites   | 🔄         |
+| CMB010     | Cancel Community Invite          |                       | DELETE     | cancelCommunityInvite         | 🔄         |
 |            | Accept Community Invite          |                       | POST       | acceptCommunityInvite         | 🔄         |
 |            | Decline Community Invite         |                       | POST       | declineCommunityInvite        | 🔄         |
 |            | List Community Members           |                       | GET        | listCommunityMembers          | 🔄         |
 |            | Remove Community Member          |                       | DELETE     | removeCommunityMember         | 🔄         |
-|            | Modify Community Member Role     |                       | PUT        | modifyCommunityMemberRole     | 🔄         |
-|            | Dissolve Community               |                       | DELETE     | dissolveCommunit              | 🔄         |
+|            | Update Community Member Role     |                       | PUT        | updateCommunityMemberRole     | 🔄         |
+|            | Delete Community                 |                       | DELETE     | deleteCommunity               | 🔄         |
 
 
 ---
