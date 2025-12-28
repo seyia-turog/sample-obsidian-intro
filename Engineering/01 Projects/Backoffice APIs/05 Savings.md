@@ -90,7 +90,7 @@ It manages account listing and search, detailed account information retrieval, p
 | CBB041     | Transfer Funds (Internal)               | /api/v1/savings/transfer                          | POST       | SVB013           | 🔄         |
 | CBB041     | Transfer Funds (External)               | /api/v1/savings/accounts/transfer                 | POST       | SVB014           | 🔄         |
 | CBB044     | Archive Savings Account                 | /api/v1/savings/accounts/archive                  | PUT        | SVB015           | 🔄         |
-| CBB045     | Unarchive Savings Account               |                                                   | PUT        | SVB016           | 🔄         |
+| CBB045     | Unarchive Savings Account               | /api/v1/savings/accounts/unarchive                | PUT        | SVB016           | 🔄         |
 | CBB046     | Update Savings Account                  | /api/v1/savings/accounts/{accountId}              | PUT        | SVB017           | 🔄         |
 | CBB047     | Get Savings Account Transaction Details | /api/v1/savings/transactions/{transactionId}      | GET        | SVB018           | 🔄         |
 
