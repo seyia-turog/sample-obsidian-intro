@@ -88,6 +88,7 @@ It manages community creation, search and discovery, membership management, invi
 | CBB019     | Remove a Community Member          | /api/v1/communities/members/{community_id}        | DELETE     | CMB013           | 🔄         |
 | CBB020     | Update Member Role                 | /api/v1/communities/members/role/{{community_id}} | PUT        | CMB014           | 🔄         |
 | CBB021     | Delete Community                   | /api/v1/communities/account/{{community_id}}      | DELETE     | CMB015           | 🔄         |
+|            |                                    |                                                   |            |                  |            |
 
 ---
 
