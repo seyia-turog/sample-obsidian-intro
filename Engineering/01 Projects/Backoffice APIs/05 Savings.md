@@ -67,8 +67,9 @@ It manages account listing and search, detailed account information retrieval, p
 | SVB017     | Update Savings Account                  |                                             | PUT        | updateSavingsAccount           | 🔄         |
 | SVB018     | Get Savings Account Transaction Details |                                             | GET        | getSavingsAccountTransaction   | 🔄         |
 | SVB018     | List Staff Member                       |                                             | GET        | listStaffMembers               | 🔄         |
-|            |                                         |                                             |            |                                |            |
-|            |                                         |                                             |            |                                |            |
+|            | List Charges                            |                                             |            |                                |            |
+|            | Get Charge Detail                       |                                             |            |                                |            |
+|            | List Account Charges                    |                                             |            |                                |            |
 |            |                                         |                                             |            |                                |            |
 
 ---
