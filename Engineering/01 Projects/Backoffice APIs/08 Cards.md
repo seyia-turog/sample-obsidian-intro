@@ -70,18 +70,18 @@ It manages card listing, creation and issuance, detailed information retrieval, 
 
 ### 2. CBA Adapter APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|CBB056|Deduct Card Processing Fee||POST|CDB002|🔄|
-|CBB057|Link Card to User Account||POST|CDB002|🔄|
+| **Action** | **Summary**                | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------------- | --------- | ---------- | ---------------- | ---------- |
+| CBB056     | Deduct Card Processing Fee |           | POST       | CDB002           | 🔄         |
+
 
 ---
 
 ### 3. User Settings Utility APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|SUB002|Fetch Cards List||GET|CDB001|🔄|
+| **Action** | **Summary**      | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | ---------------- | --------- | ---------- | ---------------- | ---------- |
+| SUB002     | Fetch Cards List |           | GET        | CDB001           | 🔄         |
 
 ---
 
