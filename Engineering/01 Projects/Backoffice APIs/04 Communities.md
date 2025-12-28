@@ -78,8 +78,8 @@ It manages community creation, search and discovery, membership management, invi
 | CBB012     | Create Community Account           | /api/v1/communities/account                | POST       | CMB003           | 🔄         |
 | CBB013     | Retrieve Community Account Details | /api/v1/communities/account/{community_id} | GET        | CMB004           | 🔄         |
 | CBB014     | Update Community Account Detail    | /api/v1/communities/account/{community_id} | PUT        | CMB005           | 🔄         |
-| CBB015     | Block Community Account            |                                            | PUT        | CMB006, CMB007   | 🔄         |
-| CBB016     | Unlock Community Account           |                                            | PUT        | CMB007           | 🔄         |
+| CBB015     | Block Community Account            |                                            | PUT        | CMB006           | 🔄         |
+| CBB016     | Unblock Community Account          |                                            | PUT        | CMB007           | 🔄         |
 | CBB017     | Create Invitation                  |                                            | POST       | CMB008           | 🔄         |
 | CBB018     | Retrieve Pending Invites           |                                            | GET        | CMB009           | 🔄         |
 | CBB019     | Remove Invitation                  |                                            | DELETE     | CMB010           | 🔄         |
@@ -102,7 +102,7 @@ It manages community creation, search and discovery, membership management, invi
 | UMB001     | Send Community Account Details to Community Admin                     |           | POST       | CMB003           | 🔄         |
 | UMB002     | Send Community (Un)Block Notification to Admin                        |           | PUT        | CMB006           | 🔄         |
 | UMB003     | Create Invitation                                                     |           | POST       | CMB007           | 🔄         |
-| UMB004     | Send Invite Accepted Notification to Community Admin                  |           | POST       | CMB010           | 🔄         |
+| UMB004     | Send Invite Accepted Notification to Community Admin                  |           | POST       | CMB011           | 🔄         |
 | UMB005     | Send Invite Declined Notification to Community Admin                  |           | POST       | CMB011           | 🔄         |
 | UMB006     | Send Community Member Removed Notification to Removed Member          |           | DELETE     | CMB013           | 🔄         |
 | UMB007     | Send New Role Notification Message to Affected Member and Other Admin |           | PUT        | CMB014           | 🔄         |
