@@ -59,12 +59,12 @@ It manages card listing, creation and issuance, detailed information retrieval, 
 
 ### 1. Card Processor APIs
 
-|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
-|---|---|---|---|---|---|
-|PCB001|Create a Card||POST|CDB002|🔄|
-|PCB002|Retrieve Card Detail||GET|CDB003|🔄|
-|PCB005|Reset Card Pin||PUT|CDB006|🔄|
-|PCB006|Send PIN Reset Notification||PUT|CDB006|🔄|
+| **Action** | **Summary**                 | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | --------------------------- | --------- | ---------- | ---------------- | ---------- |
+| PCB001     | Create a Card               |           | POST       | CDB002           | 🔄         |
+| PCB002     | Retrieve Card Detail        |           | GET        | CDB003           | 🔄         |
+| PCB005     | Reset Card Pin              |           | PUT        | CDB006           | 🔄         |
+
 
 ---
 
