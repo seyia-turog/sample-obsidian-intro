@@ -81,7 +81,7 @@ It manages card listing, creation and issuance, detailed information retrieval, 
 
 | **Action** | **Summary**                      | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | -------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| SUB002     | Add Card Detail to User Settings |           | GET        | CDB001           | 🔄         |
+| SUB001     | Add Card Detail to User Settings |           | GET        | CDB001           | 🔄         |
 | SUB002     | Fetch Cards List                 |           | GET        | CDB002           | 🔄         |
 
 ---
