@@ -67,10 +67,10 @@ It manages account listing and search, detailed account information retrieval, p
 | SVB017     | Update Savings Account                  |                                             | PUT        | updateSavingsAccount           | 🔄         |
 | SVB018     | Get Savings Account Transaction Details |                                             | GET        | getSavingsAccountTransaction   | 🔄         |
 | SVB018     | List Staff Member                       |                                             | GET        | listStaffMembers               | 🔄         |
-|            | List Charges                            |                                             |            |                                |            |
-|            | Get Charge Details                      |                                             |            |                                |            |
-|            | List Account Charges                    |                                             |            |                                |            |
-|            | Reverse Charge                          |                                             |            |                                |            |
+| SVB019     | List Charges                            |                                             | GET        | listCharges                    |            |
+| SVB020     | Get Charge Details                      |                                             | GET        | getChargeDetails               |            |
+| SVB021     | List Account Charges                    |                                             | GET        | listAccountCharges             |            |
+| SVB022     | Reverse Charge                          |                                             | POST       | reverseCharge                  |            |
 
 ---
 
