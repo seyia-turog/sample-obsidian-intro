@@ -57,7 +57,7 @@ It manages community creation, search and discovery, membership management, invi
 | CMB011     | Accept Community Invite            | /communities/invites/accept                | POST       | acceptCommunityInvite         | 🔄         |
 | CMB012     | Decline Community Invite           | /communities/account/invites/decline       | POST       | declineCommunityInvite        | 🔄         |
 | CMB013     | List Community Members             | /communities/account/members               | GET        | listCommunityMembers          | 🔄         |
-| CMB014     | Remove Community Member            |                                            | DELETE     | removeCommunityMember         | 🔄         |
+| CMB014     | Remove Community Member            | /communities/account/members               | DELETE     | removeCommunityMember         | 🔄         |
 | CMB015     | Update Community Member Role       |                                            | PUT        | updateCommunityMemberRole     | 🔄         |
 | CMB016     | Delete Community                   |                                            | DELETE     | deleteCommunity               | 🔄         |
 | CMB017     | Add Community Account Signatory    |                                            |            |                               | 🔄         |
