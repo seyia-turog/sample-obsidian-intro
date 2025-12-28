@@ -46,6 +46,25 @@ It manages loan account operations, repayment schedules, transactions, guarantor
 
 ### Backoffice APIs
 
+|**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
+|---|---|---|---|---|---|
+|LNA001|List Loan Accounts|/loans/accounts|GET|listLoanAccounts|🔄|
+|LNA002|Get Loan Account Details|/loans/accounts/{loanId}|GET|getLoanAccountDetails|🔄|
+|LNA003|Update Loan Account|/loans/accounts/{loanId}|PUT|updateLoanAccount|🔄|
+|LNA004|Get Loan Repayment Schedule|/loans/accounts/{loanId}/schedule|GET|getLoanRepaymentSchedule|🔄|
+|LNA005|List Loan Account Transactions|/loans/accounts/{loanId}/transactions|GET|listLoanAccountTransactions|🔄|
+|LNA006|Close Loan Account|/loans/accounts/{loanId}/close|POST|closeLoanAccount|🔄|
+|LNA007|Add Loan Guarantor|/loans/accounts/{loanId}/guarantors|POST|addLoanGuarantor|🔄|
+|LNA008|Remove Loan Guarantor|/loans/accounts/{loanId}/guarantors/{guarantorId}|DELETE|removeLoanGuarantor|🔄|
+|LNA009|List Loan Guarantors|/loans/accounts/{loanId}/guarantors|GET|listLoanGuarantors|🔄|
+|LNA010|Update Loan Status|/loans/accounts/{loanId}/status|PUT|updateLoanStatus|🔄|
+|LNA011|List Loan Charges|/loans/accounts/{loanId}/charges|GET|listLoanCharges|🔄|
+|LNA012|Submit Loan Application|/loans/applications|POST|submitLoanApplication|🔄|
+|LNA013|Review Loan Application|/loans/applications/{applicationId}/review|POST|reviewLoanApplication|🔄|
+|LNA014|Approve Loan Application|/loans/applications/{applicationId}/approve|POST|approveLoanApplication|🔄|
+|LNA015|Reject Loan Application|/loans/applications/{applicationId}/reject|POST|rejectLoanApplication|🔄|
+|LNA016|Disburse Loan|/loans/applications/{applicationId}/disburse|POST|disburseLoan|🔄|
+
 | **Action** | **Summary**               | **Route**                                          | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------------------- | -------------------------------------------------- | ---------- | ---------------- | ---------- |
 | LNB001     | List Loan Accounts        | /loans/account                                     | GET        | Loan Accounts    | 🔄         |
