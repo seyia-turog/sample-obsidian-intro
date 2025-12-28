@@ -68,7 +68,7 @@ It manages card listing, creation and issuance, detailed information retrieval, 
 
 ---
 
-### 1. CBA Adapter APIs
+### 2. CBA Adapter APIs
 
 |**Action**|**Summary**|**Route**|**Method**|**Operation ID**|**Status**|
 |---|---|---|---|---|---|
