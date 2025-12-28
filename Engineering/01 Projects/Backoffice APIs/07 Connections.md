@@ -41,16 +41,16 @@ It manages connection listing, creation, configuration, status control (pause/ac
 
 ### Backoffice APIs
 
-| **Action** | **Summary**            | **Route**                                 | **Method** | **Operation ID** | **Status** |
-| ---------- | ---------------------- | ----------------------------------------- | ---------- | ---------------- | ---------- |
-| CNB001     | List Connections       | /connections/applications                 | GET        |                  | 🔄         |
-| CNB002     | Edit Connection        | /connections/applications                 | PUT        |                  | 🔄         |
-| CNB003     | Pause Connection       | /connections/applications/pause           | PUT        |                  | 🔄         |
-| CNB004     | Test Connection        | /connections/applications/test            | POST       |                  | 🔄         |
-| CNB005     | Start Connection       | /connections/applications/activate        | PUT        |                  | 🔄         |
-| CNB006     | View Connection Detail | /connections/applications/{connection_id} | GET        |                  | 🔄         |
-| CNB007     | Create Connection      | /connections/applications                 | POST       |                  | 🔄         |
-| CNB008     | Delete Connection      | /connections/applications/{connectionId}  | DELETE     |                  | 🔄         |
+| **Action** | **Summary**             | **Route**                                 | **Method** | **Operation ID**       | **Status** |
+| ---------- | ----------------------- | ----------------------------------------- | ---------- | -------------------- | ---------- |
+| CNB001     | List Connections        | /connections/applications                 | GET        | listConnections       | 🔄         |
+| CNB002     | Update Connection       | /connections/applications                 | PUT        | updateConnection      | 🔄         |
+| CNB003     | Pause Connection        | /connections/applications/pause           | PUT        | pauseConnection       | 🔄         |
+| CNB004     | Test Connection         | /connections/applications/test            | POST       | testConnection        | 🔄         |
+| CNB005     | Activate Connection     | /connections/applications/activate        | PUT        | activateConnection    | 🔄         |
+| CNB006     | Retrieve Connection Detail | /connections/applications/{connection_id} | GET        | retrieveConnectionDetail | 🔄     |
+| CNB007     | Create Connection       | /connections/applications                 | POST       | createConnection      | 🔄         |
+| CNB008     | Delete Connection       | /connections/applications/{connectionId}  | DELETE     | deleteConnection      | 🔄         |
 
 ---
 
