@@ -80,18 +80,18 @@ It manages community creation, search and discovery, membership management, invi
 | CBB014     | Update Community Account Detail    | /api/v1/communities/account/{community_id} | PUT        | CMB005           | 🔄         |
 | CBB015     | Block Community Account            |                                            | PUT        | CMB006           | 🔄         |
 | CBB016     | Unlock Community Account           |                                            | PUT        | CMB007           | 🔄         |
-| CBB017     | Create Invitation                  |                                            | POST       |                  | 🔄         |
-| CBB018     | Retrieve Pending Invites           |                                            | GET        |                  | 🔄         |
-| CBB019     | Remove Invitation                  |                                            | DELETE     |                  | 🔄         |
-| CBB020     | Accept Invite                      |                                            | POST       |                  | 🔄         |
-| CBB021     | Decline Invite                     |                                            | POST       |                  | 🔄         |
-| CBB022     | Retrieve Community Member List     |                                            | GET        |                  | 🔄         |
-| CBB023     | Remove a Community Member          |                                            | DELETE     |                  | 🔄         |
-| CBB024     | Update Member Role                 |                                            | PUT        |                  | 🔄         |
-| CBB025     | Delete Community Account           | /api/v1/communities/account/{community_id} | DELETE     |                  | 🔄         |
-| CBB026     | Add Community Account Signatory    |                                            | POST       |                  | 🔄         |
-| CBB027     | Remove Community Account Signatory |                                            | DELETE     |                  | 🔄         |
-| CBB028     | List Community Account Signatories |                                            | GET        |                  | 🔄         |
+| CBB017     | Create Invitation                  |                                            | POST       | CMB008           | 🔄         |
+| CBB018     | Retrieve Pending Invites           |                                            | GET        | CMB009           | 🔄         |
+| CBB019     | Remove Invitation                  |                                            | DELETE     | CMB010           | 🔄         |
+| CBB020     | Accept Invite                      |                                            | POST       | CMB011           | 🔄         |
+| CBB021     | Decline Invite                     |                                            | POST       | CMB012           | 🔄         |
+| CBB022     | Retrieve Community Member List     |                                            | GET        | CMB013           | 🔄         |
+| CBB023     | Remove a Community Member          |                                            | DELETE     | CMB014           | 🔄         |
+| CBB024     | Update Member Role                 |                                            | PUT        | CMB015           | 🔄         |
+| CBB025     | Delete Community Account           | /api/v1/communities/account/{community_id} | DELETE     | CMB016           | 🔄         |
+| CBB026     | Add Community Account Signatory    |                                            | POST       | CMB017           | 🔄         |
+| CBB027     | Remove Community Account Signatory |                                            | DELETE     | CMB018           | 🔄         |
+| CBB028     | List Community Account Signatories |                                            | GET        | CMB019           | 🔄         |
 
 ---
 
