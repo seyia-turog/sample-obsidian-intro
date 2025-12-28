@@ -44,7 +44,7 @@ It manages community creation, search and discovery, membership management, invi
 
 | **Action** | **Summary**                  | **Route**                                  | **Method** | **Operation ID**          | **Status** |
 | ---------- | ---------------------------- | ------------------------------------------ | ---------- | ------------------------- | ---------- |
-| CMB001     | Get Communities List         | /communities/accounts                      | GET        | getCommunityList          | 🔄         |
+| CMB001     | List Comm                    | /communities/accounts                      | GET        | getCommunityList          | 🔄         |
 | CMB002     | Search Community             | /communities/accounts/search               | GET        | searchCommunity           | 🔄         |
 | CMB003     | Add New Community            | /communities/account                       | POST       | addNewCommunity           | 🔄         |
 | CMB004     | View Community Detail        | /communities/account/{community_id}        | GET        | viewCommunityDetail       | 🔄         |
