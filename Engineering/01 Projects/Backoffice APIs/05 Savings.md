@@ -83,7 +83,7 @@ It manages account listing and search, detailed account information retrieval, p
 | CBB037     | Update Relationship Officer      | /api/v1/savings/accounts/assign-staff/{accountId} | PUT        | SVB009           | 🔄         |
 | CBB038     | Update Account Status            | /api/v1/savings/accounts/status/{accountId}       | PUT        | SVB010           | 🔄         |
 | CBB039     | Close Account                    | /api/v1/savings/accounts/close                    | POST       | SVB011           | 🔄         |
-| CBB040     | Create Savings Account Charge    |                                                   | POST       | SVB013           | 🔄         |
+| CBB040     | Add Savings Account Charge       | /api/v1/savings/accounts/charge                   | POST       | SVB013           | 🔄         |
 | CBB041     | Transfer Funds (Internal)        |                                                   | POST       | SVB013           | 🔄         |
 | CBB041     | Transfer Funds (External)        |                                                   | POST       | SVB014           |            |
 | CBB044     | Archive Savings Account          |                                                   | PUT        | SVB015           |            |
