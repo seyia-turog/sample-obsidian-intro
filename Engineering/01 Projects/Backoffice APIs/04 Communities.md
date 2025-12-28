@@ -42,27 +42,27 @@ It manages community creation, search and discovery, membership management, invi
 
 ### Backoffice APIs
 
-| **Action** | **Summary**                        | **Route**                                         | **Method** | **Operation ID**              | **Status** |
-| ---------- | ---------------------------------- | ------------------------------------------------- | ---------- | ----------------------------- | ---------- |
-| CMB001     | List Community Accounts            | /api/v1/communities/accounts                      | GET        | listCommunityAccounts         | 🔄         |
-| CMB002     | Search Community Accounts          |                                                   | GET        | searchCommunityAccounts       | 🔄         |
-| CMB003     | Create Community Accounts          | /api/v1/communities/account                       | POST       | createCommunityAccounts       | 🔄         |
-| CMB004     | Get Community Account Details      | /api/v1/communities/account/{community_id}        | GET        | getCommunityAccountDetails    | 🔄         |
-| CMB005     | Update Community Account Details   | /api/v1/communities/account/{community_id}        | PUT        | updateCommunityAccountDetails | 🔄         |
-| CMB006     | Block Community Account            | /api/v1/communities/account/{community_id}/status | PUT        | blockCommunityAccount         | 🔄         |
-| CMB007     | Unblock Community Account          | /api/v1/communities/account/{community_id}/status | PUT        | unblockCommunityAccount       | 🔄         |
-| CMB008     | Create Community Invite            |                                                   | POST       | createCommunityInvite         | 🔄         |
-| CMB009     | List Pending Community Invites     |                                                   | GET        | listPendingCommunityInvites   | 🔄         |
-| CMB010     | Cancel Community Invite            |                                                   | DELETE     | cancelCommunityInvite         | 🔄         |
-| CMB011     | Accept Community Invite            |                                                   | POST       | acceptCommunityInvite         | 🔄         |
-| CMB012     | Decline Community Invite           |                                                   | POST       | declineCommunityInvite        | 🔄         |
-| CMB013     | List Community Members             |                                                   | GET        | listCommunityMembers          | 🔄         |
-| CMB014     | Remove Community Member            |                                                   | DELETE     | removeCommunityMember         | 🔄         |
-| CMB015     | Update Community Member Role       |                                                   | PUT        | updateCommunityMemberRole     | 🔄         |
-| CMB016     | Delete Community                   |                                                   | DELETE     | deleteCommunity               | 🔄         |
-| CMB017     | Add Community Account Signatory    |                                                   |            |                               | 🔄         |
-| CMB018     | Remove Community Account Signatory |                                                   |            |                               | 🔄         |
-| CMB019     | List Community Account Signatories |                                                   |            |                               | 🔄         |
+| **Action** | **Summary**                        | **Route**                    | **Method** | **Operation ID**              | **Status** |
+| ---------- | ---------------------------------- | ---------------------------- | ---------- | ----------------------------- | ---------- |
+| CMB001     | List Community Accounts            | /communities/accounts        | GET        | listCommunityAccounts         | 🔄         |
+| CMB002     | Search Community Accounts          | /communities/accounts/search | GET        | searchCommunityAccounts       | 🔄         |
+| CMB003     | Create Community Accounts          |                              | POST       | createCommunityAccounts       | 🔄         |
+| CMB004     | Get Community Account Details      |                              | GET        | getCommunityAccountDetails    | 🔄         |
+| CMB005     | Update Community Account Details   |                              | PUT        | updateCommunityAccountDetails | 🔄         |
+| CMB006     | Block Community Account            |                              | PUT        | blockCommunityAccount         | 🔄         |
+| CMB007     | Unblock Community Account          |                              | PUT        | unblockCommunityAccount       | 🔄         |
+| CMB008     | Create Community Invite            |                              | POST       | createCommunityInvite         | 🔄         |
+| CMB009     | List Pending Community Invites     |                              | GET        | listPendingCommunityInvites   | 🔄         |
+| CMB010     | Cancel Community Invite            |                              | DELETE     | cancelCommunityInvite         | 🔄         |
+| CMB011     | Accept Community Invite            |                              | POST       | acceptCommunityInvite         | 🔄         |
+| CMB012     | Decline Community Invite           |                              | POST       | declineCommunityInvite        | 🔄         |
+| CMB013     | List Community Members             |                              | GET        | listCommunityMembers          | 🔄         |
+| CMB014     | Remove Community Member            |                              | DELETE     | removeCommunityMember         | 🔄         |
+| CMB015     | Update Community Member Role       |                              | PUT        | updateCommunityMemberRole     | 🔄         |
+| CMB016     | Delete Community                   |                              | DELETE     | deleteCommunity               | 🔄         |
+| CMB017     | Add Community Account Signatory    |                              |            |                               | 🔄         |
+| CMB018     | Remove Community Account Signatory |                              |            |                               | 🔄         |
+| CMB019     | List Community Account Signatories |                              |            |                               | 🔄         |
 
 
 ---
