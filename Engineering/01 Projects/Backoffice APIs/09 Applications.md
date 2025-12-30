@@ -40,17 +40,6 @@ It manages application discovery through listing, searching, and filtering, appl
 
 ### Backoffice APIs
 
-| **Action** | **Summary**              | **Route**                                                    | **Method** | **Operation ID** | **Status** |
-| ---------- | ------------------------ | ------------------------------------------------------------ | ---------- | ---------------- | ---------- |
-| APB001     | List Applications        | /applications/clients                                        | GET        |                  | 🔄         |
-| APB002     | Search Application       | /applications/clients/search?query={keyword}                 | GET        |                  | 🔄         |
-| APB003     | Filter Application       | /applications/clients/filter?category={category}&type={type} | GET        |                  | 🔄         |
-| APB004     | View Application Details | /applications/clients/{application_id}                       | GET        |                  | 🔄         |
-| APB005     | Add Application To Plan  | /applications/clients/plans                                  | POST       |                  | 🔄         |
-| APB006     | List My Applications     | /application/clients/{client_id}                             | GET        |                  | 🔄         |
-| APB007     | Edit My Application      | /applications/clients/{application_id}                       | PUT        |                  | 🔄         |
-| APB008     | Remove My Application    | /applications/clients/{application_id}                       | DELETE     |                  | 🔄         |
-
 | Action | Summary                      | Route                                        | Method | Operation ID            | Status |
 | ------ | ---------------------------- | -------------------------------------------- | ------ | ----------------------- | ------ |
 | APB001 | List Applications            | /applications/clients                        | GET    | listApplications        | 🔄     |
@@ -71,7 +60,6 @@ It manages application discovery through listing, searching, and filtering, appl
 | ---------- | ------------------------------------ | ------------------------------------------------------------------- | ---------- | ---------------- | ---------- |
 | CRB003     | Retrieve Application Catalog         | /api/v1/applications                                                | GET        | APB001           | 🔄         |
 | CRB004     | Search Applications                  |                                                                     | GET        | APB002           | 🔄         |
-| CRB005     | Filter Applications                  |                                                                     | GET        | APB003           | 🔄         |
 | CRB006     | Retrieve Application Details         | /api/v1/applications/{applicationId}                                | GET        | APB004           | 🔄         |
 | CRB007     | Add Application to Subscription Plan | /api/v1/applications/subscriptions/{subscriptionId}                 | POST       | APB005           | 🔄         |
 | CRB008     | Retrieve User-Specific Apps          | /api/v1/applications/subscriptions/{subscriptionId}                 | GET        | APB006           | 🔄         |
