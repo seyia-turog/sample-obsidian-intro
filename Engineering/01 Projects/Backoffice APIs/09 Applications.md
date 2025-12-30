@@ -51,15 +51,15 @@ It manages application discovery through listing, searching, and filtering, appl
 | APB007     | Edit My Application      | /applications/clients/{application_id}                       | PUT        |                  | 🔄         |
 | APB008     | Remove My Application    | /applications/clients/{application_id}                       | DELETE     |                  | 🔄         |
 
-| Action | Summary                      | Route                                                         | Method | Operation ID            | Status |
-| ------ | ---------------------------- | ------------------------------------------------------------- | ------ | ----------------------- | ------ |
-| APB001 | List Applications            | /applications                                                 | GET    | listApplications        | 🔄     |
-| APB002 | Search / Filter Applications | /applications?query={keyword}&category={category}&type={type} | GET    | searchApplications      | 🔄     |
-| APB003 | View Application Details     | /applications/{applicationId}                                 | GET    | getApplication          | 🔄     |
-| APB004 | Add Application to Plan      | /applications/clients/plans                                   | POST   | addApplicationToPlan    | 🔄     |
-| APB005 | List Client Applications     | /application/clients/{client_id}                              | GET    | listClientApplications  | 🔄     |
-| APB006 | Update Client Application    | /applications/clients/{application_id}                        | PUT    | updateClientApplication | 🔄     |
-| APB007 | Remove Application           | /applications/clients/{application_id}                        | DELETE | removeClientApplication | 🔄     |
+| Action | Summary                      | Route                                        | Method | Operation ID            | Status |
+| ------ | ---------------------------- | -------------------------------------------- | ------ | ----------------------- | ------ |
+| APB001 | List Applications            | /applications/clients                        | GET    | listApplications        | 🔄     |
+| APB002 | Search / Filter Applications | /applications/clients/search?query={keyword} | GET    | searchApplications      | 🔄     |
+| APB003 | View Application Details     | /applications/clients/{application_id}       | GET    | getApplication          | 🔄     |
+| APB004 | Add Application to Plan      | /applications/clients/plans                  | POST   | addApplicationToPlan    | 🔄     |
+| APB005 | List Client Applications     | /application/clients/{client_id}             | GET    | listClientApplications  | 🔄     |
+| APB006 | Update Client Application    | /applications/clients/{application_id}       | PUT    | updateClientApplication | 🔄     |
+| APB007 | Remove Application           | /applications/clients/{application_id}       | DELETE | removeClientApplication | 🔄     |
 
 ---
 
