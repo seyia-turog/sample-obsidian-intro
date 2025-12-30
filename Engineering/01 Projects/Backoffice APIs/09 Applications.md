@@ -51,14 +51,14 @@ It manages application discovery through listing, searching, and filtering, appl
 | APB007     | Edit My Application      | /applications/clients/{application_id}                       | PUT        |                  | 🔄         |
 | APB008     | Remove My Application    | /applications/clients/{application_id}                       | DELETE     |                  | 🔄         |
 
-|Action|Summary|Route|Method|Operation ID|Status|
-|---|---|---|---|---|---|
-|APB001|List Applications|/applications|GET|listApplications|🔄|
-|APB002|Search / Filter Applications|/applications?query={keyword}&category={category}&type={type}|GET|searchApplications|🔄|
-|APB003|View Application Details|/applications/{applicationId}|GET|getApplication|🔄|
-|APB004|Add Application to Plan|/applications/{applicationId}/plans|POST|addApplicationToPlan|🔄|
-|APB005|List Client Applications|/clients/{clientId}/applications|GET|listClientApplications|🔄|
-|APB006|Update Client Application|/applications/{applicationId}|PUT|updateApplication|🔄|
+| Action | Summary                      | Route                                                         | Method | Operation ID           | Status |
+| ------ | ---------------------------- | ------------------------------------------------------------- | ------ | ---------------------- | ------ |
+| APB001 | List Applications            | /applications                                                 | GET    | listApplications       | 🔄     |
+| APB002 | Search / Filter Applications | /applications?query={keyword}&category={category}&type={type} | GET    | searchApplications     | 🔄     |
+| APB003 | View Application Details     | /applications/{applicationId}                                 | GET    | getApplication         | 🔄     |
+| APB004 | Add Application to Plan      | /applications/{applicationId}/plans                           | POST   | addApplicationToPlan   | 🔄     |
+| APB005 | List Client Applications     | /clients/{clientId}/applications                              | GET    | listClientApplications | 🔄     |
+| APB006 | Update Client Application    | /applications/{applicationId}                                 | PUT    | updateApplication      | 🔄     |
 
 ---
 
