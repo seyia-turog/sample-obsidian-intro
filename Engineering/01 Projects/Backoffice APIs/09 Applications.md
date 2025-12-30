@@ -44,7 +44,7 @@ It manages application discovery through listing, searching, and filtering, appl
 | ------ | ---------------------------- | -------------------------------------------- | ------ | ----------------------- | ------ |
 | APB001 | List Applications            | /applications/clients                        | GET    | listApplications        | 🔄     |
 | APB002 | Search / Filter Applications | /applications/clients/search?query={keyword} | GET    | searchApplications      | 🔄     |
-| APB003 | View Application Details     | /applications/clients/{application_id}       | GET    | getApplication          | 🔄     |
+| APB003 | View Application Details     | /applications/clients/{application_id}       | GET    | getApplicationDetails   | 🔄     |
 | APB004 | Add Application to Plan      | /applications/clients/plans                  | POST   | addApplicationToPlan    | 🔄     |
 | APB005 | List Client Applications     | /application/clients/{client_id}             | GET    | listClientApplications  | 🔄     |
 | APB006 | Update Client Application    | /applications/clients/{application_id}       | PUT    | updateClientApplication | 🔄     |
