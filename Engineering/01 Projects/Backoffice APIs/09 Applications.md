@@ -59,6 +59,7 @@ It manages application discovery through listing, searching, and filtering, appl
 | APB004 | Add Application to Plan      | /applications/{applicationId}/plans                           | POST   | addApplicationToPlan   | 🔄     |
 | APB005 | List Client Applications     | /clients/{clientId}/applications                              | GET    | listClientApplications | 🔄     |
 | APB006 | Update Client Application    | /applications/{applicationId}                                 | PUT    | updateApplication      | 🔄     |
+|        |                              |                                                               |        |                        |        |
 
 ---
 
