@@ -49,7 +49,8 @@ It manages application discovery through listing, searching, and filtering, appl
 | APB005 | List Client Applications     | /application/clients/{client_id}             | GET    | listClientApplications  | 🔄     |
 | APB006 | Update Client Application    | /applications/clients/{application_id}       | PUT    | updateClientApplication | 🔄     |
 | APB007 | Remove Application           | /applications/clients/{application_id}       | DELETE | removeClientApplication | 🔄     |
-| APB008 | Create Application           |                                              |        |                         |        |
+| APB008 | Create Application           |                                              | POST   | createApplication       |        |
+|        |                              |                                              |        |                         |        |
 
 ---
 
