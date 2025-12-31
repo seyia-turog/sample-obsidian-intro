@@ -15,7 +15,7 @@
               "state": {
                 "file": "Engineering/01 Projects/Omnichannel API/02. Devices.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "02. Devices"
