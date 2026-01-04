@@ -45,6 +45,12 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 | CLB001     | Run AML Check (All) | /compliance/checks/run-aml | POST       | Compliance API | Compliance       | 🔄         |
 |            |                     |                            |            |                |                  |            |
 |            |                     |                            |            |                |                  |            |
+|            |                     |                            |            |                |                  |            |
+|            |                     |                            |            |                |                  |            |
+|            |                     |                            |            |                |                  |            |
+|            |                     |                            |            |                |                  |            |
+|            |                     |                            |            |                |                  |            |
+|            |                     |                            |            |                |                  |            |
 
 ---
 
