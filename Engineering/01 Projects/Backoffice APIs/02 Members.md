@@ -91,11 +91,11 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 ### 3. CBA Adapter APIs
 
-| **Action** | **Summary**  | **Route**      | **Method** | **Operation ID** | **Status** |
-| ---------- | ------------ | -------------- | ---------- | ---------------- | ---------- |
-| CBB053     | Create Staff | /api/v1/staff/ | POST       | MBB001           | 🔄         |
-| CBB053     | Create Staff | /api/v1/staff/ | POST       | MBB001           | 🔄         |
-| CBB053     | Create Staff | /api/v1/staff/ | POST       | MBB001           | 🔄         |
+| **Action** | **Summary**       | **Route**      | **Method** | **Operation ID** | **Status** |
+| ---------- | ----------------- | -------------- | ---------- | ---------------- | ---------- |
+| CBB053     | Create Staff      | /api/v1/staff/ | POST       | MBB001           | 🔄         |
+| CBB053     | Get Staff Details | /api/v1/staff/ | POST       | MBB001           | 🔄         |
+| CBB053     | List Staff        | /api/v1/staff/ | POST       | MBB001           | 🔄         |
 
 
 ---
