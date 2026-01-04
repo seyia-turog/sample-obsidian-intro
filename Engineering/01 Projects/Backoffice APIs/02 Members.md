@@ -64,11 +64,11 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 | **Action** | **Summary**            | **Route**                           | **Method** | **Operation ID** | **Status** |
 | ---------- | ---------------------- | ----------------------------------- | ---------- | ---------------- | ---------- |
-| AIB001     | Create Member Identity | /api/v1/members/profile             | POST       | MBB001           | 🔄         |
-| AIB002     | List Members           | /api/v1/members/profile             | GET        | MBB002           | 🔄         |
-| AIB003     | Get Member Details     | /api/v1/members/profile/{member_id} | GET        | MBB003           | 🔄         |
-| AIB004     | Update Member Profile  | /api/v1/members/profile/{member_id} | PUT        | MBB004           | 🔄         |
-| AIB005     | Change Member Password | /api/v1/members/profile/password    | PUT        | MBB005           | 🔄         |
+| AIB201     | Create Member Identity | /api/v1/members/profile             | POST       | MBB001           | 🔄         |
+| AIB202     | List Members           | /api/v1/members/profile             | GET        | MBB002           | 🔄         |
+| AIB203     | Get Member Details     | /api/v1/members/profile/{member_id} | GET        | MBB003           | 🔄         |
+| AIB204     | Update Member Profile  | /api/v1/members/profile/{member_id} | PUT        | MBB004           | 🔄         |
+| AIB205     | Change Member Password | /api/v1/members/profile/password    | PUT        | MBB005           | 🔄         |
 | AIB006     | Upload Member Avatar   | /api/v1/members/profile/avatar      | POST       | MBB006           | 🔄         |
 | AIB007     | Get Member Avatar      | /api/v1/members/profile/avatar      | GET        | MBB007           | 🔄         |
 | AIB008     | Block Member           |                                     | PATCH      | MBB008           | 🔄         |
@@ -83,7 +83,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | ---------- | --------------------- | -------------------------- | ---------- | ---------------- | ---------- |
 | AIB001     | Create Member         | /api/v1/members            | POST       | MBB001           | 🔄         |
 | AIB002     | List Members          | /api/v1/members            | GET        | MBB002           | 🔄         |
-| AIB003     | Get Member Profile    | /api/v1/members/{memberId} | GET        | MBB003           | 🔄         |
+| AIB003     | Get Member Profile    |                            | GET        | MBB003           | 🔄         |
 | AIB004     | Update Member Profile | /api/v1/members/{memberId} | PUT        | MBB004           | 🔄         |
 | AIB05      | Delete Member         | /api/v1/members/{memberId} | Delete     | MBB010           | 🔄         |
 
