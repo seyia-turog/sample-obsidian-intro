@@ -63,11 +63,51 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 ## Dependency Service APIs
 
-### Identity Processor APIs
+### 1. Identity Processor APIs
 
 | **Action** | **Summary**   | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------- | --------- | ---------- | ---------------- | ---------- |
 | PIB301     | Run AML Check |           | POST       | CLB001           | 🔄         |
+
+---
+
+### 2. CBA Adapter APIs
+
+| **Action** | **Summary**                                     | **Route**                                                | **Method** | **Operation ID** | **Status** |
+| ---------- | ----------------------------------------------- | -------------------------------------------------------- | ---------- | ---------------- | ---------- |
+| CB035      | Create Client Address                           | /api/v1/clients/{clientId}/address                       | POST       | CP001            | 🔄         |
+| CB036      | Update Client Address                           | /api/v1/clients/{clientId}/address                       | PUT        | CP002            | 🔄         |
+| CB037      | Fetch All Registered Addresses                  | /api/v1/clients/{clientId}/address                       | GET        | CP003            | 🔄         |
+| CB038      | Retrieves Next of Kin Information               | /api/v1/clients/{clientId}/kin                           | GET        | CP004            | 🔄         |
+| CB039      | Registers New Next of Kin                       | /api/v1/clients/{clientId}/kin                           | POST       | CP005            | 🔄         |
+| CB040      | Modifies Existing Next of Kin Information       | /api/v1/clients/{clientId}/kin/{kinId}                   | PUT        | CP006            | 🔄         |
+| CB041      | Removes Next of Kin Contact                     | /api/v1/clients/{clientId}/kin/{kinId}                   | DELETE     | CP007            | 🔄         |
+| CB042      | Retrieves Complete Employment History           | /api/v1/clients/{clientId}/employment                    | GET        | CP008            | 🔄         |
+| CB043      | Registers New Employment Record                 | /api/v1/clients/{clientId}/employment                    | POST       | CP009            | 🔄         |
+| CB044      | Modifies Existing Employment Records            | /clients/{clientId}/employment/{employmentId}            | PUT        | CP010            | 🔄         |
+| CB045      | Removes Employment Records                      | /clients/{clientId}/employment/{employmentId}            | DELETE     | CP011            | 🔄         |
+| CB046      | Retrieves Emergency Contact Information         | /api/v1/clients/{clientId}/emergency-contact             | GET        | CP012            | 🔄         |
+| CB047      | Registers New Emergency Contact                 | /api/v1/clients/{clientId}/emergency-contact             | POST       | CP013            | 🔄         |
+| CB048      | Modifies Existing Emergency Contact Information | /api/v1/clients/{clientId}/emergency-contact/{contactId} | PUT        | CP014            | 🔄         |
+| CB049      | Removes Emergency Contact                       | /api/v1/clients/{clientId}/emergency-contact/{contactId} | DELETE     | CP015            | 🔄         |
+
+---
+
+### 3. Notification Worker APIs
+
+| **Action** | **Summary**                            | **Route** | **Method** | **Operation ID** | **Status** |
+| ---------- | -------------------------------------- | --------- | ---------- | ---------------- | ---------- |
+| UM035      | Send Confirmation Notification to User | TBD       | POST       | CP001            | 🔄         |
+| UM036      | Send Confirmation Notification to User | TBD       | PUT        | CP002            | 🔄         |
+| UM037      | Send Confirmation Notification to User | TBD       | POST       | CP005            | 🔄         |
+| UM038      | Send Confirmation Notification to User | TBD       | PUT        | CP006            | 🔄         |
+| UM039      | Send Confirmation Notification to User | TBD       | DELETE     | CP007            | 🔄         |
+| UM040      | Send Confirmation Notification to User | TBD       | POST       | CP009            | 🔄         |
+| UM041      | Send Confirmation Notification to User | TBD       | PUT        | CP010            | 🔄         |
+| UM042      | Send Confirmation Notification to User | TBD       | DELETE     | CP011            | 🔄         |
+| UM043      | Send Confirmation Notification to User | TBD       | POST       | CP013            | 🔄         |
+| UM044      | Send Confirmation Notification to User | TBD       | PUT        | CP014            | 🔄         |
+| UM045      | Send Confirmation Notification to User | TBD       | DELETE     | CP015            | 🔄         |
 
 ---
 
