@@ -98,15 +98,15 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 | **Action** | **Summary**                            | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | -------------------------------------- | --------- | ---------- | ---------------- | ---------- |
 | PMI301     | Send Confirmation Notification to User |           | POST       | CP001            | 🔄         |
-| PMI30      | Send Confirmation Notification to User |           | PUT        | CP002            | 🔄         |
-| UM037      | Send Confirmation Notification to User |           | POST       | CP005            | 🔄         |
-| UM038      | Send Confirmation Notification to User |           | PUT        | CP006            | 🔄         |
-| UM039      | Send Confirmation Notification to User |           | DELETE     | CP007            | 🔄         |
-| UM040      | Send Confirmation Notification to User |           | POST       | CP009            | 🔄         |
-| UM041      | Send Confirmation Notification to User |           | PUT        | CP010            | 🔄         |
-| UM042      | Send Confirmation Notification to User |           | DELETE     | CP011            | 🔄         |
-| UM043      | Send Confirmation Notification to User |           | POST       | CP013            | 🔄         |
-| UM044      | Send Confirmation Notification to User |           | PUT        | CP014            | 🔄         |
+| PMI302     | Send Confirmation Notification to User |           | PUT        | CP002            | 🔄         |
+| PMI303     | Send Confirmation Notification to User |           | POST       | CP005            | 🔄         |
+| PMI304     | Send Confirmation Notification to User |           | PUT        | CP006            | 🔄         |
+| PMI305     | Send Confirmation Notification to User |           | DELETE     | CP007            | 🔄         |
+| PMI306     | Send Confirmation Notification to User |           | POST       | CP009            | 🔄         |
+| PMI307     | Send Confirmation Notification to User |           | PUT        | CP010            | 🔄         |
+| PMI308     | Send Confirmation Notification to User |           | DELETE     | CP011            | 🔄         |
+| PMI309     | Send Confirmation Notification to User |           | POST       | CP013            | 🔄         |
+| PMI301     | Send Confirmation Notification to User |           | PUT        | CP014            | 🔄         |
 | UM045      | Send Confirmation Notification to User |           | DELETE     | CP015            | 🔄         |
 
 ---
