@@ -69,11 +69,11 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | AIB203     | Get Member Details     | /api/v1/members/profile/{member_id} | GET        | MBB003           | 🔄         |
 | AIB204     | Update Member Profile  | /api/v1/members/profile/{member_id} | PUT        | MBB004           | 🔄         |
 | AIB205     | Change Member Password | /api/v1/members/profile/password    | PUT        | MBB005           | 🔄         |
-| AIB006     | Upload Member Avatar   | /api/v1/members/profile/avatar      | POST       | MBB006           | 🔄         |
-| AIB007     | Get Member Avatar      | /api/v1/members/profile/avatar      | GET        | MBB007           | 🔄         |
-| AIB008     | Block Member           |                                     | PATCH      | MBB008           | 🔄         |
-| AIB009     | Unblock Member         |                                     | PATCH      | MBB009           | 🔄         |
-| AIB010     | Delete Member          |                                     | Delete     | MBB010           | 🔄         |
+| AIB206     | Upload Member Avatar   | /api/v1/members/profile/avatar      | POST       | MBB006           | 🔄         |
+| AIB207     | Get Member Avatar      | /api/v1/members/profile/avatar      | GET        | MBB007           | 🔄         |
+| AIB208     | Block Member           |                                     | PATCH      | MBB008           | 🔄         |
+| AIB209     | Unblock Member         |                                     | PATCH      | MBB009           | 🔄         |
+| AIB210     | Delete Member          |                                     | Delete     | MBB010           | 🔄         |
 
 ---
 
