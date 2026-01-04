@@ -97,7 +97,7 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 | **Action** | **Summary**                            | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | -------------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| PMI301     | Send Confirmation Notification to User |           | POST       | CP001            | 🔄         |
+| PMI301     | Send Confirmation Notification to User |           | POST       | CLB002           | 🔄         |
 | PMI302     | Send Confirmation Notification to User |           | PUT        | CP002            | 🔄         |
 | PMI303     | Send Confirmation Notification to User |           | POST       | CP005            | 🔄         |
 | PMI304     | Send Confirmation Notification to User |           | PUT        | CP006            | 🔄         |
@@ -106,8 +106,8 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 | PMI307     | Send Confirmation Notification to User |           | PUT        | CP010            | 🔄         |
 | PMI308     | Send Confirmation Notification to User |           | DELETE     | CP011            | 🔄         |
 | PMI309     | Send Confirmation Notification to User |           | POST       | CP013            | 🔄         |
-| PMI301     | Send Confirmation Notification to User |           | PUT        | CP014            | 🔄         |
-| UM045      | Send Confirmation Notification to User |           | DELETE     | CP015            | 🔄         |
+| PMI310     | Send Confirmation Notification to User |           | PUT        | CP014            | 🔄         |
+| PMI311     | Send Confirmation Notification to User |           | DELETE     | CP015            | 🔄         |
 
 ---
 
