@@ -95,19 +95,19 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 ### 3. Notification Worker APIs
 
-| **Action** | **Summary**                            | **Route** | **Method** | **Operation ID** | **Status** |
-| ---------- | -------------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| PMI301     | Send Confirmation Notification to User |           | POST       | CLB002           | 🔄         |
-| PMI302     | Send Confirmation Notification to User |           | PUT        | CP002            | 🔄         |
-| PMI303     | Send Confirmation Notification to User |           | POST       | CP005            | 🔄         |
-| PMI304     | Send Confirmation Notification to User |           | PUT        | CP006            | 🔄         |
-| PMI305     | Send Confirmation Notification to User |           | DELETE     | CP007            | 🔄         |
-| PMI306     | Send Confirmation Notification to User |           | POST       | CP009            | 🔄         |
-| PMI307     | Send Confirmation Notification to User |           | PUT        | CP010            | 🔄         |
-| PMI308     | Send Confirmation Notification to User |           | DELETE     | CP011            | 🔄         |
-| PMI309     | Send Confirmation Notification to User |           | POST       | CP013            | 🔄         |
-| PMI310     | Send Confirmation Notification to User |           | PUT        | CP014            | 🔄         |
-| PMI311     | Send Confirmation Notification to User |           | DELETE     | CP015            | 🔄         |
+| **Action** | **Summary**                            | **Route** | **Method** | **Operation ID**                                              | **Status** |
+| ---------- | -------------------------------------- | --------- | ---------- | ------------------------------------------------------------- | ---------- |
+| PMI301     | Send Confirmation Notification to User |           | POST       | CLB002, CLB003,CLB006, CLB007, CLB008, CLB010, CLB012, CLB002 | 🔄         |
+| PMI302     | Send Confirmation Notification to User |           | PUT        | CP002                                                         | 🔄         |
+| PMI303     | Send Confirmation Notification to User |           | POST       | CP005                                                         | 🔄         |
+| PMI304     | Send Confirmation Notification to User |           | PUT        | CP006                                                         | 🔄         |
+| PMI305     | Send Confirmation Notification to User |           | DELETE     | CP007                                                         | 🔄         |
+| PMI306     | Send Confirmation Notification to User |           | POST       | CP009                                                         | 🔄         |
+| PMI307     | Send Confirmation Notification to User |           | PUT        | CP010                                                         | 🔄         |
+| PMI308     | Send Confirmation Notification to User |           | DELETE     | CP011                                                         | 🔄         |
+| PMI309     | Send Confirmation Notification to User |           | POST       | CP013                                                         | 🔄         |
+| PMI310     | Send Confirmation Notification to User |           | PUT        | CP014                                                         | 🔄         |
+| PMI311     | Send Confirmation Notification to User |           | DELETE     | CP015                                                         | 🔄         |
 
 ---
 
