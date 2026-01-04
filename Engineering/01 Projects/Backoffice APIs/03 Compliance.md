@@ -52,7 +52,7 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 | **Action** | **Summary**   | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------- | --------- | ---------- | ---------------- | ---------- |
-| PIB001     | Run AML Check |           | POST       | CLB001           | 🔄         |
+| PIB301     | Run AML Check |           | POST       | CLB001           | 🔄         |
 
 ---
 
