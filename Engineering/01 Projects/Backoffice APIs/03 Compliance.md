@@ -75,21 +75,21 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 | **Action** | **Summary**                                     | **Route**                                                | **Method** | **Operation ID** | **Status** |
 | ---------- | ----------------------------------------------- | -------------------------------------------------------- | ---------- | ---------------- | ---------- |
-| CB301      | Create Client Address                           | /api/v1/clients/{clientId}/address                       | POST       | CP001            | 🔄         |
-| CB302      | Update Client Address                           | /api/v1/clients/{clientId}/address                       | PUT        | CP002            | 🔄         |
-| CB303      | Fetch All Registered Addresses                  | /api/v1/clients/{clientId}/address                       | GET        | CP003            | 🔄         |
-| CB304      | Retrieves Next of Kin Information               | /api/v1/clients/{clientId}/kin                           | GET        | CP004            | 🔄         |
-| CB305      | Registers New Next of Kin                       | /api/v1/clients/{clientId}/kin                           | POST       | CP005            | 🔄         |
-| CB306      | Modifies Existing Next of Kin Information       | /api/v1/clients/{clientId}/kin/{kinId}                   | PUT        | CP006            | 🔄         |
+| CB301      | Create Client Address                           | /api/v1/clients/{clientId}/address                       | POST       | CLB002           | 🔄         |
+| CB302      | Update Client Address                           | /api/v1/clients/{clientId}/address                       | PUT        | CLB003           | 🔄         |
+| CB303      | Fetch All Registered Addresses                  | /api/v1/clients/{clientId}/address                       | GET        | CLB004           | 🔄         |
+| CB304      | Retrieves Next of Kin Information               | /api/v1/clients/{clientId}/kin                           | GET        | CLB005           | 🔄         |
+| CB305      | Registers New Next of Kin                       | /api/v1/clients/{clientId}/kin                           | POST       | CLB006           | 🔄         |
+| CB306      | Modifies Existing Next of Kin Information       | /api/v1/clients/{clientId}/kin/{kinId}                   | PUT        | CLB007           | 🔄         |
 | CB307      | Removes Next of Kin Contact                     | /api/v1/clients/{clientId}/kin/{kinId}                   | DELETE     | CP007            | 🔄         |
 | CB308      | Retrieves Complete Employment History           | /api/v1/clients/{clientId}/employment                    | GET        | CP008            | 🔄         |
 | CB309      | Registers New Employment Record                 | /api/v1/clients/{clientId}/employment                    | POST       | CP009            | 🔄         |
-| CB044      | Modifies Existing Employment Records            | /clients/{clientId}/employment/{employmentId}            | PUT        | CP010            | 🔄         |
-| CB045      | Removes Employment Records                      | /clients/{clientId}/employment/{employmentId}            | DELETE     | CP011            | 🔄         |
-| CB046      | Retrieves Emergency Contact Information         | /api/v1/clients/{clientId}/emergency-contact             | GET        | CP012            | 🔄         |
-| CB047      | Registers New Emergency Contact                 | /api/v1/clients/{clientId}/emergency-contact             | POST       | CP013            | 🔄         |
-| CB048      | Modifies Existing Emergency Contact Information | /api/v1/clients/{clientId}/emergency-contact/{contactId} | PUT        | CP014            | 🔄         |
-| CB049      | Removes Emergency Contact                       | /api/v1/clients/{clientId}/emergency-contact/{contactId} | DELETE     | CP015            | 🔄         |
+| CB310      | Modifies Existing Employment Records            | /clients/{clientId}/employment/{employmentId}            | PUT        | CP010            | 🔄         |
+| CB312      | Removes Employment Records                      | /clients/{clientId}/employment/{employmentId}            | DELETE     | CP011            | 🔄         |
+| CB313      | Retrieves Emergency Contact Information         | /api/v1/clients/{clientId}/emergency-contact             | GET        | CP012            | 🔄         |
+| CB314      | Registers New Emergency Contact                 | /api/v1/clients/{clientId}/emergency-contact             | POST       | CP013            | 🔄         |
+| CB315      | Modifies Existing Emergency Contact Information | /api/v1/clients/{clientId}/emergency-contact/{contactId} | PUT        | CP014            | 🔄         |
+| CB316      | Removes Emergency Contact                       | /api/v1/clients/{clientId}/emergency-contact/{contactId} | DELETE     | CP015            | 🔄         |
 
 ---
 
