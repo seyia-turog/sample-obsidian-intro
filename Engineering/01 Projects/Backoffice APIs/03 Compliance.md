@@ -45,19 +45,19 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 | CLB001     | Run AML Check (All)       | /compliance/checks/run-aml    | POST       | Compliance API          | Compliance       | 🔄         |
 | CLB002     | Add Registered Address    | /compliance/address           | POST       | addRegisteredAddress    | 🔄               |            |
 | CLB003     | Update Registered Address | /compliance/address           | PUT        | updateRegisteredAddress | 🔄               |            |
-| CP003      | List Registered Addresses | /compliance/address           | GET        | listRegisteredAddresses | 🔄               |            |
-| CP004      | List Next Of Kin          | /compliance/kin               | GET        | listNextOfKin           | 🔄               |            |
-| CP005      | Add Next Of Kin           | /compliance/kin               | POST       | addNextOfKin            | 🔄               |            |
-| CP006      | Update Next Of Kin        | /compliance/kin               | PUT        | updateNextOfKin         | 🔄               |            |
-| CP007      | Remove Next Of Kin        | /compliance/kin               | DELETE     | removeNextOfKin         | 🔄               |            |
-| CP008      | List Employment History   | /compliance/employment        | GET        | listEmploymentHistory   | 🔄               |            |
-| CP009      | Add Employment History    | /compliance/employment        | POST       | addEmploymentHistory    | 🔄               |            |
-| CP010      | Update Employment History | /compliance/employment        | PUT        | updateEmploymentHistory | 🔄               |            |
-| CP011      | Remove Employment History | /compliance/employment        | DELETE     | removeEmploymentHistory | 🔄               |            |
-| CP012      | List Emergency Contact    | /compliance/emergency_contact | GET        | listEmergencyContacts   | 🔄               |            |
-| CP013      | Add Emergency Contact     | /compliance/emergency_contact | POST       | addEmergencyContact     | 🔄               |            |
-| CP014      | Update Emergency Contact  | /compliance/emergency_contact | PUT        | updateEmergencyContact  | 🔄               |            |
-| CP015      | Remove Emergency Contact  | /compliance/emergency_contact | DELETE     | removeEmergencyContact  | 🔄               |            |
+| CLB004     | List Registered Addresses | /compliance/address           | GET        | listRegisteredAddresses | 🔄               |            |
+| CLB005     | List Next Of Kin          | /compliance/kin               | GET        | listNextOfKin           | 🔄               |            |
+| CLB006     | Add Next Of Kin           | /compliance/kin               | POST       | addNextOfKin            | 🔄               |            |
+| CLB007     | Update Next Of Kin        | /compliance/kin               | PUT        | updateNextOfKin         | 🔄               |            |
+| CLB008     | Remove Next Of Kin        | /compliance/kin               | DELETE     | removeNextOfKin         | 🔄               |            |
+| CLB009     | List Employment History   | /compliance/employment        | GET        | listEmploymentHistory   | 🔄               |            |
+| CLB010     | Add Employment History    | /compliance/employment        | POST       | addEmploymentHistory    | 🔄               |            |
+| CLB011     | Update Employment History | /compliance/employment        | PUT        | updateEmploymentHistory | 🔄               |            |
+| CLB012     | Remove Employment History | /compliance/employment        | DELETE     | removeEmploymentHistory | 🔄               |            |
+| CLB013     | List Emergency Contact    | /compliance/emergency_contact | GET        | listEmergencyContacts   | 🔄               |            |
+| CLB014     | Add Emergency Contact     | /compliance/emergency_contact | POST       | addEmergencyContact     | 🔄               |            |
+| CLB015     | Update Emergency Contact  | /compliance/emergency_contact | PUT        | updateEmergencyContact  | 🔄               |            |
+| CLB016     | Remove Emergency Contact  | /compliance/emergency_contact | DELETE     | removeEmergencyContact  | 🔄               |            |
 
 ---
 
