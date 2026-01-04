@@ -91,9 +91,9 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 | **Action** | **Summary**                    | **Route**                                   | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------------------------ | ------------------------------------------- | ---------- | ---------------- | ---------- |
-| CRB001     | Create Customer in CRM         | /api/v1/stakeholders/customers              | POST       | CLB003           | 🔄         |
-| CRB002     | Update Customer Profile in CRM | /api/v1/stakeholders/customers/{customerId} | PUT        | CLB004           | 🔄         |
-| CRB003     | Remove Customer Profile in CRM | /api/v1/stakeholders/customers              | DELETE     | CLB007           | 🔄         |
+| CRB101     | Create Customer in CRM         | /api/v1/stakeholders/customers              | POST       | CLB003           | 🔄         |
+| CRB102     | Update Customer Profile in CRM | /api/v1/stakeholders/customers/{customerId} | PUT        | CLB004           | 🔄         |
+| CRB103     | Remove Customer Profile in CRM | /api/v1/stakeholders/customers              | DELETE     | CLB007           | 🔄         |
 
 ---
 
@@ -101,7 +101,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 | **Action** | **Summary**       | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ----------------- | --------- | ---------- | ---------------- | ---------- |
-| SUB001     | List User Devices |           | GET        | CLB006           | 🔄         |
+| SUB101     | List User Devices |           | GET        | CLB006           | 🔄         |
 
 ---
 
@@ -109,7 +109,7 @@ It manages client profile creation, listing, detailed views, profile updates, as
 
 | **Action** | **Summary**          | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | -------------------- | --------- | ---------- | ---------------- | ---------- |
-| PMI003     | Send Welcome Message |           | POST       | CLB003           | 🔄         |
+| PMI103     | Send Welcome Message |           | POST       | CLB003           | 🔄         |
 
 ---
 
