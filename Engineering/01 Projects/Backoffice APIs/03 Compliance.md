@@ -97,17 +97,17 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 | **Action** | **Summary**                            | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | -------------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| UM035      | Send Confirmation Notification to User | TBD       | POST       | CP001            | 🔄         |
-| UM036      | Send Confirmation Notification to User | TBD       | PUT        | CP002            | 🔄         |
-| UM037      | Send Confirmation Notification to User | TBD       | POST       | CP005            | 🔄         |
-| UM038      | Send Confirmation Notification to User | TBD       | PUT        | CP006            | 🔄         |
-| UM039      | Send Confirmation Notification to User | TBD       | DELETE     | CP007            | 🔄         |
-| UM040      | Send Confirmation Notification to User | TBD       | POST       | CP009            | 🔄         |
-| UM041      | Send Confirmation Notification to User | TBD       | PUT        | CP010            | 🔄         |
-| UM042      | Send Confirmation Notification to User | TBD       | DELETE     | CP011            | 🔄         |
-| UM043      | Send Confirmation Notification to User | TBD       | POST       | CP013            | 🔄         |
-| UM044      | Send Confirmation Notification to User | TBD       | PUT        | CP014            | 🔄         |
-| UM045      | Send Confirmation Notification to User | TBD       | DELETE     | CP015            | 🔄         |
+| UM035      | Send Confirmation Notification to User |           | POST       | CP001            | 🔄         |
+| UM036      | Send Confirmation Notification to User |           | PUT        | CP002            | 🔄         |
+| UM037      | Send Confirmation Notification to User |           | POST       | CP005            | 🔄         |
+| UM038      | Send Confirmation Notification to User |           | PUT        | CP006            | 🔄         |
+| UM039      | Send Confirmation Notification to User |           | DELETE     | CP007            | 🔄         |
+| UM040      | Send Confirmation Notification to User |           | POST       | CP009            | 🔄         |
+| UM041      | Send Confirmation Notification to User |           | PUT        | CP010            | 🔄         |
+| UM042      | Send Confirmation Notification to User |           | DELETE     | CP011            | 🔄         |
+| UM043      | Send Confirmation Notification to User |           | POST       | CP013            | 🔄         |
+| UM044      | Send Confirmation Notification to User |           | PUT        | CP014            | 🔄         |
+| UM045      | Send Confirmation Notification to User |           | DELETE     | CP015            | 🔄         |
 
 ---
 
