@@ -85,11 +85,11 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 | CBB308     | Retrieves Complete Employment History           | /api/v1/clients/{clientId}/employment                    | GET        | CLB009           | 🔄         |
 | CBB309     | Registers New Employment Record                 | /api/v1/clients/{clientId}/employment                    | POST       | CLB010           | 🔄         |
 | CBB310     | Modifies Existing Employment Records            | /clients/{clientId}/employment/{employmentId}            | PUT        | CLB011           | 🔄         |
-| CB312      | Removes Employment Records                      | /clients/{clientId}/employment/{employmentId}            | DELETE     | CLB012           | 🔄         |
-| CB313      | Retrieves Emergency Contact Information         | /api/v1/clients/{clientId}/emergency-contact             | GET        | CLB013           | 🔄         |
-| CB314      | Registers New Emergency Contact                 | /api/v1/clients/{clientId}/emergency-contact             | POST       | CLB014           | 🔄         |
-| CB315      | Modifies Existing Emergency Contact Information | /api/v1/clients/{clientId}/emergency-contact/{contactId} | PUT        | CLB015           | 🔄         |
-| CB316      | Removes Emergency Contact                       | /api/v1/clients/{clientId}/emergency-contact/{contactId} | DELETE     | CLB016           | 🔄         |
+| CBB312     | Removes Employment Records                      | /clients/{clientId}/employment/{employmentId}            | DELETE     | CLB012           | 🔄         |
+| CBB313     | Retrieves Emergency Contact Information         | /api/v1/clients/{clientId}/emergency-contact             | GET        | CLB013           | 🔄         |
+| CBB314     | Registers New Emergency Contact                 | /api/v1/clients/{clientId}/emergency-contact             | POST       | CLB014           | 🔄         |
+| CBB315     | Modifies Existing Emergency Contact Information | /api/v1/clients/{clientId}/emergency-contact/{contactId} | PUT        | CLB015           | 🔄         |
+| CBB316     | Removes Emergency Contact                       | /api/v1/clients/{clientId}/emergency-contact/{contactId} | DELETE     | CLB016           | 🔄         |
 
 ---
 
@@ -97,8 +97,8 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 
 | **Action** | **Summary**                            | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | -------------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| UM035      | Send Confirmation Notification to User |           | POST       | CP001            | 🔄         |
-| UM036      | Send Confirmation Notification to User |           | PUT        | CP002            | 🔄         |
+| PMI301     | Send Confirmation Notification to User |           | POST       | CP001            | 🔄         |
+| PMI30      | Send Confirmation Notification to User |           | PUT        | CP002            | 🔄         |
 | UM037      | Send Confirmation Notification to User |           | POST       | CP005            | 🔄         |
 | UM038      | Send Confirmation Notification to User |           | PUT        | CP006            | 🔄         |
 | UM039      | Send Confirmation Notification to User |           | DELETE     | CP007            | 🔄         |
