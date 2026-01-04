@@ -106,8 +106,8 @@ It manages member profile creation, listing, viewing, updates, password changes,
 | **Action** | **Summary**                                    | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ---------------------------------------------- | --------- | ---------- | ---------------- | ---------- |
 | PMI101     | Send Welcome Email                             |           | POST       | MBB001           | 🔄         |
-| PMI002     | Send Password Reset Success Notification       |           | POST       | MBB005           | 🔄         |
-| PMI002     | Send Member Profile Status Update Notification |           | POST       | MBB008, MBB009   | 🔄         |
+| PMI102     | Send Password Reset Success Notification       |           | POST       | MBB005           | 🔄         |
+| PMI103     | Send Member Profile Status Update Notification |           | POST       | MBB008, MBB009   | 🔄         |
 
 ---
 
@@ -115,9 +115,9 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 | **Action** | **Summary**   | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ------------- | --------- | ---------- | ---------------- | ---------- |
-| PDB001     | Process Image |           | POST       | MBB006           | 🔄         |
-| PDB002     | Store Image   |           | POST       | MBB006           | 🔄         |
-| PDB003     | Get Image     |           | GET        | MBB007           | 🔄         |
+| PDB101     | Process Image |           | POST       | MBB006           | 🔄         |
+| PDB102     | Store Image   |           | POST       | MBB006           | 🔄         |
+| PDB103     | Get Image     |           | GET        | MBB007           | 🔄         |
 
 ---
 
