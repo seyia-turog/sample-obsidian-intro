@@ -81,11 +81,11 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 | **Action** | **Summary**           | **Route**                  | **Method** | **Operation ID** | **Status** |
 | ---------- | --------------------- | -------------------------- | ---------- | ---------------- | ---------- |
-| AIB001     | Create Member         | /api/v1/members            | POST       | MBB001           | 🔄         |
-| AIB002     | List Members          | /api/v1/members            | GET        | MBB002           | 🔄         |
-| AIB003     | Get Member Profile    |                            | GET        | MBB003           | 🔄         |
-| AIB004     | Update Member Profile | /api/v1/members/{memberId} | PUT        | MBB004           | 🔄         |
-| AIB05      | Delete Member         | /api/v1/members/{memberId} | Delete     | MBB010           | 🔄         |
+| CRB201     | Create Member         | /api/v1/members            | POST       | MBB001           | 🔄         |
+| CRB202     | List Members          | /api/v1/members            | GET        | MBB002           | 🔄         |
+| CRB203     | Get Member Profile    |                            | GET        | MBB003           | 🔄         |
+| CRB204     | Update Member Profile | /api/v1/members/{memberId} | PUT        | MBB004           | 🔄         |
+| CRB205     | Delete Member         | /api/v1/members/{memberId} | Delete     | MBB010           | 🔄         |
 
 ---
 
@@ -93,9 +93,9 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 | **Action** | **Summary**       | **Route**               | **Method** | **Operation ID** | **Status** |
 | ---------- | ----------------- | ----------------------- | ---------- | ---------------- | ---------- |
-| CBB053     | Create Staff      | /api/v1/staff/          | POST       | MBB001           | 🔄         |
-| CBB053     | Get Staff Details | /api/v1/staff/{staffId} | POST       | MBB003           | 🔄         |
-| CBB053     | List Staff        | /api/v1/staff/          | POST       | MBB002           | 🔄         |
+| CBB201     | Create Staff      | /api/v1/staff/          | POST       | MBB001           | 🔄         |
+| CBB202     | Get Staff Details | /api/v1/staff/{staffId} | POST       | MBB003           | 🔄         |
+| CBB203     | List Staff        | /api/v1/staff/          | POST       | MBB002           | 🔄         |
 
 
 ---
@@ -105,7 +105,7 @@ It manages member profile creation, listing, viewing, updates, password changes,
 
 | **Action** | **Summary**                                    | **Route** | **Method** | **Operation ID** | **Status** |
 | ---------- | ---------------------------------------------- | --------- | ---------- | ---------------- | ---------- |
-| PMI001     | Send Welcome Email                             |           | POST       | MBB001           | 🔄         |
+| PMI101     | Send Welcome Email                             |           | POST       | MBB001           | 🔄         |
 | PMI002     | Send Password Reset Success Notification       |           | POST       | MBB005           | 🔄         |
 | PMI002     | Send Member Profile Status Update Notification |           | POST       | MBB008, MBB009   | 🔄         |
 
