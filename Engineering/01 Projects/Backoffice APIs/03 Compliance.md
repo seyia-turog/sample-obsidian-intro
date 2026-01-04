@@ -81,15 +81,15 @@ It manages comprehensive AML checks including PEP (Politically Exposed Persons) 
 | CB304      | Retrieves Next of Kin Information               | /api/v1/clients/{clientId}/kin                           | GET        | CLB005           | 🔄         |
 | CB305      | Registers New Next of Kin                       | /api/v1/clients/{clientId}/kin                           | POST       | CLB006           | 🔄         |
 | CB306      | Modifies Existing Next of Kin Information       | /api/v1/clients/{clientId}/kin/{kinId}                   | PUT        | CLB007           | 🔄         |
-| CB307      | Removes Next of Kin Contact                     | /api/v1/clients/{clientId}/kin/{kinId}                   | DELETE     | CP007            | 🔄         |
-| CB308      | Retrieves Complete Employment History           | /api/v1/clients/{clientId}/employment                    | GET        | CP008            | 🔄         |
-| CB309      | Registers New Employment Record                 | /api/v1/clients/{clientId}/employment                    | POST       | CP009            | 🔄         |
-| CB310      | Modifies Existing Employment Records            | /clients/{clientId}/employment/{employmentId}            | PUT        | CP010            | 🔄         |
-| CB312      | Removes Employment Records                      | /clients/{clientId}/employment/{employmentId}            | DELETE     | CP011            | 🔄         |
-| CB313      | Retrieves Emergency Contact Information         | /api/v1/clients/{clientId}/emergency-contact             | GET        | CP012            | 🔄         |
-| CB314      | Registers New Emergency Contact                 | /api/v1/clients/{clientId}/emergency-contact             | POST       | CP013            | 🔄         |
-| CB315      | Modifies Existing Emergency Contact Information | /api/v1/clients/{clientId}/emergency-contact/{contactId} | PUT        | CP014            | 🔄         |
-| CB316      | Removes Emergency Contact                       | /api/v1/clients/{clientId}/emergency-contact/{contactId} | DELETE     | CP015            | 🔄         |
+| CB307      | Removes Next of Kin Contact                     | /api/v1/clients/{clientId}/kin/{kinId}                   | DELETE     | CLB008           | 🔄         |
+| CB308      | Retrieves Complete Employment History           | /api/v1/clients/{clientId}/employment                    | GET        | CLB009           | 🔄         |
+| CB309      | Registers New Employment Record                 | /api/v1/clients/{clientId}/employment                    | POST       | CLB010           | 🔄         |
+| CB310      | Modifies Existing Employment Records            | /clients/{clientId}/employment/{employmentId}            | PUT        | CLB011           | 🔄         |
+| CB312      | Removes Employment Records                      | /clients/{clientId}/employment/{employmentId}            | DELETE     | CLB012           | 🔄         |
+| CB313      | Retrieves Emergency Contact Information         | /api/v1/clients/{clientId}/emergency-contact             | GET        | CLB013           | 🔄         |
+| CB314      | Registers New Emergency Contact                 | /api/v1/clients/{clientId}/emergency-contact             | POST       | CLB014           | 🔄         |
+| CB315      | Modifies Existing Emergency Contact Information | /api/v1/clients/{clientId}/emergency-contact/{contactId} | PUT        | CLB015           | 🔄         |
+| CB316      | Removes Emergency Contact                       | /api/v1/clients/{clientId}/emergency-contact/{contactId} | DELETE     | CLB016           | 🔄         |
 
 ---
 
