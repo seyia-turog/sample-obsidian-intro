@@ -79,11 +79,11 @@ It manages client profile creation, listing, detailed views, profile updates, as
 | CBB102     | Retrieve Client Details          | /api/v1/clients/{type}/{clientId}                | GET        | CLB002           | 🔄         |
 | CBB103     | Create Client in CBA             | /api/v1/clients/{type}                           | POST       | CLB003           | 🔄         |
 | CBB104     | Update Client Profile in CBA     | /api/v1/clients/{type}                           | PUT        | CLB004           | 🔄         |
-| CBB005     | List Client Accounts             | /api/v1/savings/accounts/overview/{accountId}    | GET        | CLB005           | 🔄         |
+| CBB105     | List Client Accounts             | /api/v1/savings/accounts/overview/{accountId}    | GET        | CLB005           | 🔄         |
 | CBB006     | Remove Client                    | /api/v1/clients/{clientId}                       | DELETE     | CLB007           | 🔄         |
-| CBB007     | Add Corporate Client Director    | /api/v1/clients/{clientId}/director              | POST       | CLB008           | 🔄         |
-| CBB008     | Remove Corporate Client Director | /api/v1/clients/{clientId}/director/{directorId} | DELETE     | CLB009           | 🔄         |
-| CBB009     | List Corporate Client Directors  | /api/v1/clients/{clientId}/directors             | GET        | CLB010           | 🔄         |
+| CBB107     | Add Corporate Client Director    | /api/v1/clients/{clientId}/director              | POST       | CLB008           | 🔄         |
+| CBB108     | Remove Corporate Client Director | /api/v1/clients/{clientId}/director/{directorId} | DELETE     | CLB009           | 🔄         |
+| CBB109     | List Corporate Client Directors  | /api/v1/clients/{clientId}/directors             | GET        | CLB010           | 🔄         |
 
 ---
 
