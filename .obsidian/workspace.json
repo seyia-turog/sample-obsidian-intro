@@ -184,9 +184,10 @@
   },
   "active": "ee44878349066c0d",
   "lastOpenFiles": [
+    "model_1.bpmn",
+    "US001.md",
     "Engineering/01 Projects/Omnichannel API/01. Users.md",
     "US002.md",
-    "US001.md",
     "Engineering/01 Projects/Backoffice APIs/02 Members.md",
     "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
     "Engineering/01 Projects/Backoffice APIs/01 Clients.md",
@@ -209,7 +210,6 @@
     "Engineering/01 Projects/Backoffice APIs/08 Cards.md",
     "Engineering/01 Projects/Backoffice APIs/07 Connections.md",
     "Engineering/01 Projects/Backoffice APIs/10 Merchants.md",
-    "Engineering/01 Projects/Omnichannel API/03. Authentication.md",
     "Engineering/01 Projects/Open Banking Showcase (AISP Personal Finance Manager)",
     "Engineering/01 Projects/Open Banking Showcase (PISP-Truelayer)",
     "Engineering/01 Projects/Open Banking API (Nigeria)",
@@ -218,7 +218,6 @@
     "Engineering/01 Projects/Omnichannel Showcase",
     "Engineering/01 Projects/Omnichannel API",
     "Engineering/01 Projects/Backoffice Console",
-    "Untitled",
-    "Engineering/01 Projects/Backoffice APIs"
+    "Untitled"
   ]
 }
