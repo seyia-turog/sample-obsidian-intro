@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering/01 Projects/Omnichannel API/01. Users.md",
+                "file": "US001.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. Users"
+              "title": "US001"
             }
           }
         ]
@@ -184,8 +184,8 @@
   },
   "active": "ee44878349066c0d",
   "lastOpenFiles": [
-    "US002.md",
     "Engineering/01 Projects/Omnichannel API/01. Users.md",
+    "US002.md",
     "US001.md",
     "Engineering/01 Projects/Backoffice APIs/02 Members.md",
     "Engineering/01 Projects/Backoffice APIs/03 Compliance.md",
