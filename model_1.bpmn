@@ -22,12 +22,17 @@
     <bpmn2:sequenceFlow id="Flow_1wav2xt" sourceRef="Activity_0w2qc2s" targetRef="Gateway_0vxdlxz" />
     <bpmn2:task id="Activity_0f0zgvv">
       <bpmn2:incoming>Flow_1mcu1iu</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_0w84irv</bpmn2:outgoing>
     </bpmn2:task>
     <bpmn2:sequenceFlow id="Flow_1mcu1iu" sourceRef="Gateway_0vxdlxz" targetRef="Activity_0f0zgvv" />
     <bpmn2:task id="Activity_0ot7a4z">
       <bpmn2:incoming>Flow_0bcgcup</bpmn2:incoming>
     </bpmn2:task>
     <bpmn2:sequenceFlow id="Flow_0bcgcup" sourceRef="Gateway_0vxdlxz" targetRef="Activity_0ot7a4z" />
+    <bpmn2:endEvent id="Event_0x72ox6">
+      <bpmn2:incoming>Flow_0w84irv</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="Flow_0w84irv" sourceRef="Activity_0f0zgvv" targetRef="Event_0x72ox6" />
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_k23x4">
     <bpmndi:BPMNPlane id="BPMNPlane_k23x4" bpmnElement="Process_k23x4">
@@ -50,6 +55,9 @@
       <bpmndi:BPMNShape id="Activity_0ot7a4z_di" bpmnElement="Activity_0ot7a4z">
         <dc:Bounds x="700" y="290" width="100" height="80" />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0x72ox6_di" bpmnElement="Event_0x72ox6">
+        <dc:Bounds x="872" y="202" width="36" height="36" />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1eomm91_di" bpmnElement="Flow_1eomm91">
         <di:waypoint x="208" y="220" />
         <di:waypoint x="260" y="220" />
@@ -70,6 +78,10 @@
         <di:waypoint x="610" y="245" />
         <di:waypoint x="610" y="330" />
         <di:waypoint x="700" y="330" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0w84irv_di" bpmnElement="Flow_0w84irv">
+        <di:waypoint x="800" y="220" />
+        <di:waypoint x="872" y="220" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
